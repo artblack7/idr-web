@@ -31,6 +31,7 @@ section .LineBtn {
   align-items: center;
   justify-content: center;
   padding: var(--padding);
+  border: 0.5px solid rgb(174, 174, 174)
 }
 
 /*---- Base Section ----*/
@@ -69,6 +70,30 @@ section .LineBtn {
   align-items: center;
 }
 
+.CenterHeading h5 {
+  width: 100%;
+  max-width: 1000px;
+}
+
+/*---- Center Section ----*/
+
+.ZeroSectionWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 0;
+}
+
+.ZeroSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
 /*---- Side Section ----*/
 
 .SideSection {
@@ -87,7 +112,7 @@ section .LineBtn {
 .Right {
   display: flex;
   flex-direction: row;
-  gap: 10%;
+  gap: 5%;
 }
 
 .SideTxt {
@@ -104,6 +129,15 @@ section .LineBtn {
   align-items: center;
   width: 50%;
 }
+
+.SideImg img {
+  width: 100%;
+}
+
+.SideImg.Square img {
+  border-radius: 10px;
+}
+
 
 .CenterTxt {
   display: flex;
@@ -177,82 +211,31 @@ section .LineBtn {
 
 .CardGroup {
   display: grid;
-  /* grid-template-columns: 1fr 1fr 1fr; */
-  gap: 2%;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* gap: 3%; */
   margin-top: 80px;
   align-items: stretch;
-  max-width: 1200px;
-  align-items: stretch;
+  /* max-width: 1400px; */
 }
 
 .CardWrap {
   display: flex;
   flex-direction: column;
-  align-content: flex-start;
+  /* align-content: flex-start; */
   flex: 1;
-  width: 100%;
-  min-height: 300px;
+  /* min-height: 300px; */
   transition: transform 0.3s ease;
 }
-
-/* min-height review */
 
 .Card {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
-  border: 0.5px solid;
+  flex: 1;
+  /* border: 0.5px solid;
   border-radius: 0 0 12px 12px;
   border-color: var(--grey2);
   box-shadow: var(--sh-box);
-  background: var(--white);
-}
-
-.CardTxt {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  padding: 30px 40px;
-  /* justify-content: space-between; */
-  align-items: flex-start;
-}
-
-.CardSub {
-  font-size: 0.75rem;
-  font-weight: 500;
-  color: var(--main);
-}
-
-.Card p {
-  font-size: 0.875rem;
-  line-height: 1.375rem;
-}
-
-.CardLink {
-  font-size: var(--text-s);
-  font-weight: 400;
-}
-
-.CardLink #arrow-icon {
-  width: 9px;
-  height: auto;
-  margin-left: 2px;
-}
-
-.CardLink #arrow-icon path {
-  fill: var(--dark2);
-}
-
-.Card:hover #arrow-icon path {
-  fill: var(--main);
-}
-
-.Card a {
-  color: var(--dark2);
-}
-
-.Card:hover a {
-  color: var(--main);
+  background: var(--white); */
 }
 
 .CardGroup h6 {
@@ -260,28 +243,224 @@ section .LineBtn {
   padding-bottom: 20px;
 }
 
-
-/*//////////////////////// HERO SECTION /////////////////////*/
-
-/*--------------- Main Hero Section ---------------*/
-
-/* .HeroBgWrap {
-  position: absolute;
-  top: 0px;
-  right: 0;
-  z-index: -1;
-  width: 100%; 
-  display: flex; 
-  justify-content: center; 
-  overflow-x: hidden;
+.CardGroup p {
+  font-size: 14px;
+  line-height: 20px;
 }
 
-.HeroBg {
+/* CARD TYPES */
+
+.BlogCardGroup {
+  display: grid;
+  align-items: stretch; 
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  margin: 50px 0;
+}
+
+.BlogCardWrap {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  flex: 1;
+  margin-right: 1%;
+  max-width: 450px;
+  min-width: 400px;
+  /* min-width: 400px !important; */
+  height: 100%;
+  border-radius: 25px;
+  transition: 0.3s ease-in-out;
+}
+
+.Recent .BlogCardWrap {
+  width: 500px;
+}
+
+.BlogCardWrap:last-child {
+  margin-right: 0px;
+}
+
+.BlogCardTop {
+  background-color: var(--tgreen3);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 230px;
   position: relative;
-  top: 0;
-  right: 0;
-  z-index: 0;
+  padding: 0;
+  border-radius: 16px 16px 0 0;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+
+.BlogCard {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  border: 0.5px solid;
+  border-radius: 0 0 16px 16px;
+  border-color: var(--grey2);
+  box-shadow: var(--sh-xl);
+  background: var(--white);
+  min-height: 160px;
+  transition: 0.3s ease-in-out;
+}
+
+.BlogCardWrap:hover {
+  box-shadow: var(--sh-box);
+}
+
+/* .BlogCardWrap:hover .BlogCardTxt {
+  padding-top: 25px;
 } */
+
+.BlogCardWrap:hover .BlogCardTop{
+  filter: brightness(115%);
+}
+
+.BlogCardTxt {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 30px 15px 30px;
+  transition: 0.3s ease-in-out;
+}
+
+.BlogCardSub {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--pblue);
+  margin-bottom: 2px !important;
+  color: var(--dark4);
+}
+
+.BlogCard p {
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  color: var(--dark4);
+}
+
+.BlogCard h6 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--dark2);
+  padding-bottom: 10px;
+}
+
+.BlogCard a {
+  color: var(--pblue);
+}
+
+.BlogCard a:hover {
+  color: var(--pblue1);
+}
+
+/* Collab Cards */
+
+.BlogCardTop.Collab1 {
+  background: url("../public/img/leather.jpg") 
+  no-repeat center right / cover; 
+}
+.BlogCardTop.Collab2 {
+  background: url("../public/img/leaf.jpg") 
+  no-repeat center right / cover; 
+}
+.BlogCardTop.Collab3 {
+  background: url("../public/img/water.jpg") 
+  no-repeat center right / cover; 
+}
+
+
+
+/* CenterTri */
+
+.CardGroup.CenterTri,
+.Cardgroup.Collab {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1%;
+  width: 100%;
+}
+
+.CardGroup.CenterTri .CardWrap,
+.Cardgroup.Collab .CardWrap {
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+  width: 100%;
+  min-height: 300px;
+}
+
+.CenterTri .CardWrap img {
+  width: 80px;
+  height: auto;
+}
+
+/* Numbers Cards */
+
+.CardGroup.Numbers {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+}
+
+.CardGroup.Numbers .CardWrap {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 250px;
+  width: 100%;
+}
+
+.CardGroup.Numbers .Card {
+  display: flex;
+  align-items: center;
+}
+
+.CardGroup.Numbers h1 {
+  font-weight: 600;
+  font-family: Poppins, sans-serif;
+  font-size: 80px;
+}
+
+.CardGroup.Numbers h6 {
+  color: var(--tgreen3)
+}
+
+.CardLine {
+  width: 100%;
+  height: 4px;
+  background: var(--mainGrad);
+  margin-bottom: 20px;
+}
+
+/* Squares Cards */
+
+.CardGroup.Squares {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
+}
+
+.CardGroup.Squares .CardWrap {
+  display: flex;
+  text-align: center;
+  padding: 50px 30px;
+  color: white;
+}
+
+.CardGroup.Squares .Card1 {
+  background: var(--tgreen4);
+}
+.CardGroup.Squares .Card2 {
+  background: var(--tgreen3);
+}
+.CardGroup.Squares .Card3 {
+  background: var(--tgreen2);
+}
+.CardGroup.Squares .Card4 {
+  background: var(--green2);
+}
+
+/*/////////// HERO SECTION ///////////*/
 
 .HeroVideo {
   position: absolute;
@@ -304,10 +483,12 @@ section .LineBtn {
   transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
   z-index: 0;
   background: linear-gradient(180deg, 
-  rgba(11, 15, 22, 0.8),
-  rgba(0, 0, 0, 0.4),
+  rgba(11, 15, 22, 0.7),
+  rgba(11, 15, 22, 0.524),
   rgba(0, 0, 0, 0.3),
-  rgba(0, 0, 0, 0.1), 
+  rgba(0, 0, 0, 0.2),
+  rgba(0, 0, 0, 0.1),
+  rgba(0, 0, 0, 0), 
   rgba(0, 0, 0, 0));
 }
 
@@ -326,15 +507,11 @@ section .LineBtn {
 .HeroSection {
   /* max-width: 1400px; */
   margin: auto;
-  height: 800px;
+  height: 850px;
   z-index: 1;
   position: relative;
   display: flex;
   align-items: center;
-}
-
-.HeroSection.main  {
-  justify-content: center;
 }
 
 .MainHeroContent {
@@ -358,7 +535,7 @@ section .LineBtn {
 }
 
 .HeroTitle {
-  padding: 40px 0 20px 0;
+  padding: 40px 0 24px 0;
 }
 
 .HeroSection .AppBtn button {
@@ -370,6 +547,8 @@ section .LineBtn {
   font-family: "montserrat", sans-serif;
   font-weight: 700;
   margin-bottom: 6px;
+  /* font-size: 60px;
+  width: 60%; */
   color: var(--white);
   text-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5);
 }
@@ -382,28 +561,53 @@ section .LineBtn {
   letter-spacing: 0.06rem;
 }
 
-#Projectes {
-  background: 
-  
-  linear-gradient(180deg, 
+#main-hero .HeroSection  {
+  justify-content: center;
+}
+
+#innovation-hero {
+  background: linear-gradient(180deg, 
+  rgba(0, 58, 139, 0.9), transparent),
+  url(../public/img/projectes.jpg) no-repeat center/cover;
+}
+
+#tech-hero {
+  background: linear-gradient(180deg, 
+  rgba(0, 58, 139, 0.9), transparent),
+  url(../public/img/projectes.jpg) no-repeat center/cover;
+}
+
+#ecology-hero {
+  background: linear-gradient(180deg, 
+  rgba(0, 58, 139, 0.9), transparent),
+  url(../public/img/projectes.jpg) no-repeat center/cover;
+}
+
+#services-hero {
+  background: linear-gradient(180deg, 
+  rgba(0, 58, 139, 0.9), transparent),
+  url(../public/img/projectes.jpg) no-repeat center/cover;
+}
+
+#about-hero {
+  background: linear-gradient(180deg, 
+  rgba(0, 58, 139, 0.9), transparent),
+  url(../public/img/projectes.jpg) no-repeat center/cover;
+}
+
+/* #innovation-hero {
+  background: linear-gradient(180deg, 
   rgba(0, 58, 139, 0.9), 
   transparent, transparent),
-  
+
   url(../public/img/projectes.jpg);
-  
   background-repeat: no-repeat;
   background-position: 100% 100%;
   background-position: center center;
   background-size: cover;
-}
-
+} */
 
 /* .HeroSectionWrap {
-  width: 100%;
-  height: 850px;
-  justify-content: center;
-  overflow: hidden;
-  background: var(--darkGrad);
 	background: 
   
   linear-gradient(180deg, 
@@ -423,70 +627,76 @@ section .LineBtn {
   background-position: 100% 100%;
   background-position: center center;
   background-size: cover;
-  margin-top: -100px;
+} */
+
+/* .HeroBgWrap {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  z-index: -1;
+  width: 100%; 
+  display: flex; 
+  justify-content: center; 
+  overflow-x: hidden;
+}
+
+.HeroBg {
+  position: relative;
+  top: 0;
+  right: 0;
+  z-index: 0;
 } */
 
 
-/*//////////////////////// SECTIONS /////////////////////*/
-
+/*/////////////// MAIN PAGE /////////////////////*/
 
 /* QUISOM */
 
-#quisom .SideImg img {
+#main-about .SideImg img {
   max-width: 600px;
-  width: 100%;
-  height: auto;
-  position: relative;
 }
 
+/* TECHNOLOGY - CenterSection */
 
-/* Partners */
-
-.PartnerLogos {
+#main-tech {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10%;
-  height: 100px;
 }
 
-.PartnerLogos img {
-  height: 30px;
-  width: auto;
-} 
+#main-tech video {
+  display: flex;
+  width: 100%;
+  border-radius: 10px;
+}
 
 /* INNOVATION */
 
-#innovation {
+#main-innovation {
   background: url("../public/img/lab.jpg") 
   no-repeat center right / auto 100% ;
 }
 
-/* #innovation::before {
-  background: linear-gradient(105deg, var(--blue4) 53%, transparent 47%) no-repeat
-  center right / cover;
-}  */
-
-#innovation::before {
-  content: ""; /* Required for pseudo-elements */
+#main-innovation::before {
+  content: ""; 
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background: 
-    linear-gradient(
-      var(--blue5), /* Black overlay with 50% transparency */
-      var(--blue5)
-    ),
+    linear-gradient( var(--blue5), var(--blue5)),
     url("../public/img/water2.jpg") no-repeat center / cover;
   /* background-blend-mode: multiply; */
   clip-path: polygon(0 0, 60% 0, 50% 100%, 0 100%);
 }
 
+/* #innovation::before {
+  background: linear-gradient(105deg, var(--blue4) 53%, transparent 47%) no-repeat
+  center right / cover;
+}  */ 
+
 .Stripe {
   width: 100%;
-  height: 60px;
+  height: 40px;
 } 
 
 .Stripe.Blue {
@@ -496,17 +706,12 @@ section .LineBtn {
 
 /* RESIDUS */
 
-#residus {
+#main-services {
   background: url("../public/img/residus.jpg") 
   no-repeat center right / auto 100% ;
 }
 
-/* #residus::before {
-  background: linear-gradient(105deg, var(--tgreen5) 53%, transparent 47%) no-repeat
-  center right / cover;
-}  */
-
-#residus::before {
+#main-services::before {
   content: ""; /* Required for pseudo-elements */
   position: absolute;
   top: 0;
@@ -523,9 +728,9 @@ section .LineBtn {
   no-repeat center / cover;
 }
 
-/* Socis */
+/* SOCIS */
 
-#socis {
+#main-socis {
   /* background: 
     linear-gradient(
       rgba(0, 0, 0, 0.5),
@@ -542,14 +747,14 @@ section .LineBtn {
 }
 
 .center-subtitle {
-  width: 60%;
+  width: 100%;
+  max-width: 1000px;
   text-align: center;
 }
 
-
 /* MISSION - Features */
 
-.SquareSection {
+/* .SquareSection {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -557,50 +762,27 @@ section .LineBtn {
   margin: 0 auto;
   padding: 60px 20px;
   border-radius: 10px;
-}
-
-.CardGroup.CenterTri  {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-content: center;
-  gap: 3%;
-  align-items: center;
-}
-
-.CardGroup.CenterTri .CardWrap {
-  max-width: 300px;
-  align-items: center;
-  text-align: center;
-  margin: 0 auto;
-}
-
-.CardGroup.CenterTri .CardTxt h6 {
-  justify-content: center;
-  align-items: center;
-  text-align: center !important;
-  width: 100%;
-}
-
-/* .CenterTri .CardWrap img {
-  width: 100%;
 } */
 
 
 
-/* TECNOLOGIA - CenterSection */
-
-#tech {
-  display: flex;
-}
-
-#tech video {
-  display: flex;
-  width: 100%;
-  border-radius: 10px;
-}
-
-
 /*//////////////////////// PAGES /////////////////////*/
+
+.QuoteContent {
+  text-align: center;
+  padding: 50px 0;
+}
+
+#quote-innovation {
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(18, 33, 87, 0.5),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url("../public/img/water2.jpg") 
+    no-repeat center right / cover;
+}
 
 
 /*--------------- Get Started  - #getstarted ---------------*/
@@ -736,145 +918,6 @@ section .LineBtn {
 .SupportSection .Card {
   min-height: 0;
 }
-
-
-/*--------------- Main Section ---------------*/
-
-.MainSectionWrap {
-  /* background: linear-gradient(180deg, rgba(215, 209, 255, 0.334), transparent), url(../public/img/linewave.svg);
-  background-repeat: no-repeat;
-  background-position: center -900px;
-  background-size: 110%; */
-}
-
-.MainSection {
-  position: relative;
-}
-
-.MainSectionContent {
-  max-width: 1200px;
-  margin: auto;
-  padding: 100px;
-}
-
-
-/* .MainSection::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 300px; 
-  background: linear-gradient(rgba(255, 255, 255, 0), rgb(255, 255, 255));
-  pointer-events: none;
-} */
-
-
-/*--------------- Growth Section ---------------*/
-
-.GrowthSectionWrap {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: var(--whiteGrad);
-}
-
-.GrowthSection {
-  max-width: 1100px;
-  width: 100%;
-}
-
-/* ------- Card Group --------*/
-
-.GrowthSection .CardGroup {
-  display: flex;
-  margin-top: 60px;
-  margin-bottom: 20px;
-  justify-content: space-between;
-}
-
-.GrowthSection .CardWrap {
-  max-width: 320px;
-  min-width: 0;
-  min-height: fit-content;
-}
-
-.GrowthSection .Card h1 {
-  font-size: 5.5rem;
-  font-weight: 600;
-  margin-bottom: 12px;
-}
-
-.CardLearn {
-  font-size: 0.75rem !important;
-  font-weight: 400;
-  color: var(--pblue);
-}
-
-/* ------- Card --------*/
-
-
-
-.CardWrap {
-  display: flex;
-  flex-direction: column;
-  align-content: flex-start;
-  flex: 1;
-  margin-right: 1%;
-}
-
-.CardWrap:last-child {
-  margin-right: 0px;
-}
-
-.CardTop {
-  background: var(--pblue);
-  height: 14px;
-  padding: 0;
-  border-radius: 12px 12px 0 0;
-}
-
-.CardTop.Purple {
-  background: var(--purple);
-}
-
-.Card {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  border: 0.5px solid;
-  border-radius: 0 0 12px 12px;
-  border-color: var(--grey2);
-  box-shadow: var(--sh-l);
-  background: var(--white);
-}
-
-.CardTxt {
-  display: flex;
-  flex-direction: column;
-  padding: 30px 40px;
-}
-
-.CardSub {
-  font-size: 0.75rem;
-  font-weight: 500;
-  color: var(--pblue);
-}
-
-.Card p {
-  font-size: 0.875rem;
-  line-height: 1.375rem;
-}
-
-.Card a {
-  color: var(--pblue);
-}
-
-.Card a:hover {
-  color: var(--pblue1);
-}
-
 
 /**************************************************************************************/
 /*//////////////////////////////// RESPONSIVE STYLES /////////////////////////////////*/
@@ -1018,7 +1061,8 @@ section .LineBtn {
       center right / cover;
   } */
 
-  .CardGroup.CenterTri  {
+  .CardGroup.CenterTri,
+  .CardGroup.Numbers  {
     display: grid;
     grid-template-columns: 1fr;
   }

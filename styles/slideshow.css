@@ -53,6 +53,10 @@
 
 /*/////// FLICKITY STYLES //////*/
 
+.flickity-viewport {
+  height: 440px !important;
+}
+
 .carousel .flickity-cell {
   width: 100%;
   height: 580px;
@@ -163,7 +167,7 @@
   background-color: rgba(255, 255, 255, 0.08);
   border-radius: 30px;
   border: 1px solid hsla(260, 100%, 68%, 0.9);
-  box-shadow: var(--sh-xl);
+  /* box-shadow: var(--sh-xl); */
   transition: background-color 0.3s ease-in-out;
 }
 
@@ -254,24 +258,22 @@
 .news-carousel .flickity-cell {
   width: 400px;
   height: auto;
-  margin: 15px 10px;
+  margin: 0px 10px;
   background: transparent;
   border-radius: 30px;
-  box-shadow: var(--sh-xl);
+  /* box-shadow: var(--sh-xl); */
 }
 
 .news-carousel .flickity-button {
-  background: hsla(0, 0%, 100%, 0.1);
-  border: 1px solid hsla(0, 0%, 100%, 0.4);
-  color: #ffffff8b;
+  background: var(--tgreen);
+  /* border: 1px solid #50958d; */
 }
   .news-carousel .flickity-button:active {
     opacity: 0.8;
   }
   .news-carousel .flickity-button:hover {
-    background: hsla(0, 0%, 100%, 0.2);
+    background: var(--tgreen3);
     cursor: pointer;
-    color: #ffffff;
   }
   .news-carousel .flickity-button:focus {
     box-shadow: none;
@@ -323,6 +325,9 @@
   content: url('/icons/arrow-right.svg');
 }
 
+.news-carousel .flickity-prev-next-button.next::before svg path {
+  fill: #50958d !important;
+}
 
 /**************************************************************************************/
 /*//////////////////////////////// RESPONSIVE STYLES /////////////////////////////////*/

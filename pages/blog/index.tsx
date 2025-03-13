@@ -36,8 +36,8 @@ export default function Blog(props: IIndexProps) {
         <MainHeader useWhite={true} 
           meta={<Meta 
             title="Blog" 
-            metaTitle="Hifi Blog │ CompanyName" 
-            metaImg="https://akashalabs.net/thumb/thumb.png" 
+            metaTitle="IDR │ IDR" 
+            metaImg="https://idr.cat/thumb/thumb.png" 
             description="Don't just keep up —Lead the way with cutting-edge insights at your fingertips." />} 
             />
       </div>

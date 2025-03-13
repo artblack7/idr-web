@@ -31,13 +31,13 @@ type IBlogCardProps = {
     <article className="">
       <Link href="/post/[slug]" as={`/post/${props.slug}`} className="BlogCardWrap">
         <div className="BlogCardTop" style={BlogCardImgBG}>
-          <div className="CategoryTag">
+          {/* <div className="CategoryTag">
             {props.tags.map((tag) => (
               <div key={tag}>
                 {`${tag}`}
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
 
         <div className="BlogCard">

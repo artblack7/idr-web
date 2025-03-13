@@ -8,18 +8,7 @@ import AnimationTrigger from '../components/AnimationTrigger';
 import Arrow_Icon from '../components/SVG/Arrow_Icon';
 import { Meta } from '../components/head/Meta';
 
-import RecentPosts from '../components/blog/RecentPosts';
-import { GetStaticProps } from 'next';
-import { BlogArchiveConfig, Config } from '../utils/Config';
-import { getAllPosts, getCategoryCollection, PostItems } from '../utils/Content';
-
-type IAboutProps = {
-  initialPosts: PostItems[];
-  allPosts: PostItems[];
-};
-
-export default function Innovation(props: IAboutProps) {
-  const { allPosts, initialPosts } = props;
+export default function Tech() {
 
   return (
     <main className='Main'>
@@ -147,6 +136,8 @@ export default function Innovation(props: IAboutProps) {
           </div>
         </section>
 
+    {/* QUOTE */}
+
       <section className="SectionWrap Dark" id="quote-innovation">
         <div className="CenterSection">
             <div className="QuoteContent animation-up" data-animate="slide-up">
@@ -158,36 +149,8 @@ export default function Innovation(props: IAboutProps) {
         </div>
       </section>
 
-
-      {/* POSTS */}
-
-      <section className="NewsSectionWrap">
-          <div className="NewsSection">
-            <div className="NewsContent">
-              <div className='NewsTitle'>
-                <h3>Projectes Recents</h3>
-              </div>
-              <RecentPosts allPosts={allPosts}/>
-              </div>
-          </div>
-        </section>
-
-
       <Footer />
 
     </main>
   );
 }
-
-
-export const getStaticProps: GetStaticProps<IAboutProps> = async () => {
-  const posts = getAllPosts(Config.post_fields);
-
-  return {
-    props: {
-      allPosts: posts,
-      initialPosts: posts.slice(0, BlogArchiveConfig.blog_pagination_size),
-      categoryCollection: getCategoryCollection(['slug', 'tags']),    
-    },
-  };
-};

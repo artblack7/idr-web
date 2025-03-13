@@ -337,8 +337,13 @@
 .Toolbar .AppBtn button,
 .ToolbarWhite .AppBtn button {
   color: var(--white);
-  padding: 16px 20px;
-  height: 52px;
+  /* padding: 16px 20px; */
+  /* height: 48px; */
+  border-color: white;
+}
+
+.Toolbar .AppBtn svg path {
+  fill: var(--white);
 }
 
 /* .Toolbar .LineBtn button {
@@ -435,6 +440,21 @@
  .Footer a:hover {
   color: var(--pblue1);
  }
+
+ /* Partners */
+
+.PartnerLogos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  height: 100px;
+}
+
+.PartnerLogos img {
+  height: 30px;
+  width: auto;
+} 
 
  /* ---- Social Section ----*/
 

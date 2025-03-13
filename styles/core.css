@@ -64,13 +64,13 @@
 
   /* Size */
 
-  --padding: 100px 8%;
+  --padding: 120px 8%;
   --paddingHero: 0px 50px 0px 8%;
   /* --sPadding: 80px 8%; */ 
   --divPadding: 100px 4%;   
-  --padding-1024: 80px 6% 100px 6%;
+  --padding-1024: 100px 6%;
   --paddingHero-1024: 0px 6%;
-  --padding-480: 60px 4% 80px 4%;
+  --padding-480: 80px 4%;
   --paddingHero-480: 0px 4%;
   --toolbar: 100px;
 
@@ -105,7 +105,7 @@
   --blue4: hsl(210, 100%, 13%); /*innovation*/
   --blue5: hsla(211, 100%, 10%, 0.96); /*innovation*/
 
-  --turq: hsl(190, 48%, 37%); /*fase4*/
+  --turq: hsl(185, 53%, 43%); /*fase4*/
   --turq2: hsl(195, 85%, 30%); /*fase3*/
   --turq3: hsl(195, 100%, 25%); /*fase2*/
   --turq4: hsl(195, 100%, 18%); /*fase1*/
@@ -113,7 +113,7 @@
   --green: hsl(145, 71%, 57%); 
   --green2: hsl(150, 48%, 43%); /*ecosquare4 */
 
-  --tgreen: hsl(170, 49%, 48%); /*maingrad*/
+  --tgreen: hsl(170, 30%, 48%); /*maingrad*/
   --tgreen2: hsl(170, 100%, 27%); /*ecosquare3 - maingrad dark*/
   --tgreen3: hsl(186, 100%, 22%); /*ecosquare2*/
   --tgreen4: hsl(186, 100%, 13%); /*ecosquare1 - footer*/
@@ -139,7 +139,7 @@
   --mainGrad: linear-gradient(
     to right, 
     var(--blue2),
-    var(--green)
+    var(--turq)
   );
 
   --darkGrad: linear-gradient(
@@ -161,7 +161,7 @@
   --sh-s: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   --sh-m: 4px 4px 6px 0px rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   --sh-l: 0 10px 10px -5px rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  --sh-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --sh-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.03), 0 10px 10px -5px rgba(0, 0, 0, 0.02);
   --sh-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 
   /* --sh-img: 0px 5px 15px rgb(30, 20, 100, 0.1);
@@ -186,8 +186,8 @@ html:focus-within {
 }
 
 body {
-  /* font-family: "Montserrat", sans-serif; */
-  font-family: "Inter", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 1rem;
   /* color: hsl(245, 35%, 20%); */
   color: #282828;
@@ -196,7 +196,7 @@ body {
   margin: 0;
   outline: none;
   box-sizing: border-box;
-  letter-spacing: 0.02rem;
+  /* letter-spacing: 0.02rem; */
 }
 
 .Dark {
@@ -294,9 +294,9 @@ h4 {
 }
 
 h5 {
-  font-size: 2rem;
+  font-size: 1.6rem;
   line-height: 2rem;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 h6 {
@@ -313,12 +313,12 @@ p {
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 300;
-  letter-spacing: 0.03rem;
+  letter-spacing: 0.02rem;
   padding-bottom: 16px;
 }
 
-.bold {
-  font-size: 600;
+.bold-text {
+  font-weight: 600;
 }
 
 .text-s {
@@ -343,7 +343,7 @@ p {
 
 .BlueGrad,
 .BlueGrad span {
-  background: var(--blueGrad);
+  background: var(--mainGrad);
   border-image-slice: 1;
   background-clip: border-box;
   -webkit-text-fill-color: transparent;

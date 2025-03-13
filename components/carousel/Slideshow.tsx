@@ -37,9 +37,9 @@ const Slideshow: React.FC = () => {
                       Lorem Ipsum Dolor sit amet eliqua et ud nam sapere.                      
                       </p>
 
-                       <div className="ImgCarousel">
+                       {/* <div className="ImgCarousel">
                          <ImgCarousel set="socis" />
-                      </div>
+                      </div> */}
 
                     </div>
                   </div>
