@@ -28,7 +28,8 @@ export default function MainHeader(props: any) {
             {/* <ProductsDropdown /> */}
             <Link href="/">Inici</Link>
             <Link href="/laplanta">La Planta</Link>
-            <Link href="/projectes">Innovació</Link>
+            <Link href="/innovacio">Innovació</Link>
+            {/* <Link href="/projectes">Projectes</Link> */}
             <Link href="/sostenibilitat">Sostenibilitat</Link>
             <Link href="/serveis">Gestió Residus</Link>
             <Link href="/empresa">Empresa</Link>

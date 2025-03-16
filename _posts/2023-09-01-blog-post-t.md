@@ -4,7 +4,7 @@ metaTitle: "Lorem Ipsum Dolor Sit amet"
 description: "Libero volutpat sed cras ornare arcu dui vivamus. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at. Velit ut tortor pretium viverra suspendisse potenti nullam ac."
 date: "2023-09-01"
 modified_date: "2023-09-01"
-image: https://akashalabs.com/posts/post-template.jpg
+# image: https://idr.cat/posts/post-template.jpg
 tags:
   - Product
 ---

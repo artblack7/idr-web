@@ -103,16 +103,22 @@ section .LineBtn {
   justify-content: space-between;
   max-width: 1400px;
   margin: 0 auto;
-  gap: 5%;
   z-index: 1;
   width: 100%;
+  /* align-items: stretch; */
 }
 
 .Left,
 .Right {
   display: flex;
   flex-direction: row;
-  gap: 5%;
+}
+
+.Left .SideTxt {
+  margin-right: 30px;
+}
+.Right .SideTxt {
+  margin-left: 30px;
 }
 
 .SideTxt {
@@ -129,15 +135,6 @@ section .LineBtn {
   align-items: center;
   width: 50%;
 }
-
-.SideImg img {
-  width: 100%;
-}
-
-.SideImg.Square img {
-  border-radius: 10px;
-}
-
 
 .CenterTxt {
   display: flex;
@@ -162,10 +159,19 @@ section .LineBtn {
   height: auto;
 }
 
-.ImgWrap {
-  position: relative;
-  width: 100%; 
+.ImgWrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
+
+@media (max-width: 2000px) and (min-width: 1024px) {
+  .ImgWrap {
+    width: calc(50% + ((100vw - 1024px) / (1500px - 1024px)) * 50%);
+    height: 100%;
+  }
+}
+
 
 /*--------------- Divided Section ---------------*/
 
@@ -205,259 +211,6 @@ section .LineBtn {
   margin: 0 auto;
   z-index: 1;
   /* border: 1px solid red; */
-}
-
-/*--------------- Cards Section ---------------*/
-
-.CardGroup {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  /* gap: 3%; */
-  margin-top: 80px;
-  align-items: stretch;
-  /* max-width: 1400px; */
-}
-
-.CardWrap {
-  display: flex;
-  flex-direction: column;
-  /* align-content: flex-start; */
-  flex: 1;
-  /* min-height: 300px; */
-  transition: transform 0.3s ease;
-}
-
-.Card {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  /* border: 0.5px solid;
-  border-radius: 0 0 12px 12px;
-  border-color: var(--grey2);
-  box-shadow: var(--sh-box);
-  background: var(--white); */
-}
-
-.CardGroup h6 {
-  font-weight: 600;
-  padding-bottom: 20px;
-}
-
-.CardGroup p {
-  font-size: 14px;
-  line-height: 20px;
-}
-
-/* CARD TYPES */
-
-.BlogCardGroup {
-  display: grid;
-  align-items: stretch; 
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 30px;
-  margin: 50px 0;
-}
-
-.BlogCardWrap {
-  display: flex;
-  flex-direction: column;
-  align-content: flex-start;
-  flex: 1;
-  margin-right: 1%;
-  max-width: 450px;
-  min-width: 400px;
-  /* min-width: 400px !important; */
-  height: 100%;
-  border-radius: 25px;
-  transition: 0.3s ease-in-out;
-}
-
-.Recent .BlogCardWrap {
-  width: 500px;
-}
-
-.BlogCardWrap:last-child {
-  margin-right: 0px;
-}
-
-.BlogCardTop {
-  background-color: var(--tgreen3);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 230px;
-  position: relative;
-  padding: 0;
-  border-radius: 16px 16px 0 0;
-  position: relative;
-  transition: 0.3s ease-in-out;
-}
-
-.BlogCard {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  border: 0.5px solid;
-  border-radius: 0 0 16px 16px;
-  border-color: var(--grey2);
-  box-shadow: var(--sh-xl);
-  background: var(--white);
-  min-height: 160px;
-  transition: 0.3s ease-in-out;
-}
-
-.BlogCardWrap:hover {
-  box-shadow: var(--sh-box);
-}
-
-/* .BlogCardWrap:hover .BlogCardTxt {
-  padding-top: 25px;
-} */
-
-.BlogCardWrap:hover .BlogCardTop{
-  filter: brightness(115%);
-}
-
-.BlogCardTxt {
-  display: flex;
-  flex-direction: column;
-  padding: 30px 30px 15px 30px;
-  transition: 0.3s ease-in-out;
-}
-
-.BlogCardSub {
-  font-size: 0.75rem;
-  font-weight: 500;
-  color: var(--pblue);
-  margin-bottom: 2px !important;
-  color: var(--dark4);
-}
-
-.BlogCard p {
-  font-size: 0.875rem;
-  line-height: 1.375rem;
-  color: var(--dark4);
-}
-
-.BlogCard h6 {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: var(--dark2);
-  padding-bottom: 10px;
-}
-
-.BlogCard a {
-  color: var(--pblue);
-}
-
-.BlogCard a:hover {
-  color: var(--pblue1);
-}
-
-/* Collab Cards */
-
-.BlogCardTop.Collab1 {
-  background: url("../public/img/leather.jpg") 
-  no-repeat center right / cover; 
-}
-.BlogCardTop.Collab2 {
-  background: url("../public/img/leaf.jpg") 
-  no-repeat center right / cover; 
-}
-.BlogCardTop.Collab3 {
-  background: url("../public/img/water.jpg") 
-  no-repeat center right / cover; 
-}
-
-
-
-/* CenterTri */
-
-.CardGroup.CenterTri,
-.Cardgroup.Collab {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 1%;
-  width: 100%;
-}
-
-.CardGroup.CenterTri .CardWrap,
-.Cardgroup.Collab .CardWrap {
-  text-align: center;
-  max-width: 500px;
-  margin: 0 auto;
-  width: 100%;
-  min-height: 300px;
-}
-
-.CenterTri .CardWrap img {
-  width: 80px;
-  height: auto;
-}
-
-/* Numbers Cards */
-
-.CardGroup.Numbers {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 100%;
-}
-
-.CardGroup.Numbers .CardWrap {
-  text-align: center;
-  margin: 0 auto;
-  max-width: 250px;
-  width: 100%;
-}
-
-.CardGroup.Numbers .Card {
-  display: flex;
-  align-items: center;
-}
-
-.CardGroup.Numbers h1 {
-  font-weight: 600;
-  font-family: Poppins, sans-serif;
-  font-size: 80px;
-}
-
-.CardGroup.Numbers h6 {
-  color: var(--tgreen3)
-}
-
-.CardLine {
-  width: 100%;
-  height: 4px;
-  background: var(--mainGrad);
-  margin-bottom: 20px;
-}
-
-/* Squares Cards */
-
-.CardGroup.Squares {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  width: 100%;
-}
-
-.CardGroup.Squares .CardWrap {
-  display: flex;
-  text-align: center;
-  padding: 50px 30px;
-  color: white;
-}
-
-.CardGroup.Squares .Card1 {
-  background: var(--tgreen4);
-}
-.CardGroup.Squares .Card2 {
-  background: var(--tgreen3);
-}
-.CardGroup.Squares .Card3 {
-  background: var(--tgreen2);
-}
-.CardGroup.Squares .Card4 {
-  background: var(--green2);
 }
 
 /*/////////// HERO SECTION ///////////*/
@@ -668,6 +421,17 @@ section .LineBtn {
   border-radius: 10px;
 }
 
+.TextGroup {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  margin-top: 12px;
+}
+
+.TextGroup .HalfText {
+  width: 70%;
+}
+
 /* INNOVATION */
 
 #main-innovation {
@@ -752,8 +516,6 @@ section .LineBtn {
   text-align: center;
 }
 
-/* MISSION - Features */
-
 /* .SquareSection {
   display: flex;
   flex-direction: column;
@@ -764,6 +526,43 @@ section .LineBtn {
   border-radius: 10px;
 } */
 
+/*//////////////////////// SOSTENIBILITAT /////////////////////*/
+
+
+/* CICLE VIDA  */
+
+#eco-cicle .SideContent {
+  max-width: 1200px;
+  margin-top: 80px;
+}
+
+#eco-cicle img {
+  /* height: 300px; */
+  /* width: auto; */
+}
+
+#eco-cicle .SideImg {
+  width: 40%;
+}
+#eco-cicle .SideTxt {
+  width: 60%;
+  padding-left: 2%;
+}
+
+/* #eco-cicle .SideContent {
+  justify-content: center;
+} */
+
+
+/* COMPROMIS SOSTENIBLE  */
+
+.ZeroSection .CenterHeading {
+  padding: 0 6%;
+}
+
+
+
+
 
 
 /*//////////////////////// PAGES /////////////////////*/
@@ -773,6 +572,11 @@ section .LineBtn {
   padding: 50px 0;
 }
 
+.QuoteContent h4 {
+  margin-bottom: 0;
+  font-weight: 400;
+}
+ 
 #quote-innovation {
   background: 
     linear-gradient(
@@ -816,7 +620,7 @@ section .LineBtn {
 
 /*--------------- Features Section ---------------*/
 
-.FeaturesSectionWrap {
+/* .FeaturesSectionWrap {
   border-top: 1px solid var(--grey2);
   background: var(--white);
   position: relative;
@@ -881,11 +685,11 @@ section .LineBtn {
 
 .FeaturesCards p {
   font-size: 0.875rem;
-}
+} */
  
 /*--------------- Support Section ---------------*/
 
-.SupportSectionWrap {
+/* .SupportSectionWrap {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -917,7 +721,7 @@ section .LineBtn {
 
 .SupportSection .Card {
   min-height: 0;
-}
+} */
 
 /**************************************************************************************/
 /*//////////////////////////////// RESPONSIVE STYLES /////////////////////////////////*/
@@ -936,6 +740,19 @@ section .LineBtn {
     center right / cover;
   } 
 
+}
+
+@media (min-width: 1025px) and (max-width: 1500px) {
+
+  .ImgWrap {
+    height: calc(50vw * ((1 - 0.5625) * ((1500 - 100vw) / (1500 - 1024)) + 0.5625));
+    /* overflow: hidden; */
+  }
+  .ImgWrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 @media (max-width: 1280px) {
@@ -962,7 +779,7 @@ section .LineBtn {
     letter-spacing: 0.02rem;
   }  */
 
-  .SupportSection .CardGroup {
+  /* .SupportSection .CardGroup {
     grid-template-columns: 1fr 1fr;
     gap: 5%;
     margin-bottom: 60px;
@@ -975,7 +792,7 @@ section .LineBtn {
 
   .SupportSection .CardTxt {
     padding: 10%;  
-  }
+  } */
 
 }
 
@@ -1031,6 +848,8 @@ section .LineBtn {
     .Left .SideTxt,
     .Right .SideTxt {
       padding-bottom: 40px;
+      padding-left: 0;
+      padding-right: 0;
     }
 
     .Left .SideImg,
@@ -1046,6 +865,12 @@ section .LineBtn {
       left: 0;
     }
 
+  #eco-cicle .SideImg,
+  #eco-cicle .SideTxt {
+    width: 100%;
+    padding-left: 0;
+  }
+
   .DivSectionWrap {
     min-height: 0;
   }
@@ -1060,12 +885,6 @@ section .LineBtn {
     background: linear-gradient(350deg, transparent 45%, white 40%) no-repeat
       center right / cover;
   } */
-
-  .CardGroup.CenterTri,
-  .CardGroup.Numbers  {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
 
   #innovation,
   #residus {
@@ -1103,7 +922,7 @@ section .LineBtn {
     max-width: 60%;
   } */
 
-  .FeaturesCards {
+  /* .FeaturesCards {
     grid-template-columns: 1fr;
     margin-top: 40px;
   }
@@ -1130,7 +949,7 @@ section .LineBtn {
   .SupportSection .ButtonGroup {
     flex-direction: column;
     align-items: flex-start;
-  }
+  } */
 
 }
 
@@ -1239,3 +1058,5 @@ section .LineBtn {
   } */
 
 } 
+
+

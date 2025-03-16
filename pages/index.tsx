@@ -13,6 +13,7 @@ import RecentPosts from '../components/blog/RecentPosts';
 import { GetStaticProps } from 'next';
 import { BlogArchiveConfig, Config } from '../utils/Config';
 import { getAllPosts, getCategoryCollection, PostItems } from '../utils/Content';
+import Table from '../components/table';
 
 type IAboutProps = {
   initialPosts: PostItems[];
@@ -120,12 +121,12 @@ export default function Home(props: IAboutProps) {
             <div className="CenterTxt animation-up" data-animate="slide-up">
               <h3>Tecnologia avançada al servei de l’aigua</h3>
               <div className="TextGroup">
-                <div className="SuiteText">
+                <div className="HalfText">
                   <p>
                   La nostra planta, pionera a Europa en depuració biològica, utilitza tecnologia d'última generació per garantir l'eficiència i la qualitat del tractament de les aigües. 
                   </p>
                 </div>
-                <div className="SuiteText">
+                <div className="HalfText">
                   <p>
                   Comptem amb un equip de professionals especialitzats en el tractament d’aigues residuals industrials, que asseguren un control rigorós de qualitat en totes les fases del procés.                  <span className="pblue"> </span>                
                   </p>
@@ -196,7 +197,7 @@ export default function Home(props: IAboutProps) {
               </div>
             </div>
       
-            <div className="CardGroup CenterTri">
+            <div className="CardGroup three Mission">
             
               <div className="CardWrap animation-up" data-animate="slide-up">
                 <div className="CardImg">
@@ -248,6 +249,92 @@ export default function Home(props: IAboutProps) {
           </div>
         </section>
 
+  {/* TECNOLOGIA */}
+
+    <section className="SectionWrap" id="main-tech">
+        <div className="CenterSection">
+          <div className="CenterContent">
+            <div className="CenterTxt animation-up" data-animate="slide-up">
+              <h3>Llistat de Codis LER</h3>
+              <div className="">
+                <p>
+                La nostra planta, pionera a Europa en depuració biològica, utilitza tecnologia d'última generació per garantir l'eficiència i la qualitat del tractament de les aigües. 
+                </p>
+              </div>
+            </div>
+
+            <Table />
+
+
+
+
+          </div>
+
+        </div>
+      </section>
+
+   {/* CICLE VIDA */}
+
+    <section className="SectionWrap" id="eco-cicle">
+        <div className="CenterSection">
+          <div className="CenterContent">
+            <div className=" animation-up" data-animate="slide-up">
+            <p className='tagline'>INDÚSTRIA</p>
+              <h3>El cicle de vida sostenible dels curtits</h3>
+            </div>
+
+            <div className="SideContent Right animation-up" data-animate="slide-up">
+              <div className="SideImg">
+                  <Image className="radius-3 animation-up" data-animate="slide-up"  loading="eager" 
+                  alt="IDR" src='/img/img-micro.jpg' 
+                  // sizes="(max-width: 480px) 500px, (max-width: 1024px) 700px, 1000px"
+                  width={500} height={500} />
+              </div>
+              
+              <div className="SideTxt">
+                <h5>Compromís amb l’economia circular</h5>
+                <p>
+                A IDR, apostem per l’economia circular com a base d’un desenvolupament sostenible. Els adobers recuperen la pell, un subproducte del consum de carn, font principal de proteïna per a més del 90% de la població mundial, i la reciclen per evitar que es converteixi en residu. Així, la revaloritzen en productes elegants, nobles i útils per a la societat, contribuint a la sostenibilitat gràcies a la seva durabilitat.
+                </p>
+              </div>
+            </div>
+
+            <div className="SideContent Right animation-up" data-animate="slide-up">
+              <div className="SideImg">
+                  <Image className="radius-3 animation-up" data-animate="slide-up"  loading="eager" 
+                  alt="IDR" src='/img/img-micro.jpg' 
+                  // sizes="(max-width: 480px) 500px, (max-width: 1024px) 700px, 1000px"
+                  width={500} height={500} />
+              </div>
+              
+              <div className="SideTxt">
+                <h5>Compromís amb l’economia circular</h5>
+                <p>
+                A IDR, apostem per l’economia circular com a base d’un desenvolupament sostenible. Els adobers recuperen la pell, un subproducte del consum de carn, font principal de proteïna per a més del 90% de la població mundial, i la reciclen per evitar que es converteixi en residu. Així, la revaloritzen en productes elegants, nobles i útils per a la societat, contribuint a la sostenibilitat gràcies a la seva durabilitat.
+                </p>
+              </div>
+            </div>
+
+            <div className="SideContent Right animation-up" data-animate="slide-up">
+              <div className="SideImg">
+                  <Image className="radius-3 animation-up" data-animate="slide-up"  loading="eager" 
+                  alt="IDR" src='/img/img-micro.jpg' 
+                  // sizes="(max-width: 480px) 500px, (max-width: 1024px) 700px, 1000px"
+                  width={500} height={500} />
+              </div>
+              
+              <div className="SideTxt">
+                <h5>Compromís amb l’economia circular</h5>
+                <p>
+                A IDR, apostem per l’economia circular com a base d’un desenvolupament sostenible. Els adobers recuperen la pell, un subproducte del consum de carn, font principal de proteïna per a més del 90% de la població mundial, i la reciclen per evitar que es converteixi en residu. Així, la revaloritzen en productes elegants, nobles i útils per a la societat, contribuint a la sostenibilitat gràcies a la seva durabilitat.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
     {/* COLLAB */}
 
       <section className="SectionWrap" id="main-mission">
@@ -263,45 +350,58 @@ export default function Home(props: IAboutProps) {
             </div>
           </div>
 
-          <div className="CardGroup">
+          <div className="CardGroup Collab">
 
-            <a href="https://leatherbarcelona.com/" target="blank" className="BlogCardWrap">
-              <div className="BlogCardTop Collab1">
-              </div>
-
-              <div className="BlogCard">
-                <div className="BlogCardTxt">
-                  <h6>Leather Cluster Barcelona</h6>
-                  <p className='Description'>
-                  Associació que uneix empreses i institucions del sector de la pell per impulsar la col·laboració, la innovació sostenible i l’accés a nous mercats, promovent el networking i aplicant tecnologies avançades per una major responsabilitat ambiental.
-                  </p>
+            <a href="https://leatherbarcelona.com/" target="blank">
+              <div className="CardWrap">
+                <div className="CardTop Collab1">
+                <div className="CardImg">
+                  <Image className="animation-up" data-animate="slide-up" loading="eager" 
+                  alt="img" src='/logos/tradebe.png' width={250} height={200} />           
+                </div>
+                </div>
+                <div className="CardBottom">
+      
+                  <div className="CardTxt">
+                    <h6>Leather Cluster Barcelona</h6>
+                    <p className=''>
+                    Associació que uneix empreses i institucions del sector de la pell per impulsar la col·laboració, la innovació sostenible i l’accés a nous mercats, promovent el networking i aplicant tecnologies avançades per una major responsabilitat ambiental.
+                    </p>
+                  </div>
                 </div>
               </div>
             </a>
 
-            <a href="https://www.tradebe.com/environmental-services/" target="blank" className="BlogCardWrap">
-              <div className="BlogCardTop Collab2">
-              </div>
-
-              <div className="BlogCard">
-                <div className="BlogCardTxt">
-                  <h6>Tradebe</h6>
-                  <p className='Description'>
-                  Tradebe és una empresa pionera en la gestió de residus, especialitzada en convertir-los en recursos valuosos a través de solucions innovadores. Amb un ferm compromís amb l’economia circular, Tradebe contribueix activament a un futur més verd i sostenible.                  </p>
+            <a href="https://www.tradebe.com/environmental-services/" target="blank">
+              <div className="CardWrap">
+                <div className="CardTop Collab2">
+                  <Image className="animation-up" data-animate="slide-up" loading="eager" 
+                    alt="img" src='/logos/tradebe.png' width={250} height={200} />           
+                </div>
+                <div className="CardBottom">
+                  <div className="CardTxt">
+                    <h6>Tradebe</h6>
+                    <p className=''>
+                    Tradebe és una empresa pionera en la gestió de residus, especialitzada en convertir-los en recursos valuosos a través de solucions innovadores. Amb un ferm compromís amb l’economia circular, Tradebe contribueix activament a un futur més verd i sostenible.                  
+                    </p>
+                  </div>
                 </div>
               </div>
             </a>
 
-            <a href="https://a3center.cat/index.php/en/" target="blank" className="BlogCardWrap">
-              <div className="BlogCardTop Collab3">
-              </div>
-
-              <div className="BlogCard">
-                <div className="BlogCardTxt">
-                  <h6>A3 Leather Innovation Center</h6>
-                  <p className='Description'>
-                  Recerca i innovació amb noves tecnologies en el sector de la pell. A3 Leather Innovation Center impulsa projectes per obrir nous horitzons, crear pell ecològica d’alta gamma i millorar la sostenibilitat dels processos.
-                  </p>
+            <a href="https://a3center.cat/index.php/en/" target="blank">
+              <div className="CardWrap">
+                <div className="CardTop Collab3">
+                <Image className="animation-up" data-animate="slide-up" loading="eager" 
+                  alt="img" src='/logos/tradebe.png' width={250} height={200} />           
+                </div>
+                <div className="CardBottom">
+                  <div className="CardTxt">
+                    <h6>A3 Leather Innovation Center</h6>
+                    <p className=''>
+                    Recerca i innovació amb noves tecnologies en el sector de la pell. A3 Leather Innovation Center impulsa projectes per obrir nous horitzons, crear pell ecològica d’alta gamma i millorar la sostenibilitat dels processos.
+                    </p>
+                  </div>
                 </div>
               </div>
             </a>
@@ -328,7 +428,7 @@ export default function Home(props: IAboutProps) {
         <section className="SectionWrap" id="">
           <div className="CenterSection">
       
-            <div className="CardGroup Numbers">
+            <div className="CardGroup three Numbers">
             
               <div className="CardWrap animation-up" data-animate="slide-up">
                 <div className="Card">
@@ -358,22 +458,21 @@ export default function Home(props: IAboutProps) {
           </div>
         </section>
 
-    {/* SUSTAINABLE CARDS */}
+    {/* COMPROMIS SOSTENIBLE */}
 
-      <section className="ZeroSectionWrap" id="main-mission">
+      <section className="ZeroSectionWrap" id="eco-compromis">
           <div className="ZeroSection">
             <div>
               <div className="CenterHeading animation-up" data-animate="slide-up">
                 <div>
-                  <h2>El nostre compromís</h2>
+                  <h2>El compromís sostenible de la depuradora</h2>
                   <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. 
-                  </p>
+                  A IDR, el nostre compromís amb la sostenibilitat es reflecteix no només en la nostra tecnologia de depuració, sinó també en les pràctiques internes que adoptem per minimitzar el nostre impacte ambiental i garantir un entorn de treball segur i responsable.                  </p>
                 </div>
               </div>
             </div>
       
-            <div className="CardGroup Squares">
+            <div className="CardGroup four Squares">
             
               <div className="CardWrap Card1 animation-up" data-animate="slide-up">
                 <div className="CardImg">
@@ -381,9 +480,9 @@ export default function Home(props: IAboutProps) {
                   alt="img" src='/icons/check-circle.png' width={100} height={100} />           
                 </div>
                 <div className="CardTxt">
-                  <h6>Qualitat de l’aigua</h6>
+                  <h6>Energies renovables</h6>
                   <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. 
+                  El 100% de l'energia que consumim prové de fonts renovables, i comptem amb un sistema de plaques solars pròpies per augmentar la nostra eficiència energètica.
                   </p>
                 </div> 
               </div>   
@@ -394,23 +493,21 @@ export default function Home(props: IAboutProps) {
                 alt="img" src='/icons/check-circle.png' width={100} height={100} />           
                </div>
                 <div className="CardTxt">
-                  <h6>Qualitat de l’aigua</h6>
+                  <h6>Reducció de l'ús d'agents químics</h6>
                   <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. 
-                  </p>
+                  El nostre procés de depuració biològica optimitza la utilització de microorganismes per substituir els agents químics, amb l'objectiu de minimitzar l'impacte ambiental i afavorir solucions més sostenibles i ecològiques.                  </p>
                 </div>
               </div>  
 
-                            <div className="CardWrap Card3 animation-up" data-animate="slide-up">
+              <div className="CardWrap Card3 animation-up" data-animate="slide-up">
                 <div className="CardImg">
                 <Image className="animation-up" data-animate="slide-up" loading="eager" 
                 alt="img" src='/icons/check-circle.png' width={100} height={100} />           
                </div>
                 <div className="CardTxt">
-                  <h6>Qualitat de l’aigua</h6>
+                  <h6>Auditories mediambientals</h6>
                   <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. 
-                  </p>
+                  Realitzem auditories mediambientals regulars i mantenim certificacions per assegurar que les nostres pràctiques compleixen els estàndards més alts de sostenibilitat i responsabilitat ambiental.                  </p>
                 </div>
               </div>  
 
@@ -420,10 +517,9 @@ export default function Home(props: IAboutProps) {
                 alt="img" src='/icons/check-circle.png' width={100} height={100} />           
                </div>
                 <div className="CardTxt">
-                  <h6>Qualitat de l’aigua</h6>
+                  <h6>Seguretat i prevenció de riscos laborals</h6>
                   <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. 
-                  </p>
+                  Ens prenem molt seriosament la seguretat dels nostres treballadors, amb protocols estrictes per garantir un entorn laboral segur i complir amb totes les normatives de salut i seguretat.                  </p>
                 </div>
               </div>        
             </div>

@@ -1,0 +1,190 @@
+
+/* -------------------- BUTTONS  --------------------*/
+
+button {
+  font-size: 1rem;
+  /* background: var(--transparent); */
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+  .AppBtn button {
+    position: relative;
+    background: var(--transparent);
+    /* box-shadow: var(--sh-l); */
+    border: 1.5px solid var(--dark3);
+    padding: 12px 20px;
+    min-width: 150px;
+    width: max-content;
+    border-radius: 6px;
+    transition: filter 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+    overflow: hidden;
+    z-index: 1;
+    font-weight: 400;
+    letter-spacing: 0.02rem;
+  }
+    .AppBtn button:hover {
+      color: var(--tgreen2);
+      border-color: var(--tgreen2);
+      /* background-color: var(--tgreen3); */
+    }
+
+  .AppBtn button svg {
+    position: relative;
+    top: 1px;
+    margin-left: 12px;
+    margin-right: 2px;
+    transition: 0.1s ease-in-out;
+    width: 7px;
+  }
+    .AppBtn button:hover svg {
+      margin-left: 14px;
+      margin-right: 0px;
+    }
+
+  .AppBtn svg path {
+    fill: var(--dark);
+  }
+    .AppBtn button:hover svg path {
+      fill: var(--tgreen2);
+    }
+
+  .AppBtn.Blue button,
+  .AppBtn.Green button {
+    border-color: white;
+    color: white;
+    font-weight: 300;
+    border: 1px solid;
+  }
+    .AppBtn.Blue button svg path,
+    .AppBtn.Green button svg path {
+      fill: var(--white);
+    }
+
+  .AppBtn.Blue button:hover {
+    border-color: var(--cyan2);
+    color: var(--cyan2);
+    background: transparent;
+  }
+
+  .AppBtn.Blue button:hover svg path {
+    fill: var(--cyan2);
+  }
+
+  .AppBtn.Green button:hover {
+    border-color: var(--green);
+    color: var(--green);
+    background: transparent;
+  }
+
+  .AppBtn.Green button:hover svg path {
+    fill: var(--green);
+  }
+
+  
+
+/* 
+  .AppBtn button:hover {
+    filter: brightness(110%);
+  }
+  
+  .AppBtn button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--blueGrad);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: inherit;
+    z-index: -1;
+  }
+
+  .AppBtn button:hover::after {
+    opacity: 1;
+  }
+  
+  .AppBtn.Grad button {
+    background: var(--warmGrad);
+  }
+  
+  .AppBtn.Blue button {
+    background: var(--blueGrad);
+  }
+
+  .AppBtn.Blue button::after {
+    background: var(--blueGrad);
+  }
+
+   */
+
+/* -------------------- TAGS  --------------------*/
+
+.tagline {
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+
+
+ .Tag {
+  background: var(--black);
+  font-size: 0.75rem;
+  padding: 4px 15px;
+  margin-left: -30px;
+  border-radius: 30px;
+  color: var(--white);
+  letter-spacing: 0.02rem;
+  margin-bottom: 10px;
+  border: 1px solid red;
+}
+
+.long {
+  padding: 4px 30px;
+}
+
+.blue {
+  background: var(--blueGrad);
+}
+
+.SmallTag {
+  background: var(--purpleGrad);
+  border-radius: 30px;
+  font-size: 0.75rem;
+  font-weight: 300;
+  color: var(--white);
+  letter-spacing: 0.02rem;
+  padding: 0px 8px;
+  margin-left: 8px;
+}
+
+.TagWrap {
+  display: flex;
+  flex-direction: column;
+  width: 245px;
+  margin-top: 8px;
+}
+
+.LineTag div {
+  color: var(--dark2);
+  font-weight: 400;
+  font-size: 0.875rem;
+  border-radius: 8px;
+  position: relative;
+  z-index: 1;
+  border: none;
+  background: white;
+  padding: 4px 20px;
+  /* box-shadow: var(--sh-m); */
+}
+
+.LineTag {
+  display: inline-block;
+  padding: 1px;
+  background: var(--blueGradSoft);
+  border-radius: 9.5px;
+  position: relative;
+  margin-bottom: 8px;
+}
+

@@ -4,7 +4,7 @@ metaTitle: "Mattis enim ut tellus elementum sagittis vitae."
 description: "Amet porttitor eget dolor morbi non. Amet volutpat consequat mauris nunc congue nisi vitae. Ut sem nulla pharetra diam. Commodo viverra maecenas accumsan lacus vel facilisis."
 date: "2023-09-03"
 modified_date: "2023-09-03"
-image: https://akashalabs.com/posts/post-template.jpg
+# image: https://idr.cat/posts/post-template.jpg
 tags:
   - General
 ---

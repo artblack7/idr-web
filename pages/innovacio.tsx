@@ -53,9 +53,9 @@ export default function Innovation(props: IAboutProps) {
         <div className="SideSection">
           <div className="SideContent Right animation-up" data-animate="slide-up">
           
-          <div className="SideImg Square">
-              <div className="ImgWrap">
-                <Image className="animation-up" data-animate="slide-up"  loading="eager" 
+            <div className="SideImg">
+              <div className='ImgWrap'>
+                <Image className="radius-4 nimation-up" data-animate="slide-up"  loading="eager" 
                 alt="IDR" src='/img/img-micro.jpg' 
                 // sizes="(max-width: 480px) 500px, (max-width: 1024px) 700px, 1000px"
                 width={500} height={500} />
@@ -99,9 +99,9 @@ export default function Innovation(props: IAboutProps) {
 
           </div>
 
-            <div className="SideImg Square">
-              <div className="ImgWrap">
-                <Image className="animation-up" data-animate="slide-up"  loading="eager" 
+            <div className="SideImg">
+              <div className='ImgWrap'>
+                <Image className="radius-4 nimation-up" data-animate="slide-up"  loading="eager" 
                 alt="IDR" src='/img/img-micro.jpg' 
                 // sizes="(max-width: 480px) 500px, (max-width: 1024px) 700px, 1000px"
                 width={500} height={500} />

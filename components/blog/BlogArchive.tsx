@@ -50,13 +50,13 @@ const BlogArchive: React.FC<BlogArchiveProps> = ({ initialPosts, allPosts, tagFi
           />
         ))}
       </div>
-      {offset < filteredPosts.length && (
+      {/* {offset < filteredPosts.length && ( */}
         <div className="LoadMore">
           <button onClick={handleLoadMore}>
             Load More Posts
           </button>
         </div>
-      )}
+      {/* )} */}
     </>
   );
 };

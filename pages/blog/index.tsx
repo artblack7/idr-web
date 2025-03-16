@@ -64,15 +64,6 @@ export default function Blog(props: IIndexProps) {
               <div className={activeSection==='all' ? 'activeTab' : 'hiddenTab'}>
                 <BlogArchive initialPosts={initialPosts} allPosts={filteredPosts.all}/>
               </div>
-              <div className={activeSection==='general' ? 'activeTab' : 'hiddenTab'}>
-                <BlogArchive initialPosts={initialPosts} allPosts={filteredPosts.general}/>
-              </div>
-              <div className={activeSection==='product' ? 'activeTab' : 'hiddenTab'}>
-                <BlogArchive initialPosts={initialPosts} allPosts={filteredPosts.product}/>
-              </div>
-              <div className={activeSection==='company' ? 'activeTab' : 'hiddenTab'}>
-                <BlogArchive initialPosts={initialPosts} allPosts={filteredPosts.company}/>
-              </div>
             </div>
         </div>
       </section>

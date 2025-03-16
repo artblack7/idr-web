@@ -4,7 +4,7 @@ metaTitle: "Tellus pellentesque eu tincidunt tortor aliquam."
 description: "Vulputate odio ut enim blandit volutpat. Cursus mattis molestie a iaculis at erat pellentesque adipiscing. Ultricies mi eget mauris pharetra. Ornare massa eget egestas purus viverra. Sed cras ornare arcu dui vivamus. Parturient montes nascetur ridiculus mus mauris vitae."
 date: "2023-09-02"
 modified_date: "2023-09-02"
-image: https://akashalabs.com/posts/post-template.jpg
+# image: https://idr.cat/posts/post-template.jpg
 tags:
   - Company
 ---
@@ -33,7 +33,7 @@ Posuere lorem ipsum dolor sit amet consectetur adipiscing elit:
 
 Libero volutpat sed cras ornare arcu dui vivamus. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at. Velit ut tortor pretium viverra suspendisse potenti nullam ac. Diam donec adipiscing tristique risus nec feugiat in fermentum. Urna nec tincidunt praesent semper feugiat nibh sed. Sed viverra ipsum nunc aliquet bibendum.
 
-<img className="PostImg" src="https://www.akashalabs.com/bg/waves-hpay.jpg">
+<img className="PostImg" src="https://www./bg/waves-hpay.jpg">
 
 Aenean pharetra magna ac placerat vestibulum lectus mauris. Ultricies mi eget mauris pharetra et ultrices neque ornare. Eu facilisis sed odio morbi quis commodo odio aenean. Sed viverra tellus in hac habitasse. Euismod elementum nisi quis eleifend quam adipiscing vitae proin sagittis.
 

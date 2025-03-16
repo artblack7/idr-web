@@ -1,10 +1,10 @@
 ---
-title: "Felis imperdiet proin fermentum leo vel orci porta"
-metaTitle: "Felis imperdiet proin fermentum leo vel orci porta"
+title: "Felis imperdiet proin fermentum leo vel orci porta Felis imperdiet proin fermentum leo vel orci porta"
+metaTitle: "Felis imperdiet proin fermentum leo vel orci porta Felis imperdiet proin fermentum leo vel orci porta"
 description: "Sed cras ornare arcu dui vivamus. Parturient montes nascetur ridiculus mus mauris vitae. Eu sem integer vitae justo eget magna. Commodo elit at imperdiet dui accumsan sit amet."
 date: "2023-09-08"
 modified_date: "2023-09-08"
-image: https://idr.cat/posts/post-template.jpg
+# image: https://idr.cat/posts/post-template.jpg
 tags:
   - General
 ---

@@ -4,7 +4,7 @@ metaTitle: "Et malesuada fames ac turpis egestas sed tempus urna et"
 description: "Libero volutpat sed cras ornare arcu dui vivamus. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at. Velit ut tortor pretium viverra suspendisse potenti nullam ac."
 date: "2023-09-07"
 modified_date: "2023-09-07"
-image: https://akashalabs.com/posts/post-template.jpg
+# image: https://idr.cat/posts/post-template.jpg
 tags:
   - General
 ---
