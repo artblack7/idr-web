@@ -1,5 +1,4 @@
 import React from 'react';
-import useMediaQuery from "../hooks/useMediaQuery";
 import Image from "next/image";
 import Link from 'next/link';
 import MainHeader from "../components/navigation/Header";
@@ -8,7 +7,7 @@ import AnimationTrigger from '../components/AnimationTrigger';
 import Arrow_Icon from '../components/SVG/Arrow_Icon';
 import { Meta } from '../components/head/Meta';
 
-export default function Tech() {
+export default function Planta() {
 
   return (
     <main className='Main'>
@@ -16,10 +15,10 @@ export default function Tech() {
       <div>
         <MainHeader useWhite={false}
           meta={<Meta 
-          title="IDR" 
-          metaTitle="IDR │ Igualadina de Depuració i Recuperació." 
+          title="La Planta" 
+          metaTitle="La Planta │ Igualadina de Depuració i Recuperació." 
           metaImg="https://idr.com/thumb/thumb.png" 
-          description="Depuració Innovadora per un futur sostenible." />} 
+          description="Pioners en depuració biològica per al tractament d’aigües." />} 
           />
       </div>
 
@@ -28,126 +27,154 @@ export default function Tech() {
         <div className="HeroSection">
           <div className="HeroContent animation-up" data-animate="slide-up">
             <div className='HeroTitle'>
-              <h6>PROJECTES</h6>
-              <h2>Depuració innovadora per un futur sostenible</h2>
+              <h6>LA PLANTA</h6>
+              <h2>Pioners en depuració biològica per al tractament d’aigües</h2>
             </div>
           </div>
         </div>
 
       </div>
 
-      {/* TEXT RIGHT */}
+      {/* MAIN SECTION */}
 
-      <section className="SectionWrap" id="">
-        <div className="SideSection">
-          <div className="SideContent Right animation-up" data-animate="slide-up">
+    <section className="SectionWrap" id="tech-main">
+
+      {/* RIGHT */}
+
+      <div className="SideSection MiddleSpace">
+        <div className="SideContent Right animation-up" data-animate="slide-up">
+        
+          <div className="SideImg">
+            <div className='ImgWrap'>
+              <Image className="radius-4 nimation-up" data-animate="slide-up"  loading="eager" 
+              alt="IDR" src='/img/img-micro.jpg' 
+              // sizes="(max-width: 480px) 500px, (max-width: 1024px) 700px, 1000px"
+              width={500} height={500} />
+            </div>
+          </div>
           
-          <div className="SideImg Square">
-              <div className="ImgWrap">
-                <Image className="animation-up" data-animate="slide-up"  loading="eager" 
-                alt="IDR" src='/img/img-micro.jpg' 
-                // sizes="(max-width: 480px) 500px, (max-width: 1024px) 700px, 1000px"
-                width={500} height={500} />
-              </div>
-            </div>
-            
-            <div className="SideTxt">
-              <p className='tagline'>Projectes</p>
-              <h3>Projectes I+D per a nous reptes ambientals</h3>
-              <p className='bold-text'>
-              Amb la missió de liderar la transició cap a un cicle de l’aigua més net i sostenible, IDR està compromesa amb la recerca i desenvolupament de solucions innovadores en el tractament d’aigües.               </p>
-              <p>
-              Col·laborem amb empreses de curtits, centres d'innovació i altres entitats del sector per optimitzar el tractament d’aigües residuals i avançar en models d’economia circular de l’aigua que permetin la reutilització de recursos dins la indústria de la pell, reduïnt així el consum de recursos naturals. 
-              </p>
+          <div className="SideTxt">
+            <p className='tagline'>La planta</p>
+            <h3>Tecnologia avançada al servei de l’aigua</h3>
+            <p className='highlight'>
+            La nostra planta, pionera a Europa en depuració biològica, realitza el tractament de les aigües residuals del sector de la pell a Igualada. 
+            </p>
+            <p>
+            Equipada amb tecnologia d’última generació i gestionada per Tradebe, companyia internacional líder en el tractament de residus industrials, assegura un procés eficient que compleix els estàndards mediambientals més exigents.
+            </p>
+            <p>
+            Amb una supervisió constant i rigorosa, analitzem diàriament les aigües residuals, la qual cosa ens permet conèixer amb precisió la seva composició i aplicar millores immediates per reduir l’impacte ambiental en temps real.
+            </p>
+          </div>
+        </div>
 
-         </div>
+      </div>
+
+      {/* LEFT */}
+
+      <div className="SideSection MiddleSpace">
+        <div className="SideContent Left animation-up" data-animate="slide-up">
+          <div className="SideTxt">
+            <p className='tagline'>El nostre procés</p>
+            <h3>Depuració biològica: Aigua, aire i vida en harmonia</h3>
+
+            <p className='highlight'>
+            El nostre procés de depuració imita els cicles de la naturalesa, utilitzant l’aigua, l’aire i la vida microbiana.            
+            </p>
+            <p>
+            L’aigua residual es tracta amb oxigen per afavorir el creixement de bacteris específics, que descomponen la matèria orgànica i transformen els contaminants a través del cicle natural del nitrogen. En fases finals, els bacteris, sense necessitat d’oxigen, converteixen els nitrats en nitrogen gas, retornant l’aigua neta al medi amb un impacte mínim. 
+            </p>
+            <p>
+            Aquest sistema és una solució altament sostenible que reprodueix el funcionament de la natura en cada etapa.
+            </p>
+
+        </div>
+
+          <div className="SideImg">
+            <div className='ImgWrap'>
+              <Image className="radius-4 nimation-up" data-animate="slide-up"  loading="eager" 
+              alt="IDR" src='/img/img-micro.jpg' 
+              // sizes="(max-width: 480px) 500px, (max-width: 1024px) 700px, 1000px"
+              width={500} height={500} />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* NUMBERS */}
+
+      <div className="CenterSection">
+          <div className="CardGroup three Numbers">
+          
+            <div className="CardWrap animation-up" data-animate="slide-up">
+              <div className="Card">
+                <h1 className='MainGrad'>12M €</h1>
+                <div className="CardLine"></div>
+                <h6 className='blue-text'>Inversió inicial</h6>
+              </div>
+            </div>      
+
+            <div className="CardWrap animation-up" data-animate="slide-up">
+              <div className="Card">
+                <h1 className='MainGrad'>4,5M €</h1>
+                <div className="CardLine"></div>
+                <h6 className='blue-text'>Cost anual d’explotació</h6>
+              </div>
+            </div>        
+
+            <div className="CardWrap animation-up" data-animate="slide-up">
+              <div className="Card">
+                <h1 className='MainGrad'>4000m&sup3;</h1>
+                <div className="CardLine"></div>
+                <h6 className='blue-text'>Aigua depurada diàriament</h6>
+              </div>
+            </div>              
           </div>
 
         </div>
+
+      </section>
+
+      <section>
+        {/* <div className='GradStripe'></div> */}
+        <div className='Stripe Blue'></div>
       </section>
 
 
-      {/* TEXT LEFT */}
+    {/* LA PLANTA */}
 
-      <section className="SectionWrap" id="">
-        <div className="SideSection">
-          <div className="SideContent Left animation-up" data-animate="slide-up">
-            <div className="SideTxt">
-              <p className='tagline'>Qui Som</p>
-              <h3>Tecnologies per avançar cap a l’impacte zero</h3>
-              <p>
-              Lorem Ipsum
-              </p>
-              <p>
-              A través de l’investigació en tecnologies avançades com la nanofiltració i l’osmosis inversa, busquem aconseguir una depuració cada vegada més completa i eficient, orientada cap a un model d’impacte ambiental mínim, i avançant cap a l’impacte zero.
-              </p>
-
-            <div className="AppBtn">
-              <Link href="/empresa"><button>Saber més<Arrow_Icon /></button></Link>
-            </div>
-
-          </div>
-
-            <div className="SideImg Square">
-              <div className="ImgWrap">
-                <Image className="animation-up" data-animate="slide-up"  loading="eager" 
-                alt="IDR" src='/img/img-micro.jpg' 
-                // sizes="(max-width: 480px) 500px, (max-width: 1024px) 700px, 1000px"
-                width={500} height={500} />
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      {/* NUMBER CARDS */}
-
-            <section className="SectionWrap" id="">
-          <div className="CenterSection">
-      
-            <div className="CardGroup Numbers">
-            
-              <div className="CardWrap animation-up" data-animate="slide-up">
-                <div className="Card">
-                  <h1 className='BlueGrad'>+10</h1>
-                  <div className="CardLine"></div>
-                  <h6>Projectes</h6>
-                </div>
-              </div>      
-
-              <div className="CardWrap animation-up" data-animate="slide-up">
-                <div className="Card">
-                  <h1 className='BlueGrad'>+10</h1>
-                  <div className="CardLine"></div>
-                  <h6>Projectes</h6>
-                </div>
-              </div>        
-
-              <div className="CardWrap animation-up" data-animate="slide-up">
-                <div className="Card">
-                  <h1 className='BlueGrad'>+10</h1>
-                  <div className="CardLine"></div>
-                  <h6>Projectes</h6>
-                </div>
-              </div>              
-            </div>
-
-          </div>
-        </section>
-
-    {/* QUOTE */}
-
-      <section className="SectionWrap Dark" id="quote-innovation">
+    <section className="SectionWrap" id="main-tech">
         <div className="CenterSection">
-            <div className="QuoteContent animation-up" data-animate="slide-up">
-              <h5>
-              IDR, pionera en depuració biològica, impulsa la sostenibilitat i la innovació contínua en el tractament d'aigües per a la indústria de la pell.
-              </h5>
+          <div className="CenterContent">
+            <div className="CenterTxt animation-up" data-animate="slide-up">
+            <p className='tagline'>Les instal·lacions</p>
+              <h3>Un recorregut per les instal·lacions i el procés de depuració</h3>
+              <div className="TextGroup">
+                <div className="HalfText">
+                  <p>
+                  Cada dia, tècnics especialitzats de la depuradora recullen mostres d’aigua a les 26 empreses associades per a la seva anàlisi. Els resultats obtinguts permeten conèixer amb exactitud la composició de les aigües residuals de cada empresa, i aquestes, al seu torn, prenen les mesures adequades per minimitzar l’impacte ambiental.
+                  </p>
+                </div>
+                <div className="HalfText">
+                  <p>
+                  Un cop a la planta de tractament, l’aigua passa per processos físics, químics i biològics per eliminar sòlids, matèria en suspensió, substàncies dissoltes com matèria orgànica i nitrogen, així com el color. Finalment, l’aigua tractada es retorna neta al medi ambient, complint amb els requisits ambientals establerts.                  </p>
+                </div>
+              </div>
             </div>
+
+            <div className="CenterImg">
+              <video muted loop playsInline
+              autoPlay
+              src="video/hero-video.mp4">
+              </video>
+            </div>
+
+          </div>
 
         </div>
       </section>
+
+
 
       <Footer />
 

@@ -13,7 +13,7 @@ import RecentPosts from '../components/blog/RecentPosts';
 import { GetStaticProps } from 'next';
 import { BlogArchiveConfig, Config } from '../utils/Config';
 import { getAllPosts, getCategoryCollection, PostItems } from '../utils/Content';
-import Table from '../components/table';
+import Table from '../components/Table';
 
 type IAboutProps = {
   initialPosts: PostItems[];
@@ -52,7 +52,7 @@ export default function Home(props: IAboutProps) {
       <div className="HeroSectionWrap Dark" id="main-hero">
           <video className="HeroVideo"  muted loop playsInline
             autoPlay
-            src="video/idr-video.mp4">
+            src="video/hero-video.mp4">
           </video>
           <div className="Overlay"></div>
         <div className="HeroSection Main">
@@ -70,7 +70,7 @@ export default function Home(props: IAboutProps) {
 
       {/* QUI SOM */}
 
-      <section className="SectionWrap" id="main-about">
+      {/* <section className="SectionWrap" id="main-about">
         <div className="SideSection">
           <div className="SideContent Right animation-up" data-animate="slide-up">
           
@@ -78,7 +78,6 @@ export default function Home(props: IAboutProps) {
               <div className="ImgWrap">
                 <Image className="animation-up" data-animate="slide-up"  loading="eager" 
                 alt="IDR" src='/img/quisom.png' 
-                // sizes="(max-width: 480px) 500px, (max-width: 1024px) 700px, 1000px"
                 width={500} height={500} />
               </div>
             </div>
@@ -97,52 +96,116 @@ export default function Home(props: IAboutProps) {
               <Link href="/empresa"><button>Saber més<Arrow_Icon /></button></Link>
             </div>
 
-
          </div>
-
-            {/* GUIA MIDA IMATGES 
-
-                <Image className="index-1 animation-up" data-animate="slide-up"  loading="eager" 
-                alt="IDR" src='/img/brand-logo.png' 
-                sizes="(max-width: 480px) 500px, (max-width: 1024px) 700px, 1000px"
-                width={500} height={500} />
-
-             */}
           </div>
 
         </div>
-      </section>
+      </section> */}
 
-    {/* TECNOLOGIA */}
+    {/* LA PLANTA */}
 
     <section className="SectionWrap" id="main-tech">
         <div className="CenterSection">
           <div className="CenterContent">
             <div className="CenterTxt animation-up" data-animate="slide-up">
-              <h3>Tecnologia avançada al servei de l’aigua</h3>
-              <div className="TextGroup">
-                <div className="HalfText">
-                  <p>
-                  La nostra planta, pionera a Europa en depuració biològica, utilitza tecnologia d'última generació per garantir l'eficiència i la qualitat del tractament de les aigües. 
+              <h3>Depuració innovadora per un futur sostenible</h3>
+              <div className="">
+                <div className="">
+                  <p className='highlight'>
+                  La planta d’IDR, pionera a Europa en depuració biològica, utilitza tecnologia d'última generació per garantir l'eficiència i la qualitat del tractament de les aigües. 
                   </p>
-                </div>
-                <div className="HalfText">
                   <p>
-                  Comptem amb un equip de professionals especialitzats en el tractament d’aigues residuals industrials, que asseguren un control rigorós de qualitat en totes les fases del procés.                  <span className="pblue"> </span>                
+                  Gestionada per un equip de professionals especialitzats en el tractament d'aigües residuals industrials, assegura un control rigorós de qualitat en totes les fases del procés, complint amb tots els estàndards mediambientals vigents.
+                  </p>
+                  <p>
+                  La planta també ofereix serveis de gestió de residus líquids no perillosos per a altres indústries, ajudant a reduir l'impacte ambiental de la indústria catalana.
+                  </p>
+                  <p>
+                  Aquesta instal·lació reflecteix el compromís col·lectiu amb una indústria més neta, sostenible i preparada per als reptes mediambientals del present i del futur.
                   </p>
                 </div>
               </div>
 
              <div className="AppBtn Black">
-               <Link href="/empresa"><button>Saber més<Arrow_Icon /></button></Link>
+               <Link href="/empresa"><button>Veure la planta<Arrow_Icon /></button></Link>
              </div>
             </div>
 
             <div className="CenterImg">
               <video muted loop playsInline
               autoPlay
-              src="video/idr-video.mp4">
+              src="video/hero-video.mp4">
               </video>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+          {/* QUI SOM */}
+
+        <section className="DivSectionWrap DivLeft Dark" id="main-about">
+          <div className="DivSection Left animation-up" data-animate="slide-up">
+
+            <div className="SideTxt">
+              <p className='tagline'>QUI SOM</p>
+              <h3><span className="BrownGrad">Units per una indústria</span> de la pell sostenible
+              </h3>              
+              <p>
+              Igualadina de Depuració i Recuperació (IDR) és una iniciativa col·laborativa entre els curtidors del barri del Rec d'Igualada, creada amb l’objectiu de tractar les aigües residuals del sector dels curtits i garantir un cicle d’aigua més net i respectuós amb el medi ambient.
+              </p>
+              <p>
+              Gràcies a aquesta aliança, IDR s'ha convertit en una plataforma única a Catalunya, amb una missió clara: Impulsar una indústria de la pell més sostenible.
+              </p>
+              <div className="AppBtn Brown">
+                <Link href="/empresa"><button>Saber més<Arrow_Icon /></button></Link>
+              </div>
+            </div>
+
+            {/* <div className="SideImg"></div>  */}
+
+            <div className="SideImg">
+
+              {isTablet ? <Image alt="dashboard" src='/img/img-pells.jpg' width={800} height={800} />
+              : (null )}
+
+            </div>
+
+          </div>
+      </section>
+      <section>
+        <div className='Stripe Brown'></div>
+      </section>
+
+        {/* SOCIS  */}
+
+        <section className="SectionWrap" id="main-socis">
+        <div className="CenterSection">
+          <div className="CenterContent">
+            <div className="CenterWrap animation-up" data-animate="slide-up">
+              <h3>Socis</h3>
+              <div className="center-subtitle">
+                <p>
+                Els nostres socis fundadors inclouen destacades empreses del sector dels curtits, així com l’Ajuntament d’Igualada i representants de les indústries tèxtil i química, tots compromesos amb la sostenibilitat ambiental.
+                </p>
+              </div>
+              <div className="CenterWrap">
+                <Image className="animation-up mt-5" data-animate="slide-up"  loading="eager" 
+                  alt="IDR" src='/logos/ig-white.png' 
+                  // sizes="(max-width: 480px) 200px, (max-width: 1024px) 300px, 400px"
+                  width={250} height={50} />
+                <p className='mt-3'>
+                 SOCI IL·LUSTRE 
+                </p>
+              </div>
+
+            </div>
+
+            <div className="CenterImg mt-7">
+              <div className="ImgCarousel">
+              <ImgCarousel set="socis" />
+              </div>
             </div>
 
           </div>
@@ -156,11 +219,14 @@ export default function Home(props: IAboutProps) {
           <div className="DivSection Left animation-up" data-animate="slide-up">
 
             <div className="SideTxt">
-              <p className='tagline'>PROJECTES</p>
-              <h3><span className="GreenGrad">Gestió de Residus </span>
-              per una indústria més neta</h3>              
+              <p className='tagline'>SERVEIS</p>
+              <h3><span className="GreenGrad">Gestió de residus </span>
+              líquids per una indústria més neta</h3>              
               <p>
-              Impulsem projectes I+D per optimitzar els processos existents i implementar tecnologies innovadores que permetin una depuració cada cop més completa i sostenible, avançant cap a un model d’economia circular i impacte zero.
+              IDR és l'única planta depuradora autoritzada a Catalunya per tractar residus líquids industrials no perillosos.               
+              </p>
+              <p>
+              Afegim valor a la indústria catalana oferint un servei especialitzat de depuració d’aigües per a empreses externes, amb tecnologia avançada i processos sostenibles.
               </p>
               <div className="AppBtn Green">
                 <Link href="/gestioresidus"><button>Més Informació<Arrow_Icon /></button></Link>
@@ -189,9 +255,9 @@ export default function Home(props: IAboutProps) {
             <div>
               <div className="CenterHeading animation-up" data-animate="slide-up">
                 <div>
-                  <h2>El nostre compromís</h2>
+                  <h2>La nostra missió</h2>
                   <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. 
+                  A IDR, ens esforcem per oferir solucions de depuració sostenibles, innovant constantment per explorar models d’economia circular i avançar cap a una indústria cada dia més eficient i responsable amb el medi ambient.
                   </p>
                 </div>
               </div>
@@ -209,8 +275,7 @@ export default function Home(props: IAboutProps) {
                 <div className="CardTxt">
                   <h6>Qualitat de l’aigua</h6>
                   <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. 
-                  </p>
+                  Apliquem processos avançats de tractament per garantir una aigua depurada de màxima qualitat, protegint l’entorn mitjançant una gestió eficient de l’aigua durant tot el procés de depuració.                  </p>
                 </div>
               </div>      
 
@@ -224,7 +289,7 @@ export default function Home(props: IAboutProps) {
                 <div className="CardTxt">
                   <h6>Sostenibilitat ambiental</h6>
                   <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. 
+                  Estem compromesos amb la reducció de l'impacte ecològic del sector dels curtits, depurant les aigües residuals del procés d’adobat mitjançant tractaments biològics per minimitzar-ne l'efecte ambiental.
                   </p>
                 </div>
               </div>       
@@ -239,7 +304,7 @@ export default function Home(props: IAboutProps) {
                 <div className="CardTxt">
                   <h6>Economia Circular</h6>
                   <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. 
+                  Fomentem la recerca d’alternatives per reintegrar l’aigua depurada en el procés productiu, contribuint així a un sistema més circular i optimitzant l'ús dels recursos hídrics.
                   </p>
                 </div>
               </div>              
@@ -249,296 +314,17 @@ export default function Home(props: IAboutProps) {
           </div>
         </section>
 
-  {/* TECNOLOGIA */}
-
-    <section className="SectionWrap" id="main-tech">
-        <div className="CenterSection">
-          <div className="CenterContent">
-            <div className="CenterTxt animation-up" data-animate="slide-up">
-              <h3>Llistat de Codis LER</h3>
-              <div className="">
-                <p>
-                La nostra planta, pionera a Europa en depuració biològica, utilitza tecnologia d'última generació per garantir l'eficiència i la qualitat del tractament de les aigües. 
-                </p>
-              </div>
-            </div>
-
-            <Table />
-
-
-
-
-          </div>
-
-        </div>
-      </section>
-
-   {/* CICLE VIDA */}
-
-    <section className="SectionWrap" id="eco-cicle">
-        <div className="CenterSection">
-          <div className="CenterContent">
-            <div className=" animation-up" data-animate="slide-up">
-            <p className='tagline'>INDÚSTRIA</p>
-              <h3>El cicle de vida sostenible dels curtits</h3>
-            </div>
-
-            <div className="SideContent Right animation-up" data-animate="slide-up">
-              <div className="SideImg">
-                  <Image className="radius-3 animation-up" data-animate="slide-up"  loading="eager" 
-                  alt="IDR" src='/img/img-micro.jpg' 
-                  // sizes="(max-width: 480px) 500px, (max-width: 1024px) 700px, 1000px"
-                  width={500} height={500} />
-              </div>
-              
-              <div className="SideTxt">
-                <h5>Compromís amb l’economia circular</h5>
-                <p>
-                A IDR, apostem per l’economia circular com a base d’un desenvolupament sostenible. Els adobers recuperen la pell, un subproducte del consum de carn, font principal de proteïna per a més del 90% de la població mundial, i la reciclen per evitar que es converteixi en residu. Així, la revaloritzen en productes elegants, nobles i útils per a la societat, contribuint a la sostenibilitat gràcies a la seva durabilitat.
-                </p>
-              </div>
-            </div>
-
-            <div className="SideContent Right animation-up" data-animate="slide-up">
-              <div className="SideImg">
-                  <Image className="radius-3 animation-up" data-animate="slide-up"  loading="eager" 
-                  alt="IDR" src='/img/img-micro.jpg' 
-                  // sizes="(max-width: 480px) 500px, (max-width: 1024px) 700px, 1000px"
-                  width={500} height={500} />
-              </div>
-              
-              <div className="SideTxt">
-                <h5>Compromís amb l’economia circular</h5>
-                <p>
-                A IDR, apostem per l’economia circular com a base d’un desenvolupament sostenible. Els adobers recuperen la pell, un subproducte del consum de carn, font principal de proteïna per a més del 90% de la població mundial, i la reciclen per evitar que es converteixi en residu. Així, la revaloritzen en productes elegants, nobles i útils per a la societat, contribuint a la sostenibilitat gràcies a la seva durabilitat.
-                </p>
-              </div>
-            </div>
-
-            <div className="SideContent Right animation-up" data-animate="slide-up">
-              <div className="SideImg">
-                  <Image className="radius-3 animation-up" data-animate="slide-up"  loading="eager" 
-                  alt="IDR" src='/img/img-micro.jpg' 
-                  // sizes="(max-width: 480px) 500px, (max-width: 1024px) 700px, 1000px"
-                  width={500} height={500} />
-              </div>
-              
-              <div className="SideTxt">
-                <h5>Compromís amb l’economia circular</h5>
-                <p>
-                A IDR, apostem per l’economia circular com a base d’un desenvolupament sostenible. Els adobers recuperen la pell, un subproducte del consum de carn, font principal de proteïna per a més del 90% de la població mundial, i la reciclen per evitar que es converteixi en residu. Així, la revaloritzen en productes elegants, nobles i útils per a la societat, contribuint a la sostenibilitat gràcies a la seva durabilitat.
-                </p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-    {/* COLLAB */}
-
-      <section className="SectionWrap" id="main-mission">
-        <div className="CenterSection">
-          <div>
-            <div className="CenterHeading animation-up" data-animate="slide-up">
-              <div>
-                <h2>Xarxa de Col·laboradors</h2>
-                <p>
-                A IDR formem part d'una xarxa de col·laboració amb universitats, associacions, ajuntaments i empreses especialitzades, amb les quals treballem conjuntament per impulsar projectes d'I+D i garantir la sostenibilitat en la indústria de la pell.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="CardGroup Collab">
-
-            <a href="https://leatherbarcelona.com/" target="blank">
-              <div className="CardWrap">
-                <div className="CardTop Collab1">
-                <div className="CardImg">
-                  <Image className="animation-up" data-animate="slide-up" loading="eager" 
-                  alt="img" src='/logos/tradebe.png' width={250} height={200} />           
-                </div>
-                </div>
-                <div className="CardBottom">
-      
-                  <div className="CardTxt">
-                    <h6>Leather Cluster Barcelona</h6>
-                    <p className=''>
-                    Associació que uneix empreses i institucions del sector de la pell per impulsar la col·laboració, la innovació sostenible i l’accés a nous mercats, promovent el networking i aplicant tecnologies avançades per una major responsabilitat ambiental.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </a>
-
-            <a href="https://www.tradebe.com/environmental-services/" target="blank">
-              <div className="CardWrap">
-                <div className="CardTop Collab2">
-                  <Image className="animation-up" data-animate="slide-up" loading="eager" 
-                    alt="img" src='/logos/tradebe.png' width={250} height={200} />           
-                </div>
-                <div className="CardBottom">
-                  <div className="CardTxt">
-                    <h6>Tradebe</h6>
-                    <p className=''>
-                    Tradebe és una empresa pionera en la gestió de residus, especialitzada en convertir-los en recursos valuosos a través de solucions innovadores. Amb un ferm compromís amb l’economia circular, Tradebe contribueix activament a un futur més verd i sostenible.                  
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </a>
-
-            <a href="https://a3center.cat/index.php/en/" target="blank">
-              <div className="CardWrap">
-                <div className="CardTop Collab3">
-                <Image className="animation-up" data-animate="slide-up" loading="eager" 
-                  alt="img" src='/logos/tradebe.png' width={250} height={200} />           
-                </div>
-                <div className="CardBottom">
-                  <div className="CardTxt">
-                    <h6>A3 Leather Innovation Center</h6>
-                    <p className=''>
-                    Recerca i innovació amb noves tecnologies en el sector de la pell. A3 Leather Innovation Center impulsa projectes per obrir nous horitzons, crear pell ecològica d’alta gamma i millorar la sostenibilitat dels processos.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </a>
-          
-          </div>
-        </div>
-      </section>
-
-      {/* POSTS */}
-
-      <section className="NewsSectionWrap">
-          <div className="NewsSection">
-            <div className="NewsContent">
-              <div className='NewsTitle'>
-                <h3>Projectes Recents</h3>
-              </div>
-              <RecentPosts allPosts={allPosts}/>
-              </div>
-          </div>
-        </section>
-
-      {/* NUMBER CARDS */}
-
-        <section className="SectionWrap" id="">
-          <div className="CenterSection">
-      
-            <div className="CardGroup three Numbers">
-            
-              <div className="CardWrap animation-up" data-animate="slide-up">
-                <div className="Card">
-                  <h1 className='BlueGrad'>+10</h1>
-                  <div className="CardLine"></div>
-                  <h6>Projectes</h6>
-                </div>
-              </div>      
-
-              <div className="CardWrap animation-up" data-animate="slide-up">
-                <div className="Card">
-                  <h1 className='BlueGrad'>+10</h1>
-                  <div className="CardLine"></div>
-                  <h6>Projectes</h6>
-                </div>
-              </div>        
-
-              <div className="CardWrap animation-up" data-animate="slide-up">
-                <div className="Card">
-                  <h1 className='BlueGrad'>+10</h1>
-                  <div className="CardLine"></div>
-                  <h6>Projectes</h6>
-                </div>
-              </div>              
-            </div>
-
-          </div>
-        </section>
-
-    {/* COMPROMIS SOSTENIBLE */}
-
-      <section className="ZeroSectionWrap" id="eco-compromis">
-          <div className="ZeroSection">
-            <div>
-              <div className="CenterHeading animation-up" data-animate="slide-up">
-                <div>
-                  <h2>El compromís sostenible de la depuradora</h2>
-                  <p>
-                  A IDR, el nostre compromís amb la sostenibilitat es reflecteix no només en la nostra tecnologia de depuració, sinó també en les pràctiques internes que adoptem per minimitzar el nostre impacte ambiental i garantir un entorn de treball segur i responsable.                  </p>
-                </div>
-              </div>
-            </div>
-      
-            <div className="CardGroup four Squares">
-            
-              <div className="CardWrap Card1 animation-up" data-animate="slide-up">
-                <div className="CardImg">
-                  <Image className="animation-up" data-animate="slide-up" loading="eager" 
-                  alt="img" src='/icons/check-circle.png' width={100} height={100} />           
-                </div>
-                <div className="CardTxt">
-                  <h6>Energies renovables</h6>
-                  <p>
-                  El 100% de l'energia que consumim prové de fonts renovables, i comptem amb un sistema de plaques solars pròpies per augmentar la nostra eficiència energètica.
-                  </p>
-                </div> 
-              </div>   
-
-              <div className="CardWrap Card2 animation-up" data-animate="slide-up">
-                <div className="CardImg">
-                <Image className="animation-up" data-animate="slide-up" loading="eager" 
-                alt="img" src='/icons/check-circle.png' width={100} height={100} />           
-               </div>
-                <div className="CardTxt">
-                  <h6>Reducció de l'ús d'agents químics</h6>
-                  <p>
-                  El nostre procés de depuració biològica optimitza la utilització de microorganismes per substituir els agents químics, amb l'objectiu de minimitzar l'impacte ambiental i afavorir solucions més sostenibles i ecològiques.                  </p>
-                </div>
-              </div>  
-
-              <div className="CardWrap Card3 animation-up" data-animate="slide-up">
-                <div className="CardImg">
-                <Image className="animation-up" data-animate="slide-up" loading="eager" 
-                alt="img" src='/icons/check-circle.png' width={100} height={100} />           
-               </div>
-                <div className="CardTxt">
-                  <h6>Auditories mediambientals</h6>
-                  <p>
-                  Realitzem auditories mediambientals regulars i mantenim certificacions per assegurar que les nostres pràctiques compleixen els estàndards més alts de sostenibilitat i responsabilitat ambiental.                  </p>
-                </div>
-              </div>  
-
-             <div className="CardWrap Card4 animation-up" data-animate="slide-up">
-                <div className="CardImg">
-                <Image className="animation-up" data-animate="slide-up" loading="eager" 
-                alt="img" src='/icons/check-circle.png' width={100} height={100} />           
-               </div>
-                <div className="CardTxt">
-                  <h6>Seguretat i prevenció de riscos laborals</h6>
-                  <p>
-                  Ens prenem molt seriosament la seguretat dels nostres treballadors, amb protocols estrictes per garantir un entorn laboral segur i complir amb totes les normatives de salut i seguretat.                  </p>
-                </div>
-              </div>        
-            </div>
-
-          </div>
-        </section>
-
-
-        {/* INNOVATION */}
+      {/* INNOVATION */}
 
         <section className="DivSectionWrap DivLeft Dark" id="main-innovation">
           <div className="DivSection Left animation-up" data-animate="slide-up">
 
             <div className="SideTxt">
               <p className='tagline'>PROJECTES</p>
-              <h3>Solucions <span className="BlueGrad">Innovadores </span>
+              <h3><span className="BlueGrad">Solucions innovadores </span>
               per a nous reptes ambientals</h3>              
               <p>
-              Impulsem projectes I+D per optimitzar els processos existents i implementar tecnologies innovadores que permetin una depuració cada cop més completa i sostenible, avançant cap a un model d’economia circular i impacte zero.
+              Impulsem projectes I+D per optimitzar els processos existents i implementar tecnologies innovadores que permetin una depuració cada cop més completa i sostenible, avançant cap a un model d’economia circular i impacte zero.              
               </p>
               <div className="AppBtn Blue">
                 <Link href="/empresa"><button>Veure Projectes<Arrow_Icon /></button></Link>
@@ -560,46 +346,18 @@ export default function Home(props: IAboutProps) {
         <div className='Stripe Blue'></div>
       </section>
 
-  {/* SOCIS  */}
+      {/* POSTS */}
 
-      <section className="SectionWrap" id="main-socis">
-        <div className="CenterSection">
-          <div className="CenterContent">
-            <div className="CenterWrap animation-up" data-animate="slide-up">
-              <h3>Socis i Col·laboradors</h3>
-              <div className="center-subtitle">
-                <p>
-                Els nostres socis fundadors inclouen destacades empreses del sector dels curtits, així com l’Ajuntament d’Igualada i representants de les indústries tèxtil i química, tots compromesos amb la reducció de l'impacte ambiental i la reutilització de recursos.
-                </p>
+      <section className="NewsSectionWrap">
+          <div className="NewsSection">
+            <div className="NewsContent">
+              <div className='NewsTitle'>
+                <h3>Projectes Recents</h3>
               </div>
-              <div className="CenterWrap">
-                <Image className="animation-up mt-5" data-animate="slide-up"  loading="eager" 
-                  alt="IDR" src='/logos/ig-white.png' 
-                  // sizes="(max-width: 480px) 200px, (max-width: 1024px) 300px, 400px"
-                  width={250} height={50} />
-                <p className='mt-3'>
-                 SOCI IL·LUSTRE 
-                </p>
+              <RecentPosts allPosts={allPosts}/>
               </div>
-
-            </div>
-
-            <div className="CenterImg mt-7">
-              <div className="ImgCarousel">
-              <ImgCarousel set="socis" />
-              </div>
-            </div>
-
           </div>
-
-        </div>
-      </section>
-
-      <section>
-        <div className='Stripe Brown'></div>
-      </section>
-
-      <Contact />
+        </section>
 
       <Footer />
 

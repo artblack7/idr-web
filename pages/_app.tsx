@@ -1,12 +1,12 @@
 import "../styles/fonts.css";
 import "../styles/core.css";
-import "../styles/elements.css";
 import "../styles/global.css";
-import "../styles/cards.css";
+import "../styles/elements.css";
+import "../styles/slideshow.css";
 import "../styles/main.css";
 import "../styles/blog.css";
 import "../styles/extra.css";
-import "../styles/slideshow.css";
+
 import "../node_modules/flickity/css/flickity.css";
 
 import React, { useEffect, useState } from 'react';

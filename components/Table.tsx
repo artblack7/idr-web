@@ -52,33 +52,72 @@ const Table = () => {
   ];
 
   return (
+    <div className="table-wrapper">
+      <div className="table-top"></div>
     <div className="table-container">
-      <table className="app-table">
-        <thead>
-          <tr>
-            <th>
-              <div className="table-header-content">
-               <span className="LerTag">CODI LER</span>
-              </div>
-            </th>
-            <th className="table-header-content">
-              DESCRIPCIÓ
-            </th>
-          </tr>
-        </thead>
-        <tbody>
+      <div className="app-table">
+        <div className="table-header">
+          <div className="header-cell">
+            <div className="table-header-content">
+              <p>CODI LER</p>
+            </div>
+          </div>
+          <div className="header-cell">
+            <div className="table-header-content">
+              <p>DESCRIPCIÓ</p>
+            </div>
+          </div>
+        </div>
+        <div className="table-body">
           {tableData.map((item) => (
-            <tr key={item.codi}>
-              <td>
-                <span className="Codi">{item.codi}</span>
-              </td>
-              <td className="Desc">{item.desc}</td>
-            </tr>
+            <div key={item.codi} className="table-row">
+              <div className="table-cell">
+                <span className="CodeTag">{item.codi}</span>
+              </div>
+              <div className="table-cell">
+                {item.desc}
+              </div>
+            </div>
           ))}
-        </tbody>
-      </table>
+        </div>
+      </div>
     </div>
+  </div>
   );
 };
+
+//   return (
+//     <div className="table-container">
+//       <table className="app-table">
+//         <thead>
+//           <tr className="table-header">
+//             <th>
+//               <div className="table-header-content">
+//                <p>CODI LER</p>
+//               </div>
+//             </th>
+//             <th>
+//               <div className="table-header-content">
+//                 <p>DESCRIPCIÓ</p>
+//               </div>
+//             </th>
+//           </tr>
+//         </thead>
+//         <tbody className="table-body">
+//           {tableData.map((item) => (
+//             <tr key={item.codi}>
+//               <td className="table-cell">
+//                 <span className="CodeTag">{item.codi}</span>
+//               </td>
+//               <td className="table-cell">
+//                 {item.desc}
+//               </td>
+//             </tr>
+//           ))}
+//         </tbody>
+//       </table>
+//     </div>
+//   );
+// };
 
 export default Table;

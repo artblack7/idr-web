@@ -44,8 +44,8 @@ export default function Blog(props: IIndexProps) {
 
       <BlogHero posts={initialPosts}/>
 
-      <section className="PostSectionWrap">
-          <div className="PostSection">
+      <section className="SectionWrap" id='posts-section'>
+          <div className="BaseSection">
             <div className="PostContent">
               <div className="Categories">
                 <button 

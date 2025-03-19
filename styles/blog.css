@@ -56,17 +56,13 @@
 
 /*--------------- Cards Section ---------------*/
 
-.PostSectionWrap {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: var(--white);
+#posts-section {
+  background: var(--grey);
 }
 
-.PostSection {
+/* .BaseSection {
   max-width: 1400px;
-}
+} */
 
 .Categories {
   display: flex;
@@ -144,9 +140,9 @@
   box-shadow: var(--sh-box);
 }
 
-.BlogCardWrap:hover .BlogCardTxt {
-  padding-top: 25px;
-}
+/* .BlogCardWrap:hover .BlogCardTxt {
+  margin-top: 25px;
+} */
 
 .BlogCardWrap:hover .BlogCardTop{
   filter: brightness(115%);
@@ -638,10 +634,9 @@ body.blog-post li > p {
 }
 
 
-/**************************************************************************************/
-/*//////////////////////////////// RESPONSIVE STYLES /////////////////////////////////*/
-/**************************************************************************************/
-
+/*********************************************************/
+/*/////////////////// RESPONSIVE STYLES /////////////////*/
+/*********************************************************/
 
 @media (max-width: 1320px) {
 
