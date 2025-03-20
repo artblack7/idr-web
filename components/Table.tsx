@@ -52,9 +52,9 @@ const Table = () => {
   ];
 
   return (
-    <div className="table-wrapper">
+    <div className="">
       <div className="table-top"></div>
-    <div className="table-container">
+    <div className="">
       <div className="app-table">
         <div className="table-header">
           <div className="header-cell">

@@ -23,7 +23,7 @@ export default function Sostenibilitat() {
           />
       </div>
 
-      <div className="HeroSectionWrap Dark" id="innovation-hero">
+      <div className="HeroSectionWrap Dark" id="eco-hero">
           <div className="Overlay"></div>
         <div className="HeroSection">
           <div className="HeroContent animation-up" data-animate="slide-up">
@@ -70,7 +70,7 @@ export default function Sostenibilitat() {
 
         {/* LEFT */}
 
-        <div className="SideSection MiddleSpace">
+        <div className="SideSection">
           <div className="SideContent Left animation-up" data-animate="slide-up">
             <div className="SideTxt">
               <p className='tagline'>L’IMPACTE EN DADES</p>
@@ -108,28 +108,43 @@ export default function Sostenibilitat() {
             <div className="CardGroup three Numbers">
             
               <div className="CardWrap animation-up" data-animate="slide-up">
-                <div className="Card">
+                <div className="CardNumber">
                   <h1 className='MainGrad'>50%</h1>
-                  <div className="CardLine"></div>
-                  <h6 className='blue-text'>Reducció d’aigua per unitat produïda durant els últims 20 anys</h6>
                 </div>
-              </div>      
+                <div className='CardLineWrap'>
+                    <div className="CardLine"></div>
+                  </div>
+                <div>
+                  <h6 className='CardConcept blue-text'>Reducció d’aigua per unitat produïda durant els últims 20 anys</h6>
+                </div>
+              </div>    
 
               <div className="CardWrap animation-up" data-animate="slide-up">
-                <div className="Card">
+                <div className="CardNumber">
                   <h1 className='MainGrad'>50%</h1>
-                  <div className="CardLine"></div>
-                  <h6 className='blue-text'>Reducció de càrrega contaminant durant els últims 20 anys</h6>
                 </div>
-              </div>        
+                <div className='CardLineWrap'>
+                    <div className="CardLine"></div>
+                  </div>
+                <div className='CardConcept'>
+                  <h6 className='blue-text'>
+                  Reducció de càrrega contaminant durant els últims 20 anys
+                  </h6>
+                </div>
+              </div>   
 
               <div className="CardWrap animation-up" data-animate="slide-up">
-                <div className="Card">
+                <div className="CardNumber">
                   <h1 className='MainGrad'>26</h1>
-                  <div className="CardLine"></div>
-                  <h6 className='blue-text'>Empreses que depuren les seves aigües a IDR</h6>
                 </div>
-              </div>              
+                  <div className='CardLineWrap'>
+                    <div className="CardLine"></div>
+                  </div>
+                <div>
+                  <h6 className='CardConcept blue-text'>Empreses que depuren les seves aigües a IDR</h6>
+                </div>
+              </div>     
+             
             </div>
 
           </div>
@@ -156,17 +171,19 @@ export default function Sostenibilitat() {
     <section className="SectionWrap" id="eco-cicle">
         <div className="CenterSection">
           <div className="CenterContent">
-            <div className=" animation-up" data-animate="slide-up">
-            <p className='tagline'>INDÚSTRIA</p>
+            <div className="CenterHeading animation-up" data-animate="slide-up">
+            <p className='tagline'>SOSTENIBILITAT EN EL SECTOR</p>
               <h3>El cicle de vida sostenible dels curtits</h3>
             </div>
 
-            <div className="SideContent Right animation-up" data-animate="slide-up">
+            <div className="Content animation-up" data-animate="slide-up">
               <div className="SideImg">
+                <div className='SquareImgWrap'>
                   <Image className="radius-3 animation-up" data-animate="slide-up"  loading="eager" 
                   alt="IDR" src='/img/img-micro.jpg' 
                   // sizes="(max-width: 480px) 500px, (max-width: 1024px) 700px, 1000px"
                   width={500} height={500} />
+                </div>
               </div>
               
               <div className="SideTxt">
@@ -177,34 +194,37 @@ export default function Sostenibilitat() {
               </div>
             </div>
 
-            <div className="SideContent Right animation-up" data-animate="slide-up">
+            <div className="Content animation-up" data-animate="slide-up">
               <div className="SideImg">
+               <div className='SquareImgWrap'>
                   <Image className="radius-3 animation-up" data-animate="slide-up"  loading="eager" 
                   alt="IDR" src='/img/img-micro.jpg' 
                   // sizes="(max-width: 480px) 500px, (max-width: 1024px) 700px, 1000px"
                   width={500} height={500} />
+                </div>
               </div>
               
               <div className="SideTxt">
                 <h5>Compromís amb l’economia circular</h5>
                 <p>
-                A IDR, apostem per l’economia circular com a base d’un desenvolupament sostenible. Els adobers recuperen la pell, un subproducte del consum de carn, font principal de proteïna per a més del 90% de la població mundial, i la reciclen per evitar que es converteixi en residu. Així, la revaloritzen en productes elegants, nobles i útils per a la societat, contribuint a la sostenibilitat gràcies a la seva durabilitat.
-                </p>
+                Des de fa segles, els adobers han recuperat aquest subproducte de la indústria alimentària i el reciclen per transformar-lo en béns de consum sostenible d’alt valor afegit. Aquesta pràctica no només redueix residus, sinó que també promou l’ús responsable dels recursos.                </p>
               </div>
             </div>
 
-            <div className="SideContent Right animation-up" data-animate="slide-up">
+            <div className="Content animation-up" data-animate="slide-up">
               <div className="SideImg">
+                <div className='SquareImgWrap'>
                   <Image className="radius-3 animation-up" data-animate="slide-up"  loading="eager" 
                   alt="IDR" src='/img/img-micro.jpg' 
                   // sizes="(max-width: 480px) 500px, (max-width: 1024px) 700px, 1000px"
                   width={500} height={500} />
+                </div>
               </div>
               
               <div className="SideTxt">
                 <h5>Compromís amb l’economia circular</h5>
                 <p>
-                A IDR, apostem per l’economia circular com a base d’un desenvolupament sostenible. Els adobers recuperen la pell, un subproducte del consum de carn, font principal de proteïna per a més del 90% de la població mundial, i la reciclen per evitar que es converteixi en residu. Així, la revaloritzen en productes elegants, nobles i útils per a la societat, contribuint a la sostenibilitat gràcies a la seva durabilitat.
+                Els adobers catalans, agrupats a Leather Cluster Barcelona, mantenen el seu compromís amb el model de residu zero. El clúster impulsa diversos projectes per optimitzar la valorització dels subproductes i residus generats durant tot el procés de producció dins de la cadena de valor de la indústria de la pell.
                 </p>
               </div>
             </div>
@@ -224,6 +244,7 @@ export default function Sostenibilitat() {
             <div>
               <div className="CenterHeading animation-up" data-animate="slide-up">
                 <div>
+                <p className='tagline'>SOSTENIBILITAT A LA PLANTA</p>
                   <h2>El compromís sostenible de la depuradora</h2>
                   <p>
                   A IDR, el nostre compromís amb la sostenibilitat es reflecteix no només en la nostra tecnologia de depuració, sinó també en les pràctiques internes que adoptem per minimitzar el nostre impacte ambiental i garantir un entorn de treball segur i responsable.
@@ -279,7 +300,8 @@ export default function Sostenibilitat() {
                 <div className="CardTxt">
                   <h6>Seguretat i prevenció de riscos laborals</h6>
                   <p>
-                  Ens prenem molt seriosament la seguretat dels nostres treballadors, amb protocols estrictes per garantir un entorn laboral segur i complir amb totes les normatives de salut i seguretat.                  </p>
+                  Ens prenem molt seriosament la seguretat dels nostres treballadors, amb protocols estrictes per garantir un entorn laboral segur i complir amb totes les normatives de salut i seguretat.                  
+                  </p>
                 </div>
               </div>        
             </div>
@@ -287,20 +309,24 @@ export default function Sostenibilitat() {
           </div>
         </section>
 
-          {/* CERTIFICATS*/}
+    {/* CERTIFICATS*/}
 
-    <section className="SectionWrap" id="main-tech">
+    <section className="SectionWrap" id="eco-cert">
         <div className="CenterSection">
           <div className="CenterContent">
             <div className="CenterTxt animation-up" data-animate="slide-up">
               <h3>Certificacions i Auditories Mediambientals</h3>
-              <div className="">
-                  <p className='highlight'>
-                  A IDR, en col·laboració amb Tradebe, gestionem la depuradora seguint els més alts estàndards mediambientals, amb una clara vocació per la sostenibilitat.                   
-                  </p>
+                <div className=''>
+                 <div className="">
+                    <p className='highlight'>
+                    A IDR, en col·laboració amb Tradebe, gestionem la depuradora seguint els més alts estàndards mediambientals, amb una clara vocació per la sostenibilitat.                   
+                    </p>
+                  </div>
+                  <div className="">
                   <p>
-                  Les nostres auditories i certificacions demostren la nostra dedicació a garantir les millors pràctiques en sostenibilitat, innovació i seguretat en tots els nostres serveis.                
-                  </p>
+                    Les nostres auditories i certificacions demostren la nostra dedicació a garantir les millors pràctiques en sostenibilitat, innovació i seguretat en tots els nostres serveis:                
+                    </p>
+                </div>
                 </div>
             </div>
 
@@ -311,10 +337,10 @@ export default function Sostenibilitat() {
             <div>
               <div className="CardWrap">
                 <div className="CardTopCert">
-                <div className="CardImg">
-                  <Image className="animation-up" data-animate="slide-up" loading="eager" 
-                  alt="img" src='/logos/tradebe.png' width={250} height={200} />           
-                </div>
+                  <div className="CardImg">
+                    <Image className="animation-up" data-animate="slide-up" loading="eager" 
+                    alt="img" src='/logos/tradebe.png' width={250} height={200} />           
+                  </div>
                 </div>
                 <div className="CardBottomCert">
                   <div className="CardTxt">

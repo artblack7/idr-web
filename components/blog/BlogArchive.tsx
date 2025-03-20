@@ -52,9 +52,11 @@ const BlogArchive: React.FC<BlogArchiveProps> = ({ initialPosts, allPosts, tagFi
       </div>
       {/* {offset < filteredPosts.length && ( */}
         <div className="LoadMore">
+          <div className='SmallBtnWrap'>
           <button onClick={handleLoadMore}>
-            Load More Posts
+            Veure més projectes
           </button>
+          </div>
         </div>
       {/* )} */}
     </>

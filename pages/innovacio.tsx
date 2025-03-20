@@ -83,7 +83,7 @@ export default function Innovation(props: IAboutProps) {
 
         {/* LEFT */}
 
-        <div className="SideSection MiddleSpace">
+        <div className="SideSection">
           <div className="SideContent Left animation-up" data-animate="slide-up">
             <div className="SideTxt">
               <p className='tagline'></p>
@@ -126,7 +126,7 @@ export default function Innovation(props: IAboutProps) {
         <div className="CenterSection">
             <div className="CardGroup three Numbers">
             
-              <div className="CardWrap animation-up" data-animate="slide-up">
+              {/* <div className="CardWrap animation-up" data-animate="slide-up">
                 <div className="Card">
                   <h1 className='MainGrad'>+10</h1>
                   <div className="CardLine"></div>
@@ -146,9 +146,48 @@ export default function Innovation(props: IAboutProps) {
                 <div className="Card">
                   <h1 className='MainGrad'>+14</h1>
                   <div className="CardLine"></div>
-                  <h6 className='blue-text'>Investigadors dedicats <br/> a I+D</h6>
+                  <h6 className='blue-text'>Investigadors dedicats a I+D</h6>
                 </div>
-              </div>              
+              </div>   */}
+
+              <div className="CardWrap animation-up" data-animate="slide-up">
+                <div className="CardNumber">
+                  <h1 className='MainGrad'>12M €</h1>
+                </div>
+                  <div className='CardLineWrap'>
+                    <div className="CardLine"></div>
+                  </div>
+                <div>
+                  <h6 className='CardConcept blue-text'>Projectes</h6>
+                </div>
+              </div>
+
+              <div className="CardWrap animation-up" data-animate="slide-up">
+                <div className="CardNumber">
+                  <h1 className='MainGrad'>12M €</h1>
+                </div>
+                  <div className='CardLineWrap'>
+                    <div className="CardLine"></div>
+                  </div>
+                <div>
+                  <h6 className='CardConcept blue-text'>Entitats col·laboradores</h6>
+                </div>
+              </div>
+
+              <div className="CardWrap animation-up" data-animate="slide-up">
+                <div className="CardNumber">
+                  <h1 className='MainGrad'>12M €</h1>
+                </div>
+                  <div className='CardLineWrap'>
+                    <div className="CardLine"></div>
+                  </div>
+                <div>
+                  <h6 className='CardConcept blue-text'>Investigadors dedicats a I+D</h6>
+                </div>
+              </div>
+
+
+
             </div>
 
           </div>

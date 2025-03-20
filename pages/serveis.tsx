@@ -8,6 +8,7 @@ import Arrow_Icon from '../components/SVG/Arrow_Icon';
 import { Meta } from '../components/head/Meta';
 import Table from '../components/Table';
 import Contact from '../components/Contact';
+import ContactForm from '../components/ContactForm';
 
 export default function Serveis() {
 
@@ -24,13 +25,13 @@ export default function Serveis() {
           />
       </div>
 
-      <div className="HeroSectionWrap Dark" id="innovation-hero">
+      <div className="HeroSectionWrap Dark" id="services-hero">
           <div className="Overlay"></div>
         <div className="HeroSection">
           <div className="HeroContent animation-up" data-animate="slide-up">
             <div className='HeroTitle'>
-              <h6>PROJECTES</h6>
-              <h2>Depuració innovadora per un futur sostenible</h2>
+              <h6>SERVEIS</h6>
+              <h2>Gestió de residus líquids industrials</h2>
             </div>
           </div>
         </div>
@@ -56,13 +57,13 @@ export default function Serveis() {
             </div>
             
             <div className="SideTxt">
-              <p className='tagline'>Projectes</p>
-              <h3>Projectes I+D per a nous reptes ambientals</h3>
+              <p className='tagline'>SERVEIS PER EMPRESES</p>
+              <h3>Servei de gestió de residus líquids no perillosos</h3>
               <p className='highlight'>
-              Amb la missió de liderar la transició cap a un cicle de l’aigua més net i sostenible, IDR està compromesa amb la recerca i desenvolupament de solucions innovadores en el tractament d’aigües. 
+              IDR ofereix els seus serveis de depuració i gestió de residus líquids no perillosos, assessorant a les empreses en la minimització del seu impacte ambiental.
               </p>
               <p>
-               Col·laborem amb empreses de curtits, centres d'innovació i altres entitats del sector per optimitzar el tractament d’aigües residuals i avançar en models d’economia circular de l’aigua que permetin la reutilització de recursos dins la indústria de la pell, reduïnt així el consum de recursos naturals. 
+              La nostra filosofia de millora continua fa que constantment treballem en optimitzar el procés de tractament de les nostres aigües, aplicant un tractament fisicoquímic i biològic personalitzat i òptim per a cada residu.              
               </p>
             </div>
           </div>
@@ -74,15 +75,17 @@ export default function Serveis() {
         <div className="SideSection">
           <div className="SideContent Left animation-up" data-animate="slide-up">
             <div className="SideTxt">
-              <p className='tagline'></p>
-              <h3>Tecnologies per avançar cap a l’impacte zero</h3>
-              {/* <p>
-              Lorem Ipsum
-              </p> */}
-              <p>
-              A través de l’investigació en tecnologies avançades com la nanofiltració i l’osmosis inversa, busquem aconseguir una depuració cada vegada més completa i eficient, orientada cap a un model d’impacte ambiental mínim, i avançant cap a l’impacte zero.
+              <p className='tagline'>LLICÈNCIES</p>
+              <h3>Gestió de residus líquids amb garanties ambientals</h3>
+              <p className='highlight'>
+              IDR disposa de la Llicència Ambiental Integrada per la gestió de residus líquids no perillosos, amb codi de gestor E-1706.17.
               </p>
-
+              <p>
+              IDR és pionera a Catalunya en combinar dues activitats, la depuració d’aigües industrials i urbanes i la gestió de residus líquids no perillosos.
+              </p>
+              <p>
+              L’alta capacitat tecnològica de la depuradora d’IDR, permet tractar residus líquids no perillosos amb totes les garanties mediambientals.
+              </p>
             <div className="AppBtn">
               <Link href="/empresa"><button>Saber més<Arrow_Icon /></button></Link>
             </div>
@@ -104,7 +107,12 @@ export default function Serveis() {
 
   {/* CODIS LER */}
 
-    <section className="SectionWrap" id="main-tech">
+      <section>
+        {/* <div className='GradStripe'></div> */}
+        <div className='Stripe Green'></div>
+      </section>
+
+    <section className="SectionWrap" id="services-codes">
         <div className="CenterSection">
           <div className="CenterContent">
             <div className="CenterTxt animation-up" data-animate="slide-up">

@@ -69,7 +69,13 @@
   padding-top: 18.5px;
 }
 
+.Toolbar .AppBtn button {
+  background-color: transparent !important;
+}
+
+
 /*//////////////////// TOOLBAR /////////////////*/
+
 
 .Toolbar,
 .ToolbarWhite {
@@ -78,7 +84,6 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  z-index: 10;
 }
 
 .Toolbar,
@@ -87,7 +92,7 @@
 .header-scrolled,
 .header-top-w,
 .header-scrolled-w {
-  height: 100px;
+  height: 80px;
   z-index: 10;
 }
 
@@ -101,14 +106,13 @@
 }
 
 .header-scrolled {
-  position: block;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   box-shadow: var(--sh-l);
-  background: var(--black);
-  transition: all 0.1s ease-in-out;
-  border-bottom: 0.5px solid var(--dark2);
+  background: var(--white);
+  transition: all 0.3s ease-in-out;
 }
 
 .header-top-w {
@@ -168,25 +172,25 @@
  
 /*---------------  Menu  Links ---------------*/
 
+
 .MenuLinks {
   display: flex;
   flex-direction: row;
-  /* border: 1px solid red; */
 }
 
 .header-top .MenuLinks a {
   color: var(--white);
 }
-.header-top .MenuLinks a:hover {
-  color: var(--pblue);
+/* .header-top .MenuLinks a:hover {
+  color: var(--pblue1);
   cursor: pointer;
 }
 .header-top .MenuLinks a:active {
-  color: var(--pblue);
+  color: var(--pblue1);
 }
 
 .header-scrolled .MenuLinks a {
-  color: var(--white);
+  color: var(--dark2);
 }
 .header-scrolled .MenuLinks a:hover {
   color: var(--pblue);
@@ -194,7 +198,7 @@
 }
 .header-scrolled .MenuLinks a:active {
   color: var(--pblue);
-}
+} */
 
 .MenuLinks a {
   display: flex;
@@ -214,7 +218,7 @@
 }
 
   .ToolbarWhite .MenuLinks a {
-    color: var(--pblue) !important;
+    color: var(--dark2) !important;
   }
   .ToolbarWhite .MenuLinks a:hover {
     color: var(--pblue) !important;

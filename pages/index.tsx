@@ -109,19 +109,21 @@ export default function Home(props: IAboutProps) {
           <div className="CenterContent">
             <div className="CenterTxt animation-up" data-animate="slide-up">
               <h3>Depuració innovadora per un futur sostenible</h3>
-              <div className="">
-                <div className="">
+              <div className="TextGroup">
+                <div className="HalfText">
                   <p className='highlight'>
                   La planta d’IDR, pionera a Europa en depuració biològica, utilitza tecnologia d'última generació per garantir l'eficiència i la qualitat del tractament de les aigües. 
                   </p>
                   <p>
+                  Aquesta instal·lació reflecteix el compromís col·lectiu amb una indústria més neta, sostenible i preparada per als reptes mediambientals del present i del futur.
+                  </p>
+                  </div>
+                  <div className="HalfText">
+                  <p className='highlight'>
                   Gestionada per un equip de professionals especialitzats en el tractament d'aigües residuals industrials, assegura un control rigorós de qualitat en totes les fases del procés, complint amb tots els estàndards mediambientals vigents.
                   </p>
                   <p>
                   La planta també ofereix serveis de gestió de residus líquids no perillosos per a altres indústries, ajudant a reduir l'impacte ambiental de la indústria catalana.
-                  </p>
-                  <p>
-                  Aquesta instal·lació reflecteix el compromís col·lectiu amb una indústria més neta, sostenible i preparada per als reptes mediambientals del present i del futur.
                   </p>
                 </div>
               </div>
@@ -183,7 +185,7 @@ export default function Home(props: IAboutProps) {
         <section className="SectionWrap" id="main-socis">
         <div className="CenterSection">
           <div className="CenterContent">
-            <div className="CenterWrap animation-up" data-animate="slide-up">
+            <div className="CenterHeading animation-up" data-animate="slide-up">
               <h3>Socis</h3>
               <div className="center-subtitle">
                 <p>
@@ -192,7 +194,7 @@ export default function Home(props: IAboutProps) {
               </div>
               <div className="CenterWrap">
                 <Image className="animation-up mt-5" data-animate="slide-up"  loading="eager" 
-                  alt="IDR" src='/logos/ig-white.png' 
+                  alt="IDR" src='/logos/aj-black.png' 
                   // sizes="(max-width: 480px) 200px, (max-width: 1024px) 300px, 400px"
                   width={250} height={50} />
                 <p className='mt-3'>
@@ -202,7 +204,7 @@ export default function Home(props: IAboutProps) {
 
             </div>
 
-            <div className="CenterImg mt-7">
+            <div className=" mt-7">
               <div className="ImgCarousel">
               <ImgCarousel set="socis" />
               </div>
@@ -255,7 +257,7 @@ export default function Home(props: IAboutProps) {
             <div>
               <div className="CenterHeading animation-up" data-animate="slide-up">
                 <div>
-                  <h2>La nostra missió</h2>
+                  <h3>La nostra missió</h3>
                   <p>
                   A IDR, ens esforcem per oferir solucions de depuració sostenibles, innovant constantment per explorar models d’economia circular i avançar cap a una indústria cada dia més eficient i responsable amb el medi ambient.
                   </p>
@@ -352,7 +354,7 @@ export default function Home(props: IAboutProps) {
           <div className="NewsSection">
             <div className="NewsContent">
               <div className='NewsTitle'>
-                <h3>Projectes Recents</h3>
+                <h3>Projectes Destacats</h3>
               </div>
               <RecentPosts allPosts={allPosts}/>
               </div>

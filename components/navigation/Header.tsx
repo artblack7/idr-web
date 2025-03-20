@@ -6,7 +6,7 @@ import Head from 'next/head';
 import Link from "next/link";
 
 export default function MainHeader(props: any) {
-  const [ bannerRef, isVisible ] = useElementOnScreen({
+  const [isVisible ] = useElementOnScreen({
     root: null,
     rootMargin: "0px",
     threshold: 0
@@ -14,9 +14,11 @@ export default function MainHeader(props: any) {
 
   const isMobile = useMediaQuery('(max-width: 480px)');
 
-  const headerClass = isMobile ? "header-top-w" : (props.useWhite ? "header-top-w" : "header-top");
-  const headerScrolledClass = isMobile ? "header-scrolled-w" : (props.useWhite ? "header-scrolled-w" : "header-scrolled");
-  
+  // const headerClass = isMobile ? "header-top-w" : (props.useWhite ? "header-top-w" : "header-top");
+  // const headerScrolledClass = isMobile ? "header-scrolled-w" : (props.useWhite ? "header-scrolled-w" : "header-scrolled");
+  const headerClass = "header-top";
+  const headerScrolledClass = "header-scrolled";
+
   return (
     <>
     {props.meta}
@@ -33,7 +35,6 @@ export default function MainHeader(props: any) {
             <Link href="/sostenibilitat">Sostenibilitat</Link>
             <Link href="/serveis">Gestió Residus</Link>
             <Link href="/empresa">Empresa</Link>
-            {/* <Link href="/">Blog</Link> */}
           </div>
         </Toolbar>
 

@@ -7,7 +7,7 @@ import AnimationTrigger from '../components/AnimationTrigger';
 import Arrow_Icon from '../components/SVG/Arrow_Icon';
 import { Meta } from '../components/head/Meta';
 
-export default function Planta() {
+export default function Tech() {
 
   return (
     <main className='Main'>
@@ -22,7 +22,7 @@ export default function Planta() {
           />
       </div>
 
-      <div className="HeroSectionWrap Dark" id="innovation-hero">
+      <div className="HeroSectionWrap Dark" id="tech-hero">
           <div className="Overlay"></div>
         <div className="HeroSection">
           <div className="HeroContent animation-up" data-animate="slide-up">
@@ -72,7 +72,7 @@ export default function Planta() {
 
       {/* LEFT */}
 
-      <div className="SideSection MiddleSpace">
+      <div className="SideSection">
         <div className="SideContent Left animation-up" data-animate="slide-up">
           <div className="SideTxt">
             <p className='tagline'>El nostre procés</p>
@@ -106,7 +106,7 @@ export default function Planta() {
       <div className="CenterSection">
           <div className="CardGroup three Numbers">
           
-            <div className="CardWrap animation-up" data-animate="slide-up">
+            {/* <div className="CardWrap animation-up" data-animate="slide-up">
               <div className="Card">
                 <h1 className='MainGrad'>12M €</h1>
                 <div className="CardLine"></div>
@@ -128,9 +128,45 @@ export default function Planta() {
                 <div className="CardLine"></div>
                 <h6 className='blue-text'>Aigua depurada diàriament</h6>
               </div>
-            </div>              
-          </div>
+            </div>               */}
 
+          <div className="CardWrap animation-up" data-animate="slide-up">
+            <div className="CardNumber">
+              <h1 className='MainGrad'>12M €</h1>
+            </div>
+              <div className='CardLineWrap'>
+                <div className="CardLine"></div>
+              </div>
+            <div>
+              <h6 className='CardConcept blue-text'>Inversió inicial</h6>
+            </div>
+          </div>   
+
+          <div className="CardWrap animation-up" data-animate="slide-up">
+            <div className="CardNumber">
+              <h1 className='MainGrad'>4,5M €</h1>
+            </div>
+              <div className='CardLineWrap'>
+                <div className="CardLine"></div>
+              </div>
+            <div>
+              <h6 className='CardConcept blue-text'>Cost anual d’explotació</h6>
+            </div>
+          </div>   
+
+          <div className="CardWrap animation-up" data-animate="slide-up">
+            <div className="CardNumber">
+              <h1 className='MainGrad'>4000m&sup3;</h1>
+            </div>
+              <div className='CardLineWrap'>
+                <div className="CardLine"></div>
+              </div>
+            <div>
+              <h6 className='CardConcept blue-text'>Aigua depurada diàriament</h6>
+            </div>
+          </div>   
+          </div>
+          
         </div>
 
       </section>

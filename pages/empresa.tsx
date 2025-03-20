@@ -22,13 +22,13 @@ export default function Empresa() {
           />
       </div>
 
-      <div className="HeroSectionWrap Dark" id="innovation-hero">
+      <div className="HeroSectionWrap Dark" id="about-hero">
           <div className="Overlay"></div>
         <div className="HeroSection">
           <div className="HeroContent animation-up" data-animate="slide-up">
             <div className='HeroTitle'>
               <h6>PROJECTES</h6>
-              <h2>Depuració innovadora per un futur sostenible</h2>
+              <h2>La depuradora dels curtidors d'Igualada</h2>
             </div>
           </div>
         </div>
@@ -37,7 +37,7 @@ export default function Empresa() {
 
       {/* MAIN SECTION */}
 
-      <section className="SectionWrap" id="">
+      <section className="SectionWrap" id="about-main">
 
         {/* RIGHT */}
 
@@ -54,13 +54,16 @@ export default function Empresa() {
             </div>
             
             <div className="SideTxt">
-              <p className='tagline'>Projectes</p>
-              <h3>Projectes I+D per a nous reptes ambientals</h3>
+              <p className='tagline'>QUI SOM</p>
+              <h3>La depuradora dels curtidors</h3>
               <p className='highlight'>
-              Amb la missió de liderar la transició cap a un cicle de l’aigua més net i sostenible, IDR està compromesa amb la recerca i desenvolupament de solucions innovadores en el tractament d’aigües. 
+              IDR va ser fundada com una iniciativa col·laborativa entre els curtidors del barri del Rec d'Igualada. Aquesta planta depuradora és gestionada per les mateixes empreses de la indústria de la pell, amb l'objectiu de garantir un futur sostenible per al sector.
               </p>
               <p>
-               Col·laborem amb empreses de curtits, centres d'innovació i altres entitats del sector per optimitzar el tractament d’aigües residuals i avançar en models d’economia circular de l’aigua que permetin la reutilització de recursos dins la indústria de la pell, reduïnt així el consum de recursos naturals. 
+              La nostra estructura organitzativa es basa en la col·laboració activa dels nostres socis, amb comitès i grups de treball que assessoren en aspectes com la traçabilitat, el desenvolupament tècnic i l'impacte ambiental, assegurant així que cada decisió contribueixi a un cicle de producció més sostenible.
+              </p>
+              <p>
+              Gràcies a aquesta aliança, IDR s'ha convertit en una plataforma única a Catalunya, dedicada al tractament d'aigües residuals específiques del procés de curtits i a la gestió de residus líquids industrials per altres sectors.
               </p>
             </div>
           </div>
@@ -69,16 +72,16 @@ export default function Empresa() {
 
         {/* LEFT */}
 
-        <div className="SideSection MiddleSpace">
+        <div className="SideSection ">
           <div className="SideContent Left animation-up" data-animate="slide-up">
             <div className="SideTxt">
-              <p className='tagline'></p>
-              <h3>Tecnologies per avançar cap a l’impacte zero</h3>
-              {/* <p>
-              Lorem Ipsum
-              </p> */}
+              <p className='tagline'>LA NOSTRA MISSIÓ</p>
+              <h3>La revolució sostenible del sector dels curtits</h3>
               <p>
-              A través de l’investigació en tecnologies avançades com la nanofiltració i l’osmosis inversa, busquem aconseguir una depuració cada vegada més completa i eficient, orientada cap a un model d’impacte ambiental mínim, i avançant cap a l’impacte zero.
+              Com a part del Leather Cluster Barcelona, IDR ha contribuït a la millora contínua dels processos en el sector de la pell, amb un sistema innovador de depuració biològica que ha permès reduir de manera significativa l’impacte ambiental de la indústria. 
+              </p>
+              <p>
+              Aquest esforç col·lectiu impulsa una indústria de la pell orientada al futur, amb un ferm compromís amb l'eficiència i el respecte pel medi ambient, aportant valor tant a la cadena productiva com a la comunitat local.
               </p>
 
             <div className="AppBtn">
@@ -89,7 +92,7 @@ export default function Empresa() {
 
             <div className="SideImg">
               <div className='ImgWrap'>
-                <Image className="radius-4 nimation-up" data-animate="slide-up"  loading="eager" 
+                <Image className="radius-4 animation-up" data-animate="slide-up"  loading="eager" 
                 alt="IDR" src='/img/img-micro.jpg' 
                 // sizes="(max-width: 480px) 500px, (max-width: 1024px) 700px, 1000px"
                 width={500} height={500} />
@@ -100,17 +103,17 @@ export default function Empresa() {
 
         {/* TIMELINE */}
 
-
       </section>
 
     {/* QUOTE */}
 
-      <section className="SectionWrap Dark" id="quote-innovation">
+      <section className="SectionWrap Dark" id="about-quote">
         <div className="CenterSection">
             <div className="QuoteContent animation-up" data-animate="slide-up">
-              <h5>
-              IDR, pionera en depuració biològica, impulsa la sostenibilitat i la innovació contínua en el tractament d'aigües per a la indústria de la pell.
-              </h5>
+              <p className='tagline'>VISIÓ DE FUTUR</p>
+              <h4>
+              Volem ser un referent internacional en sistemes avançats de depuració d’aigües industrials, liderant la transició del sector de la pell cap a un model d’economia circular de l’aigua d’impacte zero.
+              </h4>
             </div>
 
         </div>
@@ -118,7 +121,7 @@ export default function Empresa() {
 
           {/* COLLAB */}
 
-          <section className="SectionWrap" id="main-mission">
+          <section className="SectionWrap" id="about-collab">
         <div className="CenterSection">
           <div>
             <div className="CenterHeading animation-up" data-animate="slide-up">
@@ -193,7 +196,11 @@ export default function Empresa() {
 
         {/* SOCIS  */}
 
-        <section className="SectionWrap" id="main-socis">
+        <section>
+        <div className='Stripe Green'></div>
+      </section>
+
+        <section className="SectionWrap" id="about-socis">
         <div className="CenterSection">
           <div className="CenterContent">
             <div className="CenterWrap animation-up" data-animate="slide-up">
@@ -205,7 +212,7 @@ export default function Empresa() {
               </div>
               <div className="CenterWrap">
                 <Image className="animation-up mt-5" data-animate="slide-up"  loading="eager" 
-                  alt="IDR" src='/logos/ig-white.png' 
+                  alt="IDR" src='/logos/aj-black.png' 
                   // sizes="(max-width: 480px) 200px, (max-width: 1024px) 300px, 400px"
                   width={250} height={50} />
                 <p className='mt-3'>

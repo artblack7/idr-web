@@ -53,7 +53,7 @@ const ChosenPosts: React.FC<ChosenPostsProps> = ({ initialPosts, allPosts, tagFi
       {/* {offset < filteredPosts.length && ( */}
         <div className="LoadMore">
           <button onClick={handleLoadMore}>
-            Load More Posts
+            Veure més projectes
           </button>
         </div>
       {/* )} */}

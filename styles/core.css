@@ -65,11 +65,11 @@
   /* Size */
 
   --padding: 120px 6%;
-  --paddingHero: 0px 50px 0px 8%;
+  --paddingHero: 0px 100px 0px 8%;
   /* --sPadding: 80px 8%; */ 
   --divPadding: 100px 4%;   
   --padding-1024: 100px 6%;
-  --paddingHero-1024: 0px 4%;
+  --paddingHero-1024: 0px 6%;
   --padding-480: 80px 4%;
   --paddingHero-480: 0px 2%;
   --toolbar: 100px;
@@ -94,8 +94,10 @@
 
   /***/
 
-  --heroBlue: hsla(213, 100%, 19%, 0.9);
-  --heroGreen: hsla(203, 100%, 44%, 0.5);
+  --heroBlue: hsla(215, 100%, 19%, 0.9);
+  --heroBlue2: hsla(215, 100%, 27%, 0.9);
+  --heroGreen: hsla(178, 100%, 13%, 0.9);
+  --heroGreen2: hsla(178, 100%, 13%, 0.9); 
 
   --cyan: #00ede2; /*bluegrad*/
   --cyan2: #00eff3; /*bluegrad*/
@@ -126,11 +128,21 @@
   --brown: hsl(27, 75%, 62%); 
   --brown2:rgb(72, 34, 13); 
   --brown3:rgba(28, 15, 7, 0.903); 
+  --brown4:rgb(33, 20, 12); 
+
+
+  --red: #ff5b4d;
 
   /* ------------ Gradients -------------*/
   
   --mainGrad: linear-gradient(
     to right, 
+    var(--blue2),
+    var(--turq)
+  );
+
+  --mainGrad90: linear-gradient(
+    45deg, 
     var(--blue2),
     var(--turq)
   );
@@ -183,6 +195,7 @@
   --herobtn: 2px 5px 10px 0px rgba(47, 0, 135, 0.2);
   --herobtn-hover: 2px 5px 10px 0px rgba(47, 0, 135, 0.631);
   --sh-box: 0 0px 50px -12px rgba(0, 0, 0, 0.25);
+  --sh-btn: 0 10px 10px -5px rgba(0, 0, 0, 0.2);
 }
 
 /*///////////////////////////////////////////////////////////////////////////////////////*/
@@ -224,7 +237,7 @@ a, Link {
   cursor: pointer;
   outline: none;
   color: var(--white);
-  /* background: transparent; */
+  box-shadow: none;
 }
 
 a path {
@@ -290,7 +303,7 @@ h1 {
 
 h2 {
   font-size: 3rem;
-  line-height: 3.4rem;
+  line-height: 4rem;
   font-weight: 500;
   margin-bottom: 24px; 
   letter-spacing: 0.08rem; 
@@ -359,6 +372,10 @@ p {
 .text-xs {
   font-size: 0.75rem;
 }
+
+/* .smallcaps {
+  font-variant: small-caps;
+} */
 
 .MainGrad,
 .MainGrad span {
@@ -464,7 +481,7 @@ p {
   flex-direction: column;
 }
 
-.RowListWrap {
+/* .RowListWrap {
   display: flex;
   flex-direction: column;
   margin-top: 16px;
@@ -487,7 +504,7 @@ p {
   padding-right: 16px;
   width: 16px !important;
   height: 16px !important;
-}
+} */
 
 /* -------------------- COMMON ELEMENTS --------------------*/
 
@@ -514,6 +531,44 @@ p {
 }
 
 
+/* Arrow SVG */
+
+.arrow-left {
+  transform: rotate(-90deg);
+}
+
+.arrow-right {
+  transform: rotate(90deg);
+}
+
+.arrow-down {
+  transform: rotate(180deg);
+}
+
+.arrow-white {
+  transform: rotate(180deg);
+}
+
+.arrow {
+  --arrow-fill: #161b22;
+}
+
+.arrow.orange-fill {
+  --arrow-fill: #bd5e00;
+}
+
+.arrow.gray-fill {
+  --arrow-fill: #64748b;
+}
+
+.arrow.white-fill {
+  --arrow-fill: #ffffff;
+}
+
+.input-file {
+  display: none;
+}
+
 /* -------------------- BUTTONS  --------------------*/
 
 button {
@@ -532,16 +587,19 @@ button {
     min-width: 150px;
     width: max-content;
     border-radius: 6px;
-    transition: filter 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
     overflow: hidden;
     z-index: 1;
     font-weight: 400;
     letter-spacing: 0.02rem;
   }
     .AppBtn button:hover {
-      color: var(--tgreen2);
-      border-color: var(--tgreen2);
-      /* background-color: var(--tgreen3); */
+      /* color: var(--tgreen2); */
+      /* border-color: var(--tgreen2); */
+      background-color: var(--tgreen3);
+      border: 1.5px solid var(--tgreen3);
+      color: white;
+      transition: background-color 0.2s ease-in-out;
     }
 
   .AppBtn button svg {
@@ -561,7 +619,7 @@ button {
     fill: var(--dark);
   }
     .AppBtn button:hover svg path {
-      fill: var(--tgreen2);
+      fill: var(--white);
     }
 
   .AppBtn.Blue button,
@@ -622,13 +680,33 @@ button {
   .SmallBtnWrap {
     padding-top: 20px;
     width: fit-content;
+    transition: filter 0.2s ease-in-out, box-shadow 0.3s ease-in-out,
+    padding 0.2s ease-in-out;
+    border-radius: 30px;
   }
 
   .SmallBtnWrap:hover {
     filter: brightness(120%);
-    padding-top: 18px;
+    /* padding-top: 19px; */
     transition: filter 0.2s ease-in-out, box-shadow 0.3s ease-in-out,
     padding 0.2s ease-in-out;
+    box-shadow: var(--sh-btn);
+  }
+
+  .LoadMore {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .LoadMore button {
+    background: var(--darkGrad);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 24px;
+    border-radius: 30px;
+    color: white;
   }
 
 /* -------------------- TAGS  --------------------*/
@@ -642,48 +720,6 @@ button {
   letter-spacing: 0.02rem;
   padding: 0px 8px;
   margin-left: 8px;
-}
-
-.CodeTag {
-  background: var(--darkGrad);
-  font-size: 0.75rem;
-  padding: 6px 0;
-  min-width: 120px;
-  display: flex;
-  justify-content: center;
-  width: 80%;
-  border-radius: 30px;
-  color: var(--white);
-  letter-spacing: 0.04rem;
-  font-weight: 300;
-}
-
-/* DIVIDER LINES */
-
-.GradStripe {
-  width: 100%;
-  height: 14px;
-  background: var(--darkGrad);
-}
-
-.Stripe {
-  width: 100%;
-  height: 50px;
-} 
-
-.Stripe.Blue {
-  background: url("../public/bg/bluestripe.jpg") 
-  no-repeat top right / cover;
-}
-
-.Stripe.Green {
-  background: url("../public/bg/green-stripe.png") 
-  no-repeat center / cover;
-}
-
-.Stripe.Brown {
-  background: url("../public/img/leather.jpg") 
-  no-repeat center right / cover;
 }
 
 /* -------------------- ANIMATIONS --------------------*/

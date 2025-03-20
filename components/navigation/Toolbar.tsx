@@ -10,11 +10,12 @@ export const Toolbar = (props: any) => {
     const [burgerMenuOpen, setBurgerMenuOpen] = useState(false);
     const isDesktop = useMediaQuery('(min-width: 1025px)');
     const isMobile = useMediaQuery('(max-width: 480px)');
-    const toolbarClass = isMobile ? 'ToolbarWhite' : (props.useWhite ? 'ToolbarWhite' : 'Toolbar');
+    // const toolbarClass = props.useWhite ? 'ToolbarWhite' : 'Toolbar';
+    // const toolbarClass = isMobile ? 'ToolbarWhite' : (props.useWhite ? 'ToolbarWhite' : 'Toolbar');
 
     if (isDesktop) {
         return (
-            <div className={toolbarClass}>
+            <div className="Toolbar">
                 <div className="ToolbarInner">
                     <div className="AppName">
                         <Link href="/">

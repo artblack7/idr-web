@@ -196,21 +196,6 @@
   font-size: 12px;
 }
 
-.LoadMore {
-  padding-top: 10px;
-  display: flex;
-  justify-content: center;
-}
-
-.LoadMore button {
-  background: var(--blue);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 14px 24px;
-  border-radius: 30px;
-  color: white;
-}
 
 /* 
 .PagLinks {

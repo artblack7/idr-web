@@ -2,19 +2,7 @@
 /*//////////////////////// PAGES ////////////////////////*/
 /*********************************************************/
 
-/*//////////////////// COMMON STYLES ///////////////////*/
-
-/* section {
-  padding: 100px;
-} */
-
-/* .Main section > div {
-  margin: auto;
-}
-
-.Main section {
-  min-height: 500px;
-} */
+/*///////////// COMMON STYLES ///////////////////*/
 
 section .ButtonGroup,
 section .AppBtn,
@@ -22,9 +10,9 @@ section .LineBtn {
   margin-top: 16px;
 }
 
-/*//////////////////// SECTION TEMPLATES ///////////////////*/
+/*////////////// SECTION TEMPLATES //////////////*/
 
-/*--------------- Section Wrap -------------*/
+/*---------- Section Wrap ---------*/
 
 .SectionWrap {
   display: flex;
@@ -34,7 +22,6 @@ section .LineBtn {
   padding: var(--padding);
   /* border: 0.5px solid rgb(174, 174, 174) */
 }
-
 
 /*---- Base Section ----*/
 
@@ -51,7 +38,6 @@ section .LineBtn {
 .CenterSection {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   width: 100%;
   max-width: 1400px;
@@ -62,7 +48,6 @@ section .LineBtn {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
 }
 
 .CenterHeading {
@@ -79,7 +64,8 @@ section .LineBtn {
   align-items: center;
 }
 
-.CenterHeading h5 {
+.CenterHeading h5,
+.CenterHeading p {
   width: 100%;
   max-width: 1000px;
 }
@@ -101,7 +87,6 @@ section .LineBtn {
   width: 100%;
   margin: 0 auto;
 }
-
 
 /*---- Side Section ----*/
 
@@ -182,7 +167,13 @@ section .LineBtn {
   object-fit: cover;
 }
 
-/*--------------- Divided Section ---------------*/
+.SquareImgWrap img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/*-------- Divided Section -------*/
 
 .DivSectionWrap {
   display: flex;
@@ -229,8 +220,7 @@ section .LineBtn {
   width: 55%;
 }
 
-
-/*/////////// HERO SECTION ///////////*/
+/* -------- HERO SECTION --------*/
 
 .HeroVideo {
   position: absolute;
@@ -298,14 +288,15 @@ section .LineBtn {
   display: flex;
   flex-direction: column;
   z-index: 2;
-  width: 600px;
+  width: fit-content;
+  max-width: 700px;
+  min-width: 600px;
   padding: var(--paddingHero);
-  background-color: var(--heroBlue);
   border-radius: 0 150px 150px 0 ;
 }
 
 .HeroTitle {
-  padding: 40px 0 24px 0;
+  padding: 50px 0 30px 0;
 }
 
 .HeroSection .AppBtn button {
@@ -325,104 +316,136 @@ section .LineBtn {
 
 .HeroSection h6 {
   font-family: "poppins", sans-serif;
-  font-weight: 300;
-  /* text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); */
-  margin-bottom: 10px;
+  font-weight: 400;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  margin-bottom: 24px;
   letter-spacing: 0.06rem;
 }
+
+/*///////////////////// HERO ////////////////////*/
 
 #main-hero .HeroSection  {
   justify-content: center;
 }
 
+#innovation-hero .HeroContent,
+#projects-hero .HeroContent,
+#services-hero .HeroContent {
+  background: var(--heroBlue);
+}
+#tech-hero .HeroContent,
+#eco-hero .HeroContent,
+#about-hero .HeroContent {
+  background: var(--heroGreen);
+}
+
 #innovation-hero {
   background: linear-gradient(180deg, 
-  rgba(0, 58, 139, 0.9), transparent),
+  var(--heroBlue2), transparent),
   url(../public/img/projectes.jpg) no-repeat center/cover;
 }
 
 #projects-hero {
   background: linear-gradient(180deg, 
-  rgba(0, 58, 139, 0.9), transparent),
-  url(../public/img/projectes.jpg) no-repeat center/cover;
-}
-
-#tech-hero {
-  background: linear-gradient(180deg, 
-  rgba(0, 58, 139, 0.9), transparent),
-  url(../public/img/projectes.jpg) no-repeat center/cover;
-}
-
-#ecology-hero {
-  background: linear-gradient(180deg, 
-  rgba(0, 58, 139, 0.9), transparent),
+  var(--heroBlue2), transparent),
   url(../public/img/projectes.jpg) no-repeat center/cover;
 }
 
 #services-hero {
   background: linear-gradient(180deg, 
-  rgba(0, 58, 139, 0.9), transparent),
+  var(--heroBlue2), transparent),
   url(../public/img/projectes.jpg) no-repeat center/cover;
+}
+
+#tech-hero {
+  background: linear-gradient(180deg, 
+  var(--heroGreen2), transparent),
+  url(../public/img/leaf.jpg) no-repeat center/cover;
+}
+
+#eco-hero {
+  background: linear-gradient(180deg, 
+  var(--heroGreen2), transparent),
+  url(../public/img/leaf.jpg) no-repeat center/cover;
 }
 
 #about-hero {
   background: linear-gradient(180deg, 
-  rgba(0, 58, 139, 0.9), transparent),
-  url(../public/img/projectes.jpg) no-repeat center/cover;
+  var(--heroGreen2), transparent),
+  url(../public/img/leaf.jpg) no-repeat center/cover;
 }
 
-/* #innovation-hero {
-  background: linear-gradient(180deg, 
-  rgba(0, 58, 139, 0.9), 
-  transparent, transparent),
+/*////////////////// DIVIDERS ////////////////////*/
 
-  url(../public/img/projectes.jpg);
-  background-repeat: no-repeat;
-  background-position: 100% 100%;
-  background-position: center center;
-  background-size: cover;
-} */
-
-/* .HeroSectionWrap {
-	background: 
-  
-  linear-gradient(180deg, 
-  var(--blue4),
-  hsla(200, 79%, 44%, 0.1), 
-  transparent),
-
-  linear-gradient(90deg, 
-  hsla(200, 94%, 20%, 0.7),
-  hsla(200, 94%, 20%, 0.6),
-  hsla(200, 94%, 20%, 0.1),
-  transparent 100%),
-  
-  url(../public/img/splash.jpg);
-  
-  background-repeat: no-repeat;
-  background-position: 100% 100%;
-  background-position: center center;
-  background-size: cover;
-} */
-
-/* .HeroBgWrap {
-  position: absolute;
-  top: 0px;
-  right: 0;
-  z-index: -1;
-  width: 100%; 
-  display: flex; 
-  justify-content: center; 
-  overflow-x: hidden;
+.GradStripe {
+  width: 100%;
+  height: 14px;
+  background: var(--darkGrad);
 }
 
-.HeroBg {
-  position: relative;
-  top: 0;
-  right: 0;
-  z-index: 0;
-} */
+.Stripe {
+  width: 100%;
+  height: 50px;
+} 
 
+.Stripe.Blue {
+  background: url("../public/bg/bluestripe.jpg") 
+  no-repeat top right / cover;
+}
+
+.Stripe.Green {
+  background: url("../public/bg/green-stripe.png") 
+  no-repeat center / cover;
+}
+
+.Stripe.Brown {
+  background: url("../public/img/leather.jpg") 
+  no-repeat center right / cover;
+}
+
+/*//////////////////// QUOTES //////////////////*/
+
+.QuoteContent {
+  text-align: center;
+  padding: 50px ;
+}
+
+.QuoteContent h4 {
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 2.2rem;
+  letter-spacing: 0.03rem;
+}
+ 
+#innovation-quote {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(18, 33, 87, 0.6),
+      rgba(18, 33, 87, 0.6),
+      rgba(0, 0, 0, 0.2)),
+    url("../public/img/water2.jpg") 
+    no-repeat center right / cover;
+}
+
+#eco-quote {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(9, 49, 34, 0.6),
+      rgba(9, 49, 34, 0.6),
+      rgba(0, 0, 0, 0.2)),
+    url("../public/img/leaf.jpg") 
+    no-repeat center right / cover;
+}
+
+#about-quote {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(9, 49, 34, 0.6),
+      rgba(9, 49, 34, 0.6),
+      rgba(0, 0, 0, 0.2)),
+    url("../public/img/leaf.jpg") 
+    no-repeat center right / cover;
+}
 
 /*/////////////// MAIN PAGE /////////////////////*/
 
@@ -494,7 +517,7 @@ section .LineBtn {
   clip-path: polygon(0 0, 55% 0, 45% 100%, 0 100%);
 }
 
-/* QUISOM */
+/* ABOUT */
 
 #main-about {
   background: url("../public/img//img-pells.jpg") 
@@ -517,14 +540,7 @@ section .LineBtn {
 /* SOCIS */
 
 #main-socis {
-  /* background: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url("../public/img/leather.jpg") 
-    no-repeat center right / cover; */
-  background: rgb(210, 210, 210);
+  /* background: rgb(210, 210, 210); */
 }
 
 .center-subtitle {
@@ -540,20 +556,18 @@ section .LineBtn {
 }
 
 
-
 /*//////////////////////// SOSTENIBILITAT /////////////////////*/
 
 
-/* CICLE VIDA  */
-
-#eco-cicle .SideContent {
-  max-width: 1200px;
-  margin-top: 80px;
+#eco-cicle .CenterSection {
+  align-items: center;
 }
 
-#eco-cicle img {
-  /* height: 300px; */
-  /* width: auto; */
+#eco-cicle .Content {
+  max-width: 1200px;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
 }
 
 #eco-cicle .SideImg {
@@ -561,92 +575,72 @@ section .LineBtn {
 }
 #eco-cicle .SideTxt {
   width: 60%;
-  padding-left: 2%;
+  margin-left: 40px;
 }
 
-/* #eco-cicle .SideContent {
-  justify-content: center;
-} */
-
-
-/* COMPROMIS SOSTENIBLE  */
+#eco-compromis {
+  padding-bottom: 0;
+}
 
 .ZeroSection .CenterHeading {
   padding: 0 6%;
 }
 
-
-
-
-
-
-/*//////////////////////// PAGES /////////////////////*/
-
-.QuoteContent {
-  text-align: center;
-  padding: 50px ;
+#eco-cert .CenterSection {
+  max-width: 1000px;
 }
 
-.QuoteContent h4 {
-  margin-bottom: 0;
-  font-weight: 400;
-  font-size: 2.2rem;
-  letter-spacing: 0.03rem;
-}
- 
-#innovation-quote {
-  background: linear-gradient(
-      rgba(0, 0, 0, 0.2),
-      rgba(18, 33, 87, 0.6),
-      rgba(18, 33, 87, 0.6),
-      rgba(0, 0, 0, 0.2)),
-    url("../public/img/water2.jpg") 
-    no-repeat center right / cover;
+/*//////////////////////// SERVEIS /////////////////////*/
+
+
+#services-codes {
+  background: var(--grey);
+  border-bottom: 0.5px solid var(--grey3);
 }
 
-#eco-quote {
-  background: linear-gradient(
-      rgba(0, 0, 0, 0.2),
-      rgba(9, 49, 34, 0.6),
-      rgba(9, 49, 34, 0.6),
-      rgba(0, 0, 0, 0.2)),
-    url("../public/img/leaf.jpg") 
-    no-repeat center right / cover;
+#services-stripe {
+  display: none;
 }
 
+#services-contact {
+  /* border-top: 0.5px solid var(--grey2); */
+}
 
+#services-contact  {
+  background: url("../public/img/lab.jpg") 
+  no-repeat center right / auto 100% ;
+}
 
-
-/*--------------- Get Started  - #getstarted ---------------*/
-
-/* #getstarted .DivSectionWrap.DivLeft::before {
-  background: var(--blue);
+/* #services-contact .SideImg {
+  background: url("../public/img/lab.jpg") 
+  no-repeat center right / auto 100% ;
+  height: 100%;
+  width: 100%;
 } */
 
-#getstarted {
-  background: linear-gradient(105deg, var(--green2) 45%, var(--white) 45%);
-  justify-content: space-between;
-  min-height: 400px;
-  border: var(--brGreen);
+#services-contact::before {
+  content: ""; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
 }
 
-#getstarted .SideTxt {
-  width: 48%;
-}
+/*//////////////////////// EMPRESA /////////////////////*/
 
-#getstarted .SideImg {
-  width: 30%;
-  display: flex;
-}
 
-#getstarted .SideImg img {
-  width: 280px;
-}
+
+
+
 
 
 /*********************************************************/
 /*/////////////////// RESPONSIVE STYLES /////////////////*/
 /*********************************************************/
+
 
 @media (min-width: 1700px) {
   
@@ -662,21 +656,27 @@ section .LineBtn {
 
 }
 
-@media (max-width: 3000px) and (min-width: 1024px) {
+@media (min-width: 1024px) {
   .ImgWrap {
     width: calc(50% + ((100vw - 1024px) / (1500px - 1024px)) * 50%);
-    height: 400px;
+    height: 500px;
   }
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1400px) {
 
+  .DivSectionWrap {
+    min-height: 0px;
+    padding: var(--padding-1024);
+  }
 
   h3 {
     font-size: 3.2vw;
     line-height: 3.8vw;
-    margin-bottom: 3vw;
   }
+}
+
+@media (max-width: 1280px) {
 
     /* section,
   .HeroSection,
@@ -687,60 +687,35 @@ section .LineBtn {
   h2 {
     font-size: 3.5vw;
     line-height: 4vw;
-  }
-  
-
-
-  p {
-    font-size: 0.9rem;
-    letter-spacing: 0.02rem;
-  }  */
-
-  /* .SupportSection .CardGroup {
-    grid-template-columns: 1fr 1fr;
-    gap: 5%;
-    margin-bottom: 60px;
-  }
-
-  .SupportSection .CardWrap {
-    width: 100%;
-    min-height: 250px;
-  }
-
-  .SupportSection .CardTxt {
-    padding: 10%;  
-  } */
+  }*/
 
 }
 
 @media (max-width: 1024px) {
-
-  /* .Main section {
-    min-height: 470px;
-  } */
-
-  /* .Main section {
-    min-height: fit-content;
-  } */
 
   .SectionWrap,
   .DivSectionWrap {
     padding: var(--padding-1024);
   }
 
-  /* h1 {
-    font-size: 6vw;
-    line-height: 8vw;
+  .HeroSectionWrap {
+    height: 100vh;
+    margin-top: -80px;
+  }
+
+  .HeroSection {
+    height: 100vh;
   }
 
   h2 {
-    font-size: 4vw;
-    line-height: 5vw;
+    font-size: 5vw;
+    line-height: 5.8vw;
   }
-  h3, h4 {
-    font-size: 3.5vw;
-    line-height: 5vw;
-  } */
+
+  h3 {
+    font-size: 4.4vw;
+    line-height: 5.4vw;
+  }
 
   .Right {
     display: flex;
@@ -781,10 +756,25 @@ section .LineBtn {
       left: 0;
     }
 
-   .ImgWrap {
+    .ImgWrap {
       width: 100%;
     }
 
+  .QuoteContent h4 {
+    font-size: 3vw;
+    line-height: 4vw;
+  }
+
+  .HeroContent {
+    width: 75%;
+    min-width: 0;
+    padding: var(--paddingHero-1024);
+  }
+
+  .MiddleSpace {
+    margin-bottom: 80px;
+  }
+    
   .DivSectionWrap {
     min-height: 0;
   }
@@ -792,13 +782,33 @@ section .LineBtn {
   .DivSectionWrap img {
     border-radius: 8px;
   }
-
-  #eco-cicle .SideImg,
-  #eco-cicle .SideTxt {
-    width: 100%;
+  
+  #eco-cicle .SideImg {
+    width: 30%;
     padding-left: 0;
   }
 
+  #eco-cicle .SideTxt {
+    width: 70%;
+    padding-left: 0;
+  }
+
+  #eco-cicle .SideTxt h5 {
+    font-size: 22px;
+  }
+
+  #eco-cicle .SideTxt p {
+    font-size: 15px;
+    line-height: auto;
+  }
+
+  .SquareImgWrap img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+  }
 
   /* 
   .DivSectionWrap.DivRight::before,
@@ -806,7 +816,6 @@ section .LineBtn {
     background: linear-gradient(350deg, transparent 45%, white 40%) no-repeat
       center right / cover;
   } */
-
 
   .TextGroup {
     flex-direction: column;
@@ -818,7 +827,9 @@ section .LineBtn {
   }
 
   #main-services,
-  #main-innovation {
+  #main-innovation,
+  #main-about,
+  #services-contact {
     background: none;
   }
   
@@ -831,56 +842,106 @@ section .LineBtn {
     /* background: var(--tgreen5); */
     clip-path: none;
   } 
+
+  #main-about:before {
+    /* background: var(--brown4); */
+    clip-path: none;
+  } 
+
+  #services-contact::before {
+    clip-path: none;
+  }
+
+  #services-stripe {
+    display: block;
+  }
   
+}
+
+@media (max-width: 800px) {
+
+  #eco-cicle .Content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  #eco-cicle .SideImg,
+  #eco-cicle .SideTxt {
+    width: 90%;
+    margin: 0;
+  }
+
+  #eco-cicle img {
+    max-width: 300px;
+  }
+
+  #eco-cicle .SideTxt {
+    padding-top: 30px;
+    text-align: center;
+  }
+
+  #eco-cicle .SideTxt p{
+    font-size: 1rem;
+  }
+
 }
 
 @media (max-width: 640px) {
 
   h1 {
-    font-size: 8vw;
-    line-height: 10vw;
-  }
-
-  h2 {
-    font-size: 6vw;
-    line-height: 7vw;
-  }
-
-  h3, h4 {
-    font-size: 6vw;
-    line-height: 7vw;
-  }
-
-  /* .HeroContent h1 {
-    max-width: 60%;
-  } */
-
-
-}
-
-
-@media (max-width: 480px) {
-
-  h1 {
-    font-size: 12vw;
+    font-size: 14vw;
     line-height: 14vw;
   }
 
   h2 {
+    font-size: 6vw;
+    line-height: 7vw;
+  }
+
+  h3 {
+    font-size: 6vw;
+    line-height: 7vw;
+  }
+  
+  .HeroSection h6 {
+    margin-bottom: 14px;
+
+  }
+
+  .QuoteContent {
+    padding: 0px ;
+  }
+  
+  .QuoteContent h4 {
+    font-size: 4.6vw;
+    line-height: 6vw;
+  }
+  
+}
+
+@media (max-width: 480px) {
+
+  /* h1 {
+    font-size: 14vw;
+    line-height: 14vw;
+  } */
+
+  /* h2 {
     font-size: 7.8vw;
     line-height: 10vw;
-    padding-bottom: 10px;
-  }
+  } */
 
-  h3, h4 {
+  h3 {
     font-size: 7vw;
     line-height: 9vw;
-    padding-bottom: 8px;
+    /* padding-bottom: 8px; */
   }
-
-  /* p {
-    font-size: 1rem;
-  } */
+  
+  .HeroSectionWrap {
+    margin-top: -60px;
+  }
 
     /* .animation-up,
   .animation-up.slide-up {
@@ -965,3 +1026,72 @@ section .LineBtn {
 } 
 
 
+
+
+
+
+/* section {
+  padding: 100px;
+} */
+
+/* .Main section > div {
+  margin: auto;
+}
+
+.Main section {
+  min-height: 500px;
+} */
+
+
+
+/* #innovation-hero {
+  background: linear-gradient(180deg, 
+  rgba(0, 58, 139, 0.9), 
+  transparent, transparent),
+
+  url(../public/img/projectes.jpg);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-position: center center;
+  background-size: cover;
+} */
+
+/* .HeroSectionWrap {
+	background: 
+  
+  linear-gradient(180deg, 
+  var(--blue4),
+  hsla(200, 79%, 44%, 0.1), 
+  transparent),
+
+  linear-gradient(90deg, 
+  hsla(200, 94%, 20%, 0.7),
+  hsla(200, 94%, 20%, 0.6),
+  hsla(200, 94%, 20%, 0.1),
+  transparent 100%),
+  
+  url(../public/img/splash.jpg);
+  
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-position: center center;
+  background-size: cover;
+} */
+
+/* .HeroBgWrap {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  z-index: -1;
+  width: 100%; 
+  display: flex; 
+  justify-content: center; 
+  overflow-x: hidden;
+}
+
+.HeroBg {
+  position: relative;
+  top: 0;
+  right: 0;
+  z-index: 0;
+} */
