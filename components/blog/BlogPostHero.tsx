@@ -18,9 +18,9 @@ type IHeroProps = {
 const Hero = (props: IHeroProps) => {
   return (
     <>
-      <div className="PostHeader BlogHeader">
+      <div className="BlogHeader">
 
-        <header className="PostHeader">
+        {/* <header className="PostHeader">
           <div className="HeaderTxt">
             <h1>{props.title}</h1>
             <div className="PostMeta">
@@ -31,7 +31,7 @@ const Hero = (props: IHeroProps) => {
           <div className='PostHeaderImg'>
            <Image src={props.image ? props.image : BlogArchiveConfig.featured_image} alt={props.title} width={1425} height={748} />
           </div>
-        </header>
+        </header> */}
         <div className="BlogTags">
           <ul className="BlogTagsInner">
             <li>

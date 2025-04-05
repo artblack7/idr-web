@@ -6,8 +6,20 @@ import {Footer} from '../components/navigation/Footer';
 import AnimationTrigger from '../components/AnimationTrigger';
 import Arrow_Icon from '../components/SVG/Arrow_Icon';
 import { Meta } from '../components/head/Meta';
+import TechSlideshow from '../components/carousel/TechSlideshow';
+import RecentPosts from '../components/blog/RecentPosts';
+import { GetStaticProps } from 'next';
+import { BlogArchiveConfig, Config } from '../utils/Config';
+import { getAllPosts, getCategoryCollection, PostItems } from '../utils/Content';
 
-export default function Tech() {
+type IIndexProps = {
+  initialPosts: PostItems[];
+  allPosts: PostItems[];
+};
+
+export default function Tech(props: IIndexProps) {
+// export default function Tech() {
+  const { allPosts, initialPosts } = props;
 
   return (
     <main className='Main'>
@@ -25,7 +37,7 @@ export default function Tech() {
       <div className="HeroSectionWrap Dark" id="tech-hero">
           <div className="Overlay"></div>
         <div className="HeroSection">
-          <div className="HeroContent animation-up" data-animate="slide-up">
+          <div className="HeroContent Wide animation-up" data-animate="slide-up">
             <div className='HeroTitle'>
               <h6>LA PLANTA</h6>
               <h2>Pioners en depuració biològica per al tractament d’aigües</h2>
@@ -47,7 +59,7 @@ export default function Tech() {
           <div className="SideImg">
             <div className='ImgWrap'>
               <Image className="radius-4 nimation-up" data-animate="slide-up"  loading="eager" 
-              alt="IDR" src='/img/img-micro.jpg' 
+              alt="IDR" src='/img/img-uf.jpg' 
               // sizes="(max-width: 480px) 500px, (max-width: 1024px) 700px, 1000px"
               width={500} height={500} />
             </div>
@@ -91,11 +103,11 @@ export default function Tech() {
         </div>
 
           <div className="SideImg">
-            <div className='ImgWrap'>
+            <div className=''>
               <Image className="radius-4 nimation-up" data-animate="slide-up"  loading="eager" 
-              alt="IDR" src='/img/img-micro.jpg' 
+              alt="IDR" src='/img/img-bio.jpg' 
               // sizes="(max-width: 480px) 500px, (max-width: 1024px) 700px, 1000px"
-              width={500} height={500} />
+              width={650} height={650} />
             </div>
           </div>
         </div>
@@ -166,7 +178,7 @@ export default function Tech() {
             </div>
           </div>   
           </div>
-          
+
         </div>
 
       </section>
@@ -177,9 +189,9 @@ export default function Tech() {
       </section>
 
 
-    {/* LA PLANTA */}
+    {/* INSTALACIONS */}
 
-    <section className="SectionWrap" id="main-tech">
+    <section className="SectionWrap" id="tech-planta">
         <div className="CenterSection">
           <div className="CenterContent">
             <div className="CenterTxt animation-up" data-animate="slide-up">
@@ -199,8 +211,7 @@ export default function Tech() {
             </div>
 
             <div className="CenterImg">
-              <video muted loop playsInline
-              autoPlay
+              <video playsInline controls // autoPlay
               src="video/hero-video.mp4">
               </video>
             </div>
@@ -210,10 +221,37 @@ export default function Tech() {
         </div>
       </section>
 
+      {/* DIAPOSITIVES */}
 
+      <TechSlideshow/>
+
+      {/* POSTS */}
+
+        <section className="NewsSectionWrap">
+          <div className="NewsSection">
+            <div className="NewsContent">
+              <div className='NewsTitle'>
+                <h3>Projectes Destacats</h3>
+              </div>
+              <RecentPosts allPosts={allPosts}/>
+              </div>
+          </div>
+        </section>
 
       <Footer />
 
     </main>
   );
 }
+
+export const getStaticProps: GetStaticProps<IIndexProps> = async () => {
+  const posts = getAllPosts(Config.post_fields);
+
+  return {
+    props: {
+      allPosts: posts,
+      initialPosts: posts.slice(0, BlogArchiveConfig.blog_pagination_size),
+      categoryCollection: getCategoryCollection(['slug', 'tags']),    
+    },
+  };
+};

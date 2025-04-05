@@ -98,7 +98,7 @@ const Meta = (props: IMetaProps) => {
                       "@type": "Organization",
                       "logo": {
                         "@type": "ImageObject",
-                        "url": "${Config.url}${process.env.baseUrl}https://www.akashalabs.net/img/brand-img.png"
+                        "url": "${Config.url}${process.env.baseUrl}https://www.idr.cat/img/brand-img.png"
                       },
                       "name": "${props.pauthor ? props.pauthor : Config.author}"
                     },

@@ -150,7 +150,7 @@
   --darkGrad: linear-gradient(
     to right, 
     var(--blue3),
-    var(--turq2)
+    var(--tgreen3)
   );
 
   --blueGrad: linear-gradient(
@@ -186,7 +186,7 @@
   --sh-m: 4px 4px 6px 0px rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   --sh-l: 0 10px 10px -5px rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   --sh-xl: 0 10px 20px -5px rgba(0, 0, 0, 0.03), 0 10px 10px -5px rgba(0, 0, 0, 0.02);
-  --sh-2xl: 0 10px 25px -5px rgba(0, 0, 0, 0.15);
+  --sh-2xl: 5px 10px 20px -5px rgba(0, 0, 0, 0.5);
 
   /* --sh-img: 0px 5px 15px rgb(30, 20, 100, 0.1);
   --sh-img2: 0px 5px 10px rgba(45, 38, 92, 0.1); */
@@ -196,6 +196,8 @@
   --herobtn-hover: 2px 5px 10px 0px rgba(47, 0, 135, 0.631);
   --sh-box: 0 0px 50px -12px rgba(0, 0, 0, 0.25);
   --sh-btn: 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+  --sh-toolbar: 0 10px 30px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.02);
+
 }
 
 /*///////////////////////////////////////////////////////////////////////////////////////*/
@@ -242,7 +244,7 @@ a, Link {
 
 a path {
   fill: var(--dark);
-  fill-rule: evenodd;
+  fillRule: evenodd;
 }
 
 main {
@@ -621,7 +623,7 @@ button {
     .AppBtn button:hover svg path {
       fill: var(--white);
     }
-
+    
   .AppBtn.Blue button,
   .AppBtn.Green button,
   .AppBtn.Brown button {

@@ -6,7 +6,7 @@ import Head from 'next/head';
 import Link from "next/link";
 
 export default function MainHeader(props: any) {
-  const [isVisible ] = useElementOnScreen({
+  const [containerRef, isVisible ] = useElementOnScreen({
     root: null,
     rootMargin: "0px",
     threshold: 0
@@ -16,13 +16,13 @@ export default function MainHeader(props: any) {
 
   // const headerClass = isMobile ? "header-top-w" : (props.useWhite ? "header-top-w" : "header-top");
   // const headerScrolledClass = isMobile ? "header-scrolled-w" : (props.useWhite ? "header-scrolled-w" : "header-scrolled");
-  const headerClass = "header-top";
+  const headerClass = props.useWhite ? "header-top-w" : "header-top";
   const headerScrolledClass = "header-scrolled";
 
   return (
     <>
     {props.meta}
-
+    <div ref={containerRef}></div>
         <div className={isVisible ? headerClass : headerScrolledClass}>
           
         <Toolbar useWhite={props.useWhite} {...props}>

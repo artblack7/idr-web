@@ -11,21 +11,31 @@ export const Config = {
   url: process.env.SITE_URL,
   stripped_url: process.env.SITE_URL ? stripUrl(process.env.SITE_URL) : '',
   site_name: 'IDR',
-  title: 'Home',
-  description: 'Akasha Labs │ Innovative Front-End Solutions to bring your project to life.',
-  locale: 'en',
-  author: 'Team',
-  author_image: 'https://akashalabs.net/logos/team.png',
+  title: 'IDR',
+  description: 'IDR│ Igualadina de Depuració i Restauració.',
+  locale: 'cat',
+  author: 'IDR',
+  author_image: 'https://idr.cat/posts/thumb.png',
   blog_pagination_size: 3,
-  post_fields: ['title', 'description', 'date', 'image', 'tags', 'slug'],
-  metaImg: 'https://akashalabs.net/logos/thumb.png',
+  post_fields: [
+    'title',
+    'metaTitle',
+    'description',
+    'date',
+    'modified_date',
+    'pauthor', 
+    'author_image',
+    'image',
+    'tags',
+    'slug',
+  ],  metaImg: 'https://idr.cat/posts/thumb.png',
 };
 
 export const BlogArchiveConfig = {
-  title: 'The Blog',
-  description: "Don't just keep up —Lead the way with cutting-edge insights at your fingertips",
+  title: 'Projectes',
+  description: "Projectes I+D",
   blog_pagination_size: 6,
-  featured_image: 'https://akashalabs.net/bg/waves-hpay.jpg',
+  featured_image: 'https://idr.cat/posts/thumb.jpg',
 };
 
 export const SitemapConfig = {

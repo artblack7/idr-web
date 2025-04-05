@@ -191,7 +191,7 @@ section .LineBtn {
   height: 100%;
 }
 
-.DivSectionWrap.DivRight::before {
+/* .DivSectionWrap.DivRight::before {
   background: linear-gradient(105deg, transparent 50%, white 50%) no-repeat
     center right / cover;
 }
@@ -199,7 +199,7 @@ section .LineBtn {
 .DivSectionWrap.DivLeft::before {
   background: linear-gradient(105deg, white 50%, transparent 50%) no-repeat
     center right / cover;
-}
+} */
 
 .DivSection {
   display: flex;
@@ -243,11 +243,11 @@ section .LineBtn {
   transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
   z-index: 0;
   background: linear-gradient(180deg, 
-  rgba(11, 15, 22, 0.7),
-  rgba(11, 15, 22, 0.524),
-  rgba(0, 0, 0, 0.3),
+  rgba(11, 15, 22, 0.8),
+  rgba(11, 15, 22, 0.4),
   rgba(0, 0, 0, 0.2),
   rgba(0, 0, 0, 0.1),
+  rgba(0, 0, 0, 0),
   rgba(0, 0, 0, 0), 
   rgba(0, 0, 0, 0));
 }
@@ -288,15 +288,21 @@ section .LineBtn {
   display: flex;
   flex-direction: column;
   z-index: 2;
-  width: fit-content;
-  max-width: 700px;
-  min-width: 600px;
+  width: max-content;
+  max-width: 600px;
+  min-width: 550px;
   padding: var(--paddingHero);
   border-radius: 0 150px 150px 0 ;
 }
 
+.HeroContent.Wide {
+  max-width: 680px;
+}
+
+
 .HeroTitle {
   padding: 50px 0 30px 0;
+
 }
 
 .HeroSection .AppBtn button {
@@ -341,39 +347,46 @@ section .LineBtn {
 
 #innovation-hero {
   background: linear-gradient(180deg, 
-  var(--heroBlue2), transparent),
-  url(../public/img/projectes.jpg) no-repeat center/cover;
-}
-
-#projects-hero {
-  background: linear-gradient(180deg, 
-  var(--heroBlue2), transparent),
-  url(../public/img/projectes.jpg) no-repeat center/cover;
+  var(--heroBlue2), transparent, transparent),
+  url(../public/bg/bg-innovation.jpg) no-repeat center/cover;
 }
 
 #services-hero {
   background: linear-gradient(180deg, 
-  var(--heroBlue2), transparent),
-  url(../public/img/projectes.jpg) no-repeat center/cover;
+  var(--heroBlue2), transparent, transparent),
+  url(../public/img/bg-residus.jpg) no-repeat center/cover;
 }
 
 #tech-hero {
   background: linear-gradient(180deg, 
-  var(--heroGreen2), transparent),
-  url(../public/img/leaf.jpg) no-repeat center/cover;
+  var(--heroGreen2), transparent, transparent),
+  url(../public/bg/bg-tech.jpg) no-repeat bottom/cover;
 }
 
 #eco-hero {
   background: linear-gradient(180deg, 
-  var(--heroGreen2), transparent),
-  url(../public/img/leaf.jpg) no-repeat center/cover;
+  var(--heroGreen2), transparent, transparent, transparent),
+  url(../public/img/bg-eco.jpg) no-repeat center/cover;
 }
 
 #about-hero {
   background: linear-gradient(180deg, 
-  var(--heroGreen2), transparent),
-  url(../public/img/leaf.jpg) no-repeat center/cover;
+  var(--heroGreen2), transparent, transparent),
+  url(../public/img/bg-about.jpg) no-repeat top/cover;
 }
+
+
+#projects-hero {
+  background: linear-gradient(180deg, 
+  var(--heroBlue2), transparent),
+  url(../public/img/water2.jpg) no-repeat center/cover;
+
+}
+
+#projects-hero .HeroSection {
+  height: 600px;
+}
+
 
 /*////////////////// DIVIDERS ////////////////////*/
 
@@ -389,17 +402,17 @@ section .LineBtn {
 } 
 
 .Stripe.Blue {
-  background: url("../public/bg/bluestripe.jpg") 
+  background: url("../public/bg/blue-stripe.jpg") 
   no-repeat top right / cover;
 }
 
 .Stripe.Green {
-  background: url("../public/bg/green-stripe.png") 
+  background: url("../public/bg/green-stripe.jpg") 
   no-repeat center / cover;
 }
 
 .Stripe.Brown {
-  background: url("../public/img/leather.jpg") 
+  background: url("../public/bg/brown-stripe.jpg") 
   no-repeat center right / cover;
 }
 
@@ -440,10 +453,10 @@ section .LineBtn {
 #about-quote {
   background: linear-gradient(
       rgba(0, 0, 0, 0.2),
-      rgba(9, 49, 34, 0.6),
-      rgba(9, 49, 34, 0.6),
+      rgba(49, 20, 9, 0.6),
+      rgba(49, 20, 9, 0.6),
       rgba(0, 0, 0, 0.2)),
-    url("../public/img/leaf.jpg") 
+    url("../public/img/leather3.jpg") 
     no-repeat center right / cover;
 }
 
@@ -453,12 +466,23 @@ section .LineBtn {
 
 #main-tech {
   display: flex;
+  background: 
+  url("../public/bg/bg-main.jpg") 
+  no-repeat bottom right / 100%;
+  /* padding-bottom: 100px; */
 }
 
-#main-tech video {
+#main-tech .CenterSection {
+  max-width: 1200px;
+}
+
+section video {
   display: flex;
   width: 100%;
   border-radius: 10px;
+  /* border: 6px solid var(--tgreen4); */
+  box-shadow: var(--sh-);
+  margin-top: 20px;
 }
 
 .TextGroup {
@@ -490,18 +514,18 @@ section .LineBtn {
     linear-gradient( var(--blue5), var(--blue5)),
     url("../public/img/water2.jpg") no-repeat center / cover;
   /* background-blend-mode: multiply; */
-  clip-path: polygon(0 0, 55% 0, 45% 100%, 0 100%);
+  clip-path: polygon(0 0, 55% 0, 45% 101%, 0 101%);
 }
 
-/* #innovation::before {
+#innovation::before {
   background: linear-gradient(105deg, var(--blue4) 53%, transparent 47%) no-repeat
   center right / cover;
-}  */ 
+}  
 
 /* RESIDUS */
 
 #main-services {
-  background: url("../public/img/residus.jpg") 
+  background: url("../public/img/img-residus.jpg") 
   no-repeat center right / auto 100% ;
 }
 
@@ -514,8 +538,8 @@ section .LineBtn {
   height: 100%;
   background: 
     url("../public/bg/bg-green.png") no-repeat center left / cover;
-  clip-path: polygon(0 0, 55% 0, 45% 100%, 0 100%);
-}
+  clip-path: polygon(0 0, 55% 0, 45% 101%, 0 101%);
+  }
 
 /* ABOUT */
 
@@ -534,8 +558,8 @@ section .LineBtn {
   background: 
     linear-gradient( var(--brown3), var(--brown3)),
     url("../public/img/leather.jpg") no-repeat center / cover;
-  clip-path: polygon(0 0, 55% 0, 45% 100%, 0 100%);
-}
+  clip-path: polygon(0 0, 55% 0, 45% 101%, 0 101%);
+  }
 
 /* SOCIS */
 
@@ -555,6 +579,9 @@ section .LineBtn {
   font-size: 3.8rem;
 }
 
+#tech-planta .CenterSection {
+  max-width: 1200px;
+}
 
 /*//////////////////////// SOSTENIBILITAT /////////////////////*/
 
@@ -607,7 +634,7 @@ section .LineBtn {
 }
 
 #services-contact  {
-  background: url("../public/img/lab.jpg") 
+  background: url("../public/img/img-contacte.jpg") 
   no-repeat center right / auto 100% ;
 }
 
@@ -642,24 +669,24 @@ section .LineBtn {
 /*********************************************************/
 
 
-@media (min-width: 1700px) {
-  
+@media (min-width: 1800px) {
+/*   
   #innovation {
-    background: url("../public/img/lab.jpg") 
+    background: url("../public/img/img-lab.jpg") 
     no-repeat center right / auto 40vw;
   }
   
   #innovation::before {
     background: linear-gradient(105deg, var(--blue4) 60vw, transparent 40vw) no-repeat
     center right / cover;
-  } 
+  }  */
 
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .ImgWrap {
     width: calc(50% + ((100vw - 1024px) / (1500px - 1024px)) * 50%);
-    height: 500px;
+    height: 440px;
   }
 }
 
@@ -758,6 +785,7 @@ section .LineBtn {
 
     .ImgWrap {
       width: 100%;
+      height: auto;
     }
 
   .QuoteContent h4 {

@@ -13,14 +13,13 @@ import RecentPosts from '../components/blog/RecentPosts';
 import { GetStaticProps } from 'next';
 import { BlogArchiveConfig, Config } from '../utils/Config';
 import { getAllPosts, getCategoryCollection, PostItems } from '../utils/Content';
-import Table from '../components/Table';
 
-type IAboutProps = {
+type IIndexProps = {
   initialPosts: PostItems[];
   allPosts: PostItems[];
 };
 
-export default function Home(props: IAboutProps) {
+export default function Home(props: IIndexProps) {
 // export default function Home() {
   const isMobile = useMediaQuery('(max-width: 480px)');
   const isTablet = useMediaQuery('(max-width: 1024px)');
@@ -129,13 +128,13 @@ export default function Home(props: IAboutProps) {
               </div>
 
              <div className="AppBtn Black">
-               <Link href="/empresa"><button>Veure la planta<Arrow_Icon /></button></Link>
+               <Link href="/laplanta"><button>Veure la planta<Arrow_Icon /></button></Link>
              </div>
             </div>
 
             <div className="CenterImg">
-              <video muted loop playsInline
-              autoPlay
+              <video playsInline controls
+              
               src="video/hero-video.mp4">
               </video>
             </div>
@@ -231,7 +230,7 @@ export default function Home(props: IAboutProps) {
               Afegim valor a la indústria catalana oferint un servei especialitzat de depuració d’aigües per a empreses externes, amb tecnologia avançada i processos sostenibles.
               </p>
               <div className="AppBtn Green">
-                <Link href="/gestioresidus"><button>Més Informació<Arrow_Icon /></button></Link>
+                <Link href="/serveis"><button>Més Informació<Arrow_Icon /></button></Link>
               </div>
             </div>
 
@@ -270,7 +269,7 @@ export default function Home(props: IAboutProps) {
               <div className="CardWrap animation-up" data-animate="slide-up">
                 <div className="CardImg">
                 <Image className="animation-up" data-animate="slide-up"  loading="eager" 
-                alt="img" src='/icons/mission-2.png' width={100} height={100}
+                alt="img" src='/img/mission-1.jpg' width={500} height={500}
                 // sizes="(max-width: 480px) 500px, (max-width: 1024px) 700px, 1000px"
                  />           
                </div>
@@ -284,7 +283,7 @@ export default function Home(props: IAboutProps) {
               <div className="CardWrap animation-up" data-animate="slide-up">
                 <div className="CardImg">
                 <Image className="animation-up" data-animate="slide-up"  loading="eager" 
-                alt="img" src='/icons/mission-1.png' width={100} height={100}
+                alt="img" src='/img/mission-2.jpg' width={500} height={500}
                 // sizes="(max-width: 480px) 500px, (max-width: 1024px) 700px, 1000px"
                  />           
                 </div>
@@ -299,7 +298,7 @@ export default function Home(props: IAboutProps) {
               <div className="CardWrap animation-up" data-animate="slide-up">
                 <div className="CardImg">
                 <Image className="animation-up" data-animate="slide-up"  loading="eager" 
-                alt="img" src='/icons/mission-3.png' width={100} height={100}
+                alt="img" src='/img/mission-3.jpg' width={500} height={500}
                 // sizes="(max-width: 480px) 500px, (max-width: 1024px) 700px, 1000px"
                  />           
                 </div>
@@ -329,7 +328,7 @@ export default function Home(props: IAboutProps) {
               Impulsem projectes I+D per optimitzar els processos existents i implementar tecnologies innovadores que permetin una depuració cada cop més completa i sostenible, avançant cap a un model d’economia circular i impacte zero.              
               </p>
               <div className="AppBtn Blue">
-                <Link href="/empresa"><button>Veure Projectes<Arrow_Icon /></button></Link>
+                <Link href="/innovacio"><button>Veure Projectes<Arrow_Icon /></button></Link>
               </div>
             </div>
 
@@ -368,7 +367,7 @@ export default function Home(props: IAboutProps) {
 }
 
 
-export const getStaticProps: GetStaticProps<IAboutProps> = async () => {
+export const getStaticProps: GetStaticProps<IIndexProps> = async () => {
   const posts = getAllPosts(Config.post_fields);
 
   return {

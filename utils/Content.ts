@@ -43,7 +43,6 @@ export function getPostBySlug(slug: string, fields: string[] = []) {
     slug: '',
   };
 
-  // Ensure only the minimal needed data is exposed
   fields.forEach((field) => {
     if (field === 'slug') {
       items[field] = realSlug;
@@ -64,7 +63,6 @@ export function getAllPosts(fields: string[] = []) {
   const slugs = getPostSlugs();
   const posts = slugs
     .map((slug) => getPostBySlug(slug, fields))
-    // sort posts by date in descending order
     .sort((post1, post2) => new Date(post2.date).getTime() - new Date(post1.date).getTime());
   return posts;
 }

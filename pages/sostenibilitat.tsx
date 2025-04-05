@@ -48,7 +48,7 @@ export default function Sostenibilitat() {
             <div className="SideImg">
               <div className='ImgWrap'>
                 <Image className="radius-4 nimation-up" data-animate="slide-up"  loading="eager" 
-                alt="IDR" src='/img/img-micro.jpg' 
+                alt="IDR" src='/img/img-drop.jpg' 
                 // sizes="(max-width: 480px) 500px, (max-width: 1024px) 700px, 1000px"
                 width={500} height={500} />
               </div>
@@ -94,7 +94,7 @@ export default function Sostenibilitat() {
             <div className="SideImg">
               <div className='ImgWrap'>
                 <Image className="radius-4 nimation-up" data-animate="slide-up"  loading="eager" 
-                alt="IDR" src='/img/img-micro.jpg' 
+                alt="IDR" src='/img/img-riu.jpg' 
                 // sizes="(max-width: 480px) 500px, (max-width: 1024px) 700px, 1000px"
                 width={500} height={500} />
               </div>
@@ -180,7 +180,7 @@ export default function Sostenibilitat() {
               <div className="SideImg">
                 <div className='SquareImgWrap'>
                   <Image className="radius-3 animation-up" data-animate="slide-up"  loading="eager" 
-                  alt="IDR" src='/img/img-micro.jpg' 
+                  alt="IDR" src='/img/cicle-1.jpg' 
                   // sizes="(max-width: 480px) 500px, (max-width: 1024px) 700px, 1000px"
                   width={500} height={500} />
                 </div>
@@ -198,14 +198,14 @@ export default function Sostenibilitat() {
               <div className="SideImg">
                <div className='SquareImgWrap'>
                   <Image className="radius-3 animation-up" data-animate="slide-up"  loading="eager" 
-                  alt="IDR" src='/img/img-micro.jpg' 
+                  alt="IDR" src='/img/cicle-2.jpg' 
                   // sizes="(max-width: 480px) 500px, (max-width: 1024px) 700px, 1000px"
                   width={500} height={500} />
                 </div>
               </div>
               
               <div className="SideTxt">
-                <h5>Compromís amb l’economia circular</h5>
+                <h5>Valorització de subproductes</h5>
                 <p>
                 Des de fa segles, els adobers han recuperat aquest subproducte de la indústria alimentària i el reciclen per transformar-lo en béns de consum sostenible d’alt valor afegit. Aquesta pràctica no només redueix residus, sinó que també promou l’ús responsable dels recursos.                </p>
               </div>
@@ -215,14 +215,14 @@ export default function Sostenibilitat() {
               <div className="SideImg">
                 <div className='SquareImgWrap'>
                   <Image className="radius-3 animation-up" data-animate="slide-up"  loading="eager" 
-                  alt="IDR" src='/img/img-micro.jpg' 
+                  alt="IDR" src='/img/cicle-3.jpg' 
                   // sizes="(max-width: 480px) 500px, (max-width: 1024px) 700px, 1000px"
                   width={500} height={500} />
                 </div>
               </div>
               
               <div className="SideTxt">
-                <h5>Compromís amb l’economia circular</h5>
+                <h5>Camí cap al residu zero</h5>
                 <p>
                 Els adobers catalans, agrupats a Leather Cluster Barcelona, mantenen el seu compromís amb el model de residu zero. El clúster impulsa diversos projectes per optimitzar la valorització dels subproductes i residus generats durant tot el procés de producció dins de la cadena de valor de la indústria de la pell.
                 </p>
@@ -339,7 +339,7 @@ export default function Sostenibilitat() {
                 <div className="CardTopCert">
                   <div className="CardImg">
                     <Image className="animation-up" data-animate="slide-up" loading="eager" 
-                    alt="img" src='/logos/tradebe.png' width={250} height={200} />           
+                    alt="img" src='/logos/enac1.png' width={250} height={200} />           
                   </div>
                 </div>
                 <div className="CardBottomCert">
@@ -360,9 +360,9 @@ export default function Sostenibilitat() {
                       Millora contínua i adaptació constant.
                       </li>
                     </ul>
-                    <div className="SmallBtnWrap">
+                    {/* <div className="SmallBtnWrap">
                       <Link href="/"><button className='SmallBtn'>Descarregar PDF</button></Link>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -373,7 +373,7 @@ export default function Sostenibilitat() {
                 <div className="CardTopCert">
                 <div className="CardImg">
                   <Image className="animation-up" data-animate="slide-up" loading="eager" 
-                  alt="img" src='/logos/tradebe.png' width={250} height={200} />           
+                  alt="img" src='/logos/enac1.png' width={250} height={200} />           
                 </div>
                 </div>
                 <div className="CardBottomCert">
@@ -395,9 +395,6 @@ export default function Sostenibilitat() {
                       Millora contínua en l'eficiència ambiental.
                       </li>
                     </ul>
-                    <div className="SmallBtnWrap">
-                      <Link href="/"><button className='SmallBtn'>Descarregar PDF</button></Link>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -408,7 +405,7 @@ export default function Sostenibilitat() {
                 <div className="CardTopCert">
                 <div className="CardImg">
                   <Image className="animation-up" data-animate="slide-up" loading="eager" 
-                  alt="img" src='/logos/tradebe.png' width={250} height={200} />           
+                  alt="img" src='/logos/enac1.png' width={250} height={200} />           
                 </div>
                 </div>
                 <div className="CardBottomCert">
@@ -430,9 +427,6 @@ export default function Sostenibilitat() {
                       Millora contínua en la seguretat de les operacions.
                       </li>
                     </ul>
-                    <div className="SmallBtnWrap">
-                      <Link href="/"><button className='SmallBtn'>Descarregar PDF</button></Link>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -443,7 +437,7 @@ export default function Sostenibilitat() {
                 <div className="CardTopCert">
                 <div className="CardImg">
                   <Image className="animation-up" data-animate="slide-up" loading="eager" 
-                  alt="img" src='/logos/tradebe.png' width={250} height={200} />           
+                  alt="img" src='/logos/endesa.png' width={250} height={200} />           
                 </div>
                 </div>
                 <div className="CardBottomCert">
@@ -453,9 +447,7 @@ export default function Sostenibilitat() {
                     <p>
                     A la nostra depuradora, estem compromesos amb la sostenibilitat i el respecte pel medi ambient. Així, tota la nostra energia prové de fonts 100% renovables. La CNMC acredita oficialment que utilitzem exclusivament energia neta, reflectint el nostre compromís amb la reducció de l'impacte ambiental.
                     </p>
-                    <div className="SmallBtnWrap">
-                      <Link href="/"><button className='SmallBtn'>Descarregar PDF</button></Link>
-                    </div>
+
                   </div>
                 </div>
               </div>

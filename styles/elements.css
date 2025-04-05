@@ -89,15 +89,21 @@
 }
 
   .CardTop.Collab1 {
-    background: url("../public/img/leather.jpg") 
+    background: linear-gradient(
+      rgba(49, 20, 9, 0.3),
+      rgba(49, 20, 9, 0.3)),
+      url("../public/img/leather3.jpg") 
     no-repeat center right / cover; 
   }
   .CardTop.Collab2 {
-    background: url("../public/img/leaf.jpg") 
+    background: linear-gradient(
+      rgba(0, 50, 51, 0.3),
+      rgba(0, 50, 31, 0.3)),
+    url("../public/img/img-tradebe.jpg") 
     no-repeat center right / cover; 
   }
   .CardTop.Collab3 {
-    background: url("../public/img/water.jpg") 
+    background: url("../public/img/img-a3.jpg") 
     no-repeat center right / cover; 
   }
 
@@ -171,7 +177,7 @@
   display: flex;
   flex-direction: column;
   flex: 2;
-  padding: 30px;
+  padding: 40px;
   border: 0.5px solid;
   border-color: var(--grey2);
   background: var(--white);
@@ -212,9 +218,20 @@
   margin-top: 20px;
 }
 
-.CardGroup.Mission img {
+/* .CardGroup.Mission img {
   width: 80px;
   height: auto;
+} */
+
+
+.CardGroup.Mission img {
+  width: 100%;
+  height: auto;
+  width: 260px;
+  height: 260px;
+  object-fit:cover;
+  border-radius: 50%;
+
 }
 
 /* Numbers Cards */
@@ -511,6 +528,25 @@ input:focus {
 
 }
 
+
+@media (max-width: 1200px) {
+
+  .CardGroup.Numbers {
+    margin-top: 40px;
+  }
+  
+  .CardGroup.Numbers .CardWrap {
+    margin-top: 60px;
+  }
+  
+  .CardGroup.Numbers h1 {
+    font-size: 4rem !important;
+    margin-bottom: 0;
+  }
+
+}
+
+/* 
 @media (min-width: 800px) and (max-width: 1024px) {
 
   .CardGroup.Numbers {
@@ -529,7 +565,6 @@ input:focus {
     
   .CardConcept {
     text-align: left;
-    /* width: 100%; */
     width: 100%;
     max-width: 400px;
   }
@@ -540,13 +575,12 @@ input:focus {
 
   .CardLine {
     width: 4px;
-    /* margin: 0 40px; */
     height: 160px;
     background: var(--mainGrad90);
     margin-bottom: 0px;
   }
 
-}
+} */
 
 @media (max-width: 1024px) {
 
@@ -558,19 +592,6 @@ input:focus {
   .CardGroup.Squares {
     display: grid;
     grid-template-columns: 1fr 1fr;
-  }
-
-  .CardGroup.Numbers {
-    margin-top: 40px;
-  }
-
-  .CardGroup.Numbers .CardWrap {
-    margin-top: 60px;
-  }
-
-  .CardGroup.Numbers h1 {
-    font-size: 3rem !important;
-    margin-bottom: 0;
   }
 
   .form-container {
@@ -587,7 +608,7 @@ input:focus {
 
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
 
   .CardGroup.Numbers {
     flex-direction: column;
@@ -645,7 +666,7 @@ input:focus {
   
   .CardTopCert {
     align-items: center;
-    min-height: 160px;
+    min-height: 200px;
   }
   
   .CardBottomCert {

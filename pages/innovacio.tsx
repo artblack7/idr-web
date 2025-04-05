@@ -14,12 +14,12 @@ import { BlogArchiveConfig, Config } from '../utils/Config';
 import { getAllPosts, getCategoryCollection, PostItems } from '../utils/Content';
 import BlogArchive from '../components/blog/BlogArchive';
 
-type IAboutProps = {
+type IIndexProps = {
   initialPosts: PostItems[];
   allPosts: PostItems[];
 };
 
-export default function Innovation(props: IAboutProps) {
+export default function Innovation(props: IIndexProps) {
   const { allPosts, initialPosts } = props;
 
   return (
@@ -92,19 +92,19 @@ export default function Innovation(props: IAboutProps) {
               A través de l’investigació en tecnologies avançades com la nanofiltració i l’osmosis inversa, busquem aconseguir una depuració cada vegada més completa i eficient, orientada cap a un model d’impacte ambiental mínim, i avançant cap a l’impacte zero.
               </p>
               <p>
-              Lorem Ipsum
+              Aquests sistemes eliminen contaminants com sals, metalls pesants i compostos orgànics, millorant l’eficiència i reduint el consum d’energia i químics. Això permet una gestió més sostenible de l’aigua, alineada amb els objectius ambientals globals.
               </p>
 
-            <div className="AppBtn">
+            {/* <div className="AppBtn">
               <Link href="/empresa"><button>Saber més<Arrow_Icon /></button></Link>
-            </div>
+            </div> */}
 
           </div>
 
             <div className="SideImg">
               <div className='ImgWrap'>
                 <Image className="radius-4 nimation-up" data-animate="slide-up"  loading="eager" 
-                alt="IDR" src='/img/img-micro.jpg' 
+                alt="IDR" src='/img/img-barometre.jpg' 
                 // sizes="(max-width: 480px) 500px, (max-width: 1024px) 700px, 1000px"
                 width={500} height={500} />
               </div>
@@ -152,7 +152,7 @@ export default function Innovation(props: IAboutProps) {
 
               <div className="CardWrap animation-up" data-animate="slide-up">
                 <div className="CardNumber">
-                  <h1 className='MainGrad'>12M €</h1>
+                  <h1 className='MainGrad'>+12</h1>
                 </div>
                   <div className='CardLineWrap'>
                     <div className="CardLine"></div>
@@ -164,7 +164,7 @@ export default function Innovation(props: IAboutProps) {
 
               <div className="CardWrap animation-up" data-animate="slide-up">
                 <div className="CardNumber">
-                  <h1 className='MainGrad'>12M €</h1>
+                  <h1 className='MainGrad'>+7</h1>
                 </div>
                   <div className='CardLineWrap'>
                     <div className="CardLine"></div>
@@ -176,7 +176,7 @@ export default function Innovation(props: IAboutProps) {
 
               <div className="CardWrap animation-up" data-animate="slide-up">
                 <div className="CardNumber">
-                  <h1 className='MainGrad'>12M €</h1>
+                  <h1 className='MainGrad'>+16</h1>
                 </div>
                   <div className='CardLineWrap'>
                     <div className="CardLine"></div>
@@ -273,7 +273,7 @@ export default function Innovation(props: IAboutProps) {
 }
 
 
-export const getStaticProps: GetStaticProps<IAboutProps> = async () => {
+export const getStaticProps: GetStaticProps<IIndexProps> = async () => {
   const posts = getAllPosts(Config.post_fields);
 
   return {

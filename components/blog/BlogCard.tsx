@@ -31,23 +31,23 @@ type IBlogCardProps = {
     <article className="">
       <Link href="/post/[slug]" as={`/post/${props.slug}`} className="BlogCardWrap">
         <div className="BlogCardTop" style={BlogCardImgBG}>
-          {/* <div className="CategoryTag">
+          <div className="CategoryTag">
             {props.tags.map((tag) => (
               <div key={tag}>
                 {`${tag}`}
               </div>
             ))}
-          </div> */}
+          </div>
         </div>
 
         <div className="BlogCard">
           <div className="BlogCardTxt">
-            <p className="BlogCardSub">
+            {/* <p className="BlogCardSub">
               {dateTimeReadable(props.date)}
-            </p>
+            </p> */}
             <h6>{props.title}</h6>
             {props.showDescription !== false && (
-            <p className='Description'>{truncateString(props.description, 120)}</p>
+            <p className='Description'>{truncateString(props.description, 150)}</p>
             )}
           </div>
         </div>

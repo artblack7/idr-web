@@ -33,7 +33,7 @@ export default function Blog(props: IIndexProps) {
     <main className="BlogPage">
       <AnimationTrigger />
       <div>
-        <MainHeader useWhite={true} 
+        <MainHeader useWhite={false} 
           meta={<Meta 
             title="Blog" 
             metaTitle="IDR │ IDR" 
@@ -42,7 +42,20 @@ export default function Blog(props: IIndexProps) {
             />
       </div>
 
-      <BlogHero posts={initialPosts}/>
+      {/* <BlogHero posts={initialPosts}/> */}
+      <div className="HeroSectionWrap Dark" id="projects-hero">
+        <div className="Overlay"></div>
+        <div className="HeroSection">
+          <div className="HeroContent animation-up" data-animate="slide-up">
+            <div className='HeroTitle'>
+              {/* <h6>PROJECTES</h6> */}
+              {/* <h2>Depuració innovadora per un futur sostenible</h2> */}
+              <h2>Directori de Projectes</h2>
+            </div>
+          </div>
+        </div>
+
+      </div>
 
       <section className="SectionWrap" id='posts-section'>
           <div className="BaseSection">
@@ -68,7 +81,7 @@ export default function Blog(props: IIndexProps) {
         </div>
       </section>
 
-      <BlogSubscribe />
+      {/* <BlogSubscribe /> */}
 
       <Footer />
 

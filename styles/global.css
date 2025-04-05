@@ -69,11 +69,6 @@
   padding-top: 18.5px;
 }
 
-.Toolbar .AppBtn button {
-  background-color: transparent !important;
-}
-
-
 /*//////////////////// TOOLBAR /////////////////*/
 
 
@@ -84,6 +79,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  /* position: fixed; */
 }
 
 .Toolbar,
@@ -105,28 +101,20 @@
   transition: all 0.3s ease-in-out;
 }
 
-.header-scrolled {
+.header-scrolled,
+.header-scrolled-w  {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  box-shadow: var(--sh-l);
-  background: var(--white);
+  box-shadow: var(--sh-toolbar);
+  background: white;
   transition: all 0.3s ease-in-out;
 }
 
 .header-top-w {
   background: white;
   border-bottom: 1px solid var(--grey3);
-}
-
-.header-scrolled-w {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  box-shadow: var(--sh-l);
-  background: white;
 }
 
 .ToolbarInner {
@@ -161,14 +149,20 @@
   height: auto;
 }
 
-.header-top .AppName svg path {
+.header-scrolled img,
+.header-top-w img {
+  filter: invert();
+}
+
+/* .header-top .AppName svg path {
   fill: #fff;
 }
 
 .header-scrolled .AppName svg path,
 .ToolbarWhite .AppName svg path  {
   color: var(--dark);
-}
+} */
+
  
 /*---------------  Menu  Links ---------------*/
 
@@ -177,28 +171,6 @@
   display: flex;
   flex-direction: row;
 }
-
-.header-top .MenuLinks a {
-  color: var(--white);
-}
-/* .header-top .MenuLinks a:hover {
-  color: var(--pblue1);
-  cursor: pointer;
-}
-.header-top .MenuLinks a:active {
-  color: var(--pblue1);
-}
-
-.header-scrolled .MenuLinks a {
-  color: var(--dark2);
-}
-.header-scrolled .MenuLinks a:hover {
-  color: var(--pblue);
-  cursor: pointer;
-}
-.header-scrolled .MenuLinks a:active {
-  color: var(--pblue);
-} */
 
 .MenuLinks a {
   display: flex;
@@ -217,14 +189,34 @@
   cursor: pointer;
 }
 
-  .ToolbarWhite .MenuLinks a {
-    color: var(--dark2) !important;
+  .header-top .MenuLinks a {
+    color: var(--white);
   }
-  .ToolbarWhite .MenuLinks a:hover {
-    color: var(--pblue) !important;
+  .header-top .MenuLinks a:hover {
+    color: var(--white);
   }
-  .ToolbarWhite .MenuLinks a:active {
-    color: var(--pblue) !important;
+  .header-top .MenuLinks a:active {
+    color: var(--white);
+  }
+
+  .header-scrolled .MenuLinks a {
+    color: var(--dark);
+  }
+  .header-scrolled .MenuLinks a:hover {
+    color: var(--dark);
+  }
+  .header-scrolled .MenuLinks a:active {
+    color: var(--dark);
+  }
+
+  .header-top-w .MenuLinks a {
+    color: var(--dark);
+  }
+  .header-top-w .MenuLinks a:hover {
+    color: var(--dark);
+  }
+  .header-top-w .MenuLinks a:active {
+    color: var(--dark);
   }
 
 /*---------------  Menu  Dropdown ---------------*/
@@ -338,17 +330,19 @@
   justify-content: center;
 }
 
-.Toolbar .AppBtn button,
-.ToolbarWhite .AppBtn button {
+.header-top .AppBtn button {
   color: var(--white);
   /* padding: 16px 20px; */
   /* height: 48px; */
   border-color: white;
 }
-
-.Toolbar .AppBtn svg path {
+.header-top .AppBtn button:hover {
+  background-color: transparent;
+}
+.header-top .AppBtn svg path {
   fill: var(--white);
 }
+
 
 /* .Toolbar .LineBtn button {
   background: var(--dpurple);
@@ -449,14 +443,13 @@
 
 .PartnerLogos {
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 10%;
-  height: 100px;
+  height: 160px;
 }
 
 .PartnerLogos img {
-  height: 30px;
+  height: 60px;
   width: auto;
 } 
 
@@ -668,6 +661,20 @@
   }
 }
 
+@media (max-width: 1100px) {
+  
+  .Toolbar .LineBtn button,
+  .ToolbarWhite .LineBtn button {
+    width: 100% !important;
+    min-width: 10vw !important;
+  }
+
+  .MenuLinks a {
+    padding-right: 2vw;
+  }
+}
+
+
 @media (max-width: 1024px) {
 
   .ToolbarMenu {
@@ -677,7 +684,6 @@
 
   .Toolbar .AppBtn button,
   .ToolbarWhite .AppBtn button {
-    color: var(--white);
     padding: 16px 24px;
     height: 52px;
     margin-top: 30px;

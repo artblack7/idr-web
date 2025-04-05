@@ -40,7 +40,7 @@ const RecentPosts: React.FC<RecentPostsProps> = ({ allPosts }) => {
                   image={post.image}
                   slug={slugCompute(post.slug)}
                   tags={post.tags}
-                  showDescription={false}
+                  showDescription={true}
                 />
               ))}
       </Flickity>

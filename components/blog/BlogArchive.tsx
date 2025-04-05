@@ -54,7 +54,7 @@ const BlogArchive: React.FC<BlogArchiveProps> = ({ initialPosts, allPosts, tagFi
         <div className="LoadMore">
           <div className='SmallBtnWrap'>
           <button onClick={handleLoadMore}>
-            Veure més projectes
+            Més projectes destacats
           </button>
           </div>
         </div>

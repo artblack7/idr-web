@@ -67,9 +67,6 @@ return (
     categoryCollection={props.categoryCollection}
   >
 
-    {/* <Helmet>
-      <script async src="https://platform.twitter.com/widgets.js" />
-    </Helmet> */}
 
       <Content>
         <div
@@ -78,11 +75,14 @@ return (
         />
       </Content>
 
+      <section>
+        <div className='GradStripe'></div>
+      </section>
         <section className="NewsSectionWrap">
           <div className="NewsSection">
             <div className="NewsContent">
               <div className='NewsTitle'>
-                <h2>Mes Projectes</h2>
+                <h2>Projectes Destacats</h2>
               </div>
               <RecentPosts allPosts={allPosts}/>
               </div>
@@ -128,7 +128,8 @@ export const getStaticProps: GetStaticProps<IPostProps, IPostUrl> = async ({ par
     'slug',
   ]);
   const content = await markdownToHtml(post.content || '');
-
+  console.log('Markdown HTML:', content);
+  
   const recentPosts = getAllPosts(['slug', 'title', 'date']).slice(0, 5);
 
   return {

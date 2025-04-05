@@ -205,7 +205,7 @@ export default function Privacy() {
             </h4>
             <p>
             In the event we learn that we have inadvertently collected personal information from a child under age 13, we will take reasonable steps to delete that information. If you believe that we might have any information from a child under 13, 
-            please contact us at contact@akashalabs.net
+            please contact us at contact@idr.cat
             </p>
           </div>
         </div>

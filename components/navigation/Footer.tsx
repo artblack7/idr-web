@@ -49,7 +49,7 @@ const Footer = () => {
                 <h6>Direcció</h6>
                 <ul>
                   <li>
-                    <p>Direccio, 84</p>
+                    <p>Ronda del Rec, 163</p>
                     <p>08700 Igualada</p>
                     <p>Barcelona, Espanya</p>
                   </li>
@@ -60,17 +60,18 @@ const Footer = () => {
                 <h6>Contacte</h6>
                 <ul>
                   <li>
-                    <p>T: +34 923 267 128</p>
-                    <p>E: info@idr.cat</p>
+                    <p>Oficines: +34 93 806 85 95</p>
+                    <p>Planta: +34 93 803 03 30</p>
+                    <p>Email: info@idr.cat</p>
                   </li>
                 </ul>
               </div>
             </div>
             <div>
             <div className="PartnerLogos animation-up" data-animate="slide-up">
-              <Image src="/logos/logo-black.png" height="100" width="100" alt="Logo" />
-              <Image src="/logos/logo-black.png" height="100" width="100" alt="Logo" />
-              <Image src="/logos/logo-black.png" height="100" width="100" alt="Logo" />
+              <Image src="/logos/cluster.png" height="300" width="300" alt="Logo" />
+              <Image src="/logos/tradebe.png" height="300" width="300" alt="Logo" />
+              <Image src="/logos/gremi.png" height="300" width="300" alt="Logo" />
             </div>
             </div>
 
