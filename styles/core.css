@@ -94,10 +94,11 @@
 
   /***/
 
-  --heroBlue: hsla(215, 100%, 19%, 0.9);
-  --heroBlue2: hsla(215, 100%, 27%, 0.9);
-  --heroGreen: hsla(178, 100%, 13%, 0.9);
-  --heroGreen2: hsla(178, 100%, 13%, 0.9); 
+  --heroBlue: hsla(215, 100%, 13%, 0.95);
+  --heroBlue2: hsla(215, 100%, 18%, 0.95);
+  --heroGreen: hsla(178, 100%, 11%, 0.95);
+  --heroGreen2: hsla(169, 100%, 11%, 0.9); 
+  --heroBrown: hsla(0, 0%, 7%, 0.95); 
 
   --cyan: #00ede2; /*bluegrad*/
   --cyan2: #00eff3; /*bluegrad*/
@@ -106,8 +107,6 @@
   --blue3: hsl(210, 100%, 18%); /*maingrad dark*/
   --blue4: hsl(210, 100%, 13%); /*innovation*/
   
-  --blue5: hsla(211, 100%, 10%, 0.96); /*innovation*/
-
   --turq: hsl(185, 53%, 43%); /*fase4*/
   --turq2: hsl(195, 85%, 30%); /*fase3*/
   --turq3: hsl(195, 100%, 25%); /*fase2*/
@@ -122,13 +121,16 @@
   --tgreen4: hsl(186, 100%, 13%); /*ecosquare1 - footer*/
   --tgreen5: hsl(186, 100%, 7%); /*residus*/
 
+  --blue5: hsla(211, 100%, 10%, 0.96); /*innovation*/
   --tgreen6: hsl(186, 100%, 7%, 0.9); /*residus*/
+  --brown3:rgba(28, 15, 7, 0.903); /*quisom*/
 
   --cream: hsl(34, 100%, 78%); 
   --brown: hsl(27, 75%, 62%); 
   --brown2:rgb(72, 34, 13); 
-  --brown3:rgba(28, 15, 7, 0.903); 
   --brown4:rgb(33, 20, 12); 
+
+
 
 
   --red: #ff5b4d;
@@ -186,7 +188,7 @@
   --sh-m: 4px 4px 6px 0px rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   --sh-l: 0 10px 10px -5px rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   --sh-xl: 0 10px 20px -5px rgba(0, 0, 0, 0.03), 0 10px 10px -5px rgba(0, 0, 0, 0.02);
-  --sh-2xl: 5px 10px 20px -5px rgba(0, 0, 0, 0.5);
+  --sh-2xl: 5px 10px 20px -5px rgba(0, 0, 0, 0.2);
 
   /* --sh-img: 0px 5px 15px rgb(30, 20, 100, 0.1);
   --sh-img2: 0px 5px 10px rgba(45, 38, 92, 0.1); */
@@ -244,7 +246,7 @@ a, Link {
 
 a path {
   fill: var(--dark);
-  fillRule: evenodd;
+  /* fillRule: evenodd; */
 }
 
 main {

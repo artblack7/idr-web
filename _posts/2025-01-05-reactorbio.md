@@ -4,7 +4,7 @@ metaTitle: "Nou Reactor Biològic"
 description: "Optimització del tractament biològic de la planta, incrementant la capacitat hidràulica i l’eficiència del tractament."
 date: "2025-01-05"
 modified_date: "2025-01-05"
-image: https://idr.cat/posts/thumb-reactorbio.jpg
+image: https://idr.cat/posts/thumb-reactor.jpg
 tags:
   - Optimització
 ---

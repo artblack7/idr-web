@@ -30,7 +30,7 @@ export const Toolbar = (props: any) => {
                       </div>
                       <div className="ButtonGroup right">
                           <div className="AppBtn">
-                            <Link target="" href="/"><button>Àrea Clients<Arrow_Icon /></button></Link>
+                          <Link target="blank" href="https://clients.idr.cat/"><button>Àrea Clients<Arrow_Icon /></button></Link>
                           </div>
                       </div>
                     </div>
@@ -79,7 +79,7 @@ export const Toolbar = (props: any) => {
                                 </div>  */}
 
                                 <div className="AppBtn">
-                                <Link target="" href="/getstarted"><button>Àrea Clients<Arrow_Icon /></button></Link>
+                                <Link target="blank" href="https://clients.idr.cat/"><button>Àrea Clients<Arrow_Icon /></button></Link>
                                 </div>
                                 
 

@@ -23,6 +23,7 @@ export default function Home(props: IIndexProps) {
 // export default function Home() {
   const isMobile = useMediaQuery('(max-width: 480px)');
   const isTablet = useMediaQuery('(max-width: 1024px)');
+  const isWide = useMediaQuery('(min-width: 1800px)');
   const { allPosts, initialPosts } = props;
 
   return (
@@ -77,7 +78,7 @@ export default function Home(props: IIndexProps) {
               <div className="ImgWrap">
                 <Image className="animation-up" data-animate="slide-up"  loading="eager" 
                 alt="IDR" src='/img/quisom.png' 
-                width={500} height={500} />
+                width={1200} height={400} />
               </div>
             </div>
             
@@ -168,7 +169,7 @@ export default function Home(props: IIndexProps) {
 
             <div className="SideImg">
 
-              {isTablet ? <Image alt="dashboard" src='/img/img-pells.jpg' width={800} height={800} />
+              {isTablet || isWide ? <Image alt="dashboard" src='/img/img-quisom.jpg' width={800} height={800} />
               : (null )}
 
             </div>
@@ -238,7 +239,7 @@ export default function Home(props: IIndexProps) {
 
             <div className="SideImg">
 
-              {isTablet ? <Image alt="dashboard" src='/img/residus.jpg' width={800} height={800} />
+              {isTablet || isWide ? <Image alt="dashboard" src='/img/img-residus.jpg' width={800} height={800} />
               : (null )}
 
             </div>
@@ -336,7 +337,7 @@ export default function Home(props: IIndexProps) {
 
             <div className="SideImg">
 
-              {isTablet ? <Image alt="dashboard" src='/img/lab.jpg' width={800} height={800} />
+              {isTablet || isWide ? <Image alt="dashboard" src='/img/img-lab.jpg' width={800} height={800} />
               : (null )}
 
             </div>

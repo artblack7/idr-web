@@ -29,6 +29,7 @@
 
 .BlogSection {
   max-width: 1400px;
+  height: max-content;
   margin: auto;
   color: var(--white);
   padding: var(--padding);

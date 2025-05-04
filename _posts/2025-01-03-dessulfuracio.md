@@ -4,7 +4,7 @@ metaTitle: "Dessulfuració amb oxígen líquid"
 description: "Optimització del procés de dessulfuració, accelerant la reacció i reduint espumes."
 date: "2025-01-03"
 modified_date: "2025-01-03"
-image: https://idr.cat/posts/thumb-dessulfuracio.jpg
+image: https://idr.cat/posts/thumb-oxigen.jpg
 tags:
   - Optimització
 ---

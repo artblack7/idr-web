@@ -33,7 +33,12 @@ const TechSlideshow: React.FC = () => {
                   <div  className="BlogSlideWrap">
                     <div className="BlogSlideInner">
                       <div className="SideImg">
-                        <Image alt="IDR" src='/img/proces-01.jpg' width={550} height={550} />
+                        <div className='ImgWrapSlide'>
+                          <Image className="radius-4 nimation-up" data-animate="slide-up"  loading="eager" 
+                          alt="IDR" src='/img/proces-01.jpg' 
+                          sizes="(max-width: 480px) 400px, (max-width: 1024px) 800px, 1200px"
+                          width={1200} height={400} />
+                        </div>
                       </div>
                       <div className="SideTxt">
                         <p>ANÀLISIS DE L’AIGUA</p>
@@ -53,8 +58,13 @@ const TechSlideshow: React.FC = () => {
                  
                   <div  className="BlogSlideWrap">
                     <div className="BlogSlideInner">
-                      <div className="SideImg">
-                        <Image alt="IDR" src='/img/proces-02.jpg' width={550} height={550} />
+                    <div className="SideImg">
+                        <div className='ImgWrapSlide'>
+                          <Image className="radius-4 nimation-up" data-animate="slide-up"  loading="eager" 
+                          alt="IDR" src='/img/proces-02.jpg' 
+                          sizes="(max-width: 480px) 400px, (max-width: 1024px) 800px, 1200px"
+                          width={1200} height={400} />
+                        </div>
                       </div>
                       <div className="SideTxt">
                         <p>PRETRACTAMENT</p>
@@ -74,8 +84,13 @@ const TechSlideshow: React.FC = () => {
 
                   <div  className="BlogSlideWrap">
                     <div className="BlogSlideInner">
-                      <div className="SideImg">
-                        <Image alt="IDR" src='/img/proces-03.jpg' width={550} height={550} />
+                    <div className="SideImg">
+                        <div className='ImgWrapSlide'>
+                          <Image className="radius-4 nimation-up" data-animate="slide-up"  loading="eager" 
+                          alt="IDR" src='/img/proces-03.jpg' 
+                          sizes="(max-width: 480px) 400px, (max-width: 1024px) 800px, 1200px"
+                          width={1200} height={400} />
+                        </div>
                       </div>
                       <div className="SideTxt">
                         <p>TRACTAMENT QUÍMIC</p>
@@ -92,8 +107,13 @@ const TechSlideshow: React.FC = () => {
 
                   <div  className="BlogSlideWrap">
                     <div className="BlogSlideInner">
-                      <div className="SideImg">
-                        <Image alt="IDR" src='/img/proces-04.jpg' width={550} height={550} />
+                     <div className="SideImg">
+                        <div className='ImgWrapSlide'>
+                          <Image className="radius-4 nimation-up" data-animate="slide-up"  loading="eager" 
+                          alt="IDR" src='/img/proces-04.jpg' 
+                          sizes="(max-width: 480px) 400px, (max-width: 1024px) 800px, 1200px"
+                          width={1200} height={400} />
+                        </div>
                       </div>
                       <div className="SideTxt">
                         <p>TRACTAMENT BIOLÒGIC</p>
@@ -111,8 +131,14 @@ const TechSlideshow: React.FC = () => {
                   <div  className="BlogSlideWrap">
                     <div className="BlogSlideInner">
                       <div className="SideImg">
-                        <Image alt="IDR" src='/img/proces-05.jpg' width={550} height={550} />
+                        <div className='ImgWrapSlide'>
+                          <Image className="radius-4 nimation-up" data-animate="slide-up"  loading="eager" 
+                          alt="IDR" src='/img/proces-05.jpg' 
+                          sizes="(max-width: 480px) 400px, (max-width: 1024px) 800px, 1200px"
+                          width={1200} height={400} />
+                        </div>
                       </div>
+
                       <div className="SideTxt">
                         <p>TRACTAMENT BIOLÒGIC</p>
                         <h4>Reactor biològic II</h4>
@@ -129,7 +155,12 @@ const TechSlideshow: React.FC = () => {
                   <div  className="BlogSlideWrap">
                     <div className="BlogSlideInner">
                       <div className="SideImg">
-                        <Image alt="IDR" src='/img/proces-06.jpg' width={550} height={550} />
+                        <div className='ImgWrapSlide'>
+                          <Image className="radius-4 nimation-up" data-animate="slide-up"  loading="eager" 
+                          alt="IDR" src='/img/proces-06.jpg' 
+                          sizes="(max-width: 480px) 400px, (max-width: 1024px) 800px, 1200px"
+                          width={1200} height={400} />
+                        </div>
                       </div>
                       <div className="SideTxt">
                         <p>TRACTAMENT BIOLÒGIC</p>
@@ -150,7 +181,12 @@ const TechSlideshow: React.FC = () => {
                   <div  className="BlogSlideWrap">
                     <div className="BlogSlideInner">
                       <div className="SideImg">
-                        <Image alt="IDR" src='/img/proces-07.jpg' width={550} height={550} />
+                        <div className='ImgWrapSlide'>
+                          <Image className="radius-4 nimation-up" data-animate="slide-up"  loading="eager" 
+                          alt="IDR" src='/img/proces-07.jpg' 
+                          sizes="(max-width: 480px) 400px, (max-width: 1024px) 800px, 1200px"
+                          width={1200} height={400} />
+                        </div>
                       </div>
                       <div className="SideTxt">
                         <p>TRACTAMENT TERCIARI</p>
@@ -165,7 +201,12 @@ const TechSlideshow: React.FC = () => {
                   <div  className="BlogSlideWrap">
                     <div className="BlogSlideInner">
                       <div className="SideImg">
-                        <Image alt="IDR" src='/img/proces-08.jpg' width={550} height={550} />
+                        <div className='ImgWrapSlide'>
+                          <Image className="radius-4 nimation-up" data-animate="slide-up"  loading="eager" 
+                          alt="IDR" src='/img/proces-08.jpg' 
+                          sizes="(max-width: 480px) 400px, (max-width: 1024px) 800px, 1200px"
+                          width={1200} height={400} />
+                        </div>
                       </div>
                       <div className="SideTxt">
                         <p>TRACTAMENT DE FANGS</p>
@@ -186,7 +227,12 @@ const TechSlideshow: React.FC = () => {
                   <div  className="BlogSlideWrap">
                     <div className="BlogSlideInner">
                       <div className="SideImg">
-                        <Image alt="IDR" src='/img/proces-09.jpg' width={550} height={550} />
+                        <div className='ImgWrapSlide'>
+                          <Image className="radius-4 nimation-up" data-animate="slide-up"  loading="eager" 
+                          alt="IDR" src='/img/proces-09.jpg' 
+                          sizes="(max-width: 480px) 400px, (max-width: 1024px) 800px, 1200px"
+                          width={1200} height={400} />
+                        </div>
                       </div>
                       <div className="SideTxt">
                         <p>TRACTAMENT DE FANGS</p>
@@ -207,7 +253,12 @@ const TechSlideshow: React.FC = () => {
                   <div  className="BlogSlideWrap">
                     <div className="BlogSlideInner">
                       <div className="SideImg">
-                        <Image alt="IDR" src='/img/proces-10.jpg' width={550} height={550} />
+                        <div className='ImgWrapSlide'>
+                          <Image className="radius-4 nimation-up" data-animate="slide-up"  loading="eager" 
+                          alt="IDR" src='/img/proces-10.jpg' 
+                          sizes="(max-width: 480px) 400px, (max-width: 1024px) 800px, 1200px"
+                          width={1200} height={400} />
+                        </div>
                       </div>
                       <div className="SideTxt">
                         <p>CONTROL DE QUALITAT I MANTENIMENT</p>

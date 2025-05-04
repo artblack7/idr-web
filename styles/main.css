@@ -161,7 +161,8 @@ section .LineBtn {
   height: auto;
 }
 
-.ImgWrap img {
+.ImgWrap img,
+.ImgWrapSlide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -345,49 +346,146 @@ section .LineBtn {
   background: var(--heroGreen);
 }
 
+/* #about-hero .HeroContent {
+  background: var(--tgreen4);
+} */
+
+
 #innovation-hero {
   background: linear-gradient(180deg, 
   var(--heroBlue2), transparent, transparent),
-  url(../public/bg/bg-innovation.jpg) no-repeat center/cover;
+  url(../public/bg/bg-lab-xl.jpg) no-repeat center/cover;
 }
 
 #services-hero {
   background: linear-gradient(180deg, 
   var(--heroBlue2), transparent, transparent),
-  url(../public/img/bg-residus.jpg) no-repeat center/cover;
+  url(../public/bg/bg-gestio-xl.jpg) no-repeat center/cover;
 }
 
 #tech-hero {
   background: linear-gradient(180deg, 
-  var(--heroGreen2), transparent, transparent),
-  url(../public/bg/bg-tech.jpg) no-repeat bottom/cover;
+  var(--heroGreen2), transparent, transparent, transparent),
+  url(../public/bg/bg-tec-xl.jpg) no-repeat bottom/cover;
 }
 
 #eco-hero {
   background: linear-gradient(180deg, 
   var(--heroGreen2), transparent, transparent, transparent),
-  url(../public/img/bg-eco.jpg) no-repeat center/cover;
+  url(../public/bg/bg-eco-xl.jpg) no-repeat center/cover;
 }
 
 #about-hero {
   background: linear-gradient(180deg, 
   var(--heroGreen2), transparent, transparent),
-  url(../public/img/bg-about.jpg) no-repeat top/cover;
-}
-
-
-#projects-hero {
-  background: linear-gradient(180deg, 
-  var(--heroBlue2), transparent),
-  url(../public/img/water2.jpg) no-repeat center/cover;
-
+  url(../public/bg/bg-about-xl.jpg) no-repeat top/cover;
 }
 
 #projects-hero .HeroSection {
   height: 600px;
 }
 
+@media (max-width: 2000px) {
 
+  #innovation-hero {
+    background: linear-gradient(180deg, 
+    var(--heroBlue2), transparent, transparent),
+    url(../public/bg/bg-lab.jpg) no-repeat center/cover;
+  }
+  
+  #services-hero {
+    background: linear-gradient(180deg, 
+    var(--heroBlue2), transparent, transparent),
+    url(../public/bg/bg-gestio.jpg) no-repeat center/cover;
+  }
+  
+  #tech-hero {
+    background: linear-gradient(180deg, 
+    var(--heroBrown), transparent, transparent, transparent),
+    url(../public/bg/bg-tec.jpg) no-repeat bottom/cover;
+  }
+  
+  #eco-hero {
+    background: linear-gradient(180deg, 
+    var(--heroGreen2), transparent, transparent, transparent),
+    url(../public/bg/bg-eco.jpg) no-repeat center/cover;
+  }
+  
+  #about-hero {
+    background: linear-gradient(180deg, 
+    var(--heroGreen2), transparent, transparent),
+    url(../public/bg/bg-about.jpg) no-repeat top/cover;
+  }
+    
+}
+
+@media (max-width: 1024px) {
+
+  #innovation-hero {
+    background: linear-gradient(180deg, 
+    var(--heroBlue2), transparent, transparent),
+    url(../public/bg/bg-lab-m.jpg) no-repeat center/cover;
+  }
+  
+  #services-hero {
+    background: linear-gradient(180deg, 
+    var(--heroBlue2), transparent, transparent),
+    url(../public/bg/bg-gestio-m.jpg) no-repeat center/cover;
+  }
+  
+  #tech-hero {
+    background: linear-gradient(180deg, 
+    var(--heroGreen2), transparent, transparent, transparent),
+    url(../public/bg/bg-tec-m.jpg) no-repeat bottom/cover;
+  }
+  
+  #eco-hero {
+    background: linear-gradient(180deg, 
+    var(--heroGreen2), transparent, transparent, transparent),
+    url(../public/bg/bg-eco-m.jpg) no-repeat center/cover;
+  }
+  
+  #about-hero {
+    background: linear-gradient(180deg, 
+    var(--heroGreen2), transparent, transparent),
+    url(../public/bg/bg-about-m.jpg) no-repeat top/cover;
+  }
+  
+}
+
+@media (max-width: 480px) {
+
+  #innovation-hero {
+    background: linear-gradient(180deg, 
+    var(--heroBlue2), transparent, transparent),
+    url(../public/bg/bg-lab-s.jpg) no-repeat center/cover;
+  }
+  
+  #services-hero {
+    background: linear-gradient(180deg, 
+    var(--heroBlue2), transparent, transparent),
+    url(../public/bg/bg-gestio-s.jpg) no-repeat center/cover;
+  }
+  
+  #tech-hero {
+    background: linear-gradient(180deg, 
+    var(--heroGreen2), transparent, transparent, transparent),
+    url(../public/bg/bg-tec-s.jpg) no-repeat bottom/cover;
+  }
+  
+  #eco-hero {
+    background: linear-gradient(180deg, 
+    var(--heroGreen2), transparent, transparent, transparent),
+    url(../public/bg/bg-eco-s.jpg) no-repeat center/cover;
+  }
+  
+  #about-hero {
+    background: linear-gradient(180deg, 
+    var(--heroGreen2), transparent, transparent),
+    url(../public/bg/bg-about-s.jpg) no-repeat top/cover;
+  }
+  
+}
 /*////////////////// DIVIDERS ////////////////////*/
 
 .GradStripe {
@@ -436,7 +534,7 @@ section .LineBtn {
       rgba(18, 33, 87, 0.6),
       rgba(18, 33, 87, 0.6),
       rgba(0, 0, 0, 0.2)),
-    url("../public/img/water2.jpg") 
+    url("../public/bg/bg-water.jpg") 
     no-repeat center right / cover;
 }
 
@@ -446,7 +544,7 @@ section .LineBtn {
       rgba(9, 49, 34, 0.6),
       rgba(9, 49, 34, 0.6),
       rgba(0, 0, 0, 0.2)),
-    url("../public/img/leaf.jpg") 
+    url("../public/bg/bg-leaf.jpg") 
     no-repeat center right / cover;
 }
 
@@ -456,7 +554,7 @@ section .LineBtn {
       rgba(49, 20, 9, 0.6),
       rgba(49, 20, 9, 0.6),
       rgba(0, 0, 0, 0.2)),
-    url("../public/img/leather3.jpg") 
+    url("../public/bg/bg-leather.jpg") 
     no-repeat center right / cover;
 }
 
@@ -499,7 +597,7 @@ section video {
 /* INNOVATION */
 
 #main-innovation {
-  background: url("../public/img/lab.jpg") 
+  background: url("../public/img/img-lab.jpg") 
   no-repeat center right / auto 100% ;
 }
 
@@ -512,7 +610,7 @@ section video {
   height: 100%;
   background: 
     linear-gradient( var(--blue5), var(--blue5)),
-    url("../public/img/water2.jpg") no-repeat center / cover;
+    url("../public/bg/bg-water.jpg") no-repeat center / cover;
   /* background-blend-mode: multiply; */
   clip-path: polygon(0 0, 55% 0, 45% 101%, 0 101%);
 }
@@ -537,14 +635,17 @@ section video {
   width: 100%;
   height: 100%;
   background: 
-    url("../public/bg/bg-green.png") no-repeat center left / cover;
+  linear-gradient( var(--tgreen6), var(--tgreen6)),
+  url("../public/bg/bg-green.jpg") no-repeat center / cover;
+  /* background: 
+    url("../public/bg/bg-green.jpg") no-repeat center left / cover; */
   clip-path: polygon(0 0, 55% 0, 45% 101%, 0 101%);
   }
 
 /* ABOUT */
 
 #main-about {
-  background: url("../public/img//img-pells.jpg") 
+  background: url("../public/img//img-quisom.jpg") 
   no-repeat center right / auto 100% ;
 }
 
@@ -557,7 +658,7 @@ section video {
   height: 100%;
   background: 
     linear-gradient( var(--brown3), var(--brown3)),
-    url("../public/img/leather.jpg") no-repeat center / cover;
+    url("../public/bg/bg-leather.jpg") no-repeat center / cover;
   clip-path: polygon(0 0, 55% 0, 45% 101%, 0 101%);
   }
 
@@ -634,7 +735,7 @@ section video {
 }
 
 #services-contact  {
-  background: url("../public/img/img-contacte.jpg") 
+  background: url("../public/img/img-contact.jpg") 
   no-repeat center right / auto 100% ;
 }
 
@@ -659,7 +760,26 @@ section video {
 /*//////////////////////// EMPRESA /////////////////////*/
 
 
+.SocisLogos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  margin-top: 20px;
+}
 
+.SocisLogos img{
+  width: auto;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: ce;
+}
+
+.Socis {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 
 
@@ -681,6 +801,23 @@ section video {
     center right / cover;
   }  */
 
+  #main-services,
+  #main-innovation,
+  #main-about,
+  #services-contact {
+    background: none;
+  }
+  
+  #main-innovation::before,
+  #main-services:before,
+  #main-about:before {
+    clip-path: none;
+  } 
+
+  .DivSectionWrap img {
+    border-radius: 8px;
+  }
+
 }
 
 @media (min-width: 1025px) {
@@ -688,6 +825,12 @@ section video {
     width: calc(50% + ((100vw - 1024px) / (1500px - 1024px)) * 50%);
     height: 440px;
   }
+
+  .ImgWrapSlide {
+    /* width: calc(30% + ((10vw - 800px) / (10px - 1024px)) * 80%); */
+    height: 440px;
+  }
+
 }
 
 @media (max-width: 1400px) {
@@ -914,6 +1057,13 @@ section video {
     font-size: 1rem;
   }
 
+  .SocisLogos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 20px;
+  }
+
 }
 
 @media (max-width: 640px) {
@@ -946,6 +1096,14 @@ section video {
     font-size: 4.6vw;
     line-height: 6vw;
   }
+
+  .SocisLogos {
+    gap: 20px;
+  }
+
+  .SocisLogos img {
+    height: 100px;
+  }
   
 }
 
@@ -969,6 +1127,10 @@ section video {
   
   .HeroSectionWrap {
     margin-top: -60px;
+  }
+
+  .SocisLogos img {
+    height: 80px;
   }
 
     /* .animation-up,
@@ -1017,6 +1179,10 @@ section video {
 
   @media (max-width: 360px) {
 
+    .SocisLogos {
+      gap: 1vw;
+    }
+    
   /* section,
   .HeroSection,
   .FooterContent {

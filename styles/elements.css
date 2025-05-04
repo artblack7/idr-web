@@ -89,16 +89,11 @@
 }
 
   .CardTop.Collab1 {
-    background: linear-gradient(
-      rgba(49, 20, 9, 0.3),
-      rgba(49, 20, 9, 0.3)),
-      url("../public/img/leather3.jpg") 
+    background: url("../public/img/img-cluster.jpg") 
     no-repeat center right / cover; 
   }
   .CardTop.Collab2 {
-    background: linear-gradient(
-      rgba(0, 50, 51, 0.3),
-      rgba(0, 50, 31, 0.3)),
+    background:
     url("../public/img/img-tradebe.jpg") 
     no-repeat center right / cover; 
   }

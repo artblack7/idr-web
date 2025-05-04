@@ -49,7 +49,7 @@ export default function Empresa() {
                 <Image className="radius-4 nimation-up" data-animate="slide-up"  loading="eager" 
                 alt="IDR" src='/img/img-curtidors.jpg' 
                 // sizes="(max-width: 480px) 500px, (max-width: 1024px) 700px, 1000px"
-                width={500} height={500} />
+                width={1200} height={400} />
               </div>
             </div>
             
@@ -84,9 +84,9 @@ export default function Empresa() {
               Aquest esforç col·lectiu impulsa una indústria de la pell orientada al futur, amb un ferm compromís amb l'eficiència i el respecte pel medi ambient, aportant valor tant a la cadena productiva com a la comunitat local.
               </p>
 
-            <div className="AppBtn">
+            {/* <div className="AppBtn">
               <Link href="/sostenibilitat"><button>Saber més<Arrow_Icon /></button></Link>
-            </div>
+            </div> */}
 
           </div>
 
@@ -95,7 +95,7 @@ export default function Empresa() {
                 <Image className="radius-4 animation-up" data-animate="slide-up"  loading="eager" 
                 alt="IDR" src='/img/img-pells3.jpg' 
                 // sizes="(max-width: 480px) 500px, (max-width: 1024px) 700px, 1000px"
-                width={500} height={500} />
+                width={1200} height={400} />
               </div>
             </div>
           </div>
@@ -218,8 +218,80 @@ export default function Empresa() {
                 <p className='mt-3'>
                  SOCI IL·LUSTRE 
                 </p>
+                
               </div>
 
+              <div className="SocisLogos">
+                <div className="Socis">
+                  <Image alt="logo" src='/socis/01.png' width={570} height={300} />
+                </div>
+                <div className="Socis">
+                  <Image alt="logo" src='/socis/02.png' width={570} height={300} />
+                </div>
+                <div className="Socis">
+                  <Image alt="logo" src='/socis/03.png' width={570} height={300} />
+                </div>
+                <div className="Socis">
+                  <Image alt="logo" src='/socis/04.png' width={570} height={300} />
+                </div>
+                <div className="Socis">
+                  <Image alt="logo" src='/socis/05.png' width={570} height={300} />
+                </div>
+                <div className="Socis">
+                  <Image alt="logo" src='/socis/06.png' width={570} height={300} />
+                </div>
+                <div className="Socis">
+                  <Image alt="logo" src='/socis/09.png' width={570} height={300} />
+                </div>
+                <div className="Socis">
+                  <Image alt="logo" src='/socis/08.png' width={570} height={300} />
+                </div>
+                <div className="Socis">
+                  <Image alt="logo" src='/socis/07.png' width={570} height={300} />
+                </div>
+                <div className="Socis">
+                  <Image alt="logo" src='/socis/10.png' width={570} height={300} />
+                </div>
+                <div className="Socis">
+                  <Image alt="logo" src='/socis/13.png' width={570} height={300} />
+                </div>
+                <div className="Socis">
+                  <Image alt="logo" src='/socis/12.png' width={570} height={300} />
+                </div>
+                <div className="Socis">
+                  <Image alt="logo" src='/socis/16.png' width={570} height={300} />
+                </div>
+                <div className="Socis">
+                  <Image alt="logo" src='/socis/14.png' width={570} height={300} />
+                </div>
+                <div className="Socis">
+                  <Image alt="logo" src='/socis/21.png' width={570} height={300} />
+                </div>
+                <div className="Socis">
+                  <Image alt="logo" src='/socis/11.png' width={570} height={300} />
+                </div>
+                <div className="Socis">
+                  <Image alt="logo" src='/socis/15.png' width={570} height={300} />
+                </div>
+                <div className="Socis">
+                  <Image alt="logo" src='/socis/22.png' width={570} height={300} />
+                </div>
+                <div className="Socis">
+                  <Image alt="logo" src='/socis/17.png' width={570} height={300} />
+                </div>
+                <div className="Socis">
+                  <Image alt="logo" src='/socis/18.png' width={570} height={300} />
+                </div>
+                <div className="Socis">
+                  <Image alt="logo" src='/socis/19.png' width={570} height={300} />
+                </div>
+                <div className="Socis">
+                  <Image alt="logo" src='/socis/23.png' width={570} height={300} />
+                </div>
+                <div className="Socis">
+                  <Image alt="logo" src='/socis/20.png' width={570} height={300} />
+                </div>
+              </div>
             </div>
 
 

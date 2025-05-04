@@ -61,9 +61,9 @@ export default function Innovation(props: IIndexProps) {
             <div className="SideImg">
               <div className='ImgWrap'>
                 <Image className="radius-4 nimation-up" data-animate="slide-up"  loading="eager" 
-                alt="IDR" src='/img/img-micro.jpg' 
+                alt="IDR" src='/img/img-catedra.jpg' 
                 // sizes="(max-width: 480px) 500px, (max-width: 1024px) 700px, 1000px"
-                width={500} height={500} />
+                width={1200} height={400} />
               </div>
             </div>
             
@@ -106,7 +106,7 @@ export default function Innovation(props: IIndexProps) {
                 <Image className="radius-4 nimation-up" data-animate="slide-up"  loading="eager" 
                 alt="IDR" src='/img/img-barometre.jpg' 
                 // sizes="(max-width: 480px) 500px, (max-width: 1024px) 700px, 1000px"
-                width={500} height={500} />
+                width={1200} height={400} />
               </div>
             </div>
           </div>
@@ -117,7 +117,7 @@ export default function Innovation(props: IIndexProps) {
             <Image className="index-1 animation-up" data-animate="slide-up"  loading="eager" 
             alt="IDR" src='/img/brand-logo.png' 
             sizes="(max-width: 480px) 500px, (max-width: 1024px) 700px, 1000px"
-            width={500} height={500} />
+            width={1200} height={400} />
 
           */}
 

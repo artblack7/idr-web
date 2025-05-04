@@ -50,7 +50,7 @@ export default function Sostenibilitat() {
                 <Image className="radius-4 nimation-up" data-animate="slide-up"  loading="eager" 
                 alt="IDR" src='/img/img-drop.jpg' 
                 // sizes="(max-width: 480px) 500px, (max-width: 1024px) 700px, 1000px"
-                width={500} height={500} />
+                width={1200} height={400} />
               </div>
             </div>
             
@@ -85,9 +85,9 @@ export default function Sostenibilitat() {
               Mirant cap al futur, seguim innovant i explorant models d’economia circular per avançar cap a una indústria cada cop més eficient i respectuosa amb el medi ambient.
               </p>
 
-            <div className="AppBtn">
+            {/* <div className="AppBtn">
               <Link href="/empresa"><button>Saber més<Arrow_Icon /></button></Link>
-            </div>
+            </div> */}
 
           </div>
 
@@ -96,7 +96,7 @@ export default function Sostenibilitat() {
                 <Image className="radius-4 nimation-up" data-animate="slide-up"  loading="eager" 
                 alt="IDR" src='/img/img-riu.jpg' 
                 // sizes="(max-width: 480px) 500px, (max-width: 1024px) 700px, 1000px"
-                width={500} height={500} />
+                width={1200} height={400} />
               </div>
             </div>
           </div>
@@ -182,7 +182,7 @@ export default function Sostenibilitat() {
                   <Image className="radius-3 animation-up" data-animate="slide-up"  loading="eager" 
                   alt="IDR" src='/img/cicle-1.jpg' 
                   // sizes="(max-width: 480px) 500px, (max-width: 1024px) 700px, 1000px"
-                  width={500} height={500} />
+                  width={1200} height={400} />
                 </div>
               </div>
               
@@ -200,7 +200,7 @@ export default function Sostenibilitat() {
                   <Image className="radius-3 animation-up" data-animate="slide-up"  loading="eager" 
                   alt="IDR" src='/img/cicle-2.jpg' 
                   // sizes="(max-width: 480px) 500px, (max-width: 1024px) 700px, 1000px"
-                  width={500} height={500} />
+                  width={1200} height={400} />
                 </div>
               </div>
               
@@ -217,7 +217,7 @@ export default function Sostenibilitat() {
                   <Image className="radius-3 animation-up" data-animate="slide-up"  loading="eager" 
                   alt="IDR" src='/img/cicle-3.jpg' 
                   // sizes="(max-width: 480px) 500px, (max-width: 1024px) 700px, 1000px"
-                  width={500} height={500} />
+                  width={1200} height={400} />
                 </div>
               </div>
               
@@ -339,7 +339,7 @@ export default function Sostenibilitat() {
                 <div className="CardTopCert">
                   <div className="CardImg">
                     <Image className="animation-up" data-animate="slide-up" loading="eager" 
-                    alt="img" src='/logos/enac1.png' width={250} height={200} />           
+                    alt="img" src='/logos/enac-01.png' width={250} height={200} />           
                   </div>
                 </div>
                 <div className="CardBottomCert">
@@ -373,7 +373,7 @@ export default function Sostenibilitat() {
                 <div className="CardTopCert">
                 <div className="CardImg">
                   <Image className="animation-up" data-animate="slide-up" loading="eager" 
-                  alt="img" src='/logos/enac1.png' width={250} height={200} />           
+                  alt="img" src='/logos/enac-02.png' width={250} height={200} />           
                 </div>
                 </div>
                 <div className="CardBottomCert">
@@ -405,7 +405,7 @@ export default function Sostenibilitat() {
                 <div className="CardTopCert">
                 <div className="CardImg">
                   <Image className="animation-up" data-animate="slide-up" loading="eager" 
-                  alt="img" src='/logos/enac1.png' width={250} height={200} />           
+                  alt="img" src='/logos/enac-03.png' width={250} height={200} />           
                 </div>
                 </div>
                 <div className="CardBottomCert">

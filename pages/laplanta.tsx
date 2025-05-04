@@ -61,7 +61,7 @@ export default function Tech(props: IIndexProps) {
               <Image className="radius-4 nimation-up" data-animate="slide-up"  loading="eager" 
               alt="IDR" src='/img/img-uf.jpg' 
               // sizes="(max-width: 480px) 500px, (max-width: 1024px) 700px, 1000px"
-              width={500} height={500} />
+              width={1200} height={400} />
             </div>
           </div>
           
@@ -103,11 +103,11 @@ export default function Tech(props: IIndexProps) {
         </div>
 
           <div className="SideImg">
-            <div className=''>
+          <div className='ImgWrap'>
               <Image className="radius-4 nimation-up" data-animate="slide-up"  loading="eager" 
               alt="IDR" src='/img/img-bio.jpg' 
               // sizes="(max-width: 480px) 500px, (max-width: 1024px) 700px, 1000px"
-              width={650} height={650} />
+              width={1200} height={400} />
             </div>
           </div>
         </div>
@@ -117,30 +117,6 @@ export default function Tech(props: IIndexProps) {
 
       <div className="CenterSection">
           <div className="CardGroup three Numbers">
-          
-            {/* <div className="CardWrap animation-up" data-animate="slide-up">
-              <div className="Card">
-                <h1 className='MainGrad'>12M €</h1>
-                <div className="CardLine"></div>
-                <h6 className='blue-text'>Inversió inicial</h6>
-              </div>
-            </div>      
-
-            <div className="CardWrap animation-up" data-animate="slide-up">
-              <div className="Card">
-                <h1 className='MainGrad'>4,5M €</h1>
-                <div className="CardLine"></div>
-                <h6 className='blue-text'>Cost anual d’explotació</h6>
-              </div>
-            </div>        
-
-            <div className="CardWrap animation-up" data-animate="slide-up">
-              <div className="Card">
-                <h1 className='MainGrad'>4000m&sup3;</h1>
-                <div className="CardLine"></div>
-                <h6 className='blue-text'>Aigua depurada diàriament</h6>
-              </div>
-            </div>               */}
 
           <div className="CardWrap animation-up" data-animate="slide-up">
             <div className="CardNumber">
@@ -215,6 +191,13 @@ export default function Tech(props: IIndexProps) {
               src="video/hero-video.mp4">
               </video>
             </div>
+
+            {/* <div className="CenterImg">
+            <img className="" 
+              alt="IDR" src='/svg/cat-planta.svg'  />
+            </div> */}
+
+
 
           </div>
 

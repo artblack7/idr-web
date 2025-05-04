@@ -69,3 +69,43 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'Abel'; /* Must match SVG's font-family exactly */
+  src: url('/fonts/Abel-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway'; /* Must match SVG's font-family exactly */
+  src: url('/fonts/Raleway-Bold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway'; /* Must match SVG's font-family exactly */
+  src: url('/fonts/Raleway-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto'; /* Must match SVG's font-family exactly */
+  src: url('/fonts/Roboto-Bold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto'; /* Must match SVG's font-family exactly */
+  src: url('/fonts/Roboto-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}

@@ -25,19 +25,19 @@ const Footer = () => {
               <h6>Mapa Web</h6>
               <ul>
                 <li>
-                  <Link href="/" className="">La Planta</Link>
+                  <Link href="/laplanta" className="">La Planta</Link>
                 </li>
                 <li>
-                  <Link href="/" className="">Innovació</Link>
+                  <Link href="/innovacio" className="">Innovació</Link>
                 </li>
                 <li>
-                  <Link href="/" className="">Sostenibilitat</Link>
+                  <Link href="/sostenibilitat" className="">Sostenibilitat</Link>
                 </li>
                 <li>
-                  <Link href="/" className="">Gestió de Residus</Link>
+                  <Link href="/serveis" className="">Gestió de Residus</Link>
                 </li>
                 <li>
-                  <Link href="/" className="">Empresa</Link>
+                  <Link href="/empresa" className="">Empresa</Link>
                 </li>
               </ul>
             </div>

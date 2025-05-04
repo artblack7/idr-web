@@ -4,7 +4,7 @@ metaTitle: "BIOINDUSTRIAL"
 description: "BIOINDUSTRIAL té com a objectiu verificar si la depuradora és capaç de tractar biològicament només l’aigua provinent del col·lector industrial."
 date: "2025-01-08"
 modified_date: "2025-01-08"
-image: https://idr.cat/posts/thumb-bioindustrial.jpg
+image: https://idr.cat/posts/thumb-bioind.jpg
 tags:
   - I+D
 ---
@@ -19,8 +19,7 @@ tags:
 
 <!-- #### Explicació -->
 
-![My Image](/posts//bioindustrial-1.svg)
-![My Image](/posts//bioindustrial-2.svg)
+![My Image](/svg/cat-bioind.svg)
 
 El projecte BIOINDUSTRIAL, liderat per IDR i INTRAVAL S.L., té l’objectiu principal de comprovar si la depuradora pot funcionar exclusivament amb aigua del col·lector industrial. Actualment, la planta tracta un 60% d’aigua del col·lector industrial i un 40% d’aigua del col·lector municipal. Mitjançant una planta pilot, s’ha reproduït a petita escala el tractament biològic de la depuradora, amb alimentació només d’aigua industrial, per avaluar amb precisió com funcionen les reaccions biològiques implicades en aquest procés.
 
