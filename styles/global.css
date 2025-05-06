@@ -29,7 +29,7 @@
   align-items: center;
   overflow: hidden;
   transition: 0.5s ease-in-out;
-  cursor: pointer;
+   
   background: transparent;
   border: none;
   border-radius: 20px;
@@ -45,7 +45,7 @@
   right: 30px;
   transform: scale(0.75);
   border: none;
-  cursor: pointer;
+   
   background: transparent;
 }
 
@@ -186,7 +186,7 @@
 
   background: transparent;
   border-bottom: 2px solid transparent;
-  cursor: pointer;
+   
 }
 
   .header-top .MenuLinks a {
@@ -223,10 +223,6 @@
 
 .dropdown {
   position: relative;
-}
-
-.dropdown-toggle {
-  cursor: pointer;
 }
 
 .dropdown-link {
@@ -299,7 +295,7 @@
   justify-content: left;
   margin: 0;
   padding: 0;
-  cursor: pointer;
+   
 }
 
 .dropdown-item .text small {
@@ -376,7 +372,7 @@
 }
 
 .FooterContent {
-  padding: 100px;
+  padding: var(--padding);
   display: flex;
   flex-direction: column;
   color: var(--white);
@@ -394,12 +390,30 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 100%;
+}
+
+.LogoWrap {
+  display: flex;
+  flex-direction: row;
+  width: 25%;
+}
+
+.ContentWrap {
+  display: flex;
+  flex-direction: row;
+  width: 75%;
+}
+
+.FooterSection.Nav {
+  width: 33%;
+}
+.FooterSection.Info {
+  width: 66%;
+  height: 240px;
 }
 
 .FooterColumnWrap {
   display: flex;
-
 }
 
 .FooterColumn {
@@ -408,9 +422,9 @@
   width: 100%;
 }
 
-.FooterColumn.Wide {
+/* .FooterColumn.Wide {
   min-width: 250px;
-}
+} */
 
 .Footer ul, 
 .Footer li {
@@ -419,7 +433,7 @@
   margin-left: 0;
   font-size: 0.875rem;
   font-weight: 300;
-  padding: 2px 0;
+  padding: 8px 0;
 }
 
 .Footer h6 {
@@ -436,7 +450,7 @@
  }
 
  .Footer a:hover {
-  color: var(--pblue1);
+  color: var(--tgreen);
  }
 
  /* Partners */
@@ -444,23 +458,13 @@
 .PartnerLogos {
   display: flex;
   align-items: center;
-  gap: 10%;
-  height: 160px;
+  gap: 12%;
 }
 
 .PartnerLogos img {
   height: 60px;
   width: auto;
 } 
-
- /* ---- Social Section ----*/
-
- .FooterSocialWrap {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
-  margin-top: 40px;
- }
 
 /* Social Icons */
 
@@ -470,123 +474,6 @@
   height: 100px;
   padding-right: 5%;
   border-right: 1px solid var(--pblue);
-}
-
-.Footer .AppName svg {
-  width: 150px;
-  height: auto;
-}
-
-.SocialIcons {
-  display: flex;
-  justify-content: flex-start;
-  padding-top: 20px;
-}
-
-.SocialIcons svg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30px;
-  height: 30px;
-}
-
-.RoundIcon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 10px;
-  /* width: 60px;
-  height: 60px; */
-  background: transparent;
-  border-radius: 40px;
-}
-
-.RoundIcon path {
-  fill: var(--white);
-}
-
-.RoundIcon path:hover {
-  fill: var(--pblue1);
-}
-  /* .RoundIcon:hover {
-    cursor: pointer;
-    background: var(--purple3);
-  } */
-
-/* Subscribe */
-
-.SubscriptionWrap {
-  display: flex;
-  flex-direction: row;
-  padding-left: 5%;
-}
-
-.Footer .SubContent {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  color: var(--white);
-  width: 100%;
-  height: auto;
-}
-
-.SubTxt {
-  width: 100%;
-}
-
-.SubmitWrap {
-  display: flex;
-  align-items: center;
-}
-
-.SubInput {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.SubInput p {
-  width: 60px;
-}
-
-.Footer .SubContent input {
-  height: 32px;
-  box-shadow: none;
-  border: 1px solid var(--grey1);
-  margin-bottom: 0;
-  width: 20vw;
-  border-radius: 25px;
-}
-
-.Footer .SubContent h5 {
-  font-size: 1.25rem;
-  margin-bottom: 12px;
-}
-
-.Footer .SubContent h6 {
-  margin-bottom: 2px;
-  font-size: 0.875rem;
-  color: var(--sBlue) !important;
-}
-
-.Footer .SubContent p {
-  font-size: 0.75rem;
-}
-
-.AppBtn.Submit button {
-  padding: 10px;
-  margin-top: 8px;
-}
-
-.Footer .AppBtn.Submit button {
-  padding: 8px;
-  margin-top: 0;
-  margin-left: 10px;
-  width: 100px;
-  min-width: 0;
-  font-size: 0.875rem;
 }
 
 /* Info Section */
@@ -607,7 +494,6 @@
   font-weight: 300;
   letter-spacing: 0.04rem;
 }
-
 
 .PoweredBy {
   display: flex;
@@ -760,45 +646,66 @@
   } 
 
   .FooterNavWrap {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap:20px;
+    flex-direction: column;
   }
+
+  .LogoWrap {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .ContentWrap {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 800px) {
+
+  .ContentWrap {
+    flex-direction: row-reverse;
+  }
+  .FooterColumnWrap {
+    flex-direction: column;
+  }
+  .FooterSection.Info {
+    width: 60%;
+    height: auto;
+  }
+  .FooterSection.Nav {
+    width: 40%;
+  }
+  .PartnerLogos {
+    margin-top: 20px;
+  }
+ 
 }
 
 @media (max-width: 600px) {
 
-  .FooterSocialWrap {
-    flex-direction: column;
-    align-items: flex-start;
-  }
 
-  .CompanyWrap {
+  /* .CompanyWrap {
     width: 100%;
     padding-right: 0;
     padding-bottom: 20px;
     border-bottom: 1px solid var(--pblue);
     border-right: none;
+  } */
+
+  .ContentWrap {
+    flex-direction: column;
   }
 
-  .SubscriptionWrap {
-    display: flex;
-    flex-direction: row;
-    padding-left: 0;
-    padding-top: 30px;
-  }
-
-  .Footer .SubContent input {
+  .FooterSection.Info,
+  .FooterSection.Nav {
     width: 100%;
   }
-  
-  .Footer .SubContent h6 {
-    margin-bottom: 10px;
+
+  .Footer ul, 
+  .Footer li {
+    padding: 6px 0;
   }
 
-  .Footer .SubContent h5 {
-    margin-bottom: 20px;
-  }
    
 }
 

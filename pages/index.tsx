@@ -50,10 +50,13 @@ export default function Home(props: IIndexProps) {
         </div> */}
 
       <div className="HeroSectionWrap Dark" id="main-hero">
-          <video className="HeroVideo"  muted loop playsInline
+          {/* <video className="HeroVideo"  muted loop playsInline
             autoPlay
             src="video/hero-video.mp4">
-          </video>
+          </video> */}
+                <Image className="HeroVideo" style={{ borderRadius: '8px' }} loading="eager" 
+                alt="img" src='/video/video-inici.jpg' width={1600} height={900}/>           
+
           <div className="Overlay"></div>
         <div className="HeroSection Main">
           <div className="MainHeroContent animation-up" data-animate="slide-up">
@@ -134,10 +137,16 @@ export default function Home(props: IIndexProps) {
             </div>
 
             <div className="CenterImg">
-              <video playsInline controls
+              {/* <video playsInline controls
               
               src="video/hero-video.mp4">
-              </video>
+              </video> */}
+
+               <div className="CenterImg">
+                <Image style={{ borderRadius: '8px' }} loading="eager" 
+                alt="img" src='/video/thumb-video.jpg' width={1600} height={900}/>           
+               </div>
+
             </div>
 
           </div>

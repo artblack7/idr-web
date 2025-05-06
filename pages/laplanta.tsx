@@ -116,7 +116,7 @@ export default function Tech(props: IIndexProps) {
       {/* NUMBERS */}
 
       <div className="CenterSection">
-          <div className="CardGroup three Numbers">
+          <div className="CardGroup three Numbers Small">
 
           <div className="CardWrap animation-up" data-animate="slide-up">
             <div className="CardNumber">
@@ -185,28 +185,35 @@ export default function Tech(props: IIndexProps) {
                 </div>
               </div>
             </div>
-
-            <div className="CenterImg">
-              <video playsInline controls // autoPlay
-              src="video/hero-video.mp4">
-              </video>
-            </div>
-
-            {/* <div className="CenterImg">
-            <img className="" 
-              alt="IDR" src='/svg/cat-planta.svg'  />
-            </div> */}
-
-
-
           </div>
 
         </div>
+
+        <div className="TechImg">
+          <img alt="IDR" src='/svg/cat-planta.svg'  />
+        </div>
+
       </section>
 
-      {/* DIAPOSITIVES */}
-
       <TechSlideshow/>
+
+      <section className="SectionWrap" id="tech-video">
+        <div className='TechVideo'>
+        <p className='tagline'>RECORREGUT AUDIOVISUAL</p>
+          <h3>El procés de depuració de l'aigua</h3>
+          <div className="CenterImg">
+            {/* <video playsInline controls 
+            src="video/cat-tecnic.mp4">
+            </video> */}
+          </div>
+
+          </div>
+          <Image style={{ borderRadius: '8px', width:'100%', height:'auto' }} loading="eager" 
+            alt="img" src='/video/cat-tecnic.jpg' width={1600} height={900}/>           
+          <div>
+
+        </div>
+      </section>
 
       {/* POSTS */}
 

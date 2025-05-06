@@ -7,7 +7,7 @@
 /*--------------- Main Blog Section ---------------*/
 
 .BlogSectionWrap {
-  background: var(--darkGrad);
+  /* background: var(--darkGrad); */
   padding: 0;
 }
 
@@ -31,15 +31,10 @@
   max-width: 1400px;
   height: max-content;
   margin: auto;
-  color: var(--white);
+  /* color: var(--white); */
   padding: var(--padding);
+  padding-top: 0 !important;
   /* height: 1000px; */
-}
-
-.BlogSection h3,
-.BlogSection h6,
-.BlogSection p {
-  color: var(--white);
 }
 
 .BlogSection h6 {
@@ -52,7 +47,7 @@
 
 .BlogSlideWrap h4 {
   font-weight: 600;
-  color: white;
+  /* color: white; */
   font-size: 2rem;
   line-height: 2.5rem;
 }
@@ -399,7 +394,6 @@ body.blog-post .BlogHeader header {
   position: relative;
   overflow: hidden;
   background: var(--darkGrad);
-
 }
 
 .BlogHeader * {

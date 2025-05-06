@@ -664,9 +664,9 @@ section video {
 
 /* SOCIS */
 
-#main-socis {
-  /* background: rgb(210, 210, 210); */
-}
+/* #main-socis {
+  background: rgb(210, 210, 210);
+} */
 
 .center-subtitle {
   width: 100%;
@@ -676,12 +676,34 @@ section video {
 
 /*//////////////////////// LA PLANTA /////////////////////*/
 
-#tech-main .Numbers h1 {
-  font-size: 3.8rem;
+#tech-planta {
+  padding-bottom: 30px !important;
 }
 
 #tech-planta .CenterSection {
   max-width: 1200px;
+}
+
+#tech-video {
+  background: var(--darkGrad);
+  color: white;
+}
+
+.TechImg {
+  width: 100%;
+  height: auto;
+  max-width: 1100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.TechVideo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
 /*//////////////////////// SOSTENIBILITAT /////////////////////*/
@@ -730,10 +752,6 @@ section video {
   display: none;
 }
 
-#services-contact {
-  /* border-top: 0.5px solid var(--grey2); */
-}
-
 #services-contact  {
   background: url("../public/img/img-contact.jpg") 
   no-repeat center right / auto 100% ;
@@ -755,6 +773,10 @@ section video {
   height: 100%;
   background: white;
   clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+}
+
+.LerWrap {
+  margin-bottom: 50px;
 }
 
 /*//////////////////////// EMPRESA /////////////////////*/
@@ -1182,7 +1204,7 @@ section video {
     .SocisLogos {
       gap: 1vw;
     }
-    
+
   /* section,
   .HeroSection,
   .FooterContent {

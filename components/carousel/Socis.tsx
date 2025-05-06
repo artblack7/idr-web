@@ -6,6 +6,7 @@ const Socis = () => {
     <>
     <div className='img-carousel'>
       <div className='img-track socis'>
+        
         <Image alt="logo" src='/socis/01.png' width={570} height={300} />
         <Image alt="logo" src='/socis/02.png' width={570} height={300} />
         <Image alt="logo" src='/socis/03.png' width={570} height={300} />
@@ -29,7 +30,9 @@ const Socis = () => {
         <Image alt="logo" src='/socis/19.png' width={570} height={300} />
         <Image alt="logo" src='/socis/23.png' width={570} height={300} />  
         <Image alt="logo" src='/socis/20.png' width={570} height={300} />
-             
+        <Image alt="logo" src='/socis/25.png' width={570} height={300} />
+        <Image alt="logo" src='/socis/26.png' width={570} height={300} />
+        <Image alt="logo" src='/socis/24.png' width={570} height={300} />
 
         <Image alt="logo" src='/socis/01.png' width={570} height={300} />
         <Image alt="logo" src='/socis/02.png' width={570} height={300} />
@@ -53,7 +56,10 @@ const Socis = () => {
         <Image alt="logo" src='/socis/18.png' width={570} height={300} />    
         <Image alt="logo" src='/socis/19.png' width={570} height={300} />
         <Image alt="logo" src='/socis/23.png' width={570} height={300} />  
-        <Image alt="logo" src='/socis/20.png' width={570} height={300} />  
+        <Image alt="logo" src='/socis/20.png' width={570} height={300} />
+        <Image alt="logo" src='/socis/25.png' width={570} height={300} />
+        <Image alt="logo" src='/socis/26.png' width={570} height={300} />
+        <Image alt="logo" src='/socis/24.png' width={570} height={300} />
 
         </div>
       </div>

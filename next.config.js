@@ -4,9 +4,9 @@ const nextConfig = {
 
     unoptimized: false,
     domains: ['idr.cat'],
-    pageExtensions: ['js', 'jsx', 'md', 'mdx'], // Allow .md and .mdx files as pages
+    // pageExtensions: ['js', 'jsx', 'md', 'mdx'], 
   },
-  reactStrictMode: true,
+  reactStrictMode: false,
   swcMinify: true,
 };
 

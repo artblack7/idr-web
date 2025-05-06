@@ -238,7 +238,7 @@ body {
 
 a, Link {
   text-decoration: none;
-  cursor: pointer;
+   
   outline: none;
   color: var(--white);
   box-shadow: none;
@@ -251,7 +251,7 @@ a path {
 
 main {
   scrollbar-width: auto;
-  scrollbar-color: var(--dark) var(--dark);
+  scrollbar-color: white;
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -578,7 +578,7 @@ p {
 button {
   font-size: 1rem;
   /* background: var(--transparent); */
-  cursor: pointer;
+   
   border: none;
   outline: none;
 }

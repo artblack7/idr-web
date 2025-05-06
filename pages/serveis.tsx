@@ -108,7 +108,6 @@ export default function Serveis() {
   {/* CODIS LER */}
 
       <section>
-        {/* <div className='GradStripe'></div> */}
         <div className='Stripe Green'></div>
       </section>
 
@@ -129,6 +128,9 @@ export default function Serveis() {
 
         </div>
       </section>
+
+    <div className='GradStripe'></div>
+
 
       <Contact />
  

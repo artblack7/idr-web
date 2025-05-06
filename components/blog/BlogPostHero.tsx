@@ -32,7 +32,7 @@ const Hero = (props: IHeroProps) => {
            <Image src={props.image ? props.image : BlogArchiveConfig.featured_image} alt={props.title} width={1425} height={748} />
           </div>
         </header> */}
-        <div className="BlogTags">
+        {/* <div className="BlogTags">
           <ul className="BlogTagsInner">
             <li>
               <Link href="/blog" className="gtm_blog_inbound_Link_Blog">
@@ -51,7 +51,7 @@ const Hero = (props: IHeroProps) => {
               </li>
             ))}
           </ul>
-        </div>
+        </div> */}
       </div>
     </>
   )

@@ -55,7 +55,7 @@
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  cursor: pointer;
+   
   margin: 0;
   min-height: 40px;
   padding: 10px 25px 10px 25px;
@@ -72,7 +72,7 @@
 .FaqBlocks .Collapsible a {
   color: var(--green);
   font-weight: 600;
-  cursor: pointer;
+   
   transition: 0.1s ease-in-out;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -80,7 +80,7 @@
 
 .FaqBlocks .Collapsible a:hover {
   color: var(--darkpink);
-  cursor: pointer;
+   
 }
 
 .FaqBlocks .Collapsible__trigger.is-closed::after {
@@ -107,31 +107,40 @@
 
 /*---------------  LEGAL TERMS & PRIVACY ---------------*/
 
+#privacy {
+  background: var(--darkGrad);
+  color: white;
+}
+
 .LegalHero {
   max-width: 1200px;
   margin: auto;
 }
 
-.LegalSectionWrap {
+/* .LegalSectionWrap {
   border-top: 1px solid var(--grey2);
   background: var(--grey);
 }
 
 .LegalSectionWrap.Grey {
   background: var(--grey1);
-}
+} */
 
 .LegalSection {
-  max-width: 700px;
-  margin: auto;
-  padding: 0 100px ;
-  
+  width: 100%;
+  max-width: 1000px;
+  margin-bottom: 40px;
+  text-align: left;
 }
 
 .LegalSection li {
   padding: 0 10px ;
   margin-left: 15px;
   padding-bottom: 10px;
+}
+
+.LegalSection a {
+  color: var(--tgreen);
 }
 
 .legal-subtitle {

@@ -102,7 +102,7 @@
 }
 
 .img-track.socis {
-  animation: imgcarousel 50s linear infinite;
+  animation: imgcarousel 60s linear infinite;
 }
 
 @keyframes imgcarousel {
@@ -130,7 +130,6 @@
   font-size: 14px;
 }
 
-
 .BlogSlideInner {
   display: flex;
   flex-direction: row;
@@ -157,7 +156,7 @@
   /* max-width: 800px; */
   border-radius: 12px !important;
   transition: filter 0.3s ease-in-out;
-  box-shadow: var(--sh-box);
+  /* box-shadow: var(--sh-box); */
 }
 
 /* .SlideImgWrap {
@@ -212,14 +211,16 @@
   filter: brightness(110%);
 } */
 
+
+/* PREV NEXT BUTTONS */
+
 .blog-carousel .flickity-button {
-  /* background: rgba(0, 122, 124, 0.474);
-  border: 1px solid rgba(0, 191, 194, 0.464); */
-  background: rgba(0, 122, 124, 0.3);
-  border: 1px solid rgba(0, 191, 194, 0.3);
+  /* background: rgba(0, 122, 124, 0.474); */
+  background: white;
+  border: 1px solid rgb(57, 151, 153);
   opacity: 1;
   transition: opacity 0.3s ease-in-out;
-  color: #ffffff;
+  /* color: #ffffff; */
 }
 
 .blog-carousel:hover .flickity-button {
@@ -227,12 +228,14 @@
 }
 
   .blog-carousel .flickity-button:active {
+    opacity: 0.8;
   }
+
   .blog-carousel .flickity-button:hover {
-    background: rgba(0, 122, 124, 0.4);
-    border: 1px solid rgba(0, 191, 194, 0.4);
+    background: var(--tgreen3);
+    border: 1px solid var(--tgreen3);
     opacity: 1;
-    cursor: pointer;
+     
   }
   .blog-carousel .flickity-button:focus {
     box-shadow: none;
@@ -245,35 +248,50 @@
   .blog-carousel .flickity-prev-next-button.previous { left: -20px; }
   .blog-carousel .flickity-prev-next-button.next { right: -20px; }
  
-.blog-carousel .flickity-page-dot {
-  width: 13px !important;
-  height: 13px !important;
-  background: hsla(0, 0%, 100%, 0.25);
-  position: relative;
-  top: 0;
-}
-  .blog-carousel .flickity-page-dot:focus {
-    box-shadow: none;
-  }
-  .blog-carousel .flickity-page-dot.is-selected {
-    background: hsl(0, 0%, 90%);
-  }
-
-  .blog-carousel .flickity-prev-next-button .flickity-button-icon {
+  .flickity-prev-next-button .flickity-button-icon {
     display: none;
   }
-  .blog-carousel .flickity-prev-next-button.previous::before {
+
+  .flickity-prev-next-button.previous::before,
+  .flickity-prev-next-button.next::before {
     display: flex;
     justify-content: center;
     align-items: center;
-    content: url('/icons/arrow-left.svg');
+    font-size: 20px;
+    color: var(--tgreen3);
   }
-  .blog-carousel .flickity-prev-next-button.next::before {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    content: url('/icons/arrow-right.svg');
+
+  .flickity-prev-next-button:hover.previous::before,
+  .flickity-prev-next-button:hover.next::before {
+    color: var(--white);
   }
+
+  .flickity-prev-next-button.previous::before {
+    /* content: url('/icons/arrow-left.svg'); */
+    content: "←";
+  }
+
+  .flickity-prev-next-button.next::before {
+    /* content: url('/icons/arrow-right.svg'); */
+    content: "→";
+  }
+
+  /* PAGE DOT */
+
+  .blog-carousel .flickity-page-dot {
+    width: 13px !important;
+    height: 13px !important;
+    background: rgba(112, 144, 145, 0.2);
+    position: relative;
+    top: -10px;
+  }
+    .blog-carousel .flickity-page-dot:focus {
+      box-shadow: none;
+    }
+    .blog-carousel .flickity-page-dot.is-selected {
+      background: var(--tgreen2);
+    }
+  
   
 
 /*//////////////////////// NEWS SLIDESHOW /////////////////////*/
@@ -304,16 +322,22 @@
   /* box-shadow: var(--sh-xl); */
 }
 
+/* PREV NEXT BUTTONS */
+
 .news-carousel .flickity-button {
-  background: var(--tgreen);
-  /* border: 1px solid #50958d; */
+  background: white;
+  border: 1px solid rgb(57, 151, 153);
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
 }
   .news-carousel .flickity-button:active {
     opacity: 0.8;
   }
   .news-carousel .flickity-button:hover {
     background: var(--tgreen3);
-    cursor: pointer;
+    border: 1px solid var(--tgreen3);
+    opacity: 1;
+     
   }
   .news-carousel .flickity-button:focus {
     box-shadow: none;
@@ -352,7 +376,7 @@
 .news-carousel .flickity-prev-next-button .flickity-button-icon {
   display: none;
 }
-.news-carousel .flickity-prev-next-button.previous::before {
+/* .news-carousel .flickity-prev-next-button.previous::before {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -367,7 +391,7 @@
 
 .news-carousel .flickity-prev-next-button.next::before svg path {
   fill: #50958d !important;
-}
+} */
 
 /**************************************************************************************/
 /*//////////////////////////////// RESPONSIVE STYLES /////////////////////////////////*/
