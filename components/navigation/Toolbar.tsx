@@ -74,13 +74,13 @@ export const Toolbar = (props: any) => {
                                 </div>
                                 {props.children}
 
-                                {/* <div className="MenuLinks Extra">
-                                    <Link href="/getstarted">Àrea Clients</Link>
-                                </div>  */}
-
+                                <div className="MenuLinks Extra">
+                                    <Link target="blank" href="https://clients.idr.cat/">Àrea Clients</Link>
+                                </div> 
+{/* 
                                 <div className="AppBtn">
                                 <Link target="blank" href="https://clients.idr.cat/"><button>Àrea Clients<Arrow_Icon /></button></Link>
-                                </div>
+                                </div> */}
                                 
 
                             </div>}
