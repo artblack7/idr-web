@@ -11,6 +11,7 @@ import RecentPosts from '../components/blog/RecentPosts';
 import { GetStaticProps } from 'next';
 import { BlogArchiveConfig, Config } from '../utils/Config';
 import { getAllPosts, getCategoryCollection, PostItems } from '../utils/Content';
+import VideoTecnic from '../components/VideoTecnic';
 
 type IIndexProps = {
   initialPosts: PostItems[];
@@ -198,18 +199,37 @@ export default function Tech(props: IIndexProps) {
       <TechSlideshow/>
 
       <section className="SectionWrap" id="tech-video">
-        <div className='TechVideo'>
-        <p className='tagline'>RECORREGUT AUDIOVISUAL</p>
+        <div className='VideoWrap'>
+          <p className='tagline'>RECORREGUT AUDIOVISUAL</p>
           <h3>El procés de depuració de l'aigua</h3>
-          <div className="CenterImg">
             {/* <video playsInline controls 
             src="video/cat-tecnic.mp4">
             </video> */}
-          </div>
 
-          </div>
-          <Image style={{ borderRadius: '8px', width:'100%', height:'auto' }} loading="eager" 
-            alt="img" src='/video/cat-tecnic.jpg' width={1600} height={900}/>           
+            <div
+                style={{
+                  padding: '56.25% 0 0 0',
+                  position: 'relative',
+                }}
+              >
+                <iframe
+                  src="https://player.vimeo.com/video/1082373467?h=123456789a&badge=0&autopause=0&player_id=0&app_id=58479"
+                  frameBorder="0"
+                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                  className='VideoIframe'
+                  style={{
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    width: '100%',
+                    height: '100%',
+                  }}
+                  title="Igualadina de Depuració i Recuperació IDR"
+                ></iframe>
+            </div>
+
+          
+          </div>       
           <div>
 
         </div>

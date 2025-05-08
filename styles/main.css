@@ -699,11 +699,18 @@ section video {
   margin-top: 30px;
 }
 
-.TechVideo {
+.VideoWrap {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  width: 100%;
+}
+
+.VideoIframe {
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 20px;
 }
 
 /*//////////////////////// SOSTENIBILITAT /////////////////////*/
