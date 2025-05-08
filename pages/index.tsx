@@ -50,12 +50,12 @@ export default function Home(props: IIndexProps) {
         </div> */}
 
       <div className="HeroSectionWrap Dark" id="main-hero">
-          {/* <video className="HeroVideo"  muted loop playsInline
+          <video className="HeroVideo"  muted loop playsInline
             autoPlay
-            src="video/hero-video.mp4">
-          </video> */}
-                <Image className="HeroVideo" style={{ borderRadius: '8px' }} loading="eager" 
-                alt="img" src='/video/video-inici.jpg' width={1600} height={900}/>           
+            src="video/video-hero.mp4">
+          </video>
+                {/* <Image className="HeroVideo" style={{ borderRadius: '8px' }} loading="eager" 
+                alt="img" src='/video/video-inici.jpg' width={1600} height={900}/>            */}
 
           <div className="Overlay"></div>
         <div className="HeroSection Main">
@@ -136,16 +136,34 @@ export default function Home(props: IIndexProps) {
              </div>
             </div>
 
-            <div className="CenterImg">
+            <div className="Video">
               {/* <video playsInline controls
               
               src="video/hero-video.mp4">
               </video> */}
-
-               <div className="CenterImg">
-                <Image style={{ borderRadius: '8px' }} loading="eager" 
-                alt="img" src='/video/thumb-video.jpg' width={1600} height={900}/>           
-               </div>
+              
+              
+              <div
+                style={{
+                  padding: '56.25% 0 0 0',
+                  position: 'relative',
+                }}
+              >
+                <iframe
+                  src="https://player.vimeo.com/video/1082333463?h=123456789a&badge=0&autopause=0&player_id=0&app_id=58479"
+                  frameBorder="0"
+                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                  className='VideoIframe'
+                  style={{
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    width: '100%',
+                    height: '100%',
+                  }}
+                  title="Igualadina de Depuració i Recuperació IDR"
+                ></iframe>
+            </div>
 
             </div>
 
