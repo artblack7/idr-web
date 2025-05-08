@@ -5,7 +5,7 @@ description: "Optimització del tractament biològic de la planta, incrementant 
 date: "2025-01-05"
 modified_date: "2025-01-05"
 # image: https://idr.cat/thumb/thumb-reactor.jpg
-https://idr-web-teal.vercel.app/thumb/thumb-reactor.jpg
+image: https://idr-web-teal.vercel.app/thumb/thumb-reactor.jpg
 
 tags:
   - Optimització
