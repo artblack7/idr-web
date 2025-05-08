@@ -50,10 +50,15 @@ export default function Home(props: IIndexProps) {
         </div> */}
 
       <div className="HeroSectionWrap Dark" id="main-hero">
-          <video className="HeroVideo"  muted loop playsInline
+          <video
+            className="HeroVideo"
+            muted
+            loop
+            playsInline
             autoPlay
-            src="video/video-hero.mp4">
-          </video>
+            src="video/video-hero.mp4"
+            poster="/video/video-poster.jpg"
+          ></video>
                 {/* <Image className="HeroVideo" style={{ borderRadius: '8px' }} loading="eager" 
                 alt="img" src='/video/video-inici.jpg' width={1600} height={900}/>            */}
 
