@@ -4,7 +4,9 @@ metaTitle: "BIOINDUSTRIAL"
 description: "BIOINDUSTRIAL té com a objectiu verificar si la depuradora és capaç de tractar biològicament només l’aigua provinent del col·lector industrial."
 date: "2025-01-08"
 modified_date: "2025-01-08"
-image: https://idr.cat/thumb/thumb-bioind.jpg
+# image: https://idr.cat/thumb/thumb-bioind.jpg
+https://idr-web-teal.vercel.app/thumb/thumb-bioind.jpg
+
 tags:
   - I+D
 ---
