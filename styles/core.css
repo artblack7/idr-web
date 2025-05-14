@@ -101,7 +101,7 @@
   --heroBrown: hsla(0, 0%, 7%, 0.95); 
 
   --cyan: #00ede2; /*bluegrad*/
-  --cyan2: #00eff3; /*bluegrad*/
+  --cyan2: #0099c3; /*button*/
   --blue: hsl(203, 100%, 48%); /*bluegrad*/
   --blue2: hsl(210, 100%, 32%); /*maingrad*/
   --blue3: hsl(210, 100%, 18%); /*maingrad dark*/
@@ -126,6 +126,7 @@
   --brown3:rgba(28, 15, 7, 0.903); /*quisom*/
 
   --cream: hsl(34, 100%, 78%); 
+  --cream2: hsl(27, 50%, 54%); 
   --brown: hsl(27, 75%, 62%); 
   --brown2:rgb(72, 34, 13); 
   --brown4:rgb(33, 20, 12); 
@@ -586,25 +587,74 @@ button {
     position: relative;
     background: var(--transparent);
     /* box-shadow: var(--sh-l); */
-    border: 1.5px solid var(--dark3);
+    border: 1.5px solid var(--tgreen3);
     padding: 12px 20px;
     min-width: 150px;
     width: max-content;
     border-radius: 6px;
-    transition: background-color 0.2s ease-in-out;
+    /* transition: background-color 0.2s ease-in-out, box-shadow 0.3s ease-in-out; */
+    transition: background-color 0.2s ease-in-out, color 0.3s ease-in-out;
     overflow: hidden;
     z-index: 1;
     font-weight: 400;
     letter-spacing: 0.02rem;
+    color: var(--tgreen3);
   }
     .AppBtn button:hover {
       /* color: var(--tgreen2); */
       /* border-color: var(--tgreen2); */
-      background-color: var(--tgreen3);
+      /* background-color: var(--tgreen3); */
       border: 1.5px solid var(--tgreen3);
       color: white;
-      transition: background-color 0.2s ease-in-out;
+      /* box-shadow: inset 12rem 0 0 var(--tgreen3);
+      transition: background-color 0.2s ease-in-out, box-shadow 0.3s ease-in-out;  */
     }
+
+    .AppBtn button::before {
+      position: absolute;
+      transition: 0.3s;
+      content: '';
+      width: 0;
+      bottom: 0;
+      background: var(--tgreen3);
+      height: 120%;
+      left: -10%;
+      transform: skewX(20deg);
+      z-index: -1;
+  }
+  .AppBtn button:hover::before {
+    width: 120%;
+}
+
+.AppBtn.Blue button::before {
+  background: var(--cyan2);
+}
+.AppBtn.Blue button:hover {
+  border-color: var(--cyan2);
+}
+.AppBtn.Blue button:hover::before {
+  width: 120%;
+}
+
+.AppBtn.Green button::before {
+  background: var(--green2);
+}
+.AppBtn.Green button:hover {
+  border-color: var(--green2);
+}
+.AppBtn.Green button:hover::before {
+  width: 120%;
+}
+
+.AppBtn.Brown button::before {
+  background: var(--cream2);
+}
+.AppBtn.Brown button:hover {
+  border-color: var(--cream2);
+}
+.AppBtn.Brown button:hover::before {
+  width: 120%;
+}
 
   .AppBtn button svg {
     position: relative;
@@ -613,6 +663,9 @@ button {
     margin-right: 2px;
     transition: 0.1s ease-in-out;
     width: 7px;
+  }
+  .AppBtn button:hover svg path {
+    fill: var(--tgreen3);
   }
     .AppBtn button:hover svg {
       margin-left: 14px;
@@ -641,29 +694,35 @@ button {
       fill: var(--white);
     }
 
+
+    /* LINE BUTTON */
+/* 
   .AppBtn.Blue button:hover {
     border-color: var(--cyan2);
     color: var(--cyan2);
+    box-shadow: inset 12rem 0 0 0 var(--cyan2);
   }
   .AppBtn.Blue button:hover svg path {
     fill: var(--cyan2);
   }
 
   .AppBtn.Green button:hover {
-    border-color: var(--green);
+    border-color: var(--green2);
     color: var(--green);
+    box-shadow: inset 12rem 0 0 0 var(--green2);
   }
   .AppBtn.Green button:hover svg path {
     fill: var(--green);
   }
 
   .AppBtn.Brown button:hover {
-    border-color: var(--cream);
+    border-color: var(--cream2);
     color: var(--cream);
+    box-shadow: inset 12rem 0 0 0 var(--cream2);
   }
   .AppBtn.Brown button:hover svg path {
     fill: var(--cream);
-  }
+  } */
 
   .SmallBtn {
     background: var(--darkGrad);
