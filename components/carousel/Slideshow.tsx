@@ -8,7 +8,7 @@ const flickityOptions = {
     initialIndex: 0,
     wrapAround: true,
     prevNextButtons: false,
-    autoPlay: 4000
+    autoPlay: 1000
 }
 
 const Slideshow: React.FC = () => {

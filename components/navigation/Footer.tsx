@@ -15,7 +15,9 @@ const Footer = () => {
                 <div className="">
                   <div className="">
                     <div className="footer-logo">
-                      <img alt="IDR" src='/logos/logo.png' width={200} height={200} />
+                       <Link href="/" target="_blank" rel="noopener noreferrer">
+                         <Image alt="IDR" src='/logos/logo.png' width={200} height={200} />
+                       </Link>
                     </div>
                   </div>
                 </div>
@@ -77,9 +79,17 @@ const Footer = () => {
                 </div>
                 <div>
                   <div className="PartnerLogos animation-up" data-animate="slide-up">
-                    <Image src="/logos/cluster.png" height="300" width="300" alt="Logo" />
-                    <Image src="/logos/tradebe.png" height="300" width="300" alt="Logo" />
-                    <Image src="/logos/gremi.png" height="300" width="300" alt="Logo" />
+                      <div className="Socis">
+                        <a href="https://leatherbarcelona.com/" target="_blank" rel="noopener noreferrer">
+                         <Image src="/logos/cluster.png" height="300" width="300" alt="Logo" />
+                        </a>
+                      </div>
+                      <div className="Socis">
+                        <a href="https://www.tradebe.com/environmental-services/" target="_blank" rel="noopener noreferrer">
+                         <Image src="/logos/tradebe.png" height="300" width="300" alt="Logo" />
+                        </a>
+                      </div>
+                      <Image src="/logos/gremi.png" height="300" width="300" alt="Logo" />
                   </div>
                 </div>
               </div>

@@ -1,5 +1,14 @@
 /* RESPONISVE TOOLBAR */
 
+.ToolbarMenuBackdrop,
+.ToolbarMenuBox {
+  visibility: hidden;
+}
+.ToolbarMenuBackdrop.open,
+.ToolbarMenuBox.open {
+  visibility: visible;
+}
+
 .ToolbarMenuBackdrop {
   position: absolute;
   top: 0px;
@@ -79,6 +88,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  /* background: transparent; */
   /* position: fixed; */
 }
 
@@ -90,6 +100,7 @@
 .header-scrolled-w {
   height: 80px;
   z-index: 10;
+  /* background: transparent; */
 }
 
 .ToolbarWhite {

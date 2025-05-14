@@ -302,9 +302,8 @@ export default function Home(props: IIndexProps) {
               <div className="CardWrap animation-up" data-animate="slide-up">
                 <div className="CardImg">
                 <Image className="animation-up" data-animate="slide-up"  loading="eager" 
-                alt="img" src='/img/mission-1.jpg' width={500} height={500}
-                // sizes="(max-width: 480px) 500px, (max-width: 1024px) 700px, 1000px"
-                 />           
+                alt="img" src='/img/mission-1.jpg' width={800} height={800}
+                sizes="(max-width: 480px) 180px, (max-width: 1024px) 200px, 220px"                />           
                </div>
                 <div className="CardTxt">
                   <h6>Qualitat de l’aigua</h6>
@@ -316,8 +315,8 @@ export default function Home(props: IIndexProps) {
               <div className="CardWrap animation-up" data-animate="slide-up">
                 <div className="CardImg">
                 <Image className="animation-up" data-animate="slide-up"  loading="eager" 
-                alt="img" src='/img/mission-2.jpg' width={500} height={500}
-                // sizes="(max-width: 480px) 500px, (max-width: 1024px) 700px, 1000px"
+                alt="img" src='/img/mission-2.jpg' width={800} height={800}
+                sizes="(max-width: 480px) 180px, (max-width: 1024px) 200px, 220px"
                  />           
                 </div>
                 <div className="CardTxt">
@@ -331,8 +330,8 @@ export default function Home(props: IIndexProps) {
               <div className="CardWrap animation-up" data-animate="slide-up">
                 <div className="CardImg">
                 <Image className="animation-up" data-animate="slide-up"  loading="eager" 
-                alt="img" src='/img/mission-3.jpg' width={500} height={500}
-                // sizes="(max-width: 480px) 500px, (max-width: 1024px) 700px, 1000px"
+                alt="img" src='/img/mission-3.jpg' width={800} height={800}
+                sizes="(max-width: 480px) 180px, (max-width: 1024px) 200px, 220px"
                  />           
                 </div>
                 <div className="CardTxt">

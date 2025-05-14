@@ -150,7 +150,7 @@
 } */
 
 .BlogCardWrap:hover .BlogCardTop{
-  filter: brightness(115%);
+  filter: brightness(110%);
 }
 
 .BlogCardTxt {

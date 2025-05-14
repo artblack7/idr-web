@@ -210,7 +210,7 @@
 }
 
 .CardGroup.Mission .CardTxt {
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 /* .CardGroup.Mission img {
@@ -610,6 +610,11 @@ input:focus {
     font-size: 50px;
   }
 
+  .CardGroup.Mission {
+    flex-direction: column;
+    gap: 50px;
+  }
+
 }
 
 /* 
@@ -649,11 +654,6 @@ input:focus {
 } */
 
 @media (max-width: 1024px) {
-
-  .CardGroup.Mission {
-    flex-direction: column;
-    gap: 50px;
-  }
 
   .CardGroup.Squares {
     display: grid;

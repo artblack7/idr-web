@@ -168,10 +168,18 @@ section .LineBtn {
   object-fit: cover;
 }
 
+/* .SquareImgWrap img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+} */
+
 .SquareImgWrap img {
   width: 100%;
   height: auto;
   object-fit: cover;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
 }
 
 /*-------- Divided Section -------*/
@@ -721,18 +729,23 @@ section video {
 }
 
 #eco-cicle .Content {
-  max-width: 1200px;
+  max-width: 1000px;
   margin-top: 60px;
   display: flex;
   flex-direction: row;
 }
 
 #eco-cicle .SideImg {
-  width: 40%;
+  width: 30%;
 }
 #eco-cicle .SideTxt {
-  width: 60%;
+  width: 70%;
   margin-left: 40px;
+}
+
+#eco-cicle .SideImg img {
+  max-width: 300px;
+  height: auto;
 }
 
 #eco-compromis {
@@ -1002,13 +1015,13 @@ section video {
     line-height: auto;
   }
 
-  .SquareImgWrap img {
+  /* .SquareImgWrap img {
     width: 100%;
     height: auto;
     object-fit: cover;
     aspect-ratio: 1/1;
     border-radius: 50%;
-  }
+  } */
 
   /* 
   .DivSectionWrap.DivRight::before,
