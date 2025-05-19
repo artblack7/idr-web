@@ -681,7 +681,7 @@
   }
 
   .news-carousel .flickity-cell {
-    width: 95vw;
+    width: 92vw;
     height: auto;
     margin: 15px 10px;
     background: transparent;
@@ -691,11 +691,11 @@
 
   .news-carousel .flickity-prev-next-button.next { 
     right: 20px;
-    top: -30px;  }
+    top: -10px;  }
   
   .news-carousel .flickity-prev-next-button.previous {
     left: calc(100% - 130px); 
-    top: -30px;
+    top: -10px;
   }
 
   /* .blog-carousel .flickity-cell {

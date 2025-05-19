@@ -21,6 +21,7 @@
   display: flex;
   flex-direction: column;
   transition: 0.3s ease-in-out;
+  /* width: 100%; */
 }
 
 .CardTxt h6 {
@@ -197,7 +198,8 @@
 /* Mission Cards */
 
 .CardGroup.Mission {
-  margin-top: 60px;
+  margin-top: 80px;
+  width: 100%;
 }
 
 .CardGroup.Mission .CardWrap {
@@ -205,7 +207,6 @@
   max-width: 400px;
   margin: 0 auto;
   width: 100%;
-  padding: 30px;
   /* min-height: 300px; */
 }
 
@@ -222,8 +223,7 @@
 .CardGroup.Mission img {
   width: 100%;
   height: auto;
-  width: 260px;
-  height: 260px;
+  max-width: 260px;
   object-fit:cover;
   border-radius: 50%;
 
@@ -611,9 +611,14 @@ input:focus {
   }
 
   .CardGroup.Mission {
+    width: 100%;
     flex-direction: column;
     gap: 50px;
   }
+
+    /* .CardGroup.Mission .CardWrap {
+    width: 100%;
+  } */
 
 }
 

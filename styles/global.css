@@ -345,6 +345,8 @@
 }
 .header-top .AppBtn button:hover {
   background-color: transparent;
+  border-color: var(--tgreen3);
+
 }
 .header-top .AppBtn svg path {
   fill: var(--white);

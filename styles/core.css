@@ -114,7 +114,9 @@
 
   --green: hsl(145, 71%, 57%); 
   --green2: hsl(150, 48%, 43%); /*ecosquare4 */
+  --green3: hsl(150, 88%, 29%); /*ecosquare4 */
 
+  --tgreen0: hsl(170, 34%, 58%); /*maingrad*/
   --tgreen: hsl(170, 30%, 48%); /*maingrad*/
   --tgreen2: hsl(170, 100%, 27%); /*ecosquare3 - maingrad dark*/
   --tgreen3: hsl(186, 100%, 22%); /*ecosquare2*/
@@ -127,6 +129,8 @@
 
   --cream: hsl(34, 100%, 78%); 
   --cream2: hsl(27, 50%, 54%); 
+  --cream3: hsl(27, 51%, 45%); 
+
   --brown: hsl(27, 75%, 62%); 
   --brown2:rgb(72, 34, 13); 
   --brown4:rgb(33, 20, 12); 
@@ -161,17 +165,32 @@
     var(--cyan),
     var(--blue)
   );
+  --blueGrad2: linear-gradient(
+    to right, 
+    var(--cyan),
+    var(--blue)
+  );
 
   --greenGrad: linear-gradient(
     to right, 
     var(--green),
     var(--green2)
   );
+  --greenGrad2: linear-gradient(
+    to right, 
+    var(--green2),
+    var(--green3)
+  );
 
   --brownGrad: linear-gradient(
     to right, 
     var(--cream),
     var(--brown)
+  );
+  --brownGrad2: linear-gradient(
+    to right, 
+    var(--cream2),
+    var(--cream3)
   );
 
 
@@ -592,7 +611,7 @@ button {
     min-width: 150px;
     width: max-content;
     border-radius: 6px;
-    /* transition: background-color 0.2s ease-in-out, box-shadow 0.3s ease-in-out; */
+    transition: background-color 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
     transition: background-color 0.2s ease-in-out, color 0.3s ease-in-out;
     overflow: hidden;
     z-index: 1;
@@ -616,6 +635,7 @@ button {
       content: '';
       width: 0;
       bottom: 0;
+      /* background: var(--mainGrad); */
       background: var(--tgreen3);
       height: 120%;
       left: -10%;
@@ -627,6 +647,7 @@ button {
 }
 
 .AppBtn.Blue button::before {
+  /* background: var(--blueGrad2); */
   background: var(--cyan2);
 }
 .AppBtn.Blue button:hover {
@@ -637,17 +658,21 @@ button {
 }
 
 .AppBtn.Green button::before {
+  /* background: var(--greenGrad2); */
   background: var(--green2);
+
 }
 .AppBtn.Green button:hover {
-  border-color: var(--green2);
+  border: 1px solid var(--green2);
 }
 .AppBtn.Green button:hover::before {
   width: 120%;
 }
 
 .AppBtn.Brown button::before {
+  /* background: var(--brownGrad2); */
   background: var(--cream2);
+
 }
 .AppBtn.Brown button:hover {
   border-color: var(--cream2);

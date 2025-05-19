@@ -74,9 +74,9 @@ const SocisList = () => {
           </a>
         </div>
         <div className="Socis">
-          {/* <a href="https://website.com" target="_blank" rel="noopener noreferrer"> */}
+          <a href="https://abcglobalsolutions.es" target="_blank" rel="noopener noreferrer">
             <Image alt="logo" src='/socis/21.png' width={570} height={300} loading="eager"/>
-          {/* </a> */}
+          </a>
         </div>
         <div className="Socis">
           {/* <a href="https://website.com" target="_blank" rel="noopener noreferrer"> */}
