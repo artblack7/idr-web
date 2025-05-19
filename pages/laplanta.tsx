@@ -177,7 +177,7 @@ export default function Tech(props: IIndexProps) {
               <div className="TextGroup">
                 <div className="HalfText">
                   <p>
-                  Cada dia, tècnics especialitzats de la depuradora recullen mostres d’aigua a les 26 empreses associades per a la seva anàlisi. Els resultats obtinguts permeten conèixer amb exactitud la composició de les aigües residuals de cada empresa, i aquestes, al seu torn, prenen les mesures adequades per minimitzar l’impacte ambiental.
+                  Cada dia, tècnics especialitzats de la depuradora recullen mostres d’aigua proporcionals al cabal abocat a les 26 empreses associades per a la seva anàlisi. Els resultats obtinguts permeten conèixer amb exactitud la composició de les aigües residuals de cada empresa, i aquestes, al seu torn, prenen les mesures adequades per minimitzar l’impacte ambiental.
                   </p>
                 </div>
                 <div className="HalfText">

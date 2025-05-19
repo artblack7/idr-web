@@ -165,7 +165,7 @@ const TechSlideshow: React.FC = () => {
                         <p>TRACTAMENT BIOLÒGIC</p>
                         <h4>Reactor biològic III</h4>
                           <p>
-                          Als reactors desnitirifcants els bacteris transformen els nitrats a nitrogen gas, mitjançant l’addició de matèria orgànica nova (aigua dessulfurada) i en absència d’aire. Al mateix temps es du a terme un tractament terciari de reducció del color mitjançant un coagulant.
+                          Als reactors desnitirifcants els bacteris transformen els nitrats a nitrogen gas, que s’allibera a l’atmosfera, mitjançant l’addició de matèria orgànica nova (aigua dessulfurada) i en absència d’aire. Al mateix temps es du a terme un tractament terciari de reducció del color mitjançant un coagulant.
                           </p>
                           <p>
                           Els fangs de tots els reactors biològics es recullen en una arqueta de fangs biològics, des d’on es bombegen cap al tractament de fangs.
@@ -209,9 +209,9 @@ const TechSlideshow: React.FC = () => {
                       </div>
                       <div className="SideTxt">
                         <p>TRACTAMENT DE FANGS</p>
-                        <h4>Tractament de fangs primari</h4>
+                        <h4>Estabilització i deshidratació dels fangs</h4>
                           <p>
-                          Es dur a terme l’estabilització del fang afegint lletada de calç, a l’arqueta de fangs. Un cop estabilitzats, entren a les centrífugues per ser deshidratats. A la centrífuga també s’hi afegeix un polielectròlit per tal de flocular el fang i extreure’n el màxim d’aigua possible. L’aigua clarificada que en surt es retorna al reactor biològic I. 
+                          Es duu a terme l’estabilització del fang afegint lletada de calç, a l’arqueta de fangs. Un cop estabilitzats, entren a les centrífugues per ser deshidratats. A la centrífuga també s’hi afegeix un polielectròlit per tal de flocular el fang i extreure’n el màxim d’aigua possible. L’aigua clarificada que en surt es retorna al reactor biològic I. 
                           </p>
                           <p>
                           Mitjançant un cargol d’Arquimedes, els fangs deshidratats són transportats fins a les sitges d’emmagatzematge, des d’on seran enviats a la Planta de Compostatge de Jorba per a la seva bioestabilització.                          

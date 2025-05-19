@@ -21,7 +21,7 @@ tags:
 
 ![My Image](/posts/reactor.jpg)
 
-L’any 2018 es va implementar una millora molt significativa per al procés, es va centrar bàsicament en augmentar la capacitat de tractament de la planta, tant en volum com en eficiència. Això es va aconseguir mitjançant la modificació de les instal·lacions existents i la creació d’un nou reactor biològic airejat. Aquest reactor té una capacitat per tractar fins a 14.000 m³ d’aigua, i la seva funció principal és degradar la matèria orgànica present en l’aigua.
+L’any 2018 es va implementar una millora molt significativa per al procés, es va centrar bàsicament en augmentar la capacitat de tractament de la planta, tant en volum com en eficiència. Això es va aconseguir mitjançant la modificació de les instal·lacions existents i la creació d’un nou reactor biològic airejat. Aquest reactor té una capacitat per tractar fins a 14.000 m³ d’aigua. La seva funció és homogeneitzar l’aigua residual d’entrada, regular el cabal i la càrrega uniformement els set dies de la setmana i degradar la matèria orgànica present en l’aigua.
 
 Amb la incorporació d’aquest reactor, els altres reactors de la depuradora es van poder especialitzar: alguns es van destinar a la nitrificació (procés pel qual els bacteris transformen l’amoni a nitrats) i altres a la desnitrificació (procés pel qual els bacteris transformen els nitrats a nitrogen atmosfèric). Això ha permès un tractament biològic més complet, amb un sistema més eficient i ben segmentat entre els diferents reactors.
 Gràcies a aquest nou sistema, la planta depuradora aconsegueix tractar l’aigua de manera més eficient, obtenint un resultat final òptim.

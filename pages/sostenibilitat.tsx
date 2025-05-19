@@ -79,7 +79,7 @@ export default function Sostenibilitat() {
               Gràcies a aquesta aliança, el consum d’aigua per unitat produïda s’ha reduït en un 50% i la càrrega contaminant en un altre 50% durant els últims 20 anys.              
               </p>
               <p>
-              Aquest model de col·laboració ha fet possible que les empreses del clúster siguin més ecològiques i competitives, establint un estàndard d’excel·lència en la indústria adobera. 
+              Aquest model de col·laboració ha fet possible que les empreses sòcies d'IDR siguin més ecològiques i competitives, establint un estàndard d’excel·lència en la indústria adobera. 
               </p>
               <p>
               Mirant cap al futur, seguim innovant i explorant models d’economia circular per avançar cap a una indústria cada cop més eficient i respectuosa amb el medi ambient.
