@@ -36,9 +36,9 @@ export default function Blog(props: IIndexProps) {
         <MainHeader useWhite={false} 
           meta={<Meta 
             title="Blog" 
-            metaTitle="IDR │ IDR" 
+            metaTitle="IDR │ Igualadina de Depuració i Recuperació" 
             metaImg="https://idr.cat/thumb/thumb.png" 
-            description="Don't just keep up —Lead the way with cutting-edge insights at your fingertips." />} 
+            description="Projectes I+D" />} 
             />
       </div>
 

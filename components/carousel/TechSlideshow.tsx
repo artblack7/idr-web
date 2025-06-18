@@ -98,7 +98,7 @@ const TechSlideshow: React.FC = () => {
                           L’aigua de la línia industrial passa pel corrector de pH, per adequar-lo a les següents fases del procés. Una part de l’aigua industrial es dirigeix directament al primer reactor biològic. Mentre que l’altre es tracta als tancs de dessulfuració, on els sulfurs es transformen en sulfats mitjançant l'addició d’oxigen líquid. Un cop dessulfurada, l’aigua es dirigeix cap al primer reactor biològic.
                           </p>
                           <p>
-                          A més del tractament de l’aigua, la planta disposa de sistemes de desodorització, com els  scrubbers químics. L’aire que s’aspira dels pous de bombament, les basses de dessulfuració i els tancs d’emmagatzematge selectiu es tracta químicament per garantir que no alliberi contaminants perjudicials per a l’atmosfera.
+                          A més del tractament de l’aigua, la planta disposa de sistemes de desodorització, com els scrubbers químics. L’aire que s’aspira dels pous de bombament, les basses de dessulfuració i els tancs d’emmagatzematge selectiu es tracta químicament per garantir que no alliberi contaminants perjudicials per a l’atmosfera.
                           </p>
                       </div>
                     </div>
@@ -118,7 +118,7 @@ const TechSlideshow: React.FC = () => {
                         <p>TRACTAMENT BIOLÒGIC</p>
                         <h4>Reactor biològic I</h4>
                           <p>
-                          Al reactor biològic I hi arriba l’aigua industrial i municipal un cop ha estat pretractada físicament i químicament. Aquest tanc està airejat mitjançant difusors i s’hi desenvolupen els bacteris necessaris per a la degradació de la matèria orgànica.
+                          Al reactor biològic I hi arriba l’aigua industrial i municipal un cop ha estat pretractada físicament i químicament. Aquest tanc està airejat mitjançant difusors i s’hi desenvolupen els bacteris i protozous necessaris per a la degradació de la matèria orgànica.
                           </p>
                           <p>
                           L’aigua del reactor biològic travessa dos decantadors secundaris, on el fang sedimenta per gravetat. L’aigua clarificada passa a un tanc d’alimentació per al reactor biològic II i els fangs es recullen en una arqueta per ser enviats cap al tractament de fangs o bé es recirculen per mantenir un volum de fang adient al reactor.
@@ -237,7 +237,7 @@ const TechSlideshow: React.FC = () => {
                         <p>TRACTAMENT DE FANGS</p>
                         <h4>Bioestabilització de fangs</h4>
                           <p>
-                          La bioestabilització dels fangs es duu a terme a la Planta de Compostatge de Jorba. El fang que arriba a la planta es descarrega i seguidament es barreja amb fusta triturada, per facilitar-ne la bioestabilització. Aquesta mescla inicial es diposita cap a l’espai de descomposició, anomenat meseta, on comença el procés de descomposició del material.                          
+                          La bioestabilització dels fangs es duu a terme a la Planta de Compostatge de Jorba. El fang que arriba a la planta es descarrega i es barreja amb fusta triturada, per facilitar-ne la bioestabilització. Aquesta mescla inicial s’incorpora a l’espai de descomposició, anomenat meseta, on comença el procés de descomposició del material. 
                           </p>
                           <p>
                           Posteriorment, es duu a terme la maniobra de volteig, fins a finalitzar el volteig de tota la meseta, airejant així el material per afavorir-ne la descomposició. Quan la temperatura assoleix als 70 ºC, es produeix la higienització.                          

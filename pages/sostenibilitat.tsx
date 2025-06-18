@@ -61,7 +61,7 @@ export default function Sostenibilitat() {
               IDR, com a part fonamental del Leather Cluster Barcelona, ha liderat la transformació del sector de la pell cap a una indústria més sostenible.              
               </p>
               <p>
-              La planta de tractament d’aigües d’Igualada, que actualment depura les aigües residuals de 26 empreses, és un model pioner a Europa pel seu sistema biològic avançat, capaç de reduir significativament tant el consum d’aigua com la càrrega contaminant associada al procés de producció de la pell.
+              La planta de tractament d’aigües d’Igualada, que actualment depura les aigües residuals de 26 empreses, és un model pioner a Europa pel seu sistema biològic avançat, capaç de reduir significativament tant el consum d’aigua com la càrrega contaminant associada al procés de transformació de la pell.
               </p>
             </div>
           </div>
@@ -173,7 +173,7 @@ export default function Sostenibilitat() {
           <div className="CenterContent">
             <div className="CenterHeading animation-up" data-animate="slide-up">
             <p className='tagline'>SOSTENIBILITAT EN EL SECTOR</p>
-              <h3>El cicle de vida sostenible dels curtits</h3>
+              <h3>El cicle de vida sostenible de la pell</h3>
             </div>
 
             <div className="Content animation-up" data-animate="slide-up">
@@ -189,7 +189,7 @@ export default function Sostenibilitat() {
               <div className="SideTxt">
                 <h5>Compromís amb l’economia circular</h5>
                 <p>
-                A IDR, apostem per l’economia circular com a base d’un desenvolupament sostenible. Els adobers recuperen la pell, un subproducte del consum de carn, font principal de proteïna per a més del 90% de la població mundial, i la reciclen per evitar que es converteixi en residu. Així, la revaloritzen en productes elegants, nobles i útils per a la societat, contribuint a la sostenibilitat gràcies a la seva durabilitat.
+                A IDR, apostem per l’economia circular com a base d’un desenvolupament sostenible. Els adobers recuperen la pell, un subproducte del consum de carn, font principal de proteïna per a més del 90% de la població mundial, i la reciclen per evitar que es converteixi en residu. Així, la valoritzen en productes elegants, nobles i útils per a la societat, contribuint a la sostenibilitat gràcies a la seva durabilitat i per ser un producte biodegradable i compostable.
                 </p>
               </div>
             </div>
@@ -207,7 +207,7 @@ export default function Sostenibilitat() {
               <div className="SideTxt">
                 <h5>Valorització de subproductes</h5>
                 <p>
-                Des de fa segles, els adobers han recuperat aquest subproducte de la indústria alimentària i el reciclen per transformar-lo en béns de consum sostenible d’alt valor afegit. Aquesta pràctica no només redueix residus, sinó que també promou l’ús responsable dels recursos.                </p>
+                Des de fa segles, els adobers recuperen aquest subproducte de la indústria alimentària i el reciclen per transformar-lo en béns de consum sostenible d’alt valor afegit. Aquesta pràctica no només redueix residus, sinó que també promou l’ús responsable dels recursos.                 </p>
               </div>
             </div>
 
@@ -224,7 +224,7 @@ export default function Sostenibilitat() {
               <div className="SideTxt">
                 <h5>Camí cap al residu zero</h5>
                 <p>
-                Els adobers catalans, agrupats a Leather Cluster Barcelona, mantenen el seu compromís amb el model de residu zero. El clúster impulsa diversos projectes per optimitzar la valorització dels subproductes i residus generats durant tot el procés de producció dins de la cadena de valor de la indústria de la pell.
+                Els adobers catalans, associats al Leather Cluster Barcelona, mantenen el seu compromís amb el model de residu zero. El clúster impulsa diversos projectes per optimitzar la valorització dels subproductes i reduir els residus generats durant tot el procés de producció dins de la cadena de valor de la indústria de la pell.                
                 </p>
               </div>
             </div>

@@ -682,6 +682,7 @@ section video {
   text-align: center;
 }
 
+
 /*//////////////////////// LA PLANTA /////////////////////*/
 
 #tech-planta {
@@ -719,6 +720,12 @@ section video {
   width: 100%;
   border-radius: 12px;
   margin-top: 20px;
+}
+
+/*//////////////////////// INNOVACIO /////////////////////*/
+
+#testbed {
+  border-bottom: 1px solid gray;
 }
 
 /*//////////////////////// SOSTENIBILITAT /////////////////////*/

@@ -510,6 +510,28 @@ body.blog-archive .PostMeta {
   background: white;
 }
 
+/* Custom spacing controls */
+.BlogContent .no-margin {
+  margin: 0 !important;
+}
+
+.BlogContent .no-padding {
+  padding: 0 !important;
+}
+
+.BlogContent .compact {
+  margin: 8px 0 !important;
+  padding: 0 !important;
+}
+
+.BlogContent .spaced {
+  margin: 24px 0 !important;
+}
+
+.BlogContent .indented {
+  margin-left: 20px !important;
+}
+
 .BlogContent img,
 .BlogContent .Video {
   width: 100%;
@@ -547,11 +569,14 @@ body.blog-archive .PostMeta {
 
 .BlogContent p, .BlogContent span, .BlogContent div, 
 .BlogContent li, .BlogContent ul, .BlogContent a {
-  line-height: 1.8rem;
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 400;
   color: #2c2c2c;
+}
+
+.BlogContent li:last-child {
+  margin-bottom: 34px;
 }
 
 .BlogContent h2 {
@@ -572,6 +597,14 @@ body.blog-archive .PostMeta {
 
 .BlogContent h4 {
   font-size: 1.5rem;
+  line-height: 2.25rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  margin-top: 16px
+}
+
+.BlogContent h5 {
+  font-size: 1.2rem;
   line-height: 2.25rem;
   font-weight: 600;
   margin-bottom: 16px;
@@ -621,7 +654,7 @@ body.blog-archive .ImgHeader {
 }
 
 body.blog-post li > p {
-  margin-bottom: 0px!important;
+  margin-bottom: 0px !important;
 }
 
 

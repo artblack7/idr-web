@@ -74,7 +74,7 @@ export default function Innovation(props: IIndexProps) {
               Amb la missió de liderar la transició cap a un cicle de l’aigua més net i sostenible, IDR està compromesa amb la recerca i desenvolupament de solucions innovadores en el tractament d’aigües. 
               </p>
               <p>
-               Col·laborem amb empreses de curtits, centres d'innovació i altres entitats del sector per optimitzar el tractament d’aigües residuals i avançar en models d’economia circular de l’aigua que permetin la reutilització de recursos dins la indústria de la pell, reduïnt així el consum de recursos naturals. 
+               Col·laborem amb empreses adoberes, centres d'innovació i altres entitats del sector per optimitzar el tractament d’aigües residuals i avançar en models d’economia circular de l’aigua que permetin la reutilització de recursos dins la indústria de la pell, reduïnt així el consum de recursos naturals. 
               </p>
             </div>
           </div>
@@ -88,6 +88,9 @@ export default function Innovation(props: IIndexProps) {
             <div className="SideTxt">
               <p className='tagline'></p>
               <h3>Tecnologies per avançar cap a l’impacte zero</h3>
+              <p className='highlight'>
+                IDR està especialitzada en el tractament biològic d’aigües residuals industrials i compta amb una llarga trajectòria en la implementació de tecnologies avançades per a la depuració d’aigua. 
+              </p>
               <p>
               A través de l’investigació en tecnologies avançades com la nanofiltració i l’osmosis inversa, busquem aconseguir una depuració cada vegada més completa i eficient, orientada cap a un model d’impacte ambiental mínim, i avançant cap a l’impacte zero.
               </p>
@@ -204,6 +207,50 @@ export default function Innovation(props: IIndexProps) {
 
         </div>
         
+      </section>
+      
+      <section className="SectionWrap" id="testbed">
+
+        {/* RIGHT */}
+
+        <div className="SideSection">
+          <div className="SideContent Right animation-up" data-animate="slide-up">
+          
+            <div className="SideImg">
+              <div className='ImgWrap'>
+                <Image className="radius-4 nimation-up" data-animate="slide-up"  loading="eager" 
+                alt="IDR" src='/img/img-uf.jpg' 
+                sizes="(max-width: 480px) 400px, (max-width: 1024px) 800px, 1200px"
+                width={1200} height={400} />
+              </div>
+            </div>
+            
+            <div className="SideTxt">
+              <p className='tagline'>NANOFILTRACIÓ</p>
+              <h3>IDR Test Bed</h3>
+              <p className='highlight'>
+                 IDR Test bed és una planta d’assaig oberta a empreses per provar, desenvolupar i optimitzar tecnologies avançades de tractament d’aigües residuals mitjançant sistemes de filtració amb membranes.
+              </p>
+              <p>
+               Col·laborem amb empreses adoberes, centres d'innovació i altres entitats del sector per optimitzar el tractament d’aigües residuals i avançar en models d’economia circular de l’aigua que permetin la reutilització de recursos dins la indústria de la pell, reduïnt així el consum de recursos naturals. 
+              </p>
+              <div className="AppBtn">
+              <Link href="/empresa"><button>Saber més<Arrow_Icon /></button></Link>
+            </div>
+            </div>
+          </div>
+
+        </div>
+
+        {/* GUIA MIDA IMATGES 
+
+            <Image className="index-1 animation-up" data-animate="slide-up"  loading="eager" 
+            alt="IDR" src='/img/brand-logo.png' 
+            sizes="(max-width: 480px) 500px, (max-width: 1024px) 700px, 1000px"
+            width={1200} height={400} />
+
+          */}
+
       </section>
 
           {/* COLLAB */}

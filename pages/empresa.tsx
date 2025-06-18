@@ -56,15 +56,15 @@ export default function Empresa() {
             
             <div className="SideTxt">
               <p className='tagline'>QUI SOM</p>
-              <h3>La depuradora dels curtidors</h3>
+              <h3>La depuradora dels adobers</h3>
               <p className='highlight'>
-              IDR va ser fundada com una iniciativa col·laborativa entre els curtidors del barri del Rec d'Igualada. Aquesta planta depuradora és gestionada per les mateixes empreses de la indústria de la pell, amb l'objectiu de garantir un futur sostenible per al sector.
+              Igualadina de Depuració i Recuperació (IDR) va ser fundada com una iniciativa corporativa de l'associació Leather Cluster Barcelona (LCB) amb la participació dels adobers del barri del Rec d'Igualada. Aquesta planta depuradora és gestionada per les mateixes empreses de la indústria de la pell, amb l'objectiu de garantir un futur sostenible per al sector.
               </p>
               <p>
-              La nostra estructura organitzativa es basa en la col·laboració activa dels nostres socis, amb comitès i grups de treball que assessoren en aspectes com la traçabilitat, el desenvolupament tècnic i l'impacte ambiental, assegurant així que cada decisió contribueixi a un cicle de producció més sostenible.
+              Després de vint anys de funcionament, la depuradora d’IDR, una de les plantes pioneres a Europa en el tractament d’aigües residuals industrials, ha esdevingut un referent per a la indústria de l’aigua.
               </p>
               <p>
-              Gràcies a aquesta aliança, IDR s'ha convertit en una plataforma única a Catalunya, dedicada al tractament d'aigües residuals específiques del procés de curtits i a la gestió de residus líquids industrials per altres sectors.
+              Durant aquests anys, la planta que tracta cada dia les aigües que es generen en el procés de transformació de la pell de les empreses adoberes d’Igualada associades al LCB juntament amb la d’altres indústries, ha estat visitada per tècnics i professionals de la sostenibilitat de més de 30 països diferents.
               </p>
             </div>
           </div>
@@ -77,9 +77,12 @@ export default function Empresa() {
           <div className="SideContent Left animation-up" data-animate="slide-up">
             <div className="SideTxt">
               <p className='tagline'>LA NOSTRA MISSIÓ</p>
-              <h3>La revolució sostenible del sector dels curtits</h3>
+              <h3>La revolució sostenible del sector de la pell</h3>
               <p>
               Com a part del Leather Cluster Barcelona, IDR ha contribuït a la millora contínua dels processos en el sector de la pell, amb un sistema innovador de depuració biològica que ha permès reduir de manera significativa l’impacte ambiental de la indústria. 
+              </p>
+              <p>
+              La nostra estructura organitzativa es basa en la col·laboració activa dels nostres socis, amb comitès i grups de treball que assessoren en aspectes com la traçabilitat, el desenvolupament tècnic i l'impacte ambiental, assegurant així que cada decisió contribueixi a un cicle de producció més sostenible.
               </p>
               <p>
               Aquest esforç col·lectiu impulsa una indústria de la pell orientada al futur, amb un ferm compromís amb l'eficiència i el respecte pel medi ambient, aportant valor tant a la cadena productiva com a la comunitat local.
@@ -150,8 +153,7 @@ export default function Empresa() {
                   <div className="CardTxt">
                     <h6>Leather Cluster Barcelona</h6>
                     <p className=''>
-                    Associació que uneix empreses i institucions del sector de la pell per impulsar la col·laboració, la innovació sostenible i l’accés a nous mercats, promovent el networking i aplicant tecnologies avançades per una major responsabilitat ambiental.
-                    </p>
+                    Leather Cluster Barcelona és un entorn de cooperació competitiva per promoure projectes estratègics transversals i transformadors amb l’objectiu d’impulsar l’ecosistema del sector de la pell català i la seva cadena de valor en el marc de la sostenibilitat, l’economia circular, la moda sostenible i el valor compartit.                    </p>
                   </div>
                 </div>
               </div>
@@ -208,7 +210,7 @@ export default function Empresa() {
               <h3>Socis i Col·laboradors</h3>
               <div className="center-subtitle">
                 <p>
-                Els nostres socis fundadors inclouen destacades empreses del sector dels curtits, així com l’Ajuntament d’Igualada i representants de les indústries tèxtil i química, tots compromesos amb la reducció de l'impacte ambiental i la reutilització de recursos.
+                Els nostres socis fundadors inclouen destacades empreses del sector de la pell, així com l’Ajuntament d’Igualada i representants de les indústries tèxtil i química, tots compromesos amb la sostenibilitat ambiental.
                 </p>
               </div>
               <div className="CenterWrap">

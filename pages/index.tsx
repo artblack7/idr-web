@@ -187,7 +187,7 @@ export default function Home(props: IIndexProps) {
               <h3><span className="BrownGrad">Units per una indústria</span> de la pell sostenible
               </h3>              
               <p>
-              Igualadina de Depuració i Recuperació (IDR) és una iniciativa col·laborativa entre els curtidors del barri del Rec d'Igualada, creada amb l’objectiu de tractar les aigües residuals del sector dels curtits i garantir un cicle d’aigua més net i respectuós amb el medi ambient.
+              Igualadina de Depuració i Recuperació (IDR) és una iniciativa corporativa de l'associació Leather Cluster Barcelona (LCB) amb la participació dels adobers del barri del Rec d'Igualada, creada amb l’objectiu de tractar les aigües residuals del sector de la pell i garantir un cicle d’aigua més net i respectuós amb el medi ambient. 
               </p>
               <p>
               Gràcies a aquesta aliança, IDR s'ha convertit en una plataforma única a Catalunya, amb una missió clara: Impulsar una indústria de la pell més sostenible.
@@ -221,7 +221,7 @@ export default function Home(props: IIndexProps) {
               <h3>Socis</h3>
               <div className="center-subtitle">
                 <p>
-                Els nostres socis fundadors inclouen destacades empreses del sector dels curtits, així com l’Ajuntament d’Igualada i representants de les indústries tèxtil i química, tots compromesos amb la sostenibilitat ambiental.
+                Els nostres socis fundadors inclouen destacades empreses del sector de la pell, així com l’Ajuntament d’Igualada i representants de les indústries tèxtil i química, tots compromesos amb la sostenibilitat ambiental.
                 </p>
               </div>
               <div className="CenterWrap">
