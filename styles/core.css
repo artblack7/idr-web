@@ -210,6 +210,8 @@
   --sh-xl: 0 10px 20px -5px rgba(0, 0, 0, 0.03), 0 10px 10px -5px rgba(0, 0, 0, 0.02);
   --sh-2xl: 5px 10px 20px -5px rgba(0, 0, 0, 0.2);
 
+  --sh-tag: 0px 2px 5px 1px rgba(0, 0, 0, 0.15);
+
   /* --sh-img: 0px 5px 15px rgb(30, 20, 100, 0.1);
   --sh-img2: 0px 5px 10px rgba(45, 38, 92, 0.1); */
 

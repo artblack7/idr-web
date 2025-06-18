@@ -193,13 +193,14 @@
   position: absolute;
   top: 15px;
   right: 15px;
-  background: var(--tgreen);
+  background: var(--turq2);
   color: var(--white);
   padding: 4px 16px;
   border-radius: 20px;
   letter-spacing: 0.01rem;
   font-size: 12px;
-  box-shadow: var(--sh-s);
+  box-shadow: var(--sh-tag);
+  border: 0.5px solid var(--turq3)
 }
 
 /* 
