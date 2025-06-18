@@ -105,26 +105,26 @@ const Table: React.FC = () => {
         className="app-table"
         style={{ height: 600 }}
         fixedHeaderContent={() => (
-          <div className="table-header">
-            <div className="header-cell">
+          <tr className="table-header">
+            <th className="header-cell">
               <div className="table-header-content">
                 <p>CODI LER</p>
               </div>
-            </div>
-            <div className="header-cell">
+            </th>
+            <th className="header-cell">
               <div className="table-header-content">
                 <p>DESCRIPCIÓ</p>
               </div>
-            </div>
-          </div>
+            </th>
+          </tr>
         )}
         itemContent={(index, item) => (
-          <div className="table-row">
-            <div className="table-cell">
+          <tr className="table-row">
+            <td className="table-cell">
               <span className="CodeTag">{item.codi}</span>
-            </div>
-            <div className="table-cell">{item.desc}</div>
-          </div>
+            </td>
+            <td className="table-cell">{item.desc}</td>
+          </tr>
         )}
       />
     </div>

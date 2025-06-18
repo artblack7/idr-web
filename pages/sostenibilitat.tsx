@@ -12,7 +12,7 @@ export default function Sostenibilitat() {
 
   return (
     <main className='Main'>
-     {/* <AnimationTrigger /> */}
+     <AnimationTrigger />
       <div>
         <MainHeader useWhite={false}
           meta={<Meta 
@@ -26,7 +26,7 @@ export default function Sostenibilitat() {
       <div className="HeroSectionWrap Dark" id="eco-hero">
           <div className="Overlay"></div>
         <div className="HeroSection">
-          <div className="HeroContent animation-up" data-animate="slide-up">
+          <div className="HeroContent animation-right" data-animate="slide-right">
             <div className='HeroTitle'>
               <h6>SOSTENIBILITAT</h6>
               <h2>Compromís amb el medi ambient i les persones</h2>
@@ -43,9 +43,9 @@ export default function Sostenibilitat() {
         {/* RIGHT */}
 
         <div className="SideSection MiddleSpace">
-          <div className="SideContent Right animation-up" data-animate="slide-up">
+          <div className="SideContent Right">
           
-            <div className="SideImg">
+            <div className="SideImg animation-up" data-animate="slide-up">
               <div className='ImgWrap'>
                 <Image className="radius-4 nimation-up" data-animate="slide-up"  loading="eager" 
                 alt="IDR" src='/img/img-drop.jpg' 
@@ -54,7 +54,7 @@ export default function Sostenibilitat() {
               </div>
             </div>
             
-            <div className="SideTxt">
+            <div className="SideTxt animation-up" data-animate="slide-up">
               <p className='tagline'>LA NOSTRA MISSIÓ</p>
               <h3>El camí cap a una indústria d’impacte zero</h3>
               <p className='highlight'>
@@ -71,8 +71,8 @@ export default function Sostenibilitat() {
         {/* LEFT */}
 
         <div className="SideSection">
-          <div className="SideContent Left animation-up" data-animate="slide-up">
-            <div className="SideTxt">
+          <div className="SideContent Left">
+            <div className="SideTxt animation-up" data-animate="slide-up">
               <p className='tagline'>L’IMPACTE EN DADES</p>
               <h3>Els nostres resultats des de l’inici fins l’actualitat</h3>
               <p className='highlight'>
@@ -91,7 +91,7 @@ export default function Sostenibilitat() {
 
           </div>
 
-            <div className="SideImg">
+            <div className="SideImg animation-up" data-animate="slide-up">
               <div className='ImgWrap'>
                 <Image className="radius-4 nimation-up" data-animate="slide-up"  loading="eager" 
                 alt="IDR" src='/img/img-riu.jpg' 
@@ -156,7 +156,7 @@ export default function Sostenibilitat() {
 
       <section className="SectionWrap Dark" id="eco-quote">
         <div className="CenterSection">
-            <div className="QuoteContent animation-up" data-animate="slide-up">
+            <div className="QuoteContent">
               <h4>
               IDR facilita que les aigües residuals de les empreses del sector de la pell es sumin al compromís de la sostenibilitat, impulsant una indústria més respectuosa amb el medi ambient.
               </h4>
@@ -179,7 +179,7 @@ export default function Sostenibilitat() {
             <div className="Content animation-up" data-animate="slide-up">
               <div className="SideImg">
                 <div className='SquareImgWrap'>
-                  <Image className="radius-3 animation-up" data-animate="slide-up"  loading="eager" 
+                  <Image className="radius-3"  loading="eager" 
                   alt="IDR" src='/img/cicle-1.jpg' 
                   sizes="(max-width: 480px) 400px, (max-width: 1024px) 400px, 400px"
                   width={900} height={600} />
@@ -197,7 +197,7 @@ export default function Sostenibilitat() {
             <div className="Content animation-up" data-animate="slide-up">
               <div className="SideImg">
                <div className='SquareImgWrap'>
-                  <Image className="radius-3 animation-up" data-animate="slide-up"  loading="eager" 
+                  <Image className="radius-3"  loading="eager" 
                   alt="IDR" src='/img/cicle-2.jpg' 
                   sizes="(max-width: 480px) 400px, (max-width: 1024px) 400px, 400px"
                   width={900} height={600} />
@@ -214,7 +214,7 @@ export default function Sostenibilitat() {
             <div className="Content animation-up" data-animate="slide-up">
               <div className="SideImg">
                 <div className='SquareImgWrap'>
-                  <Image className="radius-3 animation-up" data-animate="slide-up"  loading="eager" 
+                  <Image className="radius-3"  loading="eager" 
                   alt="IDR" src='/img/cicle-3.jpg' 
                   sizes="(max-width: 480px) 400px, (max-width: 1024px) 400px, 400px"
                   width={900} height={600} />
@@ -257,7 +257,7 @@ export default function Sostenibilitat() {
             
               <div className="CardWrap Card1 animation-up" data-animate="slide-up">
                 <div className="CardImg">
-                  <Image className="animation-up" data-animate="slide-up" loading="eager" 
+                  <Image loading="eager" 
                   alt="img" src='/icons/check-circle.png' width={100} height={100} />           
                 </div>
                 <div className="CardTxt">
@@ -270,7 +270,7 @@ export default function Sostenibilitat() {
 
               <div className="CardWrap Card2 animation-up" data-animate="slide-up">
                 <div className="CardImg">
-                <Image className="animation-up" data-animate="slide-up" loading="eager" 
+                <Image loading="eager" 
                 alt="img" src='/icons/check-circle.png' width={100} height={100} />           
                </div>
                 <div className="CardTxt">
@@ -282,7 +282,7 @@ export default function Sostenibilitat() {
 
               <div className="CardWrap Card3 animation-up" data-animate="slide-up">
                 <div className="CardImg">
-                <Image className="animation-up" data-animate="slide-up" loading="eager" 
+                <Image loading="eager" 
                 alt="img" src='/icons/check-circle.png' width={100} height={100} />           
                </div>
                 <div className="CardTxt">
@@ -294,7 +294,7 @@ export default function Sostenibilitat() {
 
              <div className="CardWrap Card4 animation-up" data-animate="slide-up">
                 <div className="CardImg">
-                <Image className="animation-up" data-animate="slide-up" loading="eager" 
+                <Image loading="eager" 
                 alt="img" src='/icons/check-circle.png' width={100} height={100} />           
                </div>
                 <div className="CardTxt">
@@ -335,10 +335,10 @@ export default function Sostenibilitat() {
             <div className="CardGroup Cert">
             
             <div>
-              <div className="CardWrap">
+              <div className="CardWrap animation-up" data-animate="slide-up">
                 <div className="CardTopCert">
                   <div className="CardImg">
-                    <Image className="animation-up" data-animate="slide-up" loading="eager" 
+                    <Image loading="eager" 
                     alt="img" src='/logos/enac-01.png' width={250} height={200} />           
                   </div>
                 </div>
@@ -369,10 +369,10 @@ export default function Sostenibilitat() {
             </div>
 
             <div>
-              <div className="CardWrap">
+              <div className="CardWrap animation-up" data-animate="slide-up">
                 <div className="CardTopCert">
                 <div className="CardImg">
-                  <Image className="animation-up" data-animate="slide-up" loading="eager" 
+                  <Image loading="eager" 
                   alt="img" src='/logos/enac-02.png' width={250} height={200} />           
                 </div>
                 </div>
@@ -401,10 +401,10 @@ export default function Sostenibilitat() {
             </div>
 
             <div>
-              <div className="CardWrap">
+              <div className="CardWrap animation-up" data-animate="slide-up">
                 <div className="CardTopCert">
                 <div className="CardImg">
-                  <Image className="animation-up" data-animate="slide-up" loading="eager" 
+                  <Image loading="eager" 
                   alt="img" src='/logos/enac-03.png' width={250} height={200} />           
                 </div>
                 </div>
@@ -433,10 +433,10 @@ export default function Sostenibilitat() {
             </div>
 
             <div>
-              <div className="CardWrap">
+              <div className="CardWrap animation-up" data-animate="slide-up">
                 <div className="CardTopCert">
                 <div className="CardImg">
-                  <Image className="animation-up" data-animate="slide-up" loading="eager" 
+                  <Image loading="eager" 
                   alt="img" src='/logos/endesa.png' width={250} height={200} />           
                 </div>
                 </div>

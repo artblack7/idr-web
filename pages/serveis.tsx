@@ -14,7 +14,7 @@ export default function Serveis() {
 
   return (
     <main className='Main'>
-     {/* <AnimationTrigger /> */}
+     <AnimationTrigger />
       <div>
         <MainHeader useWhite={false}
           meta={<Meta 
@@ -28,7 +28,7 @@ export default function Serveis() {
       <div className="HeroSectionWrap Dark" id="services-hero">
           <div className="Overlay"></div>
         <div className="HeroSection">
-          <div className="HeroContent animation-up" data-animate="slide-up">
+          <div className="HeroContent animation-right" data-animate="slide-right">
             <div className='HeroTitle'>
               <h6>SERVEIS</h6>
               <h2>Gestió de residus líquids industrials</h2>
@@ -49,7 +49,7 @@ export default function Serveis() {
           
             <div className="SideImg">
               <div className='ImgWrap'>
-                <Image className="radius-4 nimation-up" data-animate="slide-up"  loading="eager" 
+                <Image className="radius-4" loading="eager" 
                 alt="IDR" src='/img/img-camio.jpg' 
                 sizes="(max-width: 480px) 400px, (max-width: 1024px) 800px, 1200px"
                 width={1200} height={400} />
@@ -94,7 +94,7 @@ export default function Serveis() {
 
             <div className="SideImg">
               <div className='ImgWrap'>
-                <Image className="radius-4 nimation-up" data-animate="slide-up"  loading="eager" 
+                <Image className="radius-4"  loading="eager" 
                 alt="IDR" src='/img/img-gestio.jpg' 
                 sizes="(max-width: 480px) 400px, (max-width: 1024px) 800px, 1200px"
                 width={1200} height={400} />
@@ -113,8 +113,8 @@ export default function Serveis() {
 
     <section className="SectionWrap" id="services-codes">
         <div className="CenterSection">
-          <div className="CenterContent">
-            <div className="CenterTxt animation-up" data-animate="slide-up">
+          <div className="CenterContent animation-up" data-animate="slide-up">
+            <div className="CenterTxt">
               <h3>Llistat de Codis LER</h3>
               <div className="">
                 <p>

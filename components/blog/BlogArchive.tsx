@@ -10,7 +10,7 @@ type BlogArchiveProps = {
 };
 
 const BlogArchive: React.FC<BlogArchiveProps> = ({ initialPosts, allPosts, tagFilter }) => {
-  const POSTS_PER_PAGE = 6;
+  const POSTS_PER_PAGE = 9;
 
   const [filteredPosts, setFilteredPosts] = useState<PostItems[]>([]);
   const [currentPosts, setCurrentPosts] = useState<PostItems[]>([]);

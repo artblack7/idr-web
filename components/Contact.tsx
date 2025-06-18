@@ -13,7 +13,7 @@ const Contact = () => {
       </section>
 
     <section className="DivSectionWrap" id="services-contact">
-      <div className="DivSection Left animation-up" data-animate="slide-up">
+      <div className="DivSection Left">
         
           <div className="SideTxt">
             <h3>Contacte</h3>

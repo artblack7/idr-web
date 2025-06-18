@@ -28,7 +28,7 @@ export default function Home(props: IIndexProps) {
 
   return (
     <main className='Main'>
-     {/* <AnimationTrigger /> */}
+     <AnimationTrigger />
       <div>
         <MainHeader useWhite={false}
           meta={<Meta 
@@ -114,8 +114,8 @@ export default function Home(props: IIndexProps) {
 
     <section className="SectionWrap" id="main-tech">
         <div className="CenterSection">
-          <div className="CenterContent">
-            <div className="CenterTxt animation-up" data-animate="slide-up">
+          <div className="CenterContent animation-up" data-animate="slide-up">
+            <div className="CenterTxt">
               <h3>Depuració innovadora per un futur sostenible</h3>
               <div className="TextGroup">
                 <div className="HalfText">
@@ -216,8 +216,8 @@ export default function Home(props: IIndexProps) {
 
         <section className="SectionWrap" id="main-socis">
         <div className="CenterSection">
-          <div className="CenterContent">
-            <div className="CenterHeading animation-up" data-animate="slide-up">
+          <div className="CenterContent animation-up" data-animate="slide-up">
+            <div className="CenterHeading">
               <h3>Socis</h3>
               <div className="center-subtitle">
                 <p>
@@ -225,9 +225,9 @@ export default function Home(props: IIndexProps) {
                 </p>
               </div>
               <div className="CenterWrap">
-                <Image className="animation-up mt-5" data-animate="slide-up"  loading="eager" 
+                <Image className="mt-5" loading="eager" 
                   alt="IDR" src='/logos/aj-black.png' 
-                  // sizes="(max-width: 480px) 200px, (max-width: 1024px) 300px, 400px"
+                  sizes="(max-width: 480px) 200px, (max-width: 1024px) 300px, 400px"
                   width={250} height={50} />
                 <p className='mt-3'>
                  SOCI IL·LUSTRE 
@@ -236,7 +236,7 @@ export default function Home(props: IIndexProps) {
 
             </div>
 
-            <div className=" mt-7">
+            <div className="mt-7">
               <div className="ImgCarousel">
               <ImgCarousel set="socis" />
               </div>
@@ -301,7 +301,7 @@ export default function Home(props: IIndexProps) {
             
               <div className="CardWrap animation-up" data-animate="slide-up">
                 <div className="CardImg">
-                <Image className="animation-up" data-animate="slide-up"  loading="eager" 
+                <Image loading="eager" 
                 alt="img" src='/img/mission-1.jpg' width={800} height={800}
                 sizes="(max-width: 480px) 180px, (max-width: 1024px) 200px, 220px"                />           
                </div>
@@ -314,7 +314,7 @@ export default function Home(props: IIndexProps) {
 
               <div className="CardWrap animation-up" data-animate="slide-up">
                 <div className="CardImg">
-                <Image className="animation-up" data-animate="slide-up"  loading="eager" 
+                <Image loading="eager" 
                 alt="img" src='/img/mission-2.jpg' width={800} height={800}
                 sizes="(max-width: 480px) 180px, (max-width: 1024px) 200px, 220px"
                  />           
@@ -329,7 +329,7 @@ export default function Home(props: IIndexProps) {
 
               <div className="CardWrap animation-up" data-animate="slide-up">
                 <div className="CardImg">
-                <Image className="animation-up" data-animate="slide-up"  loading="eager" 
+                <Image loading="eager" 
                 alt="img" src='/img/mission-3.jpg' width={800} height={800}
                 sizes="(max-width: 480px) 180px, (max-width: 1024px) 200px, 220px"
                  />           
@@ -383,7 +383,7 @@ export default function Home(props: IIndexProps) {
 
       <section className="NewsSectionWrap">
           <div className="NewsSection">
-            <div className="NewsContent">
+            <div className="NewsContent animation-up" data-animate="slide-up">
               <div className='NewsTitle'>
                 <h3>Projectes Destacats</h3>
               </div>

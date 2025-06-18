@@ -78,7 +78,7 @@ const Footer = () => {
                   </div>
                 </div>
                 <div>
-                  <div className="PartnerLogos animation-up" data-animate="slide-up">
+                  <div className="PartnerLogos">
                       <div className="Socis">
                         <a href="https://leatherbarcelona.com/" target="_blank" rel="noopener noreferrer">
                          <Image src="/logos/cluster.png" height="300" width="300" alt="Logo" />

@@ -12,7 +12,7 @@ export default function Empresa() {
 
   return (
     <main className='Main'>
-     {/* <AnimationTrigger /> */}
+     <AnimationTrigger />
       <div>
         <MainHeader useWhite={false}
           meta={<Meta 
@@ -26,7 +26,7 @@ export default function Empresa() {
       <div className="HeroSectionWrap Dark" id="about-hero">
           <div className="Overlay"></div>
         <div className="HeroSection">
-          <div className="HeroContent animation-up" data-animate="slide-up">
+          <div className="HeroContent animation-right" data-animate="slide-right">
             <div className='HeroTitle'>
               <h6>EMPRESA</h6>
               <h2>Units per una indústria de la pell sostenible</h2>
@@ -47,7 +47,7 @@ export default function Empresa() {
           
             <div className="SideImg">
               <div className='ImgWrap'>
-                <Image className="radius-4 nimation-up" data-animate="slide-up"  loading="eager" 
+                <Image className="radius-4" loading="eager" 
                 alt="IDR" src='/img/img-curtidors.jpg' 
                   sizes="(max-width: 480px) 400px, (max-width: 1024px) 800px, 1200px"
                   width={1200} height={400} />
@@ -73,7 +73,7 @@ export default function Empresa() {
 
         {/* LEFT */}
 
-        <div className="SideSection ">
+        <div className="SideSection">
           <div className="SideContent Left animation-up" data-animate="slide-up">
             <div className="SideTxt">
               <p className='tagline'>LA NOSTRA MISSIÓ</p>
@@ -96,7 +96,7 @@ export default function Empresa() {
 
             <div className="SideImg">
               <div className='ImgWrap'>
-                <Image className="radius-4 animation-up" data-animate="slide-up"  loading="eager" 
+                <Image className="radius-4"  loading="eager" 
                 alt="IDR" src='/img/img-pells3.jpg' 
                 sizes="(max-width: 480px) 400px, (max-width: 1024px) 800px, 1200px"
                 width={1200} height={400} />
@@ -113,7 +113,7 @@ export default function Empresa() {
 
       <section className="SectionWrap Dark" id="about-quote">
         <div className="CenterSection">
-            <div className="QuoteContent animation-up" data-animate="slide-up">
+            <div className="QuoteContent">
               <p className='tagline'>VISIÓ DE FUTUR</p>
               <h4>
               Volem ser un referent internacional en sistemes avançats de depuració d’aigües industrials, liderant la transició del sector de la pell cap a un model d’economia circular de l’aigua d’impacte zero.
@@ -141,10 +141,10 @@ export default function Empresa() {
           <div className="CardGroup Collab">
 
             <a href="https://leatherbarcelona.com/" target="blank">
-              <div className="CardWrap">
+              <div className="CardWrap animation-up" data-animate="slide-up">
                 <div className="CardTop Collab1">
                 <div className="CardImg">
-                  <Image className="animation-up" data-animate="slide-up" loading="eager" 
+                  <Image loading="eager" 
                   alt="img" src='/logos/cluster.png' width={250} height={200} />           
                 </div>
                 </div>
@@ -160,9 +160,9 @@ export default function Empresa() {
             </a>
 
             <a href="https://www.tradebe.com/environmental-services/" target="blank">
-              <div className="CardWrap">
+              <div className="CardWrap animation-up" data-animate="slide-up">
                 <div className="CardTop Collab2">
-                  <Image className="animation-up" data-animate="slide-up" loading="eager" 
+                  <Image loading="eager" 
                     alt="img" src='/logos/tradebe.png' width={250} height={200} />           
                 </div>
                 <div className="CardBottom">
@@ -177,9 +177,9 @@ export default function Empresa() {
             </a>
 
             <a href="https://a3center.cat/index.php/en/" target="blank">
-              <div className="CardWrap">
+              <div className="CardWrap animation-up" data-animate="slide-up">
                 <div className="CardTop Collab3">
-                <Image className="animation-up" data-animate="slide-up" loading="eager" 
+                <Image loading="eager" 
                   alt="img" src='/logos/a3.png' width={250} height={200} />           
                 </div>
                 <div className="CardBottom">
@@ -205,8 +205,8 @@ export default function Empresa() {
 
         <section className="SectionWrap" id="about-socis">
         <div className="CenterSection">
-          <div className="CenterContent">
-            <div className="CenterWrap animation-up" data-animate="slide-up">
+          <div className="CenterContent animation-up" data-animate="slide-up">
+            <div className="CenterWrap">
               <h3>Socis i Col·laboradors</h3>
               <div className="center-subtitle">
                 <p>
@@ -214,7 +214,7 @@ export default function Empresa() {
                 </p>
               </div>
               <div className="CenterWrap">
-                <Image className="animation-up mt-5" data-animate="slide-up"  loading="eager" 
+                <Image className="mt-5"  loading="eager" 
                   alt="IDR" src='/logos/aj-black.png' 
                   // sizes="(max-width: 480px) 200px, (max-width: 1024px) 300px, 400px"
                   width={250} height={50} />

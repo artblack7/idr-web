@@ -24,7 +24,7 @@ export default function Innovation(props: IIndexProps) {
 
   return (
     <main className='Main'>
-     {/* <AnimationTrigger /> */}
+     <AnimationTrigger />
       <div>
         <MainHeader useWhite={false}
           meta={<Meta 
@@ -128,30 +128,6 @@ export default function Innovation(props: IIndexProps) {
 
         <div className="CenterSection">
             <div className="CardGroup three Numbers">
-            
-              {/* <div className="CardWrap animation-up" data-animate="slide-up">
-                <div className="Card">
-                  <h1 className='MainGrad'>+10</h1>
-                  <div className="CardLine"></div>
-                  <h6 className='blue-text'>Projectes</h6>
-                </div>
-              </div>      
-
-              <div className="CardWrap animation-up" data-animate="slide-up">
-                <div className="Card">
-                  <h1 className='MainGrad'>+7</h1>
-                  <div className="CardLine"></div>
-                  <h6 className='blue-text'>Entitats col·laboradores</h6>
-                </div>
-              </div>        
-
-              <div className="CardWrap animation-up" data-animate="slide-up">
-                <div className="Card">
-                  <h1 className='MainGrad'>+14</h1>
-                  <div className="CardLine"></div>
-                  <h6 className='blue-text'>Investigadors dedicats a I+D</h6>
-                </div>
-              </div>   */}
 
               <div className="CardWrap animation-up" data-animate="slide-up">
                 <div className="CardNumber">
@@ -199,7 +175,7 @@ export default function Innovation(props: IIndexProps) {
 
       <section className="SectionWrap Dark" id="innovation-quote">
         <div className="CenterSection">
-            <div className="QuoteContent animation-up" data-animate="slide-up">
+            <div className="QuoteContent">
               <h4>
               IDR, pionera en depuració biològica, impulsa la sostenibilitat i la innovació contínua en el tractament d'aigües per a la indústria de la pell.
               </h4>
@@ -219,23 +195,22 @@ export default function Innovation(props: IIndexProps) {
             <div className="SideImg">
               <div className='ImgWrap'>
                 <Image className="radius-4 nimation-up" data-animate="slide-up"  loading="eager" 
-                alt="IDR" src='/img/img-uf.jpg' 
+                alt="IDR" src='/img/img-testbed.jpg' 
                 sizes="(max-width: 480px) 400px, (max-width: 1024px) 800px, 1200px"
                 width={1200} height={400} />
               </div>
             </div>
             
             <div className="SideTxt">
-              <p className='tagline'>NANOFILTRACIÓ</p>
+              <p className='tagline'>NANOFILTRACIÓ PER A EMPRESES</p>
               <h3>IDR Test Bed</h3>
               <p className='highlight'>
                  IDR Test bed és una planta d’assaig oberta a empreses per provar, desenvolupar i optimitzar tecnologies avançades de tractament d’aigües residuals mitjançant sistemes de filtració amb membranes.
               </p>
               <p>
-               Col·laborem amb empreses adoberes, centres d'innovació i altres entitats del sector per optimitzar el tractament d’aigües residuals i avançar en models d’economia circular de l’aigua que permetin la reutilització de recursos dins la indústria de la pell, reduïnt així el consum de recursos naturals. 
-              </p>
+Amb la voluntat de compartir coneixement i facilitar la innovació en el sector, IDR posa a disposició d’altres empreses la seva planta d’assaig per al tractament terciari avançat.              </p>
               <div className="AppBtn">
-              <Link href="/empresa"><button>Saber més<Arrow_Icon /></button></Link>
+              <Link href="/post/testbed"><button>Saber més<Arrow_Icon /></button></Link>
             </div>
             </div>
           </div>
@@ -253,12 +228,15 @@ export default function Innovation(props: IIndexProps) {
 
       </section>
 
+      <div className='GradStripe'></div>
+
+
           {/* COLLAB */}
       
             <section className="SectionWrap" id="main-mission">
-              <div className="CenterSection">
+              <div className="CenterSection animation-up" data-animate="slide-up">
                 <div>
-                  <div className="animation-up" data-animate="slide-up">
+                  <div>
                     <div>
                       <h2>Projectes destacats</h2>
                       {/* <p>
@@ -269,7 +247,6 @@ export default function Innovation(props: IIndexProps) {
                 </div>
 
                 <BlogArchive allPosts={allPosts} initialPosts={[]}/>
-
       
                 {/* <div className="CardGroup Collab">
       

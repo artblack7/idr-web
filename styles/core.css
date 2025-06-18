@@ -813,10 +813,10 @@ button {
 /* -------------------- ANIMATIONS --------------------*/
 
 
-/* .animation-up {
+.animation-up {
   opacity: 0;
   transform: translateY(60px);
-  transition: opacity 0.2s ease-out, transform 0.5s ease-out;
+  transition: opacity 0.4s ease-out, transform 0.7s ease-out;
 }
 
 .animation-up.slide-up {
@@ -827,20 +827,20 @@ button {
 .animation-side {
   opacity: 0;
   transform: translateX(-60px);
-  transition: opacity 0.2s ease-out, transform 0.5s ease-out;
+  transition: opacity 0.4s ease-out, transform 0.7s ease-out;
 }
 
 .animation-side.slide-side {
   opacity: 1;
   transform: translateX(0);
-} */
+}
 
 /* Right Animation */
 
-/* .animation-right {
+ .animation-right {
   opacity: 0;
   transform: translateX(-60px);
-  transition: opacity 0.2s ease-out, transform 0.5s ease-out;
+  transition: opacity 0.4s ease-out, transform 0.7s ease-out;
 }
 
 .animation-right.slide-right {
@@ -850,10 +850,10 @@ button {
 
 /* Left Animation */
 
-/* .animation-left {
+.animation-left {
   opacity: 0;
   transform: translateX(60px);
-  transition: opacity 0.2s ease-out, transform 0.5s ease-out;
+  transition: opacity 0.4s ease-out, transform 0.6s ease-out;
 }
 
 .animation-left.slide-left {
@@ -882,4 +882,4 @@ button {
 .delay-7 {
   transition-delay: 1.4s;
 } 
- */
+

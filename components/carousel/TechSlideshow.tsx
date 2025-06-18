@@ -18,7 +18,7 @@ const TechSlideshow: React.FC = () => {
 
         <section className="BlogSectionWrap">
           <div className="BlogSection">
-           <div className=" animation-up" data-animate="slide-up">
+           <div className="animation-up" data-animate="slide-up">
              <div>
                 <Flickity
                     className={'blog-carousel'}

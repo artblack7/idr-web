@@ -24,7 +24,7 @@ export default function Tech(props: IIndexProps) {
 
   return (
     <main className='Main'>
-     {/* <AnimationTrigger /> */}
+     <AnimationTrigger />
       <div>
         <MainHeader useWhite={false}
           meta={<Meta 
@@ -38,7 +38,7 @@ export default function Tech(props: IIndexProps) {
       <div className="HeroSectionWrap Dark" id="tech-hero">
           <div className="Overlay"></div>
         <div className="HeroSection">
-          <div className="HeroContent Wide animation-up" data-animate="slide-up">
+          <div className="HeroContent Wide animation-right" data-animate="slide-right">
             <div className='HeroTitle'>
               <h6>LA PLANTA</h6>
               <h2>Pioners en depuració biològica per al tractament d’aigües</h2>
@@ -59,7 +59,7 @@ export default function Tech(props: IIndexProps) {
         
           <div className="SideImg">
             <div className='ImgWrap'>
-              <Image className="radius-4 nimation-up" data-animate="slide-up"  loading="eager" 
+              <Image className="radius-4" loading="eager" 
               alt="IDR" src='/img/img-uf.jpg' 
               sizes="(max-width: 480px) 400px, (max-width: 1024px) 800px, 1200px"
               width={1200} height={400} />
@@ -105,7 +105,7 @@ export default function Tech(props: IIndexProps) {
 
           <div className="SideImg">
           <div className='ImgWrap'>
-              <Image className="radius-4 nimation-up" data-animate="slide-up"  loading="eager" 
+              <Image className="radius-4" loading="eager" 
               alt="IDR" src='/img/img-bio.jpg' 
               sizes="(max-width: 480px) 400px, (max-width: 1024px) 800px, 1200px"
               width={1200} height={400} />
@@ -190,7 +190,7 @@ export default function Tech(props: IIndexProps) {
 
         </div>
 
-        <div className="TechImg">
+        <div className="TechImg animation-up" data-animate="slide-up">
           <img alt="IDR" src='/svg/cat-planta.svg'  />
         </div>
 
@@ -199,7 +199,7 @@ export default function Tech(props: IIndexProps) {
       <TechSlideshow/>
 
       <section className="SectionWrap" id="tech-video">
-        <div className='VideoWrap'>
+        <div className="VideoWrap animation-up" data-animate="slide-up">
           <p className='tagline'>RECORREGUT AUDIOVISUAL</p>
           <h3>El procés de depuració de l'aigua</h3>
             {/* <video playsInline controls 
@@ -239,7 +239,7 @@ export default function Tech(props: IIndexProps) {
 
         <section className="NewsSectionWrap">
           <div className="NewsSection">
-            <div className="NewsContent">
+            <div className="NewsContent animation-up" data-animate="slide-up">
               <div className='NewsTitle'>
                 <h3>Projectes Destacats</h3>
               </div>
