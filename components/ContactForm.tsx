@@ -75,7 +75,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ title }) => {
               />
             </div>
             <div className="column-center">
-              <button className="SmallBtn" type="submit">
+              <button className="SubBtn" type="submit">
                 Enviar Missatge
               </button>
             </div>

@@ -751,6 +751,28 @@ button {
     fill: var(--cream);
   } */
 
+    .SubBtn {
+    position: relative;
+    background: var(--tgreen3);
+    /* box-shadow: var(--sh-l); */
+    /* border: 1.5px solid var(--tgreen3); */
+    padding: 14px 20px;
+    min-width: 150px;
+    width: max-content;
+    border-radius: 6px;
+    /* transition: background-color 0.2s ease-in-out, box-shadow 0.3s ease-in-out; */
+    transition: background-color 0.2s ease-in-out, color 0.3s ease-in-out;
+    overflow: hidden;
+    z-index: 1;
+    font-weight: 400;
+    letter-spacing: 0.02rem;
+    color: white;
+    /* width: 100%; */
+  }
+    .SubBtn:hover {
+      filter: brightness(110%);
+    }
+
   .SmallBtn {
     background: var(--darkGrad);
     font-size: 1rem;

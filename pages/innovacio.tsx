@@ -38,7 +38,7 @@ export default function Innovation(props: IIndexProps) {
       <div className="HeroSectionWrap Dark" id="innovation-hero">
           <div className="Overlay"></div>
         <div className="HeroSection">
-          <div className="HeroContent animation-up" data-animate="slide-up">
+          <div className="HeroContent animation-right" data-animate="slide-right">
             <div className='HeroTitle'>
               <h6>PROJECTES</h6>
               {/* <h2>Depuració innovadora per un futur sostenible</h2> */}
