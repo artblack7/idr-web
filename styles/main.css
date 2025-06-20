@@ -308,10 +308,8 @@ section .LineBtn {
   max-width: 680px;
 }
 
-
 .HeroTitle {
   padding: 50px 0 30px 0;
-
 }
 
 .HeroSection .AppBtn button {
@@ -830,9 +828,6 @@ section video {
   justify-content: center;
 }
 
-
-
-
 /*********************************************************/
 /*/////////////////// RESPONSIVE STYLES /////////////////*/
 /*********************************************************/
@@ -1212,17 +1207,7 @@ section video {
   .HeroSection .AppBtn button {
     margin-top: 25px;
   }
-
-  .Partners {
-    height: 80px;
-  }
-    .PartnerLogos {
-      height: 60px;
-    }
-    .PartnerLogos img {
-      height: 18px;
-      padding: 0 3vw;
-    } */
+ */
 
 }
 
@@ -1232,109 +1217,6 @@ section video {
       gap: 1vw;
     }
 
-  /* section,
-  .HeroSection,
-  .FooterContent {
-    padding: 40px 4vw;
-  }
-
-  h1 {
-    font-size: 12vw;
-    line-height: 14vw;
-  }
-
-  h2 {
-    font-size: 8vw;
-    line-height: 10vw;
-  }
-
-  h3, h4 {
-    font-size: 7vw;
-    line-height: 9vw;
-  }
-
-  .HeroContent h1 {
-    max-width: 80% !important;
-    margin-bottom: 20px !important;
-  }
-
-  .Hero h6,
-  .HeroContent h6 {
-    font-size: 4.8vw;
-    line-height: 7.2vw;
-    font-weight: 300;
-    letter-spacing: 0.01rem;
-  } */
-
 } 
 
 
-
-
-
-
-/* section {
-  padding: 100px;
-} */
-
-/* .Main section > div {
-  margin: auto;
-}
-
-.Main section {
-  min-height: 500px;
-} */
-
-
-
-/* #innovation-hero {
-  background: linear-gradient(180deg, 
-  rgba(0, 58, 139, 0.9), 
-  transparent, transparent),
-
-  url(../public/img/projectes.jpg);
-  background-repeat: no-repeat;
-  background-position: 100% 100%;
-  background-position: center center;
-  background-size: cover;
-} */
-
-/* .HeroSectionWrap {
-	background: 
-  
-  linear-gradient(180deg, 
-  var(--blue4),
-  hsla(200, 79%, 44%, 0.1), 
-  transparent),
-
-  linear-gradient(90deg, 
-  hsla(200, 94%, 20%, 0.7),
-  hsla(200, 94%, 20%, 0.6),
-  hsla(200, 94%, 20%, 0.1),
-  transparent 100%),
-  
-  url(../public/img/splash.jpg);
-  
-  background-repeat: no-repeat;
-  background-position: 100% 100%;
-  background-position: center center;
-  background-size: cover;
-} */
-
-/* .HeroBgWrap {
-  position: absolute;
-  top: 0px;
-  right: 0;
-  z-index: -1;
-  width: 100%; 
-  display: flex; 
-  justify-content: center; 
-  overflow-x: hidden;
-}
-
-.HeroBg {
-  position: relative;
-  top: 0;
-  right: 0;
-  z-index: 0;
-} */

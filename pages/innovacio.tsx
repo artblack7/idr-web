@@ -24,7 +24,7 @@ export default function Innovation(props: IIndexProps) {
 
   return (
     <main className='Main'>
-     <AnimationTrigger />
+      <AnimationTrigger />
       <div>
         <MainHeader useWhite={false}
           meta={<Meta 
@@ -41,7 +41,6 @@ export default function Innovation(props: IIndexProps) {
           <div className="HeroContent animation-right" data-animate="slide-right">
             <div className='HeroTitle'>
               <h6>PROJECTES</h6>
-              {/* <h2>Depuració innovadora per un futur sostenible</h2> */}
               <h2>Investigació, innovació i desenvolupament</h2>
             </div>
           </div>
@@ -98,10 +97,6 @@ export default function Innovation(props: IIndexProps) {
               Aquests sistemes eliminen contaminants com sals, metalls pesants i compostos orgànics, millorant l’eficiència i reduint el consum d’energia i químics. Això permet una gestió més sostenible de l’aigua, alineada amb els objectius ambientals globals.
               </p>
 
-            {/* <div className="AppBtn">
-              <Link href="/empresa"><button>Saber més<Arrow_Icon /></button></Link>
-            </div> */}
-
           </div>
 
             <div className="SideImg">
@@ -127,50 +122,46 @@ export default function Innovation(props: IIndexProps) {
         {/* NUMBERS */}
 
         <div className="CenterSection">
-            <div className="CardGroup three Numbers">
+          <div className="CardGroup three Numbers">
 
-              <div className="CardWrap animation-up" data-animate="slide-up">
-                <div className="CardNumber">
-                  <h1 className='MainGrad'>+12</h1>
-                </div>
-                  <div className='CardLineWrap'>
-                    <div className="CardLine"></div>
-                  </div>
-                <div>
-                  <h6 className='CardConcept blue-text'>Projectes</h6>
-                </div>
+            <div className="CardWrap animation-up" data-animate="slide-up">
+              <div className="CardNumber">
+                <h1 className='MainGrad'>+12</h1>
               </div>
-
-              <div className="CardWrap animation-up" data-animate="slide-up">
-                <div className="CardNumber">
-                  <h1 className='MainGrad'>+7</h1>
+                <div className='CardLineWrap'>
+                  <div className="CardLine"></div>
                 </div>
-                  <div className='CardLineWrap'>
-                    <div className="CardLine"></div>
-                  </div>
-                <div>
-                  <h6 className='CardConcept blue-text'>Entitats col·laboradores</h6>
-                </div>
+              <div>
+                <h6 className='CardConcept blue-text'>Projectes</h6>
               </div>
+            </div>
 
-              <div className="CardWrap animation-up" data-animate="slide-up">
-                <div className="CardNumber">
-                  <h1 className='MainGrad'>+16</h1>
-                </div>
-                  <div className='CardLineWrap'>
-                    <div className="CardLine"></div>
-                  </div>
-                <div>
-                  <h6 className='CardConcept blue-text'>Investigadors dedicats a I+D</h6>
-                </div>
+            <div className="CardWrap animation-up" data-animate="slide-up">
+              <div className="CardNumber">
+                <h1 className='MainGrad'>+7</h1>
               </div>
+                <div className='CardLineWrap'>
+                  <div className="CardLine"></div>
+                </div>
+              <div>
+                <h6 className='CardConcept blue-text'>Entitats col·laboradores</h6>
+              </div>
+            </div>
 
-
-
+            <div className="CardWrap animation-up" data-animate="slide-up">
+              <div className="CardNumber">
+                <h1 className='MainGrad'>+16</h1>
+              </div>
+                <div className='CardLineWrap'>
+                  <div className="CardLine"></div>
+                </div>
+              <div>
+                <h6 className='CardConcept blue-text'>Investigadors dedicats a I+D</h6>
+              </div>
             </div>
 
           </div>
-
+        </div>
       </section>
 
       <section className="SectionWrap Dark" id="innovation-quote">
@@ -180,9 +171,7 @@ export default function Innovation(props: IIndexProps) {
               IDR, pionera en depuració biològica, impulsa la sostenibilitat i la innovació contínua en el tractament d'aigües per a la indústria de la pell.
               </h4>
             </div>
-
         </div>
-        
       </section>
       
       <section className="SectionWrap" id="testbed">
@@ -208,94 +197,41 @@ export default function Innovation(props: IIndexProps) {
                  IDR Test bed és una planta d’assaig oberta a empreses per provar, desenvolupar i optimitzar tecnologies avançades de tractament d’aigües residuals mitjançant sistemes de filtració amb membranes.
               </p>
               <p>
-Amb la voluntat de compartir coneixement i facilitar la innovació en el sector, IDR posa a disposició d’altres empreses la seva planta d’assaig per al tractament terciari avançat.              </p>
+              Amb la voluntat de compartir coneixement i facilitar la innovació en el sector, IDR posa a disposició d’altres empreses la seva planta d’assaig per al tractament terciari avançat.              
+              </p>
               <div className="AppBtn">
               <Link href="/post/testbed"><button>Saber més<Arrow_Icon /></button></Link>
-            </div>
+              </div>
             </div>
           </div>
-
         </div>
-
-        {/* GUIA MIDA IMATGES 
-
-            <Image className="index-1 animation-up" data-animate="slide-up"  loading="eager" 
-            alt="IDR" src='/img/brand-logo.png' 
-            sizes="(max-width: 480px) 500px, (max-width: 1024px) 700px, 1000px"
-            width={1200} height={400} />
-
-          */}
 
       </section>
 
       <div className='GradStripe'></div>
 
-
-          {/* COLLAB */}
+      {/* PROJECTES */}
       
-            <section className="SectionWrap" id="main-mission">
-              <div className="CenterSection animation-up" data-animate="slide-up">
-                <div>
-                  <div>
-                    <div>
-                      <h2>Projectes destacats</h2>
-                      {/* <p>
-                      A IDR formem part d'una xarxa de col·laboració amb universitats, associacions, ajuntaments i empreses especialitzades, amb les quals treballem conjuntament per impulsar projectes d'I+D i garantir la sostenibilitat en la indústria de la pell.
-                      </p> */}
-                    </div>
-                  </div>
-                </div>
-
-                <BlogArchive allPosts={allPosts} initialPosts={[]}/>
-      
-                {/* <div className="CardGroup Collab">
-      
-                  <Link href="/">
-                    <div className="CardWrap">
-                      <div className="CardTop Collab1">
-                      <div className="CardImg">
-                        <Image className="animation-up" data-animate="slide-up" loading="eager" 
-                        alt="img" src='/logos/tradebe.png' width={250} height={200} />           
-                      </div>
-                      </div>
-                      <div className="CardBottom">
-            
-                        <div className="CardTxt">
-                          <h6>Leather Cluster Barcelona</h6>
-                          <p className=''>
-                          Associació que uneix empreses i institucions del sector de la pell per impulsar la col·laboració, la innovació sostenible i l’accés a nous mercats, promovent el networking i aplicant tecnologies avançades per una major responsabilitat ambiental.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </Link>
-                
-                </div> */}
-
+      <section className="SectionWrap" id="main-mission">
+        <div className="CenterSection animation-up" data-animate="slide-up">
+          <div>
+            <div>
+              <div>
+                <h2>Projectes destacats</h2>
               </div>
-            </section>
-  
-
-      {/* POSTS */}
-
-      {/* <section className="NewsSectionWrap">
-          <div className="NewsSection">
-            <div className="NewsContent">
-              <div className='NewsTitle'>
-                <h4>Projectes Destacats Recents</h4>
-              </div>
-              <RecentPosts allPosts={allPosts}/>
-              </div>
+            </div>
           </div>
-        </section> */}
 
+          <BlogArchive allPosts={allPosts} initialPosts={[]}/>
+
+        </div>
+      </section>
 
       <Footer />
 
     </main>
   );
 }
-
 
 export const getStaticProps: GetStaticProps<IIndexProps> = async () => {
   const posts = getAllPosts(Config.post_fields);

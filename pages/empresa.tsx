@@ -88,10 +88,6 @@ export default function Empresa() {
               Aquest esforç col·lectiu impulsa una indústria de la pell orientada al futur, amb un ferm compromís amb l'eficiència i el respecte pel medi ambient, aportant valor tant a la cadena productiva com a la comunitat local.
               </p>
 
-            {/* <div className="AppBtn">
-              <Link href="/sostenibilitat"><button>Saber més<Arrow_Icon /></button></Link>
-            </div> */}
-
           </div>
 
             <div className="SideImg">
@@ -104,8 +100,6 @@ export default function Empresa() {
             </div>
           </div>
         </div>
-
-        {/* TIMELINE */}
 
       </section>
 
@@ -123,9 +117,9 @@ export default function Empresa() {
         </div>
       </section>
 
-          {/* COLLAB */}
+      {/* COLLAB */}
 
-          <section className="SectionWrap" id="about-collab">
+      <section className="SectionWrap" id="about-collab">
         <div className="CenterSection">
           <div>
             <div className="CenterHeading animation-up" data-animate="slide-up">
@@ -197,13 +191,13 @@ export default function Empresa() {
         </div>
       </section>
 
-        {/* SOCIS  */}
+      {/* SOCIS  */}
 
-        <section>
+      <section>
         <div className='Stripe Brown'></div>
       </section>
 
-        <section className="SectionWrap" id="about-socis">
+      <section className="SectionWrap" id="about-socis">
         <div className="CenterSection">
           <div className="CenterContent animation-up" data-animate="slide-up">
             <div className="CenterWrap">
@@ -226,16 +220,10 @@ export default function Empresa() {
 
               <SocisList />
 
-
             </div>
-
-
-
           </div>
-
         </div>
       </section>
-
 
       <Footer />
 

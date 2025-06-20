@@ -9,6 +9,22 @@
   dependencies:
     regenerator-runtime "^0.14.0"
 
+"@formspree/core@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@formspree/core/-/core-4.0.0.tgz#3425bdcbcf8669c1540f66adc9158adcb075096d"
+  integrity sha512-geNlUut5nME1Ztej5Pzx1BrlQ1fFIcJYIqmF+Vm0jaUbpZxjXvt7SDOGeQVkuxn80QJiIHlwBGGjSBFjPX/KDw==
+  dependencies:
+    "@stripe/stripe-js" "^5.7.0"
+
+"@formspree/react@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@formspree/react/-/react-3.0.0.tgz#9d8cc5cb5c7ef18f0606dbc9415d8c3d21425467"
+  integrity sha512-8PufBZ4l13VmCp9xTGQXwyF6mZtYSecqgTlFuMo5Fbe4Q6zUk7PMU2uKOwIaytZyTyJgFVCvdbpQElPPBKYNLw==
+  dependencies:
+    "@formspree/core" "^4.0.0"
+    "@stripe/react-stripe-js" "^3.1.1"
+    "@stripe/stripe-js" "^5.7.0"
+
 "@mapbox/rehype-prism@^0.8.0":
   version "0.8.0"
   resolved "https://registry.yarnpkg.com/@mapbox/rehype-prism/-/rehype-prism-0.8.0.tgz#c8b6eafb041a97e143fcbf93dd4e319ab0c131d6"
@@ -73,6 +89,18 @@
   version "0.14.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
   integrity sha512-9NET910DNaIPngYnLLPeg+Ogzqsi9uM4mSboU5y6p8S5DzMTVEsJZrawi+BoDNUVBa2DhJqQYUFvMDfgU062LQ==
+
+"@stripe/react-stripe-js@^3.1.1":
+  version "3.7.0"
+  resolved "https://registry.yarnpkg.com/@stripe/react-stripe-js/-/react-stripe-js-3.7.0.tgz#ebebf87718875be08c68b3412cab785d0e9064d6"
+  integrity sha512-PYls/2S9l0FF+2n0wHaEJsEU8x7CmBagiH7zYOsxbBlLIHEsqUIQ4MlIAbV9Zg6xwT8jlYdlRIyBTHmO3yM7kQ==
+  dependencies:
+    prop-types "^15.7.2"
+
+"@stripe/stripe-js@^5.7.0":
+  version "5.10.0"
+  resolved "https://registry.yarnpkg.com/@stripe/stripe-js/-/stripe-js-5.10.0.tgz#4d1fcf8c59530865fcd59ce910798cc9c973a870"
+  integrity sha512-PTigkxMdMUP6B5ISS7jMqJAKhgrhZwjprDqR1eATtFfh0OpKVNp110xiH+goeVdrJ29/4LeZJR4FaHHWstsu0A==
 
 "@swc/helpers@0.5.1":
   version "0.5.1"

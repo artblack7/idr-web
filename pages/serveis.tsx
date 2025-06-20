@@ -8,7 +8,6 @@ import Arrow_Icon from '../components/SVG/Arrow_Icon';
 import { Meta } from '../components/head/Meta';
 import Table from '../components/Table';
 import Contact from '../components/Contact';
-import ContactForm from '../components/ContactForm';
 
 export default function Serveis() {
 
@@ -86,9 +85,6 @@ export default function Serveis() {
               <p>
               L’alta capacitat tecnològica de la depuradora d’IDR, permet tractar residus líquids no perillosos amb totes les garanties mediambientals.
               </p>
-            {/* <div className="AppBtn">
-              <Link href="/empresa"><button>Saber més<Arrow_Icon /></button></Link>
-            </div> */}
 
           </div>
 

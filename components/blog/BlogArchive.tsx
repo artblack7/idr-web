@@ -65,10 +65,7 @@ const BlogArchive: React.FC<BlogArchiveProps> = ({ initialPosts, allPosts, tagFi
 
 export default BlogArchive;
 
-
-
 // -------- PAGINATION BLOGARCHIVE --------------
-
 
 // import React from 'react';
 // import { PostItems } from '../../utils/Content';

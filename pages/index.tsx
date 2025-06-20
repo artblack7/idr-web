@@ -28,7 +28,7 @@ export default function Home(props: IIndexProps) {
 
   return (
     <main className='Main'>
-     <AnimationTrigger />
+      <AnimationTrigger />
       <div>
         <MainHeader useWhite={false}
           meta={<Meta 
@@ -39,80 +39,31 @@ export default function Home(props: IIndexProps) {
           />
       </div>
 
-        {/* <div className="HeroBgWrap">      
-          <div className="HeroBg">
-            <video className="HeroVideo"  muted loop playsInline
-              // autoPlay
-              src="video/idr-video.mp4 type="video/mp4">
-            </video>
-            <div className="Overlay"></div>
-          </div>
-        </div> */}
-
       <div className="HeroSectionWrap Dark" id="main-hero">
-          <video
-            className="HeroVideo"
-            muted
-            loop
-            playsInline
-            autoPlay
-            src="video/video-hero.mp4"
-            poster="/video/video-poster.jpg"
-          ></video>
-                {/* <Image className="HeroVideo" style={{ borderRadius: '8px' }} loading="eager" 
-                alt="img" src='/video/video-inici.jpg' width={1600} height={900}/>            */}
+        <video
+          className="HeroVideo"
+          muted
+          loop
+          playsInline
+          autoPlay
+          src="video/video-hero.mp4"
+          poster="/video/video-poster.jpg">
+        </video>
 
-          <div className="Overlay"></div>
+        <div className="Overlay"></div>
+
         <div className="HeroSection Main">
           <div className="MainHeroContent animation-up" data-animate="slide-up">
             <h1>Som IDR</h1>
             <h6 className=''>Igualadina de Depuració i Recuperació</h6>
-            {/* <h2>
-            Depuració Innovadora per <br></br>un futur sostenible            
-            </h2> */}
-            {/* <h2>Innovació</h2> */}
           </div>
         </div>
 
       </div>
 
-      {/* QUI SOM */}
+      {/* LA PLANTA */}
 
-      {/* <section className="SectionWrap" id="main-about">
-        <div className="SideSection">
-          <div className="SideContent Right animation-up" data-animate="slide-up">
-          
-          <div className="SideImg">
-              <div className="ImgWrap">
-                <Image className="animation-up" data-animate="slide-up"  loading="eager" 
-                alt="IDR" src='/img/quisom.png' 
-                width={1200} height={400} />
-              </div>
-            </div>
-            
-            <div className="SideTxt">
-              <p className='tagline'>Qui Som</p>
-              <h3>Units per una indústria de la pell Sostenible</h3>
-              <p>
-              Igualadina de Depuració i Recuperació és una una planta de depuració situada al barri del Rec d'Igualada, creada pels mateixos curtidors per tractar les seves aigües residuals i garantir un cicle d’aigua més net i respectuós amb el medi ambient. Ens uneix un compromís comú: impulsar una indústria de la pell sostenible.
-              </p>
-              <p>
-              A més de servir el sector dels curtits, oferim serveis de gestió de residus líquids no perillosos per a altres indústries, ajudant a reduir l'impacte ambiental.
-              </p>
-
-            <div className="AppBtn">
-              <Link href="/empresa"><button>Saber més<Arrow_Icon /></button></Link>
-            </div>
-
-         </div>
-          </div>
-
-        </div>
-      </section> */}
-
-    {/* LA PLANTA */}
-
-    <section className="SectionWrap" id="main-tech">
+      <section className="SectionWrap" id="main-tech">
         <div className="CenterSection">
           <div className="CenterContent animation-up" data-animate="slide-up">
             <div className="CenterTxt">
@@ -143,10 +94,8 @@ export default function Home(props: IIndexProps) {
 
             <div className="Video">
               {/* <video playsInline controls
-              
               src="video/hero-video.mp4">
               </video> */}
-              
               
               <div
                 style={{
@@ -168,53 +117,50 @@ export default function Home(props: IIndexProps) {
                   }}
                   title="Igualadina de Depuració i Recuperació IDR"
                 ></iframe>
-            </div>
+              </div>
 
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* QUI SOM */}
+
+      <section className="DivSectionWrap DivLeft Dark" id="main-about">
+        <div className="DivSection Left animation-up" data-animate="slide-up">
+
+          <div className="SideTxt">
+            <p className='tagline'>QUI SOM</p>
+            <h3><span className="BrownGrad">Units per una indústria</span> de la pell sostenible
+            </h3>              
+            <p>
+            Igualadina de Depuració i Recuperació (IDR) és una iniciativa corporativa de l'associació Leather Cluster Barcelona (LCB) amb la participació dels adobers del barri del Rec d'Igualada, creada amb l’objectiu de tractar les aigües residuals del sector de la pell i garantir un cicle d’aigua més net i respectuós amb el medi ambient. 
+            </p>
+            <p>
+            Gràcies a aquesta aliança, IDR s'ha convertit en una plataforma única a Catalunya, amb una missió clara: Impulsar una indústria de la pell més sostenible.
+            </p>
+            <div className="AppBtn Brown">
+              <Link href="/empresa"><button>Saber més<Arrow_Icon /></button></Link>
+            </div>
+          </div>
+
+          <div className="SideImg">
+
+            {isTablet || isWide ? <Image alt="dashboard" src='/img/img-quisom.jpg' width={800} height={800} />
+            : (null )}
 
           </div>
 
         </div>
       </section>
 
-          {/* QUI SOM */}
-
-        <section className="DivSectionWrap DivLeft Dark" id="main-about">
-          <div className="DivSection Left animation-up" data-animate="slide-up">
-
-            <div className="SideTxt">
-              <p className='tagline'>QUI SOM</p>
-              <h3><span className="BrownGrad">Units per una indústria</span> de la pell sostenible
-              </h3>              
-              <p>
-              Igualadina de Depuració i Recuperació (IDR) és una iniciativa corporativa de l'associació Leather Cluster Barcelona (LCB) amb la participació dels adobers del barri del Rec d'Igualada, creada amb l’objectiu de tractar les aigües residuals del sector de la pell i garantir un cicle d’aigua més net i respectuós amb el medi ambient. 
-              </p>
-              <p>
-              Gràcies a aquesta aliança, IDR s'ha convertit en una plataforma única a Catalunya, amb una missió clara: Impulsar una indústria de la pell més sostenible.
-              </p>
-              <div className="AppBtn Brown">
-                <Link href="/empresa"><button>Saber més<Arrow_Icon /></button></Link>
-              </div>
-            </div>
-
-            {/* <div className="SideImg"></div>  */}
-
-            <div className="SideImg">
-
-              {isTablet || isWide ? <Image alt="dashboard" src='/img/img-quisom.jpg' width={800} height={800} />
-              : (null )}
-
-            </div>
-
-          </div>
-      </section>
       <section>
         <div className='Stripe Brown'></div>
       </section>
 
-        {/* SOCIS  */}
+      {/* SOCIS  */}
 
-        <section className="SectionWrap" id="main-socis">
+      <section className="SectionWrap" id="main-socis">
         <div className="CenterSection">
           <div className="CenterContent animation-up" data-animate="slide-up">
             <div className="CenterHeading">
@@ -249,132 +195,130 @@ export default function Home(props: IIndexProps) {
       
         {/* RESIDUS */}
 
-        <section className="DivSectionWrap DivLeft Dark" id="main-services">
-          <div className="DivSection Left animation-up" data-animate="slide-up">
+      <section className="DivSectionWrap DivLeft Dark" id="main-services">
+        <div className="DivSection Left animation-up" data-animate="slide-up">
 
-            <div className="SideTxt">
-              <p className='tagline'>SERVEIS</p>
-              <h3><span className="GreenGrad">Gestió de residus </span>
-              líquids per una indústria més neta</h3>              
-              <p>
-              IDR és l'única planta depuradora autoritzada a Catalunya per tractar residus líquids industrials no perillosos.               
-              </p>
-              <p>
-              Afegim valor a la indústria catalana oferint un servei especialitzat de depuració d’aigües per a empreses externes, amb tecnologia avançada i processos sostenibles.
-              </p>
-              <div className="AppBtn Green">
-                <Link href="/serveis"><button>Més Informació<Arrow_Icon /></button></Link>
-              </div>
+          <div className="SideTxt">
+            <p className='tagline'>SERVEIS</p>
+            <h3><span className="GreenGrad">Gestió de residus </span>
+            líquids per una indústria més neta</h3>              
+            <p>
+            IDR és l'única planta depuradora autoritzada a Catalunya per tractar residus líquids industrials no perillosos.               
+            </p>
+            <p>
+            Afegim valor a la indústria catalana oferint un servei especialitzat de depuració d’aigües per a empreses externes, amb tecnologia avançada i processos sostenibles.
+            </p>
+            <div className="AppBtn Green">
+              <Link href="/serveis"><button>Més Informació<Arrow_Icon /></button></Link>
             </div>
+          </div>
 
-            {/* <div className="SideImg"></div>  */}
+          <div className="SideImg">
 
-            <div className="SideImg">
-
-              {isTablet || isWide ? <Image alt="dashboard" src='/img/img-residus.jpg' width={800} height={800} />
-              : (null )}
-
-            </div>
+            {isTablet || isWide ? <Image alt="dashboard" src='/img/img-residus.jpg' width={800} height={800} />
+            : (null )}
 
           </div>
+
+        </div>
       </section>
+
       <section>
         <div className='Stripe Green'></div>
       </section>
 
-        {/* MISSION */}
+      {/* MISSION */}
 
-        <section className="SectionWrap" id="main-mission">
-          <div className="CenterSection">
-            <div>
-              <div className="CenterHeading animation-up" data-animate="slide-up">
-                <div>
-                  <h3>La nostra missió</h3>
-                  <p>
-                  A IDR, ens esforcem per oferir solucions de depuració sostenibles, innovant constantment per explorar models d’economia circular i avançar cap a una indústria cada dia més eficient i responsable amb el medi ambient.
-                  </p>
-                </div>
+      <section className="SectionWrap" id="main-mission">
+        <div className="CenterSection">
+          <div>
+            <div className="CenterHeading animation-up" data-animate="slide-up">
+              <div>
+                <h3>La nostra missió</h3>
+                <p>
+                A IDR, ens esforcem per oferir solucions de depuració sostenibles, innovant constantment per explorar models d’economia circular i avançar cap a una indústria cada dia més eficient i responsable amb el medi ambient.
+                </p>
               </div>
             </div>
-      
-            <div className="CardGroup three Mission">
-            
-              <div className="CardWrap animation-up" data-animate="slide-up">
-                <div className="CardImg">
-                <Image loading="eager" 
-                alt="img" src='/img/mission-1.jpg' width={800} height={800}
-                sizes="(max-width: 480px) 180px, (max-width: 1024px) 200px, 220px"                />           
-               </div>
-                <div className="CardTxt">
-                  <h6>Qualitat de l’aigua</h6>
-                  <p>
-                  Apliquem processos avançats de tractament per garantir una aigua depurada de màxima qualitat, protegint l’entorn mitjançant una gestió eficient de l’aigua durant tot el procés de depuració.                  </p>
-                </div>
-              </div>      
-
-              <div className="CardWrap animation-up" data-animate="slide-up">
-                <div className="CardImg">
-                <Image loading="eager" 
-                alt="img" src='/img/mission-2.jpg' width={800} height={800}
-                sizes="(max-width: 480px) 180px, (max-width: 1024px) 200px, 220px"
-                 />           
-                </div>
-                <div className="CardTxt">
-                  <h6>Sostenibilitat ambiental</h6>
-                  <p>
-                  Estem compromesos amb la reducció de l'impacte ecològic del sector dels curtits, depurant les aigües residuals del procés d’adobat mitjançant tractaments biològics per minimitzar-ne l'efecte ambiental.
-                  </p>
-                </div>
-              </div>       
-
-              <div className="CardWrap animation-up" data-animate="slide-up">
-                <div className="CardImg">
-                <Image loading="eager" 
-                alt="img" src='/img/mission-3.jpg' width={800} height={800}
-                sizes="(max-width: 480px) 180px, (max-width: 1024px) 200px, 220px"
-                 />           
-                </div>
-                <div className="CardTxt">
-                  <h6>Economia Circular</h6>
-                  <p>
-                  Fomentem la recerca d’alternatives per reintegrar l’aigua depurada en el procés productiu, contribuint així a un sistema més circular i optimitzant l'ús dels recursos hídrics.
-                  </p>
-                </div>
-              </div>              
-      
-            </div>
-
           </div>
-        </section>
+    
+          <div className="CardGroup three Mission">
+          
+            <div className="CardWrap animation-up" data-animate="slide-up">
+              <div className="CardImg">
+              <Image loading="eager" 
+              alt="img" src='/img/mission-1.jpg' width={800} height={800}
+              sizes="(max-width: 480px) 180px, (max-width: 1024px) 200px, 220px"                />           
+              </div>
+              <div className="CardTxt">
+                <h6>Qualitat de l’aigua</h6>
+                <p>
+                Apliquem processos avançats de tractament per garantir una aigua depurada de màxima qualitat, protegint l’entorn mitjançant una gestió eficient de l’aigua durant tot el procés de depuració.                  </p>
+              </div>
+            </div>      
+
+            <div className="CardWrap animation-up" data-animate="slide-up">
+              <div className="CardImg">
+              <Image loading="eager" 
+              alt="img" src='/img/mission-2.jpg' width={800} height={800}
+              sizes="(max-width: 480px) 180px, (max-width: 1024px) 200px, 220px"
+                />           
+              </div>
+              <div className="CardTxt">
+                <h6>Sostenibilitat ambiental</h6>
+                <p>
+                Estem compromesos amb la reducció de l'impacte ecològic del sector dels curtits, depurant les aigües residuals del procés d’adobat mitjançant tractaments biològics per minimitzar-ne l'efecte ambiental.
+                </p>
+              </div>
+            </div>       
+
+            <div className="CardWrap animation-up" data-animate="slide-up">
+              <div className="CardImg">
+              <Image loading="eager" 
+              alt="img" src='/img/mission-3.jpg' width={800} height={800}
+              sizes="(max-width: 480px) 180px, (max-width: 1024px) 200px, 220px"
+                />           
+              </div>
+              <div className="CardTxt">
+                <h6>Economia Circular</h6>
+                <p>
+                Fomentem la recerca d’alternatives per reintegrar l’aigua depurada en el procés productiu, contribuint així a un sistema més circular i optimitzant l'ús dels recursos hídrics.
+                </p>
+              </div>
+            </div>              
+    
+          </div>
+
+        </div>
+      </section>
 
       {/* INNOVATION */}
 
-        <section className="DivSectionWrap DivLeft Dark" id="main-innovation">
-          <div className="DivSection Left animation-up" data-animate="slide-up">
+      <section className="DivSectionWrap DivLeft Dark" id="main-innovation">
+        <div className="DivSection Left animation-up" data-animate="slide-up">
 
-            <div className="SideTxt">
-              <p className='tagline'>PROJECTES</p>
-              <h3><span className="BlueGrad">Solucions innovadores </span>
-              per a nous reptes ambientals</h3>              
-              <p>
-              Impulsem projectes I+D per optimitzar els processos existents i implementar tecnologies innovadores que permetin una depuració cada cop més completa i sostenible, avançant cap a un model d’economia circular i impacte zero.              
-              </p>
-              <div className="AppBtn Blue">
-                <Link href="/innovacio"><button>Veure Projectes<Arrow_Icon /></button></Link>
-              </div>
+          <div className="SideTxt">
+            <p className='tagline'>PROJECTES</p>
+            <h3><span className="BlueGrad">Solucions innovadores </span>
+            per a nous reptes ambientals</h3>              
+            <p>
+            Impulsem projectes I+D per optimitzar els processos existents i implementar tecnologies innovadores que permetin una depuració cada cop més completa i sostenible, avançant cap a un model d’economia circular i impacte zero.              
+            </p>
+            <div className="AppBtn Blue">
+              <Link href="/innovacio"><button>Veure Projectes<Arrow_Icon /></button></Link>
             </div>
+          </div>
 
-            {/* <div className="SideImg"></div>  */}
+          <div className="SideImg">
 
-            <div className="SideImg">
-
-              {isTablet || isWide ? <Image alt="dashboard" src='/img/img-lab.jpg' width={800} height={800} />
-              : (null )}
-
-            </div>
+            {isTablet || isWide ? <Image alt="dashboard" src='/img/img-lab.jpg' width={800} height={800} />
+            : (null )}
 
           </div>
+
+        </div>
       </section>
+
       <section>
         <div className='Stripe Blue'></div>
       </section>
@@ -382,15 +326,15 @@ export default function Home(props: IIndexProps) {
       {/* POSTS */}
 
       <section className="NewsSectionWrap">
-          <div className="NewsSection">
-            <div className="NewsContent animation-up" data-animate="slide-up">
-              <div className='NewsTitle'>
-                <h3>Projectes Destacats</h3>
-              </div>
-              <RecentPosts allPosts={allPosts}/>
-              </div>
-          </div>
-        </section>
+        <div className="NewsSection">
+          <div className="NewsContent animation-up" data-animate="slide-up">
+            <div className='NewsTitle'>
+              <h3>Projectes Destacats</h3>
+            </div>
+            <RecentPosts allPosts={allPosts}/>
+            </div>
+        </div>
+      </section>
 
       <Footer />
 
