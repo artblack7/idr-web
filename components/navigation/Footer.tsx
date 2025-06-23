@@ -81,15 +81,15 @@ const Footer = () => {
                   <div className="PartnerLogos">
                       <div className="Socis">
                         <a href="https://leatherbarcelona.com/" target="_blank" rel="noopener noreferrer">
-                         <Image src="/logos/cluster.png" height="300" width="300" alt="Logo" />
+                         <Image src="/logos/cluster.png" height="300" width="300" alt="Logo" loading='eager'/>
                         </a>
                       </div>
                       <div className="Socis">
                         <a href="https://www.tradebe.com/environmental-services/" target="_blank" rel="noopener noreferrer">
-                         <Image src="/logos/tradebe.png" height="300" width="300" alt="Logo" />
+                         <Image src="/logos/tradebe.png" height="300" width="300" alt="Logo" loading='eager'/>
                         </a>
                       </div>
-                      <Image src="/logos/gremi.png" height="300" width="300" alt="Logo" />
+                      <Image src="/logos/gremi.png" height="300" width="300" alt="Logo" loading='eager'/>
                   </div>
                 </div>
               </div>
