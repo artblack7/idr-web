@@ -85,7 +85,7 @@ export default function Innovation(props: IIndexProps) {
         <div className="SideSection">
           <div className="SideContent Left animation-up" data-animate="slide-up">
             <div className="SideTxt">
-              <p className='tagline'></p>
+              <p className='tagline'>INNOVACIÓ</p>
               <h3>Tecnologies per avançar cap a l’impacte zero</h3>
               <p className='highlight'>
                 IDR està especialitzada en el tractament biològic d’aigües residuals industrials i compta amb una llarga trajectòria en la implementació de tecnologies avançades per a la depuració d’aigua. 
@@ -109,15 +109,6 @@ export default function Innovation(props: IIndexProps) {
             </div>
           </div>
         </div>
-
-        {/* GUIA MIDA IMATGES 
-
-            <Image className="index-1 animation-up" data-animate="slide-up"  loading="eager" 
-            alt="IDR" src='/img/brand-logo.png' 
-            sizes="(max-width: 480px) 500px, (max-width: 1024px) 700px, 1000px"
-            width={1200} height={400} />
-
-          */}
 
         {/* NUMBERS */}
 
@@ -191,7 +182,7 @@ export default function Innovation(props: IIndexProps) {
             </div>
             
             <div className="SideTxt">
-              <p className='tagline'>NANOFILTRACIÓ PER A EMPRESES</p>
+              <p className='tagline'>FILTRACIÓ AMB MEMBRANES</p>
               <h3>IDR Test Bed</h3>
               <p className='highlight'>
                  IDR Test bed és una planta d’assaig oberta a empreses per provar, desenvolupar i optimitzar tecnologies avançades de tractament d’aigües residuals mitjançant sistemes de filtració amb membranes.

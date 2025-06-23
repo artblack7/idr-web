@@ -324,7 +324,7 @@ export default function Sostenibilitat() {
                   </div>
                   <div className="">
                   <p>
-                    Les nostres auditories i certificacions demostren la nostra dedicació a garantir les millors pràctiques en sostenibilitat, innovació i seguretat en tots els nostres serveis:                
+                    Les nostres auditories i certificacions demostren la nostra dedicació a garantir les millors pràctiques en sostenibilitat, innovació i seguretat en tots els nostres serveis.                
                     </p>
                 </div>
                 </div>

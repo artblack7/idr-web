@@ -103,7 +103,7 @@ export default function Empresa() {
 
       </section>
 
-    {/* QUOTE */}
+      {/* QUOTE */}
 
       <section className="SectionWrap Dark" id="about-quote">
         <div className="CenterSection">

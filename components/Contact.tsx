@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Arrow_Icon from './SVG/Arrow_Icon';
 import ContactForm from './ContactForm';
-import ContactForm2 from './LoginForm';
+import ContactForm2 from './descarte/LoginForm';
 
 const Contact = () => {
 

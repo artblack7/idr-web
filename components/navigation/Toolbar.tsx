@@ -85,7 +85,7 @@ export const Toolbar = ({ useWhite = false, children }: ToolbarProps) => {
                         <div className="toolbar-logo">
                           <Image
                             alt="IDR Logo"
-                            src="/logos/logo.png"
+                            src="/logos/logo-black.png"
                             width={866}
                             height={414}
                             loading="eager"

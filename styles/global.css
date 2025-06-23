@@ -596,8 +596,8 @@
 
   .MenuLinks {
     flex-direction: column;
+    justify-content: center;
     font-size: 1rem;
-    gap: 20px;
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 50px;
@@ -608,16 +608,17 @@
     color: var(--dark) !important;
     margin-top: 0;
     padding-right: 0;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-bottom: 0;
+    border-bottom: 1px solid rgb(219, 219, 219);
+    height: 7vh;
   }
 
   .MenuLinks a:hover {
-    color: var(--dark);
+    color: var(--tgreen2) !important;
   }
 
   .MenuLinks.Extra {
-    padding-top: 15px;
+    padding-top: 0;
   }
 
   .dropdown-item {
@@ -637,7 +638,7 @@
     width: 100%;
   }
 
-  .MenuLinks a:hover {
+  /* .MenuLinks a:hover {
     color: var(--dark);
   }
 
@@ -656,7 +657,7 @@
   .rotate-arrow {
     transform: rotate(90deg);
     transition: transform 0.3s ease;
-  } 
+  }  */
 
   .FooterNavWrap {
     flex-direction: column;

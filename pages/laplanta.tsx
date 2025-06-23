@@ -11,7 +11,7 @@ import RecentPosts from '../components/blog/RecentPosts';
 import { GetStaticProps } from 'next';
 import { BlogArchiveConfig, Config } from '../utils/Config';
 import { getAllPosts, getCategoryCollection, PostItems } from '../utils/Content';
-import VideoTecnic from '../components/VideoTecnic';
+import VideoTecnic from '../components/descarte/VideoTecnic';
 
 type IIndexProps = {
   initialPosts: PostItems[];
@@ -32,7 +32,7 @@ export default function Tech(props: IIndexProps) {
           metaTitle="La Planta │ Igualadina de Depuració i Recuperació." 
           metaImg="https://idr.com/thumb/thumb.png" 
           description="Pioners en depuració biològica per al tractament d’aigües." />} 
-          />
+        />
       </div>
 
       <div className="HeroSectionWrap Dark" id="tech-hero">
