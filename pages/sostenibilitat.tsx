@@ -93,7 +93,8 @@ export default function Sostenibilitat() {
 
             <div className="SideImg animation-up" data-animate="slide-up">
               <div className='ImgWrap'>
-                <Image className="radius-4 nimation-up" data-animate="slide-up"  loading="eager" 
+                <Image className="radius-4 nimation-up" data-animate="slide-up"  
+                // loading="eager" 
                 alt="IDR" src='/img/img-riu.jpg' 
                 sizes="(max-width: 480px) 400px, (max-width: 1024px) 800px, 1200px"
                 width={1200} height={400} />
@@ -179,7 +180,8 @@ export default function Sostenibilitat() {
             <div className="Content animation-up" data-animate="slide-up">
               <div className="SideImg">
                 <div className='SquareImgWrap'>
-                  <Image className="radius-3"  loading="eager" 
+                  <Image className="radius-3"  
+                  // loading="eager" 
                   alt="IDR" src='/img/cicle-1.jpg' 
                   sizes="(max-width: 480px) 400px, (max-width: 1024px) 400px, 400px"
                   width={900} height={600} />
@@ -197,7 +199,8 @@ export default function Sostenibilitat() {
             <div className="Content animation-up" data-animate="slide-up">
               <div className="SideImg">
                <div className='SquareImgWrap'>
-                  <Image className="radius-3"  loading="eager" 
+                  <Image className="radius-3"  
+                  // loading="eager" 
                   alt="IDR" src='/img/cicle-2.jpg' 
                   sizes="(max-width: 480px) 400px, (max-width: 1024px) 400px, 400px"
                   width={900} height={600} />
@@ -214,7 +217,8 @@ export default function Sostenibilitat() {
             <div className="Content animation-up" data-animate="slide-up">
               <div className="SideImg">
                 <div className='SquareImgWrap'>
-                  <Image className="radius-3"  loading="eager" 
+                  <Image className="radius-3"  
+                  // loading="eager" 
                   alt="IDR" src='/img/cicle-3.jpg' 
                   sizes="(max-width: 480px) 400px, (max-width: 1024px) 400px, 400px"
                   width={900} height={600} />
@@ -257,7 +261,8 @@ export default function Sostenibilitat() {
             
               <div className="CardWrap Card1 animation-up" data-animate="slide-up">
                 <div className="CardImg">
-                  <Image loading="eager" 
+                  <Image 
+                  // loading="eager" 
                   alt="img" src='/icons/check-circle.png' width={100} height={100} />           
                 </div>
                 <div className="CardTxt">
@@ -270,7 +275,8 @@ export default function Sostenibilitat() {
 
               <div className="CardWrap Card2 animation-up" data-animate="slide-up">
                 <div className="CardImg">
-                <Image loading="eager" 
+                <Image 
+                // loading="eager" 
                 alt="img" src='/icons/check-circle.png' width={100} height={100} />           
                </div>
                 <div className="CardTxt">
@@ -282,7 +288,8 @@ export default function Sostenibilitat() {
 
               <div className="CardWrap Card3 animation-up" data-animate="slide-up">
                 <div className="CardImg">
-                <Image loading="eager" 
+                <Image 
+                // loading="eager" 
                 alt="img" src='/icons/check-circle.png' width={100} height={100} />           
                </div>
                 <div className="CardTxt">
@@ -294,7 +301,8 @@ export default function Sostenibilitat() {
 
              <div className="CardWrap Card4 animation-up" data-animate="slide-up">
                 <div className="CardImg">
-                <Image loading="eager" 
+                <Image 
+                // loading="eager" 
                 alt="img" src='/icons/check-circle.png' width={100} height={100} />           
                </div>
                 <div className="CardTxt">

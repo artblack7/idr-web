@@ -24,7 +24,7 @@ const Contact = () => {
           </div> 
 
           <div className="SideImg">
-            <div className="animation-up" data-animate="slide-up">
+            <div>
               
             </div>
           </div>

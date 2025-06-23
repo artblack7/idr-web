@@ -92,7 +92,8 @@ export default function Empresa() {
 
             <div className="SideImg">
               <div className='ImgWrap'>
-                <Image className="radius-4"  loading="eager" 
+                <Image className="radius-4"  
+                // loading="eager" 
                 alt="IDR" src='/img/img-pells3.jpg' 
                 sizes="(max-width: 480px) 400px, (max-width: 1024px) 800px, 1200px"
                 width={1200} height={400} />
