@@ -1,8 +1,14 @@
 import Link from 'next/link';
 import Image from 'next/image';
-
+import { useRouter } from 'next/router';
+import { useTranslations } from 'next-intl';
 
 const Footer = () => {
+  const { locale, asPath } = useRouter();
+  const locales = ['ca', 'es', 'en'];
+  const t = useTranslations('navigation');
+  const tf = useTranslations('footer');
+
   return (
     <>
       <div className="Footer">
@@ -28,25 +34,28 @@ const Footer = () => {
             <div className='ContentWrap'>
               <div className="FooterSection Nav">
                 <div className="">
-                  <h6>Mapa Web</h6>
+                  <h6>{tf('sitemap')}</h6>
                   <ul>
                     <li>
-                      <Link href="/laplanta" className="">La Planta</Link>
+                      <Link href="/laplanta" className="">{t('laplanta')}</Link>
                     </li>
                     <li>
-                      <Link href="/innovacio" className="">Innovació</Link>
+                      <Link href="/innovacio" className="">{t('innovacio')}</Link>
                     </li>
                     <li>
-                      <Link href="/sostenibilitat" className="">Sostenibilitat</Link>
+                      <Link href="/sostenibilitat" className="">{t('sostenibilitat')}</Link>
                     </li>
                     <li>
-                      <Link href="/serveis" className="">Gestió de Residus</Link>
+                      <Link href="/serveis" className="">{t('serveis')}</Link>
                     </li>
                     <li>
-                      <Link href="/empresa" className="">Empresa</Link>
+                      <Link href="/empresa" className="">{t('empresa')}</Link>
                     </li>
                     <li>
-                      <Link href="/privacitat">Política de Privacitat</Link>
+                      <Link href="/privacitat">{tf('privacy')}</Link>
+                    </li>
+                    <li>
+                      <Link href="https://clients.idr.cat/" target="_blank" rel="noopener noreferrer">{t('clientArea')}</Link>
                     </li>
 
                   </ul>
@@ -56,22 +65,22 @@ const Footer = () => {
               <div className="FooterSection Info">
                 <div className='FooterColumnWrap'>
                   <div className="FooterColumn">
-                    <h6>Direcció</h6>
+                    <h6>{tf('address')}</h6>
                     <ul>
                       <li>
-                        <p>Ronda del Rec, 163</p>
-                        <p>08700 Igualada</p>
-                        <p>Barcelona, Espanya</p>
+                        <p>{tf('addressStreet')}</p>
+                        <p>{tf('addressCity')}</p>
+                        <p>{tf('addressCountry')}</p>
                       </li>
                     </ul>
                   </div>
 
                   <div className="FooterColumn">
-                    <h6>Contacte</h6>
+                    <h6>{tf('contact')}</h6>
                     <ul>
                       <li>
-                        <p>Oficines: +34 93 806 85 95</p>
-                        <p>Planta: +34 93 803 03 30</p>
+                        <p>{tf('contactOffice')}: +34 93 806 85 95</p>
+                        <p>{tf('contactPlant')}: +34 93 803 03 30</p>
                         <p>Email: info@idr.cat</p>
                       </li>
                     </ul>
@@ -99,11 +108,19 @@ const Footer = () => {
           <div className="FooterInfoWrap">
 
             <div className="Legal">
-              <div><p> © 2025 Igualadina de Depuració i Recuperació. Tots els drets reservats.</p></div>
-              {/* <div className="LegalLinks">
-                <Link href="/">Terms of Service </Link>-&nbsp;
-                <Link href="/privacitat">Política de Privacitat</Link>
-              </div> */}
+              <div><p>{tf('copyright')}</p></div>
+              <div className="LanguageSelector">
+                {locales.map((lng) => (
+                  <Link 
+                    key={lng} 
+                    href={asPath} 
+                    locale={lng}
+                    className={locale === lng ? 'active' : ''}
+                  >
+                    {lng.toUpperCase()}
+                  </Link>
+                ))}
+              </div>
             </div>
           
           </div>

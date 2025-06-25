@@ -7,8 +7,10 @@ import AnimationTrigger from '../components/AnimationTrigger';
 import Arrow_Icon from '../components/SVG/Arrow_Icon';
 import { Meta } from '../components/head/Meta';
 import SocisList from '../components/carousel/SocisList';
+import { useTranslations } from 'next-intl';
 
 export default function Empresa() {
+  const t = useTranslations('empresa');
 
   return (
     <main className='Main'>
@@ -28,8 +30,8 @@ export default function Empresa() {
         <div className="HeroSection">
           <div className="HeroContent animation-right" data-animate="slide-right">
             <div className='HeroTitle'>
-              <h6>EMPRESA</h6>
-              <h2>Units per una indústria de la pell sostenible</h2>
+              <h6>{t('hero.tagline')}</h6>
+              <h2>{t('hero.title')}</h2>
             </div>
           </div>
         </div>
@@ -55,16 +57,16 @@ export default function Empresa() {
             </div>
             
             <div className="SideTxt">
-              <p className='tagline'>QUI SOM</p>
-              <h3>La depuradora dels adobers</h3>
+              <p className='tagline'>{t('sections.who.tagline')}</p>
+              <h3>{t('sections.who.title')}</h3>
               <p className='highlight'>
-              Igualadina de Depuració i Recuperació (IDR) va ser fundada com una iniciativa corporativa de l'associació Leather Cluster Barcelona (LCB) amb la participació dels adobers del barri del Rec d'Igualada. Aquesta planta depuradora és gestionada per les mateixes empreses de la indústria de la pell, amb l'objectiu de garantir un futur sostenible per al sector.
+              {t('sections.who.highlight')}
               </p>
               <p>
-              Després de vint anys de funcionament, la depuradora d’IDR, una de les plantes pioneres a Europa en el tractament d’aigües residuals industrials, ha esdevingut un referent per a la indústria de l’aigua.
+              {t('sections.who.text1')}
               </p>
               <p>
-              Durant aquests anys, la planta que tracta cada dia les aigües que es generen en el procés de transformació de la pell de les empreses adoberes d’Igualada associades al LCB juntament amb la d’altres indústries, ha estat visitada per tècnics i professionals de la sostenibilitat de més de 30 països diferents.
+              {t('sections.who.text2')}
               </p>
             </div>
           </div>
@@ -76,16 +78,16 @@ export default function Empresa() {
         <div className="SideSection">
           <div className="SideContent Left animation-up" data-animate="slide-up">
             <div className="SideTxt">
-              <p className='tagline'>LA NOSTRA MISSIÓ</p>
-              <h3>La revolució sostenible del sector de la pell</h3>
+              <p className='tagline'>{t('sections.mission.tagline')}</p>
+              <h3>{t('sections.mission.title')}</h3>
               <p>
-              Com a part del Leather Cluster Barcelona, IDR ha contribuït a la millora contínua dels processos en el sector de la pell, amb un sistema innovador de depuració biològica que ha permès reduir de manera significativa l’impacte ambiental de la indústria. 
+              {t('sections.mission.text1')}
               </p>
               <p>
-              La nostra estructura organitzativa es basa en la col·laboració activa dels nostres socis, amb comitès i grups de treball que assessoren en aspectes com la traçabilitat, el desenvolupament tècnic i l'impacte ambiental, assegurant així que cada decisió contribueixi a un cicle de producció més sostenible.
+              {t('sections.mission.text2')}
               </p>
               <p>
-              Aquest esforç col·lectiu impulsa una indústria de la pell orientada al futur, amb un ferm compromís amb l'eficiència i el respecte pel medi ambient, aportant valor tant a la cadena productiva com a la comunitat local.
+              {t('sections.mission.text3')}
               </p>
 
           </div>
@@ -109,9 +111,9 @@ export default function Empresa() {
       <section className="SectionWrap Dark" id="about-quote">
         <div className="CenterSection">
             <div className="QuoteContent">
-              <p className='tagline'>VISIÓ DE FUTUR</p>
+              <p className='tagline'>{t('sections.vision.tagline')}</p>
               <h4>
-              Volem ser un referent internacional en sistemes avançats de depuració d’aigües industrials, liderant la transició del sector de la pell cap a un model d’economia circular de l’aigua d’impacte zero.
+              {t('sections.vision.text')}
               </h4>
             </div>
 
@@ -125,9 +127,9 @@ export default function Empresa() {
           <div>
             <div className="CenterHeading animation-up" data-animate="slide-up">
               <div>
-                <h2>Xarxa de Col·laboradors</h2>
+                <h2>{t('sections.collaborators.title')}</h2>
                 <p>
-                A IDR formem part d'una xarxa de col·laboració amb universitats, associacions, ajuntaments i empreses especialitzades, amb les quals treballem conjuntament per impulsar projectes d'I+D i garantir la sostenibilitat en la indústria de la pell.
+                {t('sections.collaborators.text')}
                 </p>
               </div>
             </div>
@@ -146,9 +148,10 @@ export default function Empresa() {
                 <div className="CardBottom">
       
                   <div className="CardTxt">
-                    <h6>Leather Cluster Barcelona</h6>
+                    <h6>{t('sections.collaborators.cards.cluster.title')}</h6>
                     <p className=''>
-                    Leather Cluster Barcelona és un entorn de cooperació competitiva per promoure projectes estratègics transversals i transformadors amb l’objectiu d’impulsar l’ecosistema del sector de la pell català i la seva cadena de valor en el marc de la sostenibilitat, l’economia circular, la moda sostenible i el valor compartit.                    </p>
+                    {t('sections.collaborators.cards.cluster.text')}
+                    </p>
                   </div>
                 </div>
               </div>
@@ -162,9 +165,9 @@ export default function Empresa() {
                 </div>
                 <div className="CardBottom">
                   <div className="CardTxt">
-                    <h6>Tradebe</h6>
+                    <h6>{t('sections.collaborators.cards.tradebe.title')}</h6>
                     <p className=''>
-                    Tradebe és una empresa pionera en la gestió de residus, especialitzada en convertir-los en recursos valuosos a través de solucions innovadores. Amb un ferm compromís amb l’economia circular, Tradebe contribueix activament a un futur més verd i sostenible.                  
+                    {t('sections.collaborators.cards.tradebe.text')}
                     </p>
                   </div>
                 </div>
@@ -179,9 +182,9 @@ export default function Empresa() {
                 </div>
                 <div className="CardBottom">
                   <div className="CardTxt">
-                    <h6>A3 Leather Innovation Center</h6>
+                    <h6>{t('sections.collaborators.cards.a3.title')}</h6>
                     <p className=''>
-                    Recerca i innovació amb noves tecnologies en el sector de la pell. A3 Leather Innovation Center impulsa projectes per obrir nous horitzons, crear pell ecològica d’alta gamma i millorar la sostenibilitat dels processos.
+                    {t('sections.collaborators.cards.a3.text')}
                     </p>
                   </div>
                 </div>
@@ -202,10 +205,10 @@ export default function Empresa() {
         <div className="CenterSection">
           <div className="CenterContent animation-up" data-animate="slide-up">
             <div className="CenterWrap">
-              <h3>Socis i Col·laboradors</h3>
+              <h3>{t('sections.partners.title')}</h3>
               <div className="center-subtitle">
                 <p>
-                Els nostres socis fundadors inclouen destacades empreses del sector de la pell, així com l’Ajuntament d’Igualada i representants de les indústries tèxtil i química, tots compromesos amb la sostenibilitat ambiental.
+                {t('sections.partners.text')}
                 </p>
               </div>
               <div className="CenterWrap">
@@ -214,7 +217,7 @@ export default function Empresa() {
                   // sizes="(max-width: 480px) 200px, (max-width: 1024px) 300px, 400px"
                   width={250} height={50} />
                 <p className='mt-3'>
-                 SOCI IL·LUSTRE 
+                 {t('sections.partners.illustrious')}
                 </p>
                 
               </div>
@@ -230,4 +233,12 @@ export default function Empresa() {
 
     </main>
   );
+}
+
+export async function getStaticProps({ locale }: { locale: string }) {
+  return {
+    props: {
+      messages: (await import(`../messages/${locale}.json`)).default
+    }
+  };
 }

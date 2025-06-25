@@ -8,8 +8,10 @@ import Arrow_Icon from '../components/SVG/Arrow_Icon';
 import { Meta } from '../components/head/Meta';
 import Table from '../components/Table';
 import Contact from '../components/Contact';
+import { useTranslations } from 'next-intl';
 
 export default function Serveis() {
+  const t = useTranslations('serveis');
 
   return (
     <main className='Main'>
@@ -29,8 +31,8 @@ export default function Serveis() {
         <div className="HeroSection">
           <div className="HeroContent animation-right" data-animate="slide-right">
             <div className='HeroTitle'>
-              <h6>SERVEIS</h6>
-              <h2>Gestió de residus líquids industrials</h2>
+              <h6>{t('hero.tagline')}</h6>
+              <h2>{t('hero.title')}</h2>
             </div>
           </div>
         </div>
@@ -56,13 +58,13 @@ export default function Serveis() {
             </div>
             
             <div className="SideTxt">
-              <p className='tagline'>SERVEIS PER EMPRESES</p>
-              <h3>Servei de gestió de residus líquids no perillosos</h3>
+              <p className='tagline'>{t('sections.services.tagline')}</p>
+              <h3>{t('sections.services.title')}</h3>
               <p className='highlight'>
-              IDR ofereix els seus serveis de depuració i gestió de residus líquids no perillosos, assessorant a les empreses en la minimització del seu impacte ambiental.
+              {t('sections.services.highlight')}
               </p>
               <p>
-              La nostra filosofia de millora continua fa que constantment treballem en optimitzar el procés de tractament de les nostres aigües, aplicant un tractament fisicoquímic i biològic personalitzat i òptim per a cada residu.              
+              {t('sections.services.text')}
               </p>
             </div>
           </div>
@@ -74,16 +76,16 @@ export default function Serveis() {
         <div className="SideSection">
           <div className="SideContent Left animation-up" data-animate="slide-up">
             <div className="SideTxt">
-              <p className='tagline'>LLICÈNCIES</p>
-              <h3>Gestió de residus líquids amb garanties ambientals</h3>
+              <p className='tagline'>{t('sections.licenses.tagline')}</p>
+              <h3>{t('sections.licenses.title')}</h3>
               <p className='highlight'>
-              IDR disposa de la Llicència Ambiental Integrada per la gestió de residus líquids no perillosos, amb codi de gestor E-1706.17.
+              {t('sections.licenses.highlight')}
               </p>
               <p>
-              IDR és pionera a Catalunya en combinar dues activitats, la depuració d’aigües industrials i urbanes i la gestió de residus líquids no perillosos.
+              {t('sections.licenses.text1')}
               </p>
               <p>
-              L’alta capacitat tecnològica de la depuradora d’IDR, permet tractar residus líquids no perillosos amb totes les garanties mediambientals.
+              {t('sections.licenses.text2')}
               </p>
 
           </div>
@@ -112,10 +114,11 @@ export default function Serveis() {
         <div className="CenterSection">
           <div className="CenterContent animation-up" data-animate="slide-up">
             <div className="CenterTxt">
-              <h3>Llistat de Codis LER</h3>
+              <h3>{t('sections.codes.title')}</h3>
               <div className="">
                 <p>
-                Consulta els codis LER dels residus que estem autorizats a tractar.                </p>
+                {t('sections.codes.text')}
+                </p>
               </div>
             </div>
 
@@ -135,4 +138,12 @@ export default function Serveis() {
 
     </main>
   );
+}
+
+export async function getStaticProps({ locale }: { locale: string }) {
+  return {
+    props: {
+      messages: (await import(`../messages/${locale}.json`)).default
+    }
+  };
 }

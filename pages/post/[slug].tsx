@@ -10,6 +10,7 @@ import { Config } from '../../utils/Config';
 import { getAllPosts, getPostBySlug, PostItems, getCategoryCollection,
 } from '../../utils/Content';
 import { markdownToHtml } from '../../utils/Markdown';
+import { useTranslations } from 'next-intl';
 
 type IPostUrl = {
   slug: string;
@@ -30,10 +31,12 @@ type IPostProps = {
   posts?: any;
   initialPosts: PostItems[];
   allPosts: PostItems[];
+  messages: any;
 };
 
 const DisplayPost: React.FC<IPostProps> = (props) => {
   const { allPosts, initialPosts } = props;
+  const t = useTranslations('blog');
 
 return (
   <BlogContainer
@@ -82,7 +85,7 @@ return (
           <div className="NewsSection">
             <div className="NewsContent">
               <div className='NewsTitle'>
-                <h2>Projectes Destacats</h2>
+                <h2>{t('featuredProjects')}</h2>
               </div>
               <RecentPosts allPosts={allPosts}/>
               </div>
@@ -92,17 +95,18 @@ return (
 );
 }
 
-export const getStaticPaths: GetStaticPaths<IPostUrl> = async () => {
+export const getStaticPaths: GetStaticPaths<IPostUrl> = async ({ locales = ['ca', 'es', 'en'] }) => {
   const posts = getAllPosts(['slug']);
 
-  const paths = posts.map((post) => {
+  const paths = posts.flatMap((post) => {
     const slugArr = post.slug.split('-');
     slugArr.splice(0, 3);
-    return {
-      params: {
-        slug: slugArr.join('-'),
-      },
-    };
+    const slug = slugArr.join('-');
+    
+    return locales.map((locale) => ({
+      params: { slug },
+      locale,
+    }));
   });
 
   return {
@@ -111,7 +115,8 @@ export const getStaticPaths: GetStaticPaths<IPostUrl> = async () => {
   };
 };
 
-export const getStaticProps: GetStaticProps<IPostProps, IPostUrl> = async ({ params }) => {  const posts = getAllPosts(Config.post_fields);
+export const getStaticProps: GetStaticProps<IPostProps, IPostUrl> = async ({ params, locale }) => {  
+  const posts = getAllPosts(Config.post_fields, locale || 'ca');
   const gallery = posts.slice(0, Config.blog_pagination_size);
   const realPost = posts.find((post) => post.slug.includes(params!.slug));
 
@@ -126,11 +131,11 @@ export const getStaticProps: GetStaticProps<IPostProps, IPostUrl> = async ({ par
     'image',
     'content',
     'slug',
-  ]);
+  ], locale || 'ca');
   const content = await markdownToHtml(post.content || '');
   console.log('Markdown HTML:', content);
   
-  const recentPosts = getAllPosts(['slug', 'title', 'date']).slice(0, 5);
+  const recentPosts = getAllPosts(['slug', 'title', 'date'], locale || 'ca').slice(0, 5);
 
   return {
     props: {
@@ -144,10 +149,11 @@ export const getStaticProps: GetStaticProps<IPostProps, IPostUrl> = async ({ par
       image: post.image,
       content,
       recentPosts,
-      categoryCollection: getCategoryCollection(['slug', 'tags']),
+      categoryCollection: getCategoryCollection(['slug', 'tags'], locale || 'ca'),
       posts: gallery,
       allPosts: posts,
       initialPosts: gallery,
+      messages: (await import(`../../messages/${locale || 'ca'}.json`)).default,
     },
   };
 };

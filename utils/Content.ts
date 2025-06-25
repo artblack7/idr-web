@@ -24,7 +24,7 @@ export function getPostSlugs() {
   return fs.readdirSync(postsDirectory).filter(x => x.endsWith('.md'))
 }
 
-export function getPostBySlug(slug: string, fields: string[] = []) {
+export function getPostBySlug(slug: string, fields: string[] = [], locale: string = 'ca') {
   const realSlug = slug.replace(/\.md$/, '');
   const fullPath = join(postsDirectory, `${realSlug}.md`);
   const fileContents = fs.readFileSync(fullPath, 'utf8');
@@ -48,10 +48,24 @@ export function getPostBySlug(slug: string, fields: string[] = []) {
       items[field] = realSlug;
     }
     if (field === 'content') {
-      items[field] = content;
+      // Handle multilingual content
+      const localizedContent = `content_${locale}`;
+      if (data[localizedContent]) {
+        items[field] = data[localizedContent];
+      } else {
+        items[field] = content; // Fallback to default content (Catalan)
+      }
     }
 
-    if (data[field]) {
+    // Handle multilingual fields
+    if (field === 'title' || field === 'metaTitle' || field === 'description') {
+      const localizedField = `${field}_${locale}`;
+      if (data[localizedField]) {
+        items[field] = data[localizedField];
+      } else if (data[field]) {
+        items[field] = data[field]; // Fallback to default (Catalan)
+      }
+    } else if (data[field]) {
       items[field] = data[field];
     }
   });
@@ -59,16 +73,16 @@ export function getPostBySlug(slug: string, fields: string[] = []) {
   return items;
 }
 
-export function getAllPosts(fields: string[] = []) {
+export function getAllPosts(fields: string[] = [], locale: string = 'ca') {
   const slugs = getPostSlugs();
   const posts = slugs
-    .map((slug) => getPostBySlug(slug, fields))
+    .map((slug) => getPostBySlug(slug, fields, locale))
     .sort((post1, post2) => new Date(post2.date).getTime() - new Date(post1.date).getTime());
   return posts;
 }
 
-export function getCategoryCollection(fields: string[] = []) {
-  const posts = getAllPosts(fields);
+export function getCategoryCollection(fields: string[] = [], locale: string = 'ca') {
+  const posts = getAllPosts(fields, locale);
   const categoryCollection = new Map<string, PostItems[]>();
 
   posts.forEach((item) => {

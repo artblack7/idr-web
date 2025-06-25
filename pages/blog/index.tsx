@@ -9,16 +9,19 @@ import BlogArchive from '../../components/blog/BlogArchive';
 import { BlogArchiveConfig, Config } from '../../utils/Config';
 import { getAllPosts, getCategoryCollection, PostItems } from '../../utils/Content';
 import { Meta } from '../../components/head/Meta';
+import { useTranslations } from 'next-intl';
 
 type IIndexProps = {
   initialPosts: PostItems[];
   allPosts: PostItems[];
   categoryCollection: [string, PostItems[]][];
   posts?: any;
+  messages: any;
 };
 
 export default function Blog(props: IIndexProps) {
   const { initialPosts, allPosts, categoryCollection } = props;
+  const t = useTranslations('blog');
 
   const [activeSection, setActiveSection] = useState<string>('all');
 
@@ -35,10 +38,10 @@ export default function Blog(props: IIndexProps) {
       <div>
         <MainHeader useWhite={false} 
           meta={<Meta 
-            title="Blog" 
-            metaTitle="IDR │ Igualadina de Depuració i Recuperació" 
+            title={t('meta.title')} 
+            metaTitle={t('meta.metaTitle')} 
             metaImg="https://idr.cat/thumb/thumb.png" 
-            description="Projectes I+D" />} 
+            description={t('meta.description')} />} 
             />
       </div>
 
@@ -50,7 +53,7 @@ export default function Blog(props: IIndexProps) {
             <div className='HeroTitle'>
               {/* <h6>PROJECTES</h6> */}
               {/* <h2>Depuració innovadora per un futur sostenible</h2> */}
-              <h2>Directori de Projectes</h2>
+              <h2>{t('hero.title')}</h2>
             </div>
           </div>
         </div>
@@ -63,16 +66,16 @@ export default function Blog(props: IIndexProps) {
               <div className="Categories">
                 <button 
                   className={activeSection==='all' ? 'activeBtn' : 'inactiveBtn'}
-                  onClick={() => setActiveSection('all')}>View All</button>
+                  onClick={() => setActiveSection('all')}>{t('categories.all')}</button>
                 <button 
                   className={activeSection==='general' ? 'activeBtn' : 'inactiveBtn'}
-                  onClick={() => setActiveSection('general')}>General</button>
+                  onClick={() => setActiveSection('general')}>{t('categories.general')}</button>
                 <button 
                   className={activeSection==='product' ? 'activeBtn' : 'inactiveBtn'}
-                  onClick={() => setActiveSection('product')}>Product</button>
+                  onClick={() => setActiveSection('product')}>{t('categories.product')}</button>
                 <button 
                   className={activeSection==='company' ? 'activeBtn' : 'inactiveBtn'}
-                  onClick={() => setActiveSection('company')}>Company</button>
+                  onClick={() => setActiveSection('company')}>{t('categories.company')}</button>
               </div>
               <div className={activeSection==='all' ? 'activeTab' : 'hiddenTab'}>
                 <BlogArchive initialPosts={initialPosts} allPosts={filteredPosts.all}/>
@@ -89,14 +92,15 @@ export default function Blog(props: IIndexProps) {
   );
 }
 
-export const getStaticProps: GetStaticProps<IIndexProps> = async () => {
-  const posts = getAllPosts(Config.post_fields);
+export const getStaticProps: GetStaticProps<IIndexProps> = async ({ locale }) => {
+  const posts = getAllPosts(Config.post_fields, locale || 'ca');
 
   return {
     props: {
       allPosts: posts,
       initialPosts: posts.slice(0, BlogArchiveConfig.blog_pagination_size),
-      categoryCollection: getCategoryCollection(['slug', 'tags']),    
+      categoryCollection: getCategoryCollection(['slug', 'tags'], locale || 'ca'),
+      messages: (await import(`../../messages/${locale || 'ca'}.json`)).default,
     },
   };
 };

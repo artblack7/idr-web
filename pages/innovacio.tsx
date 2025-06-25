@@ -13,14 +13,17 @@ import { GetStaticProps } from 'next';
 import { BlogArchiveConfig, Config } from '../utils/Config';
 import { getAllPosts, getCategoryCollection, PostItems } from '../utils/Content';
 import BlogArchive from '../components/blog/BlogArchive';
+import { useTranslations } from 'next-intl';
 
 type IIndexProps = {
   initialPosts: PostItems[];
   allPosts: PostItems[];
+  messages: any;
 };
 
 export default function Innovation(props: IIndexProps) {
-  const { allPosts, initialPosts } = props;
+  const { allPosts, initialPosts, messages } = props;
+  const t = useTranslations('innovacio');
 
   return (
     <main className='Main'>
@@ -40,8 +43,8 @@ export default function Innovation(props: IIndexProps) {
         <div className="HeroSection">
           <div className="HeroContent animation-right" data-animate="slide-right">
             <div className='HeroTitle'>
-              <h6>PROJECTES</h6>
-              <h2>Investigació, innovació i desenvolupament</h2>
+              <h6>{t('hero.tagline')}</h6>
+              <h2>{t('hero.title')}</h2>
             </div>
           </div>
         </div>
@@ -68,13 +71,13 @@ export default function Innovation(props: IIndexProps) {
             </div>
             
             <div className="SideTxt">
-              <p className='tagline'>Projectes</p>
-              <h3>Projectes I+D per a nous reptes ambientals</h3>
+              <p className='tagline'>{t('sections.projects.tagline')}</p>
+              <h3>{t('sections.projects.title')}</h3>
               <p className='highlight'>
-              Amb la missió de liderar la transició cap a un cicle de l’aigua més net i sostenible, IDR està compromesa amb la recerca i desenvolupament de solucions innovadores en el tractament d’aigües. 
+              {t('sections.projects.highlight')}
               </p>
               <p>
-               Col·laborem amb empreses adoberes, centres d'innovació i altres entitats del sector per optimitzar el tractament d’aigües residuals i avançar en models d’economia circular de l’aigua que permetin la reutilització de recursos dins la indústria de la pell, reduïnt així el consum de recursos naturals. 
+              {t('sections.projects.text')}
               </p>
             </div>
           </div>
@@ -86,16 +89,16 @@ export default function Innovation(props: IIndexProps) {
         <div className="SideSection">
           <div className="SideContent Left animation-up" data-animate="slide-up">
             <div className="SideTxt">
-              <p className='tagline'>INNOVACIÓ</p>
-              <h3>Tecnologies per avançar cap a l’impacte zero</h3>
+              <p className='tagline'>{t('sections.innovation.tagline')}</p>
+              <h3>{t('sections.innovation.title')}</h3>
               <p className='highlight'>
-                IDR està especialitzada en el tractament biològic d’aigües residuals industrials i compta amb una llarga trajectòria en la implementació de tecnologies avançades per a la depuració d’aigua. 
+                {t('sections.innovation.highlight')}
               </p>
               <p>
-              A través de l’investigació en tecnologies avançades com la nanofiltració i l’osmosis inversa, busquem aconseguir una depuració cada vegada més completa i eficient, orientada cap a un model d’impacte ambiental mínim, i avançant cap a l’impacte zero.
+              {t('sections.innovation.text1')}
               </p>
               <p>
-              Aquests sistemes eliminen contaminants com sals, metalls pesants i compostos orgànics, millorant l’eficiència i reduint el consum d’energia i químics. Això permet una gestió més sostenible de l’aigua, alineada amb els objectius ambientals globals.
+              {t('sections.innovation.text2')}
               </p>
 
           </div>
@@ -119,37 +122,37 @@ export default function Innovation(props: IIndexProps) {
 
             <div className="CardWrap animation-up" data-animate="slide-up">
               <div className="CardNumber">
-                <h1 className='MainGrad'>+12</h1>
+                <h1 className='MainGrad'>{t('numbers.projects.amount')}</h1>
               </div>
                 <div className='CardLineWrap'>
                   <div className="CardLine"></div>
                 </div>
               <div>
-                <h6 className='CardConcept blue-text'>Projectes</h6>
+                <h6 className='CardConcept blue-text'>{t('numbers.projects.label')}</h6>
               </div>
             </div>
 
             <div className="CardWrap animation-up" data-animate="slide-up">
               <div className="CardNumber">
-                <h1 className='MainGrad'>+7</h1>
+                <h1 className='MainGrad'>{t('numbers.collaborators.amount')}</h1>
               </div>
                 <div className='CardLineWrap'>
                   <div className="CardLine"></div>
                 </div>
               <div>
-                <h6 className='CardConcept blue-text'>Entitats col·laboradores</h6>
+                <h6 className='CardConcept blue-text'>{t('numbers.collaborators.label')}</h6>
               </div>
             </div>
 
             <div className="CardWrap animation-up" data-animate="slide-up">
               <div className="CardNumber">
-                <h1 className='MainGrad'>+16</h1>
+                <h1 className='MainGrad'>{t('numbers.researchers.amount')}</h1>
               </div>
                 <div className='CardLineWrap'>
                   <div className="CardLine"></div>
                 </div>
               <div>
-                <h6 className='CardConcept blue-text'>Investigadors dedicats a I+D</h6>
+                <h6 className='CardConcept blue-text'>{t('numbers.researchers.label')}</h6>
               </div>
             </div>
 
@@ -161,7 +164,7 @@ export default function Innovation(props: IIndexProps) {
         <div className="CenterSection">
             <div className="QuoteContent">
               <h4>
-              IDR, pionera en depuració biològica, impulsa la sostenibilitat i la innovació contínua en el tractament d'aigües per a la indústria de la pell.
+              {t('sections.quote.text')}
               </h4>
             </div>
         </div>
@@ -185,16 +188,16 @@ export default function Innovation(props: IIndexProps) {
             </div>
             
             <div className="SideTxt">
-              <p className='tagline'>FILTRACIÓ AMB MEMBRANES</p>
-              <h3>IDR Test Bed</h3>
+              <p className='tagline'>{t('sections.testbed.tagline')}</p>
+              <h3>{t('sections.testbed.title')}</h3>
               <p className='highlight'>
-                 IDR Test bed és una planta d’assaig oberta a empreses per provar, desenvolupar i optimitzar tecnologies avançades de tractament d’aigües residuals mitjançant sistemes de filtració amb membranes.
+                 {t('sections.testbed.highlight')}
               </p>
               <p>
-              Amb la voluntat de compartir coneixement i facilitar la innovació en el sector, IDR posa a disposició d’altres empreses la seva planta d’assaig per al tractament terciari avançat.              
+              {t('sections.testbed.text')}
               </p>
               <div className="AppBtn">
-              <Link href="/post/testbed"><button>Saber més<Arrow_Icon /></button></Link>
+              <Link href="/post/testbed"><button>{t('button.more')}<Arrow_Icon /></button></Link>
               </div>
             </div>
           </div>
@@ -211,7 +214,7 @@ export default function Innovation(props: IIndexProps) {
           <div>
             <div>
               <div>
-                <h2>Projectes destacats</h2>
+                <h2>{t('sections.featured.title')}</h2>
               </div>
             </div>
           </div>
@@ -227,11 +230,13 @@ export default function Innovation(props: IIndexProps) {
   );
 }
 
-export const getStaticProps: GetStaticProps<IIndexProps> = async () => {
+export const getStaticProps: GetStaticProps<IIndexProps> = async ({ locale }) => {
+  const messages = (await import(`../messages/${locale}.json`)).default;
   const posts = getAllPosts(Config.post_fields);
 
   return {
     props: {
+      messages,
       allPosts: posts,
       initialPosts: posts.slice(0, BlogArchiveConfig.blog_pagination_size),
       categoryCollection: getCategoryCollection(['slug', 'tags']),    

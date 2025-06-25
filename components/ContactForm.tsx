@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useForm, ValidationError } from "@formspree/react";
+import { useTranslations } from 'next-intl';
 import Image from "next/image";
 
 interface ContactFormProps {
@@ -13,6 +14,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ title }) => {
     message: "",
     email: "",
   });
+  const t = useTranslations('serveis.contactForm');
 
   const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -25,7 +27,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ title }) => {
   };
 
   if (state.succeeded) {
-    return <p className="smallcaps">Gràcies pel teu missatge!</p>;
+    return <p className="smallcaps">{t('successMessage')}</p>;
   }
 
   return (
@@ -34,54 +36,54 @@ const ContactForm: React.FC<ContactFormProps> = ({ title }) => {
         <div className="">
           <form className="contact-form" onSubmit={handleSubmit}>
             <div className="form-box">
-              <p className="smallcaps">Email</p>
+              <p className="smallcaps">{t('email')}</p>
               <input
                 id="email"
                 name="email"
                 type="email"
-                placeholder="Enter email"
+                placeholder={t('emailPlaceholder')}
                 className="form-input"
                 value={formData.email}
                 onChange={handleInputChange}
                 required
               />
               <ValidationError
-                prefix="Email"
+                prefix={t('validation.email')}
                 field="email"
                 errors={state.errors}
               />
             </div>
             <div className="form-box">
-              <p className="smallcaps">Concepte</p>
+              <p className="smallcaps">{t('subject')}</p>
               <input
                 id="subject"
                 name="subject"
                 type="text"
-                placeholder="Enter subject"
+                placeholder={t('subjectPlaceholder')}
                 className="form-input"
                 value={formData.subject}
                 onChange={handleInputChange}
                 required
               />
               <ValidationError
-                prefix="Subject"
+                prefix={t('validation.subject')}
                 field="subject"
                 errors={state.errors}
               />
             </div>
             <div className="form-box">
-              <p className="smallcaps">Missatge</p>
+              <p className="smallcaps">{t('message')}</p>
               <textarea
                 id="message"
                 name="message"
-                placeholder="Enter message"
+                placeholder={t('messagePlaceholder')}
                 className="form-textarea"
                 value={formData.message}
                 onChange={handleInputChange}
                 required
               />
               <ValidationError
-                prefix="Message"
+                prefix={t('validation.message')}
                 field="message"
                 errors={state.errors}
               />
@@ -92,7 +94,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ title }) => {
                 type="submit"
                 disabled={state.submitting}
               >
-                Enviar Missatge
+                {t('submitButton')}
               </button>
             </div>
           </form>

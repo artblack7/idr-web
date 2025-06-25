@@ -6,6 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Menu_Icon from "../SVG/Menu_Icon";
 import Arrow_Icon from "../SVG/Arrow_Icon";
+import { useTranslations } from 'next-intl';
 
 interface ToolbarProps {
   useWhite?: boolean;
@@ -17,6 +18,7 @@ export const Toolbar = ({ useWhite = false, children }: ToolbarProps) => {
     const isDesktop = useMediaQuery('(min-width: 1025px)');
     const toolbarClass = useWhite ? 'ToolbarWhite' : 'Toolbar';
     const router = useRouter();
+    const t = useTranslations('navigation');
 
   // Reset burger menu state on navigation
   useEffect(() => {
@@ -44,7 +46,7 @@ export const Toolbar = ({ useWhite = false, children }: ToolbarProps) => {
                       </div>
                       <div className="ButtonGroup right">
                           <div className="AppBtn">
-                            <Link target="blank" href="https://clients.idr.cat/"><button>Àrea Clients<Arrow_Icon /></button></Link>
+                            <Link target="blank" href="https://clients.idr.cat/"><button>{t('clientArea')}<Arrow_Icon /></button></Link>
                           </div>
                       </div>
                     </div>
@@ -100,7 +102,7 @@ export const Toolbar = ({ useWhite = false, children }: ToolbarProps) => {
                   {children}
                   <div className="MenuLinks Extra">
                     <Link target="_blank" href="https://clients.idr.cat/">
-                      Àrea Clients
+                      {t('clientArea')}
                     </Link>
                   </div>
                 </div>

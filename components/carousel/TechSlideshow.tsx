@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Link from 'next/link';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 import ImgCarousel from "../carousel/ImgCarousel";
 
 const Flickity = require('react-flickity-component');
@@ -12,6 +13,7 @@ const flickityOptions = {
 }
 
 const TechSlideshow: React.FC = () => {
+    const t = useTranslations('laplanta.techSlideshow');
 
     return (
         <>
@@ -40,16 +42,16 @@ const TechSlideshow: React.FC = () => {
                         </div>
                       </div>
                       <div className="SideTxt">
-                        <p>ANÀLISIS DE L’AIGUA</p>
-                        <h4>Anàlisis de les aigües de les adoberies</h4>
+                        <p>{t('slides.analysis.tagline')}</p>
+                        <h4>{t('slides.analysis.title')}</h4>
                           <p>
-                          Cada dia, tècnics especialitzats de la depuradora recullen mostres d’aigua a les 26 empreses empreses adoberes associades, per a la seva anàlisi. 
+                          {t('slides.analysis.text1')}
                           </p>
                           <p>
-                          Les mostres d’aigua es processen en un laboratori especialitzat situat a l’A3 Innovation Center de la Universitat de Lleida, al Campus d’Igualada. 
+                          {t('slides.analysis.text2')}
                           </p>
                           <p>
-                          Els resultats obtinguts permeten determinar amb precisió la composició de les aigües residuals procedents de cada empresa. Això possibilita ajustar els processos de la depuradora als canvis en la composició de les aigües de les adoberies i notificar en temps real qualsevol anomalia que requereixi correcció.
+                          {t('slides.analysis.text3')}
                           </p>
                       </div>
                     </div>
@@ -66,16 +68,16 @@ const TechSlideshow: React.FC = () => {
                         </div>
                       </div>
                       <div className="SideTxt">
-                        <p>PRETRACTAMENT</p>
-                        <h4>Desbast o garbellament</h4>
+                        <p>{t('slides.pretreatment.tagline')}</p>
+                        <h4>{t('slides.pretreatment.title')}</h4>
                           <p>
-                          L’aigua arriba als pous d’entrada de la depuradora a través dels col·lectors: un per al col·lector industrial i un per al municipal. Aquestes línies d’aigua es mantenen separades fins que arriben al primer reactor biològic. En aquests pous, s’eliminen els sòlids gruixuts mitjançant una cullera bivalva i reixes de filtratge.
+                          {t('slides.pretreatment.text1')}
                           </p>
                           <p>
-                          Després de l’extracció dels sòlids gruixuts, el pou de bombament bombeja l’aigua cap a la següent fase, on es retiren els sòlids fins mitjançant dos tamisos d’escala. Finalment, al desgreixador i dessorrador, els greixos es retiren per flotació i les sorres per decantació. 
+                          {t('slides.pretreatment.text2')}
                           </p>
                           <p>
-                          Cada tipus de residu retirat en aquesta fase es diposita en banyeres separades per gestionar-los posteriorment.
+                          {t('slides.pretreatment.text3')}
                           </p>
                       </div>
                     </div>
@@ -92,13 +94,13 @@ const TechSlideshow: React.FC = () => {
                         </div>
                       </div>
                       <div className="SideTxt">
-                        <p>TRACTAMENT QUÍMIC</p>
-                        <h4>Correcció de pH i dessulfuració</h4>
+                        <p>{t('slides.chemical.tagline')}</p>
+                        <h4>{t('slides.chemical.title')}</h4>
                           <p>
-                          L’aigua de la línia industrial passa pel corrector de pH, per adequar-lo a les següents fases del procés. Una part de l’aigua industrial es dirigeix directament al primer reactor biològic. Mentre que l’altre es tracta als tancs de dessulfuració, on els sulfurs es transformen en sulfats mitjançant l'addició d’oxigen líquid. Un cop dessulfurada, l’aigua es dirigeix cap al primer reactor biològic.
+                          {t('slides.chemical.text1')}
                           </p>
                           <p>
-                          A més del tractament de l’aigua, la planta disposa de sistemes de desodorització, com els scrubbers químics. L’aire que s’aspira dels pous de bombament, les basses de dessulfuració i els tancs d’emmagatzematge selectiu es tracta químicament per garantir que no alliberi contaminants perjudicials per a l’atmosfera.
+                          {t('slides.chemical.text2')}
                           </p>
                       </div>
                     </div>
@@ -115,13 +117,13 @@ const TechSlideshow: React.FC = () => {
                         </div>
                       </div>
                       <div className="SideTxt">
-                        <p>TRACTAMENT BIOLÒGIC</p>
-                        <h4>Reactor biològic I</h4>
+                        <p>{t('slides.biological1.tagline')}</p>
+                        <h4>{t('slides.biological1.title')}</h4>
                           <p>
-                          Al reactor biològic I hi arriba l’aigua industrial i municipal un cop ha estat pretractada físicament i químicament. Aquest tanc està airejat mitjançant difusors i s’hi desenvolupen els bacteris i protozous necessaris per a la degradació de la matèria orgànica.
+                          {t('slides.biological1.text1')}
                           </p>
                           <p>
-                          L’aigua del reactor biològic travessa dos decantadors secundaris, on el fang sedimenta per gravetat. L’aigua clarificada passa a un tanc d’alimentació per al reactor biològic II i els fangs es recullen en una arqueta per ser enviats cap al tractament de fangs o bé es recirculen per mantenir un volum de fang adient al reactor.
+                          {t('slides.biological1.text2')}
                           </p>
                       </div>
                     </div>
@@ -139,13 +141,13 @@ const TechSlideshow: React.FC = () => {
                       </div>
 
                       <div className="SideTxt">
-                        <p>TRACTAMENT BIOLÒGIC</p>
-                        <h4>Reactor biològic II</h4>
+                        <p>{t('slides.biological2.tagline')}</p>
+                        <h4>{t('slides.biological2.title')}</h4>
                           <p>
-                          La planta compta amb quatre tancs SBR (Sequential Batch Reactor) configurables per a realitzar tant la reacció de nitrificació com la de desnitrificació. Generalment, es fan servir dos reactors per a cadascuna de les reaccions. Aquests reactors tenen la peculiaritat de poder dur a terme en un mateix tanc totes les fases d’un tractament biològic: alimentació, reacció, decantació, descàrrega i purga de fangs.
+                          {t('slides.biological2.text1')}
                           </p>
                           <p>
-                          L’aigua passa als reactors nitrificants, on, mitjançant aeració, bacteris especialitzats transformen l’amoni a nitrats. L’aigua clarificada resultant va cap al reactor biològic III.
+                          {t('slides.biological2.text2')}
                           </p>
                       </div>
                     </div>
@@ -162,16 +164,16 @@ const TechSlideshow: React.FC = () => {
                         </div>
                       </div>
                       <div className="SideTxt">
-                        <p>TRACTAMENT BIOLÒGIC</p>
-                        <h4>Reactor biològic III</h4>
+                        <p>{t('slides.biological3.tagline')}</p>
+                        <h4>{t('slides.biological3.title')}</h4>
                           <p>
-                          Als reactors desnitirifcants els bacteris transformen els nitrats a nitrogen gas, que s’allibera a l’atmosfera, mitjançant l’addició de matèria orgànica nova (aigua dessulfurada) i en absència d’aire. Al mateix temps es du a terme un tractament terciari de reducció del color mitjançant un coagulant.
+                          {t('slides.biological3.text1')}
                           </p>
                           <p>
-                          Els fangs de tots els reactors biològics es recullen en una arqueta de fangs biològics, des d’on es bombegen cap al tractament de fangs.
+                          {t('slides.biological3.text2')}
                           </p>
                           <p>
-                          Finalment, l’aigua clarificada resultant arriba a l’arqueta de sortida i s’aboca al col·lector municipal, que posteriorment arriba a la depuradora municipal de Vilanova del Camí.
+                          {t('slides.biological3.text3')}
                           </p>
                       </div>
                     </div>
@@ -188,10 +190,10 @@ const TechSlideshow: React.FC = () => {
                         </div>
                       </div>
                       <div className="SideTxt">
-                        <p>TRACTAMENT TERCIARI</p>
-                        <h4>DAF (Dissolved Air Flotation)</h4>
+                        <p>{t('slides.tertiary.tagline')}</p>
+                        <h4>{t('slides.tertiary.title')}</h4>
                           <p>
-                          El tractament terciari està actualment en construcció i s'espera que l'operativa comenci a mitjans o finals del 2025. L’aigua provinent del reactor biològic III serà tractada amb un sistema de flotació per millorar-ne la qualitat i posteriorment serà abocada al col·lector municipal.
+                          {t('slides.tertiary.text1')}
                           </p>
                       </div>
                     </div>
@@ -208,16 +210,16 @@ const TechSlideshow: React.FC = () => {
                         </div>
                       </div>
                       <div className="SideTxt">
-                        <p>TRACTAMENT DE FANGS</p>
-                        <h4>Estabilització i deshidratació dels fangs</h4>
+                        <p>{t('slides.sludge1.tagline')}</p>
+                        <h4>{t('slides.sludge1.title')}</h4>
                           <p>
-                          Es duu a terme l’estabilització del fang afegint lletada de calç, a l’arqueta de fangs. Un cop estabilitzats, entren a les centrífugues per ser deshidratats. A la centrífuga també s’hi afegeix un polielectròlit per tal de flocular el fang i extreure’n el màxim d’aigua possible. L’aigua clarificada que en surt es retorna al reactor biològic I. 
+                          {t('slides.sludge1.text1')}
                           </p>
                           <p>
-                          Mitjançant un cargol d’Arquimedes, els fangs deshidratats són transportats fins a les sitges d’emmagatzematge, des d’on seran enviats a la Planta de Compostatge de Jorba per a la seva bioestabilització.                          
+                          {t('slides.sludge1.text2')}
                           </p>
                           <p>
-                          També es disposa de sistemes de desodorització, en aquest cas scrubbers biològics. L’aire aspirat de la sala de tractament de fangs es tracta biològicament per garantir que no alliberi contaminants nocius a l’atmosfera.
+                          {t('slides.sludge1.text3')}
                           </p>
                       </div>
                     </div>
@@ -234,16 +236,16 @@ const TechSlideshow: React.FC = () => {
                         </div>
                       </div>
                       <div className="SideTxt">
-                        <p>TRACTAMENT DE FANGS</p>
-                        <h4>Bioestabilització de fangs</h4>
+                        <p>{t('slides.sludge2.tagline')}</p>
+                        <h4>{t('slides.sludge2.title')}</h4>
                           <p>
-                          La bioestabilització dels fangs es duu a terme a la Planta de Compostatge de Jorba. El fang que arriba a la planta es descarrega i es barreja amb fusta triturada, per facilitar-ne la bioestabilització. Aquesta mescla inicial s’incorpora a l’espai de descomposició, anomenat meseta, on comença el procés de descomposició del material. 
+                          {t('slides.sludge2.text1')}
                           </p>
                           <p>
-                          Posteriorment, es duu a terme la maniobra de volteig, fins a finalitzar el volteig de tota la meseta, airejant així el material per afavorir-ne la descomposició. Quan la temperatura assoleix als 70 ºC, es produeix la higienització.                          
+                          {t('slides.sludge2.text2')}
                           </p>
                           <p>
-                          Finalment, en la fase de maniobra i garbellament, el compost gris es separa de la fusta mitjançant una garbelladora (Trommel). La fusta es recircula al sistema, mentre que el compost gris es gestiona adequadament.
+                          {t('slides.sludge2.text3')}
                           </p>
                       </div>
                     </div>
@@ -260,19 +262,16 @@ const TechSlideshow: React.FC = () => {
                         </div>
                       </div>
                       <div className="SideTxt">
-                        <p>CONTROL DE QUALITAT I MANTENIMENT</p>
-                        <h4>Instal·lacions de gestió i manteniment</h4>
+                        <p>{t('slides.quality.tagline')}</p>
+                        <h4>{t('slides.quality.title')}</h4>
                           <p>
-                          Les instal·lacions compten amb un laboratori on es duen a terme els controls analítics diaris per garantir l’eficiència de la depuradora, així com l’anàlisi dels residus líquids que arriben a la planta. Des de les oficines es gestiona i dirigeix la depuradora, coordinant-ne el funcionament i el control general.
-                          
+                          {t('slides.quality.text1')}
                           </p>
                           <p>
-                          La planta disposa de dues sales amb bufadors per proveir d’aire els reactors i tancs que ho necessiten. També hi ha nebulitzadors distribuïts per tota la planta en punts estratègics per evitar la dispersió d’olors desagradables a les àrees més properes a la depuradora.
-                          
+                          {t('slides.quality.text2')}
                           </p>
                           <p>
-                          A més, compta amb 3 tancs dedicats a l’emmagatzematge selectiu transitori de residus líquids, permetent-ne la introducció i el tractament diferencial segons les seves característiques.
-                          
+                          {t('slides.quality.text3')}
                           </p>
                       </div>
                     </div>

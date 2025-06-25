@@ -5,9 +5,11 @@ import useMediaQuery from "../../hooks/useMediaQuery";
 import Head from 'next/head';
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { useTranslations } from 'next-intl';
 
 export default function MainHeader(props: any) {
   const router = useRouter();
+  const t = useTranslations('navigation');
   const [containerRef, isVisible ] = useElementOnScreen({
     root: null,
     rootMargin: "0px",
@@ -39,12 +41,12 @@ export default function MainHeader(props: any) {
           
         <Toolbar useWhite={props.useWhite} {...props}>
           <div className="MenuLinks">
-            <Link href="/">Inici</Link>
-            <Link href="/laplanta">La Planta</Link>
-            <Link href="/innovacio">Innovació</Link>
-            <Link href="/sostenibilitat">Sostenibilitat</Link>
-            <Link href="/serveis">Gestió Residus</Link>
-            <Link href="/empresa">Empresa</Link>
+            <Link href="/">{t('home')}</Link>
+            <Link href="/laplanta">{t('laplanta')}</Link>
+            <Link href="/innovacio">{t('innovacio')}</Link>
+            <Link href="/sostenibilitat">{t('sostenibilitat')}</Link>
+            <Link href="/serveis">{t('serveis')}</Link>
+            <Link href="/empresa">{t('empresa')}</Link>
           </div>
         </Toolbar>
 

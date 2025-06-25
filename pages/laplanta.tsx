@@ -12,15 +12,18 @@ import { GetStaticProps } from 'next';
 import { BlogArchiveConfig, Config } from '../utils/Config';
 import { getAllPosts, getCategoryCollection, PostItems } from '../utils/Content';
 import VideoTecnic from '../components/descarte/VideoTecnic';
+import { useTranslations } from 'next-intl';
 
 type IIndexProps = {
   initialPosts: PostItems[];
   allPosts: PostItems[];
+  messages: any;
 };
 
 export default function Tech(props: IIndexProps) {
 // export default function Tech() {
-  const { allPosts, initialPosts } = props;
+  const { allPosts, initialPosts, messages } = props;
+  const t = useTranslations('laplanta');
 
   return (
     <main className='Main'>
@@ -31,7 +34,7 @@ export default function Tech(props: IIndexProps) {
           title="La Planta" 
           metaTitle="La Planta │ Igualadina de Depuració i Recuperació." 
           metaImg="https://idr.com/thumb/thumb.png" 
-          description="Pioners en depuració biològica per al tractament d’aigües." />} 
+          description="Pioners en depuració biològica per al tractament d'aigües." />} 
         />
       </div>
 
@@ -40,8 +43,8 @@ export default function Tech(props: IIndexProps) {
         <div className="HeroSection">
           <div className="HeroContent Wide animation-right" data-animate="slide-right">
             <div className='HeroTitle'>
-              <h6>LA PLANTA</h6>
-              <h2>Pioners en depuració biològica per al tractament d’aigües</h2>
+              <h6>{t('hero.tagline')}</h6>
+              <h2>{t('hero.title')}</h2>
             </div>
           </div>
         </div>
@@ -67,16 +70,16 @@ export default function Tech(props: IIndexProps) {
           </div>
           
           <div className="SideTxt">
-            <p className='tagline'>La planta</p>
-            <h3>Tecnologia avançada al servei de l’aigua</h3>
+            <p className='tagline'>{t('sections.plant.tagline')}</p>
+            <h3>{t('sections.plant.title')}</h3>
             <p className='highlight'>
-            La nostra planta, pionera a Europa en depuració biològica, realitza el tractament de les aigües residuals del sector de la pell a Igualada. 
+            {t('sections.plant.highlight')}
             </p>
             <p>
-            Equipada amb tecnologia d’última generació i gestionada per Tradebe, companyia internacional líder en el tractament de residus industrials, assegura un procés eficient que compleix els estàndards mediambientals més exigents.
+            {t('sections.plant.text1')}
             </p>
             <p>
-            Amb una supervisió constant i rigorosa, analitzem diàriament les aigües residuals, la qual cosa ens permet conèixer amb precisió la seva composició i aplicar millores immediates per reduir l’impacte ambiental en temps real.
+            {t('sections.plant.text2')}
             </p>
           </div>
         </div>
@@ -88,17 +91,17 @@ export default function Tech(props: IIndexProps) {
       <div className="SideSection">
         <div className="SideContent Left animation-up" data-animate="slide-up">
           <div className="SideTxt">
-            <p className='tagline'>El nostre procés</p>
-            <h3>Depuració biològica: Aigua, aire i vida en harmonia</h3>
+            <p className='tagline'>{t('sections.process.tagline')}</p>
+            <h3>{t('sections.process.title')}</h3>
 
             <p className='highlight'>
-            El nostre procés de depuració imita els cicles de la naturalesa, utilitzant l’aigua, l’aire i la vida microbiana.            
+            {t('sections.process.highlight')}
             </p>
             <p>
-            L’aigua residual es tracta amb oxigen per afavorir el creixement de bacteris específics, que descomponen la matèria orgànica i transformen els contaminants a través del cicle natural del nitrogen. En fases finals, els bacteris, sense necessitat d’oxigen, converteixen els nitrats en nitrogen gas, retornant l’aigua neta al medi amb un impacte mínim. 
+            {t('sections.process.text1')}
             </p>
             <p>
-            Aquest sistema és una solució altament sostenible que reprodueix el funcionament de la natura en cada etapa.
+            {t('sections.process.text2')}
             </p>
 
         </div>
@@ -122,37 +125,37 @@ export default function Tech(props: IIndexProps) {
 
           <div className="CardWrap animation-up" data-animate="slide-up">
             <div className="CardNumber">
-              <h1 className='MainGrad'>12M €</h1>
+              <h1 className='MainGrad'>{t('numbers.investment.amount')}</h1>
             </div>
               <div className='CardLineWrap'>
                 <div className="CardLine"></div>
               </div>
             <div>
-              <h6 className='CardConcept blue-text'>Inversió inicial</h6>
+              <h6 className='CardConcept blue-text'>{t('numbers.investment.label')}</h6>
             </div>
           </div>   
 
           <div className="CardWrap animation-up" data-animate="slide-up">
             <div className="CardNumber">
-              <h1 className='MainGrad'>4,5M €</h1>
+              <h1 className='MainGrad'>{t('numbers.operation.amount')}</h1>
             </div>
               <div className='CardLineWrap'>
                 <div className="CardLine"></div>
               </div>
             <div>
-              <h6 className='CardConcept blue-text'>Cost anual d’explotació</h6>
+              <h6 className='CardConcept blue-text'>{t('numbers.operation.label')}</h6>
             </div>
           </div>   
 
           <div className="CardWrap animation-up" data-animate="slide-up">
             <div className="CardNumber">
-              <h1 className='MainGrad'>4000m&sup3;</h1>
+              <h1 className='MainGrad'>{t('numbers.water.amount')}</h1>
             </div>
               <div className='CardLineWrap'>
                 <div className="CardLine"></div>
               </div>
             <div>
-              <h6 className='CardConcept blue-text'>Aigua depurada diàriament</h6>
+              <h6 className='CardConcept blue-text'>{t('numbers.water.label')}</h6>
             </div>
           </div>   
           </div>
@@ -173,17 +176,18 @@ export default function Tech(props: IIndexProps) {
         <div className="CenterSection">
           <div className="CenterContent">
             <div className="CenterTxt animation-up" data-animate="slide-up">
-            <p className='tagline'>Les instal·lacions</p>
-              <h3>Un recorregut per les instal·lacions i el procés de depuració</h3>
+            <p className='tagline'>{t('sections.facilities.tagline')}</p>
+              <h3>{t('sections.facilities.title')}</h3>
               <div className="TextGroup">
                 <div className="HalfText">
                   <p>
-                  Cada dia, tècnics especialitzats de la depuradora recullen mostres d’aigua proporcionals al cabal abocat a les 26 empreses associades per a la seva anàlisi. Els resultats obtinguts permeten conèixer amb exactitud la composició de les aigües residuals de cada empresa, i aquestes, al seu torn, prenen les mesures adequades per minimitzar l’impacte ambiental.
+                  {t('sections.facilities.text1')}
                   </p>
                 </div>
                 <div className="HalfText">
                   <p>
-                  Un cop a la planta de tractament, l’aigua passa per processos físics, químics i biològics per eliminar sòlids, matèria en suspensió, substàncies dissoltes com matèria orgànica i nitrogen, així com el color. Finalment, l’aigua tractada es retorna neta al medi ambient, complint amb els requisits ambientals establerts.                  </p>
+                  {t('sections.facilities.text2')}
+                  </p>
                 </div>
               </div>
             </div>
@@ -201,8 +205,8 @@ export default function Tech(props: IIndexProps) {
 
       <section className="SectionWrap" id="tech-video">
         <div className="VideoWrap animation-up" data-animate="slide-up">
-          <p className='tagline'>RECORREGUT AUDIOVISUAL</p>
-          <h3>El procés de depuració de l'aigua</h3>
+          <p className='tagline'>{t('sections.video.tagline')}</p>
+          <h3>{t('sections.video.title')}</h3>
             {/* <video playsInline controls 
             src="video/cat-tecnic.mp4">
             </video> */}
@@ -242,7 +246,7 @@ export default function Tech(props: IIndexProps) {
           <div className="NewsSection">
             <div className="NewsContent animation-up" data-animate="slide-up">
               <div className='NewsTitle'>
-                <h3>Projectes Destacats</h3>
+                <h3>{t('sections.posts.title')}</h3>
               </div>
               <RecentPosts allPosts={allPosts}/>
               </div>
@@ -255,11 +259,13 @@ export default function Tech(props: IIndexProps) {
   );
 }
 
-export const getStaticProps: GetStaticProps<IIndexProps> = async () => {
+export const getStaticProps: GetStaticProps<IIndexProps> = async ({ locale }) => {
+  const messages = (await import(`../messages/${locale}.json`)).default;
   const posts = getAllPosts(Config.post_fields);
 
   return {
     props: {
+      messages,
       allPosts: posts,
       initialPosts: posts.slice(0, BlogArchiveConfig.blog_pagination_size),
       categoryCollection: getCategoryCollection(['slug', 'tags']),    
