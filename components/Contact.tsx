@@ -3,8 +3,10 @@ import Link from 'next/link';
 import Arrow_Icon from './SVG/Arrow_Icon';
 import ContactForm from './ContactForm';
 import ContactForm2 from './descarte/LoginForm';
+import { useTranslations } from 'next-intl';
 
 const Contact = () => {
+  const t = useTranslations('serveis');
 
   return (
     <>
@@ -17,7 +19,7 @@ const Contact = () => {
       <div className="DivSection Left">
         
           <div className="SideTxt">
-            <h3>Contacte</h3>
+            <h3>{t('contact')}</h3>
 
             <ContactForm/>
 

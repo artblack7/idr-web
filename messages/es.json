@@ -372,6 +372,7 @@
       "tagline": "SERVICIOS",
       "title": "Gestión de residuos líquidos industriales"
     },
+    "contact": "Contacto",
     "sections": {
       "services": {
         "tagline": "SERVICIOS PARA EMPRESAS",
@@ -395,15 +396,16 @@
       "title": "Contáctanos",
       "email": "Email",
       "emailPlaceholder": "Introduce tu email",
-      "subject": "Concepto",
-      "subjectPlaceholder": "Introduce el concepto",
+      "subject": "Asunto",
+      "subjectPlaceholder": "Introduce el asunto",
       "message": "Mensaje",
       "messagePlaceholder": "Escribe tu mensaje",
       "submitButton": "Enviar Mensaje",
+      "submittingButton": "Enviando...",
       "successMessage": "¡Gracias por tu mensaje!",
       "validation": {
         "email": "Email",
-        "subject": "Concepto",
+        "subject": "Asunto",
         "message": "Mensaje"
       }
     }

@@ -374,6 +374,7 @@
       "tagline": "SERVICES",
       "title": "Industrial liquid waste management"
     },
+    "contact": "Contact",
     "sections": {
       "services": {
         "tagline": "SERVICES FOR COMPANIES",
@@ -394,14 +395,15 @@
       }
     },
     "contactForm": {
-      "title": "Contact us",
+      "title": "Contact Us",
       "email": "Email",
       "emailPlaceholder": "Enter your email",
       "subject": "Subject",
-      "subjectPlaceholder": "Enter subject",
+      "subjectPlaceholder": "Enter the subject",
       "message": "Message",
-      "messagePlaceholder": "Enter your message",
+      "messagePlaceholder": "Write your message",
       "submitButton": "Send Message",
+      "submittingButton": "Sending...",
       "successMessage": "Thank you for your message!",
       "validation": {
         "email": "Email",

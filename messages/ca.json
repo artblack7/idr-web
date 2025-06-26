@@ -372,6 +372,7 @@
       "tagline": "SERVEIS",
       "title": "Gestió de residus líquids industrials"
     },
+    "contact": "Contacte",
     "sections": {
       "services": {
         "tagline": "SERVEIS PER EMPRESES",
@@ -400,6 +401,7 @@
       "message": "Missatge",
       "messagePlaceholder": "Escriu el teu missatge",
       "submitButton": "Enviar Missatge",
+      "submittingButton": "Enviant...",
       "successMessage": "Gràcies pel teu missatge!",
       "validation": {
         "email": "Email",
