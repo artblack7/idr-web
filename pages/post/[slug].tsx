@@ -96,21 +96,26 @@ return (
 }
 
 export const getStaticPaths: GetStaticPaths<IPostUrl> = async ({ locales = ['ca', 'es', 'en'] }) => {
-  const posts = getAllPosts(['slug']);
-
-  const paths = posts.flatMap((post) => {
-    const slugArr = post.slug.split('-');
-    slugArr.splice(0, 3);
-    const slug = slugArr.join('-');
-    
-    return locales.map((locale) => ({
-      params: { slug },
-      locale,
-    }));
-  });
+  // Get posts from all locales to generate all possible paths
+  const allPaths = [];
+  
+  for (const locale of locales) {
+    const posts = getAllPosts(['slug'], locale);
+    const paths = posts.map((post) => {
+      const slugArr = post.slug.split('-');
+      slugArr.splice(0, 3);
+      const slug = slugArr.join('-');
+      
+      return {
+        params: { slug },
+        locale,
+      };
+    });
+    allPaths.push(...paths);
+  }
 
   return {
-    paths,
+    paths: allPaths,
     fallback: false,
   };
 };
@@ -118,9 +123,69 @@ export const getStaticPaths: GetStaticPaths<IPostUrl> = async ({ locales = ['ca'
 export const getStaticProps: GetStaticProps<IPostProps, IPostUrl> = async ({ params, locale }) => {  
   const posts = getAllPosts(Config.post_fields, locale || 'ca');
   const gallery = posts.slice(0, Config.blog_pagination_size);
-  const realPost = posts.find((post) => post.slug.includes(params!.slug));
+  
+  // Find the post by matching the slug
+  const realPost = posts.find((post) => {
+    const slugArr = post.slug.split('-');
+    slugArr.splice(0, 3);
+    const postSlug = slugArr.join('-');
+    return postSlug === params!.slug;
+  });
 
-  const post = getPostBySlug(realPost!.slug, [
+  // If post not found in current locale, try to find it in Catalan as fallback
+  if (!realPost && locale !== 'ca') {
+    const fallbackPosts = getAllPosts(Config.post_fields, 'ca');
+    const fallbackPost = fallbackPosts.find((post) => {
+      const slugArr = post.slug.split('-');
+      slugArr.splice(0, 3);
+      const postSlug = slugArr.join('-');
+      return postSlug === params!.slug;
+    });
+    
+    if (fallbackPost) {
+      // Use the Catalan post but with the current locale for UI translations
+      const post = getPostBySlug(fallbackPost.slug, [
+        'title',
+        'metaTitle',
+        'description',
+        'date',
+        'modified_date',
+        'pauthor',
+        'author_image',
+        'image',
+        'content',
+        'slug',
+      ], 'ca'); // Use Catalan content
+      
+      const content = await markdownToHtml(post.content || '');
+      
+      return {
+        props: {
+          title: post.title,
+          metaTitle: post.metaTitle,
+          description: post.description,
+          date: post.date,
+          modified_date: post.modified_date,
+          pauthor: post.pauthor,
+          author_image: post.author_image,
+          image: post.image,
+          content,
+          recentPosts: getAllPosts(['slug', 'title', 'date'], locale || 'ca').slice(0, 5),
+          categoryCollection: getCategoryCollection(['slug', 'tags'], locale || 'ca'),
+          posts: gallery,
+          allPosts: posts,
+          initialPosts: gallery,
+          messages: (await import(`../../messages/${locale || 'ca'}.json`)).default,
+        },
+      };
+    }
+  }
+
+  if (!realPost) {
+    throw new Error(`Post not found for slug: ${params!.slug} in locale: ${locale}`);
+  }
+
+  const post = getPostBySlug(realPost.slug, [
     'title',
     'metaTitle',
     'description',

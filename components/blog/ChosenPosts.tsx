@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { PostItems, getAllPosts } from '../../utils/Content';
+import { PostItems } from '../../utils/Content';
 import { BlogCard } from './BlogCard';
 import { slugCompute } from '../../utils/SlugCompute';
+import { useRouter } from 'next/router';
 
 type ChosenPostsProps = {
   initialPosts: PostItems[];
@@ -11,11 +12,15 @@ type ChosenPostsProps = {
 
 const ChosenPosts: React.FC<ChosenPostsProps> = ({ initialPosts, allPosts, tagFilter }) => {
   const POSTS_PER_PAGE = 3;
+  const router = useRouter();
+  const { locale } = router;
 
   const [filteredPosts, setFilteredPosts] = useState<PostItems[]>([]);
   const [currentPosts, setCurrentPosts] = useState<PostItems[]>([]);
   const [offset, setOffset] = useState(POSTS_PER_PAGE);
 
+  // Use the posts from props (which are already filtered by locale from getStaticProps)
+  // and update when locale changes (which triggers a page reload)
   useEffect(() => {
     if (tagFilter) {
       const tagFilteredPosts = allPosts.filter(post => post.tags.includes(tagFilter));
@@ -27,7 +32,7 @@ const ChosenPosts: React.FC<ChosenPostsProps> = ({ initialPosts, allPosts, tagFi
       setCurrentPosts(allPosts.slice(0, POSTS_PER_PAGE));
       setOffset(POSTS_PER_PAGE);
     }
-  }, [tagFilter]);
+  }, [tagFilter, allPosts]);
 
   const handleLoadMore = () => {
     setOffset((prevOffset) => prevOffset + POSTS_PER_PAGE);

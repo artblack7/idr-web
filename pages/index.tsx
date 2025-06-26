@@ -354,14 +354,14 @@ export default function Home(props: IIndexProps) {
 
 export const getStaticProps: GetStaticProps<IIndexProps> = async ({ locale }) => {
   const messages = (await import(`../messages/${locale}.json`)).default;
-  const posts = getAllPosts(Config.post_fields);
+  const posts = getAllPosts(Config.post_fields, locale || 'ca');
 
   return {
     props: {
       messages,
       allPosts: posts,
       initialPosts: posts.slice(0, BlogArchiveConfig.blog_pagination_size),
-      categoryCollection: getCategoryCollection(['slug', 'tags']),    
+      categoryCollection: getCategoryCollection(['slug', 'tags'], locale || 'ca'),    
     },
   };
 };

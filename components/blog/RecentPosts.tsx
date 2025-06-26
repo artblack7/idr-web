@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
-import { PostItems, getAllPosts } from '../../utils/Content';
+import React, { useState, useEffect } from 'react';
+import { PostItems } from '../../utils/Content';
 import { BlogCard } from './BlogCard';
 import { slugCompute } from '../../utils/SlugCompute';
+import { useRouter } from 'next/router';
 
 const Flickity = require('react-flickity-component');
 const flickityOptions = {
@@ -16,9 +17,17 @@ type RecentPostsProps = {
 
 const RecentPosts: React.FC<RecentPostsProps> = ({ allPosts }) => {
 
-  const POSTS_PER_PAGE = 10;
+  const POSTS_PER_PAGE = 20;
+  const router = useRouter();
+  const { locale } = router;
 
-  const [currentPosts] = useState<PostItems[]>(allPosts.slice(0, POSTS_PER_PAGE));
+  const [currentPosts, setCurrentPosts] = useState<PostItems[]>(allPosts.slice(0, POSTS_PER_PAGE));
+
+  // Use the posts from props (which are already filtered by locale from getStaticProps)
+  // and update when locale changes (which triggers a page reload)
+  useEffect(() => {
+    setCurrentPosts(allPosts.slice(0, POSTS_PER_PAGE));
+  }, [allPosts]);
 
   return (
     <>

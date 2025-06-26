@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import MainHeader from "../../components/navigation/Header";
 import {Footer} from '../../components/navigation/Footer';
 import {BlogSubscribe} from '../../components/blog/BlogSubscribe';
@@ -10,6 +10,7 @@ import { BlogArchiveConfig, Config } from '../../utils/Config';
 import { getAllPosts, getCategoryCollection, PostItems } from '../../utils/Content';
 import { Meta } from '../../components/head/Meta';
 import { useTranslations } from 'next-intl';
+import { useRouter } from 'next/router';
 
 type IIndexProps = {
   initialPosts: PostItems[];
@@ -22,9 +23,13 @@ type IIndexProps = {
 export default function Blog(props: IIndexProps) {
   const { initialPosts, allPosts, categoryCollection } = props;
   const t = useTranslations('blog');
+  const router = useRouter();
+  const { locale } = router;
 
   const [activeSection, setActiveSection] = useState<string>('all');
 
+  // Use the posts from props (which are already filtered by locale from getStaticProps)
+  // and update when locale changes (which triggers a page reload)
   const filteredPosts = {
     all: allPosts,
     general: allPosts.filter((post) => post.tags.includes('General')),

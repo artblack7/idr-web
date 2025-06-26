@@ -20,13 +20,27 @@ export type PostItems = {
   [key: string]: string | string[];
 };
 
-export function getPostSlugs() {
-  return fs.readdirSync(postsDirectory).filter(x => x.endsWith('.md'))
+export function getPostSlugs(locale: string = 'ca') {
+  const localeDirectory = join(postsDirectory, locale);
+  if (!fs.existsSync(localeDirectory)) {
+    return [];
+  }
+  return fs.readdirSync(localeDirectory).filter(x => x.endsWith('.md'))
 }
 
 export function getPostBySlug(slug: string, fields: string[] = [], locale: string = 'ca') {
   const realSlug = slug.replace(/\.md$/, '');
-  const fullPath = join(postsDirectory, `${realSlug}.md`);
+  const localeDirectory = join(postsDirectory, locale);
+  const fullPath = join(localeDirectory, `${realSlug}.md`);
+  
+  // If the localized file doesn't exist, fall back to Catalan
+  if (!fs.existsSync(fullPath) && locale !== 'ca') {
+    const fallbackPath = join(postsDirectory, 'ca', `${realSlug}.md`);
+    if (fs.existsSync(fallbackPath)) {
+      return getPostBySlug(slug, fields, 'ca');
+    }
+  }
+  
   const fileContents = fs.readFileSync(fullPath, 'utf8');
   const { data, content } = matter(fileContents);
   const items: PostItems = {
@@ -48,24 +62,9 @@ export function getPostBySlug(slug: string, fields: string[] = [], locale: strin
       items[field] = realSlug;
     }
     if (field === 'content') {
-      // Handle multilingual content
-      const localizedContent = `content_${locale}`;
-      if (data[localizedContent]) {
-        items[field] = data[localizedContent];
-      } else {
-        items[field] = content; // Fallback to default content (Catalan)
-      }
+      items[field] = content;
     }
-
-    // Handle multilingual fields
-    if (field === 'title' || field === 'metaTitle' || field === 'description') {
-      const localizedField = `${field}_${locale}`;
-      if (data[localizedField]) {
-        items[field] = data[localizedField];
-      } else if (data[field]) {
-        items[field] = data[field]; // Fallback to default (Catalan)
-      }
-    } else if (data[field]) {
+    if (data[field]) {
       items[field] = data[field];
     }
   });
@@ -74,7 +73,7 @@ export function getPostBySlug(slug: string, fields: string[] = [], locale: strin
 }
 
 export function getAllPosts(fields: string[] = [], locale: string = 'ca') {
-  const slugs = getPostSlugs();
+  const slugs = getPostSlugs(locale);
   const posts = slugs
     .map((slug) => getPostBySlug(slug, fields, locale))
     .sort((post1, post2) => new Date(post2.date).getTime() - new Date(post1.date).getTime());
