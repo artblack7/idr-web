@@ -9,7 +9,7 @@ import { BlogContainer } from '../../components/blog/BlogContainer';
 import { Config } from '../../utils/Config';
 import { getAllPosts, getPostBySlug, PostItems, getCategoryCollection,
 } from '../../utils/Content';
-import { markdownToHtml } from '../../utils/Markdown';
+import { markdownToHtml, swapSchematicSVGs } from '../../utils/Markdown';
 import { useTranslations } from 'next-intl';
 
 type IPostUrl = {
@@ -157,7 +157,8 @@ export const getStaticProps: GetStaticProps<IPostProps, IPostUrl> = async ({ par
         'slug',
       ], 'ca'); // Use Catalan content
       
-      const content = await markdownToHtml(post.content || '');
+      const swappedContent = swapSchematicSVGs(post.content || '', locale || 'ca');
+      const content = await markdownToHtml(swappedContent);
       
       return {
         props: {
@@ -197,7 +198,8 @@ export const getStaticProps: GetStaticProps<IPostProps, IPostUrl> = async ({ par
     'content',
     'slug',
   ], locale || 'ca');
-  const content = await markdownToHtml(post.content || '');
+  const swappedContent = swapSchematicSVGs(post.content || '', locale || 'ca');
+  const content = await markdownToHtml(swappedContent);
   console.log('Markdown HTML:', content);
   
   const recentPosts = getAllPosts(['slug', 'title', 'date'], locale || 'ca').slice(0, 5);

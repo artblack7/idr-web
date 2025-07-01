@@ -25,15 +25,18 @@ const SocisList = () => {
           <a href="https://splenda.es" target="_blank" rel="noopener noreferrer">
             <Image alt="logo" src='/socis/04.png' width={570} height={300} loading="eager"/>
           </a>
-        </div>              <div className="Socis">
+        </div>              
+        <div className="Socis">
           <a href="https://fontanellasymarti.com" target="_blank" rel="noopener noreferrer">
             <Image alt="logo" src='/socis/05.png' width={570} height={300} loading="eager"/>
           </a>
-        </div>              <div className="Socis">
+        </div>              
+        <div className="Socis">
           <a href="https://despell.es" target="_blank" rel="noopener noreferrer">
             <Image alt="logo" src='/socis/06.png' width={570} height={300} loading="eager"/>
           </a>
-        </div>              <div className="Socis">
+        </div>              
+        <div className="Socis">
           <a href="https://miretycia.com" target="_blank" rel="noopener noreferrer">
             <Image alt="logo" src='/socis/09.png' width={570} height={300} loading="eager"/>
           </a>
@@ -64,9 +67,9 @@ const SocisList = () => {
           {/* </a> */}
         </div>
         <div className="Socis">
-          <a href="https://curtits-aqualata.es" target="_blank" rel="noopener noreferrer">
-            <Image alt="logo" src='/socis/16.png' width={570} height={300} loading="eager"/>
-          </a>
+          {/* <a href="https://website.com" target="_blank" rel="noopener noreferrer"> */}
+            <Image alt="logo" src='/socis/26.png' width={570} height={300} loading="eager"/>
+          {/* </a> */}
         </div>
         <div className="Socis">
           <a href="https://curtidosmuntadas.com" target="_blank" rel="noopener noreferrer">
@@ -109,10 +112,22 @@ const SocisList = () => {
           {/* </a> */}
         </div>
         <div className="Socis">
+          <a href="https://curtits-aqualata.es" target="_blank" rel="noopener noreferrer">
+            <Image alt="logo" src='/socis/16.png' width={570} height={300} loading="eager"/>
+          </a>
+        </div>
+
+        <div className="Socis">
+          <a href="https://escorpion.com" target="_blank" rel="noopener noreferrer">
+            <Image alt="logo" src='/socis/24.png' width={570} height={300} loading="eager"/>
+          </a>
+        </div>
+        <div className="Socis">
           {/* <a href="https://website.com" target="_blank" rel="noopener noreferrer"> */}
-            <Image alt="logo" src='/socis/26.png' width={570} height={300} loading="eager"/>
+            <Image alt="logo" src='/socis/19.png' width={570} height={300} loading="eager"/>
           {/* </a> */}
         </div>
+
         <div className="Socis">
           {/* <a href="https://escorpion.com" target="_blank" rel="noopener noreferrer"> */}
             <Image alt="logo" src='/socis/20.png' width={570} height={300} loading="eager"/>
@@ -122,17 +137,6 @@ const SocisList = () => {
           {/* <a href="https://escorpion.com" target="_blank" rel="noopener noreferrer"> */}
             <Image alt="logo" src='/socis/25.png' width={570} height={300} loading="eager"/>
           {/* </a> */}
-        </div>
-
-        <div className="Socis">
-          {/* <a href="https://website.com" target="_blank" rel="noopener noreferrer"> */}
-            <Image alt="logo" src='/socis/19.png' width={570} height={300} loading="eager"/>
-          {/* </a> */}
-        </div>
-        <div className="Socis">
-          <a href="https://escorpion.com" target="_blank" rel="noopener noreferrer">
-            <Image alt="logo" src='/socis/24.png' width={570} height={300} loading="eager"/>
-          </a>
         </div>
         
       </div>

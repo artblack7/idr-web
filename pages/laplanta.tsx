@@ -13,6 +13,7 @@ import { BlogArchiveConfig, Config } from '../utils/Config';
 import { getAllPosts, getCategoryCollection, PostItems } from '../utils/Content';
 import VideoTecnic from '../components/descarte/VideoTecnic';
 import { useTranslations } from 'next-intl';
+import { useRouter } from 'next/router';
 
 type IIndexProps = {
   initialPosts: PostItems[];
@@ -24,6 +25,7 @@ export default function Tech(props: IIndexProps) {
 // export default function Tech() {
   const { allPosts, initialPosts, messages } = props;
   const t = useTranslations('laplanta');
+  const router = useRouter();
 
   return (
     <main className='Main'>
@@ -196,7 +198,16 @@ export default function Tech(props: IIndexProps) {
         </div>
 
         <div className="TechImg animation-up" data-animate="slide-up">
-          <img alt="IDR" src='/svg/cat-planta.svg'  />
+          <img
+            alt="IDR"
+            src={
+              router.locale === 'es'
+                ? '/svg/es-planta.svg'
+                : router.locale === 'en'
+                ? '/svg/en-planta.svg'
+                : '/svg/cat-planta.svg'
+            }
+          />
         </div>
 
       </section>
@@ -218,7 +229,13 @@ export default function Tech(props: IIndexProps) {
                 }}
               >
                 <iframe
-                  src="https://player.vimeo.com/video/1082373467?h=123456789a&badge=0&autopause=0&player_id=0&app_id=58479"
+                  src={
+                    router.locale === 'es'
+                      ? 'https://player.vimeo.com/video/1097863337'
+                      : router.locale === 'en'
+                      ? 'https://player.vimeo.com/video/1097863149'
+                      : 'https://player.vimeo.com/video/1097863538'
+                  }
                   frameBorder="0"
                   allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
                   className='VideoIframe'

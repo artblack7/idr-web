@@ -1,4 +1,3 @@
-
 // @mapbox/rehype-prism does not have typescript definition
 // @ts-ignore
 
@@ -32,6 +31,20 @@ export async function markdownToHtml(markdown: string) {
     .replace(/@@baseUrl@@/g, process.env.baseUrl || '');
 
   return htmlContent;
+}
+
+export function swapSchematicSVGs(markdown: string, locale: string) {
+  // Only swap for the known schematic SVGs
+  const names = ['bioind', 'innpell', 'planta', 'rebio', 'resalt'];
+  let result = markdown;
+  names.forEach(name => {
+    const regex = new RegExp(`/svg/cat-${name}\\.svg`, 'g');
+    let replacement = `/svg/cat-${name}.svg`;
+    if (locale === 'es') replacement = `/svg/es-${name}.svg`;
+    else if (locale === 'en') replacement = `/svg/en-${name}.svg`;
+    result = result.replace(regex, replacement);
+  });
+  return result;
 }
 
 // import rehypePrism from '@mapbox/rehype-prism';
