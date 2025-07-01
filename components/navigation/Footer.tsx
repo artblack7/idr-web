@@ -109,7 +109,7 @@ const Footer = () => {
 
             <div className="Legal">
               <div><p>{tf('copyright')}</p></div>
-              <div className="LanguageSelector">
+              {/* <div className="LanguageSelector">
                 {locales.map((lng) => (
                   <Link 
                     key={lng} 
@@ -120,7 +120,7 @@ const Footer = () => {
                     {lng.toUpperCase()}
                   </Link>
                 ))}
-              </div>
+              </div> */}
             </div>
           
           </div>
