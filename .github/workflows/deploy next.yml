@@ -1,0 +1,35 @@
+name: Build Next.js and Deploy to FTP
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    name: Build and Upload to FTP
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install dependencies
+        run: npm ci
+      - name: Build and export Next.js
+        run: |
+          npm run build
+          npx next export
+      - name: FTP Deploy
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./out/ # Uploads the built Next.js static files
+          server-dir: / # Confirm this is the correct FTP server directory
+          protocol: ftp # Change to 'ftps' or 'sftp' if required
+          port: 21 # Default FTP port, change if different
+          stateful-method: mirror # Ensures FTP server matches local-dir
