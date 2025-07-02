@@ -28,7 +28,7 @@ export function getPostSlugs(locale: string = 'ca') {
   return fs.readdirSync(localeDirectory).filter(x => x.endsWith('.md'))
 }
 
-export function getPostBySlug(slug: string, fields: string[] = [], locale: string = 'ca') {
+export function getPostBySlug(slug: string, fields: string[] = [], locale: string = 'ca'): PostItems {
   const realSlug = slug.replace(/\.md$/, '');
   const localeDirectory = join(postsDirectory, locale);
   const fullPath = join(localeDirectory, `${realSlug}.md`);
