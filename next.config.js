@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
   images: {
-    unoptimized: false,
+    unoptimized: true,
     domains: ['idr.cat'],
     // pageExtensions: ['js', 'jsx', 'md', 'mdx'], 
   },
