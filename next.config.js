@@ -9,11 +9,11 @@ const nextConfig = {
   },
   reactStrictMode: false,
   swcMinify: true,
-  i18n: {
-    locales: ['ca', 'es', 'en'],
-    defaultLocale: 'ca',
-    localeDetection: false,
-  },
+  // i18n: {
+  //   locales: ['ca', 'es', 'en'],
+  //   defaultLocale: 'ca',
+  //   localeDetection: false,
+  // },
 };
 
 module.exports = nextConfig;
