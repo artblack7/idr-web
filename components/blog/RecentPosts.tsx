@@ -13,13 +13,14 @@ const flickityOptions = {
 
 type RecentPostsProps = {
   allPosts: PostItems[];
+  locale?: string;
 };
 
-const RecentPosts: React.FC<RecentPostsProps> = ({ allPosts }) => {
+const RecentPosts: React.FC<RecentPostsProps> = ({ allPosts, locale: propLocale }) => {
 
   const POSTS_PER_PAGE = 20;
   const router = useRouter();
-  const { locale } = router;
+  const locale = propLocale || router.locale || 'ca';
 
   const [currentPosts, setCurrentPosts] = useState<PostItems[]>(allPosts.slice(0, POSTS_PER_PAGE));
 
@@ -50,6 +51,7 @@ const RecentPosts: React.FC<RecentPostsProps> = ({ allPosts }) => {
                   slug={slugCompute(post.slug)}
                   tags={post.tags}
                   showDescription={true}
+                  locale={locale}
                 />
               ))}
       </Flickity>

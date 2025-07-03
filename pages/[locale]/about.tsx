@@ -1,27 +1,31 @@
 import React from 'react';
 import Image from "next/image";
 import Link from 'next/link';
-import MainHeader from "../components/navigation/Header";
-import {Footer} from '../components/navigation/Footer';
-import AnimationTrigger from '../components/AnimationTrigger';
-import Arrow_Icon from '../components/SVG/Arrow_Icon';
-import { Meta } from '../components/head/Meta';
-import SocisList from '../components/carousel/SocisList';
+import MainHeader from "../../components/navigation/Header";
+import {Footer} from '../../components/navigation/Footer';
+import AnimationTrigger from '../../components/AnimationTrigger';
+import Arrow_Icon from '../../components/SVG/Arrow_Icon';
+import { Meta } from '../../components/head/Meta';
+import SocisList from '../../components/carousel/SocisList';
 import { useTranslations } from 'next-intl';
+import { GetStaticPaths, GetStaticProps } from 'next';
 
-export default function Empresa() {
-  const t = useTranslations('empresa');
+type AboutProps = { messages: any; locale: string };
+
+export default function About(props: AboutProps) {
+  const { locale } = props;
+  const t = useTranslations('about');
 
   return (
     <main className='Main'>
      <AnimationTrigger />
       <div>
-        <MainHeader useWhite={false}
+        <MainHeader useWhite={false} locale={locale}
           meta={<Meta 
-          title="Empresa" 
-          metaTitle="Empresa │ Igualadina de Depuració i Recuperació." 
-          metaImg="https://idr.com/thumb/thumb.png" 
-          description="Depuració Innovadora per un futur sostenible." />} 
+          title={props.messages.meta.about.title}
+          metaTitle={props.messages.meta.about.metaTitle}
+          metaImg="https://idr.com/thumb/thumb.png"
+          description={props.messages.meta.about.metaDescription} />} 
           />
       </div>
 
@@ -229,16 +233,27 @@ export default function Empresa() {
         </div>
       </section>
 
-      <Footer />
+      <Footer locale={locale} />
 
     </main>
   );
 }
 
-export async function getStaticProps({ locale }: { locale: string }) {
+export const getStaticPaths: GetStaticPaths = async () => {
+  const locales = ['ca', 'es', 'en'];
+  return {
+    paths: locales.map(locale => ({ params: { locale } })),
+    fallback: false,
+  };
+};
+
+export const getStaticProps: GetStaticProps = async ({ params }) => {
+  const locale = typeof params?.locale === 'string' ? params.locale : 'ca';
+  const messages = (await import(`../../messages/${locale}.json`)).default;
   return {
     props: {
-      messages: (await import(`../messages/${locale}.json`)).default
-    }
+      messages,
+      locale,
+    },
   };
-}
+}; 

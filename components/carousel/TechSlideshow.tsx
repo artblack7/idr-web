@@ -13,7 +13,7 @@ const flickityOptions = {
 }
 
 const TechSlideshow: React.FC = () => {
-    const t = useTranslations('laplanta.techSlideshow');
+    const t = useTranslations('plant.techSlideshow');
 
     return (
         <>

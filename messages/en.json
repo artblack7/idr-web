@@ -1,12 +1,51 @@
 {
   "navigation": {
     "home": "Home",
-    "laplanta": "The Plant",
-    "innovacio": "Innovation",
-    "sostenibilitat": "Sustainability",
-    "serveis": "Waste Management",
-    "empresa": "Company",
-    "clientArea": "Client Area"
+    "plant": "The Plant",
+    "innovation": "Innovation",
+    "sustainability": "Sustainability",
+    "services": "Services",
+    "about": "Company",
+    "clientArea": "Client Area",
+    "privacy": "Privacy Policy"
+  },
+  
+  "meta": {
+    "home": {
+      "metaTitle": "IDR │ Igualadina de Depuració i Recuperació.",
+      "metaDescription": "Innovative purification for a sustainable future.",
+      "title": "IDR"
+    },
+    "plant": {
+      "metaTitle": "The Plant │ Igualadina de Depuració i Recuperació.",
+      "metaDescription": "Pioneers in biological purification for water treatment.",
+      "title": "The Plant"
+    },
+    "innovation": {
+      "metaTitle": "Innovation │ Igualadina de Depuració i Recuperació.",
+      "metaDescription": "Innovative purification for a sustainable future.",
+      "title": "Innovation"
+    },
+    "sustainability": {
+      "metaTitle": "Sustainability │ Igualadina de Depuració i Recuperació.",
+      "metaDescription": "Commitment to the environment and people.",
+      "title": "Sustainability"
+    },
+    "services": {
+      "metaTitle": "Services │ Igualadina de Depuració i Recuperació.",
+      "metaDescription": "Industrial liquid waste management.",
+      "title": "Services"
+    },
+    "about": {
+      "metaTitle": "Company │ Igualadina de Depuració i Recuperació.",
+      "metaDescription": "United for a sustainable leather industry.",
+      "title": "Company"
+    },
+    "privacy": {
+      "metaTitle": "Privacy Policy │ IDR",
+      "metaDescription": "Privacy Policy",
+      "title": "Privacy Policy"
+    }
   },
   
   "footer": {
@@ -85,7 +124,7 @@
     }
   },
   
-  "laplanta": {
+  "plant": {
     "hero": {
       "tagline": "THE PLANT",
       "title": "Pioneers in biological purification for water treatment"
@@ -204,7 +243,7 @@
     }
   },
   
-  "innovacio": {
+  "innovation": {
     "hero": {
       "tagline": "INNOVATION",
       "title": "Advanced technology for the future of water treatment"
@@ -255,7 +294,7 @@
     }
   },
 
-  "sostenibilitat": {
+  "sustainability": {
     "hero": {
       "tagline": "SUSTAINABILITY",
       "title": "Commitment to the environment and people"
@@ -369,7 +408,7 @@
     }
   },
   
-  "serveis": {
+  "services": {
     "hero": {
       "tagline": "SERVICES",
       "title": "Industrial liquid waste management"
@@ -412,7 +451,7 @@
       }
     }
   },
-  "empresa": {
+  "about": {
     "hero": {
       "tagline": "COMPANY",
       "title": "United for a sustainable leather industry"
@@ -531,5 +570,46 @@
       "company": "Company"
     },
     "featuredProjects": "Featured Projects"
+  },
+  "privacy": {
+    "meta": {
+      "title": "Privacy Policy",
+      "metaTitle": "Privacy Policy │ IDR",
+      "description": "Privacy Policy"
+    },
+    "metaDescription": "Privacy Policy",
+    "title": "Privacy Policy",
+    "effectiveDate": "Effective date: May 4, 2025",
+    "intro": "At IDR, we take privacy seriously. This privacy policy explains how we manage information on our website and online services. We are committed to protecting your privacy and being transparent about our practices.",
+    "section1": {
+      "title": "Section 01",
+      "subtitle": "We do not collect personal data",
+      "text": "We do not collect, store, or process any type of personal data from users who visit our website. This includes, but is not limited to, information such as names, addresses, emails, IP addresses, or any other data that could identify you."
+    },
+    "section2": {
+      "title": "Section 02",
+      "subtitle": "We do not share data with third parties",
+      "text": "Since we do not collect any personal data, we do not share any information with third parties, whether companies, organizations, or individuals. Your interaction with our website is completely private."
+    },
+    "section3": {
+      "title": "Section 03",
+      "subtitle": "Cookies and tracking technologies",
+      "text": "Our website does not use cookies or any other tracking technology to monitor user activity. We do not use analytics tools, advertising, or other forms of tracking."
+    },
+    "section4": {
+      "title": "Section 04",
+      "subtitle": "Links to third-party sites",
+      "text": "Our website may contain links to other websites that are not operated by us. We have no control over the privacy policies of those sites and recommend that you review their policies before providing any information."
+    },
+    "section5": {
+      "title": "Section 05",
+      "subtitle": "Changes to this policy",
+      "text": "This privacy policy may evolve over time. When we update it, we will revise the 'Effective date' and publish the new policy. To stay informed about our privacy practices, we recommend reviewing this policy regularly while using our services."
+    },
+    "section6": {
+      "title": "Section 06",
+      "subtitle": "How to contact us",
+      "text": "If you have any questions about this privacy policy, you can contact us at info@idr.cat."
+    }
   }
 }

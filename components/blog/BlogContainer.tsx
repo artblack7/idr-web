@@ -9,6 +9,7 @@ type IMainProps = {
   recentPosts?: PostItems[];
   categoryCollection?: [any, PostItems[]][];
   children?: ReactNode;
+  locale: string;
 };
 
 const BlogContainer = (props: IMainProps) => (
@@ -16,7 +17,7 @@ const BlogContainer = (props: IMainProps) => (
     {props.meta}
 
     <div>
-      <MainHeader useWhite={true} />
+      <MainHeader useWhite={true} locale={props.locale} />
     </div>
 
     <div>
@@ -24,7 +25,7 @@ const BlogContainer = (props: IMainProps) => (
       {props.children}
     </div> 
 
-     <Footer />
+     <Footer locale={props.locale} />
   </>
 );
 

@@ -1,40 +1,41 @@
 import React from 'react';
-import useMediaQuery from "../hooks/useMediaQuery";
+import useMediaQuery from "../../hooks/useMediaQuery";
 import Image from "next/image";
 import Link from 'next/link';
-import MainHeader from "../components/navigation/Header";
-import {Footer} from '../components/navigation/Footer';
-import AnimationTrigger from '../components/AnimationTrigger';
-import Arrow_Icon from '../components/SVG/Arrow_Icon';
-import { Meta } from '../components/head/Meta';
+import MainHeader from "../../components/navigation/Header";
+import {Footer} from '../../components/navigation/Footer';
+import AnimationTrigger from '../../components/AnimationTrigger';
+import Arrow_Icon from '../../components/SVG/Arrow_Icon';
+import { Meta } from '../../components/head/Meta';
 
-import RecentPosts from '../components/blog/RecentPosts';
-import { GetStaticProps } from 'next';
-import { BlogArchiveConfig, Config } from '../utils/Config';
-import { getAllPosts, getCategoryCollection, PostItems } from '../utils/Content';
-import BlogArchive from '../components/blog/BlogArchive';
+import RecentPosts from '../../components/blog/RecentPosts';
+import { GetStaticPaths, GetStaticProps } from 'next';
+import { BlogArchiveConfig, Config } from '../../utils/Config';
+import { getAllPosts, getCategoryCollection, PostItems } from '../../utils/Content';
+import BlogArchive from '../../components/blog/BlogArchive';
 import { useTranslations } from 'next-intl';
 
 type IIndexProps = {
   initialPosts: PostItems[];
   allPosts: PostItems[];
   messages: any;
+  locale: string;
 };
 
 export default function Innovation(props: IIndexProps) {
-  const { allPosts, initialPosts, messages } = props;
-  const t = useTranslations('innovacio');
+  const { allPosts, initialPosts, messages, locale } = props;
+  const t = useTranslations('innovation');
 
   return (
     <main className='Main'>
       <AnimationTrigger />
       <div>
-        <MainHeader useWhite={false}
+        <MainHeader useWhite={false} locale={locale}
           meta={<Meta 
-          title="Innovació" 
-          metaTitle="Innovació │ Igualadina de Depuració i Recuperació." 
-          metaImg="https://idr.com/thumb/thumb.png" 
-          description="Depuració Innovadora per un futur sostenible." />} 
+          title={messages.meta.innovation.title}
+          metaTitle={messages.meta.innovation.metaTitle}
+          metaImg="https://idr.com/thumb/thumb.png"
+          description={messages.meta.innovation.metaDescription} />} 
           />
       </div>
 
@@ -219,27 +220,36 @@ export default function Innovation(props: IIndexProps) {
             </div>
           </div>
 
-          <BlogArchive allPosts={allPosts} initialPosts={[]}/>
+          <BlogArchive allPosts={allPosts} initialPosts={[]} locale={locale}/>
 
         </div>
       </section>
 
-      <Footer />
+      <Footer locale={locale} />
 
     </main>
   );
 }
 
-export const getStaticProps: GetStaticProps<IIndexProps> = async ({ locale }) => {
-  const messages = (await import(`../messages/${locale}.json`)).default;
-  const posts = getAllPosts(Config.post_fields, locale || 'ca');
+export const getStaticPaths: GetStaticPaths = async () => {
+  const locales = ['ca', 'es', 'en'];
+  return {
+    paths: locales.map(locale => ({ params: { locale } })),
+    fallback: false,
+  };
+};
 
+export const getStaticProps: GetStaticProps = async ({ params }) => {
+  const locale = typeof params?.locale === 'string' ? params.locale : 'ca';
+  const messages = (await import(`../../messages/${locale}.json`)).default;
+  const posts = getAllPosts(Config.post_fields, locale);
   return {
     props: {
       messages,
+      locale,
       allPosts: posts,
       initialPosts: posts.slice(0, BlogArchiveConfig.blog_pagination_size),
-      categoryCollection: getCategoryCollection(['slug', 'tags'], locale || 'ca'),    
+      categoryCollection: getCategoryCollection(['slug', 'tags'], locale || 'ca'),
     },
   };
-};
+}; 

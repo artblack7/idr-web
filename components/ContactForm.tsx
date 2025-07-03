@@ -14,7 +14,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ title }) => {
     message: "",
     email: "",
   });
-  const t = useTranslations('serveis.contactForm');
+  const t = useTranslations('services.contactForm');
 
   const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>

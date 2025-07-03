@@ -1,12 +1,50 @@
 {
   "navigation": {
     "home": "Inici",
-    "laplanta": "La Planta",
-    "innovacio": "Innovació",
-    "sostenibilitat": "Sostenibilitat",
-    "serveis": "Gestió Residus",
-    "empresa": "Empresa",
-    "clientArea": "Àrea Clients"
+    "plant": "La Planta",
+    "innovation": "Innovació",
+    "sustainability": "Sostenibilitat",
+    "services": "Gestions",
+    "about": "Empresa",
+    "clientArea": "Àrea Clients",
+    "privacy": "Política de Privacitat"
+  },
+  "meta": {
+    "home": {
+      "metaTitle": "IDR │ Igualadina de Depuració i Recuperació.",
+      "metaDescription": "Depuració Innovadora per un futur sostenible.",
+      "title": "IDR"
+    },
+    "plant": {
+      "metaTitle": "La Planta │ Igualadina de Depuració i Recuperació.",
+      "metaDescription": "Pioners en depuració biològica per al tractament d'aigües.",
+      "title": "La Planta"
+    },
+    "innovation": {
+      "metaTitle": "Innovació │ Igualadina de Depuració i Recuperació.",
+      "metaDescription": "Depuració Innovadora per un futur sostenible.",
+      "title": "Innovació"
+    },
+    "sustainability": {
+      "metaTitle": "Sostenibilitat │ Igualadina de Depuració i Recuperació.",
+      "metaDescription": "Compromís amb el medi ambient i les persones.",
+      "title": "Sostenibilitat"
+    },
+    "services": {
+      "metaTitle": "Gestions │ Igualadina de Depuració i Recuperació.",
+      "metaDescription": "Gestió de residus líquids industrials.",
+      "title": "Gestions"
+    },
+    "about": {
+      "metaTitle": "Empresa │ Igualadina de Depuració i Recuperació.",
+      "metaDescription": "Units per una indústria de la pell sostenible.",
+      "title": "Empresa"
+    },
+    "privacy": {
+      "metaTitle": "Política de Privacitat │ IDR",
+      "metaDescription": "Política de Privacitat",
+      "title": "Política de Privacitat"
+    }
   },
   "footer": {
     "sitemap": "Mapa Web",
@@ -83,7 +121,7 @@
     }
   },
   
-  "laplanta": {
+  "plant": {
     "hero": {
       "tagline": "LA PLANTA",
       "title": "Pioners en depuració biològica per al tractament d'aigües"
@@ -131,6 +169,7 @@
         "label": "Aigua depurada diàriament"
       }
     },
+    
     "techSlideshow": {
       "slides": {
         "analysis": {
@@ -188,8 +227,7 @@
           "tagline": "TRACTAMENT DE FANGS",
           "title": "Bioestabilització de fangs",
           "text1": "La bioestabilització dels fangs es duu a terme a la Planta de Compostatge de Jorba. El fang que arriba a la planta es descarrega i es barreja amb fusta triturada, per facilitar-ne la bioestabilització. Aquesta mescla inicial s'incorpora a l'espai de descomposició, anomenat meseta, on comença el procés de descomposició del material.",
-          "text2": "Posteriorment, es duu a terme la maniobra de volteig, fins a finalitzar el volteig de tota la meseta, airejant així el material per afavorir-ne la descomposició. Quan la temperatura assoleix als 70 ºC, es produeix la higienització.",
-          "text3": "Finalment, en la fase de maniobra i garbellament, el compost gris es separa de la fusta mitjançant una garbelladora (Trommel). La fusta es recircula al sistema, mentre que el compost gris es gestiona adequadament."
+          "text2": "Finalment, en la fase de maniobra y cribado, el compost gris se separa de la madera mediante una cribadora (Trommel). La madera se recircula al sistema, mientras que el compost gris se gestiona adecuadamente."
         },
         "quality": {
           "tagline": "CONTROL DE QUALITAT I MANTENIMENT",
@@ -202,7 +240,7 @@
     }
   },
 
-  "innovacio": {
+  "innovation": {
     "hero": {
       "tagline": "INNOVACIÓ",
       "title": "Tecnologia avançada per a la depuració del futur"
@@ -253,7 +291,7 @@
     }
   },
 
-  "sostenibilitat": {
+  "sustainability": {
     "hero": {
       "tagline": "SOSTENIBILITAT",
       "title": "Compromís amb el medi ambient i les persones"
@@ -367,7 +405,7 @@
     }
   },
   
-  "serveis": {
+  "services": {
     "hero": {
       "tagline": "SERVEIS",
       "title": "Gestió de residus líquids industrials"
@@ -410,7 +448,8 @@
       }
     }
   },
-  "empresa": {
+
+  "about": {
     "hero": {
       "tagline": "EMPRESA",
       "title": "Units per una indústria de la pell sostenible"
@@ -459,6 +498,7 @@
       }
     }
   },
+
   "table": {
     "header": {
       "code": "CODI LER",
@@ -513,6 +553,7 @@
       "200306": "Residus de la neteja de clavegueres"
     }
   },
+
   "blog": {
     "meta": {
       "title": "Blog",
@@ -529,5 +570,47 @@
       "company": "Empresa"
     },
     "featuredProjects": "Projectes Destacats"
+  },
+
+  "privacy": {
+    "meta": {
+      "title": "Política de Privacitat",
+      "metaTitle": "Política de Privacitat │ IDR",
+      "description": "Política de Privacitat"
+    },
+    "metaDescription": "Política de Privacitat",
+    "title": "Política de Privacitat",
+    "effectiveDate": "Data efectiva: 4 de maig de 2025",
+    "intro": "A IDR, ens prenem seriosament la privadesa. Aquesta política de privacitat explica com gestionem la informació a la nostra pàgina web i els nostres serveis en línia. Ens comprometem a protegir la vostra privadesa i a ser transparents sobre les nostres pràctiques.",
+    "section1": {
+      "title": "Secció 01",
+      "subtitle": "No recollim dades personals",
+      "text": "No recollim, emmagatzemem ni processem cap tipus de dades personals dels usuaris que visiten la nostra pàgina web. Això inclou, però no es limita a, informació com noms, adreces, correus electrònics, adreces IP o qualsevol altra dada que pugui identificar-vos."
+    },
+    "section2": {
+      "title": "Secció 02",
+      "subtitle": "No compartim dades amb tercers",
+      "text": "Com que no recollim cap dada personal, no compartim cap informació amb tercers, ja siguin empreses, organitzacions o individus. La vostra interacció amb la nostra pàgina web és completament privada."
+    },
+    "section3": {
+      "title": "Secció 03",
+      "subtitle": "Galetes i tecnologies de seguiment",
+      "text": "La nostra pàgina web no utilitza galetes (cookies) ni cap altra tecnologia de seguiment per monitoritzar l'activitat dels usuaris. No fem servir eines d'anàlisi, anuncis publicitaris ni altres formes de seguiment."
+    },
+    "section4": {
+      "title": "Secció 04",
+      "subtitle": "Enllaços a llocs de tercers",
+      "text": "La nostra pàgina web pot contenir enllaços a altres llocs web que no són operats per nosaltres. No tenim control sobre les polítiques de privacitat d'aquests llocs i us recomanem que reviseu les seves polítiques abans de proporcionar-hi qualsevol informació."
+    },
+    "section5": {
+      "title": "Secció 05",
+      "subtitle": "Canvis a aquesta política",
+      "text": "Aquesta política de privacitat pot evolucionar amb el temps. Quan l'actualitzem, revisarem la 'Data efectiva' i publicarem la nova política. Per mantenir-vos informats sobre les nostres pràctiques de privacitat, us recomanem revisar aquesta política regularment mentre utilitzeu els nostres serveis."
+    },
+    "section6": {
+      "title": "Secció 06",
+      "subtitle": "Com contactar-nos",
+      "text": "Si teniu qualsevol dubte sobre aquesta política de privacitat, podeu contactar-nos a info@idr.cat."
+    }
   }
 }

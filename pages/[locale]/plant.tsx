@@ -1,17 +1,17 @@
 import React from 'react';
 import Image from "next/image";
 import Link from 'next/link';
-import MainHeader from "../components/navigation/Header";
-import {Footer} from '../components/navigation/Footer';
-import AnimationTrigger from '../components/AnimationTrigger';
-import Arrow_Icon from '../components/SVG/Arrow_Icon';
-import { Meta } from '../components/head/Meta';
-import TechSlideshow from '../components/carousel/TechSlideshow';
-import RecentPosts from '../components/blog/RecentPosts';
+import MainHeader from "../../components/navigation/Header";
+import {Footer} from '../../components/navigation/Footer';
+import AnimationTrigger from '../../components/AnimationTrigger';
+import Arrow_Icon from '../../components/SVG/Arrow_Icon';
+import { Meta } from '../../components/head/Meta';
+import TechSlideshow from '../../components/carousel/TechSlideshow';
+import RecentPosts from '../../components/blog/RecentPosts';
 import { GetStaticProps } from 'next';
-import { BlogArchiveConfig, Config } from '../utils/Config';
-import { getAllPosts, getCategoryCollection, PostItems } from '../utils/Content';
-import VideoTecnic from '../components/descarte/VideoTecnic';
+import { BlogArchiveConfig, Config } from '../../utils/Config';
+import { getAllPosts, getCategoryCollection, PostItems } from '../../utils/Content';
+import VideoTecnic from '../../components/descarte/VideoTecnic';
 import { useTranslations } from 'next-intl';
 import { useRouter } from 'next/router';
 
@@ -19,24 +19,27 @@ type IIndexProps = {
   initialPosts: PostItems[];
   allPosts: PostItems[];
   messages: any;
+  locale: string;
 };
 
 export default function Tech(props: IIndexProps) {
-// export default function Tech() {
-  const { allPosts, initialPosts, messages } = props;
-  const t = useTranslations('laplanta');
+  const { allPosts, initialPosts, messages, locale } = props;
+  const t = useTranslations('plant');
   const router = useRouter();
 
   return (
     <main className='Main'>
      <AnimationTrigger />
       <div>
-        <MainHeader useWhite={false}
+        <MainHeader 
+          useWhite={false}
+          locale={locale}
           meta={<Meta 
-          title="La Planta" 
-          metaTitle="La Planta │ Igualadina de Depuració i Recuperació." 
-          metaImg="https://idr.com/thumb/thumb.png" 
-          description="Pioners en depuració biològica per al tractament d'aigües." />} 
+            title={messages.meta.plant.title}
+            metaTitle={messages.meta.plant.metaTitle}
+            metaImg="https://idr.com/thumb/thumb.png"
+            description={messages.meta.plant.metaDescription}
+          />} 
         />
       </div>
 
@@ -265,27 +268,36 @@ export default function Tech(props: IIndexProps) {
               <div className='NewsTitle'>
                 <h3>{t('sections.posts.title')}</h3>
               </div>
-              <RecentPosts allPosts={allPosts}/>
+              <RecentPosts allPosts={allPosts} locale={locale}/>
               </div>
           </div>
         </section>
 
-      <Footer />
+      <Footer locale={locale || 'ca'} />
 
     </main>
   );
 }
 
-export const getStaticProps: GetStaticProps<IIndexProps> = async ({ locale }) => {
-  const messages = (await import(`../messages/${locale}.json`)).default;
-  const posts = getAllPosts(Config.post_fields, locale || 'ca');
-
+export const getStaticProps: GetStaticProps = async ({ params }) => {
+  const locale = typeof params?.locale === 'string' ? params.locale : 'ca';
+  const messages = (await import(`../../messages/${locale}.json`)).default;
+  const posts = getAllPosts(Config.post_fields, locale);
   return {
     props: {
       messages,
       allPosts: posts,
       initialPosts: posts.slice(0, BlogArchiveConfig.blog_pagination_size),
-      categoryCollection: getCategoryCollection(['slug', 'tags'], locale || 'ca'),    
+      categoryCollection: getCategoryCollection(['slug', 'tags'], locale || 'ca'),
+      locale,
     },
   };
 };
+
+export const getStaticPaths = async () => {
+  const locales = ['ca', 'es', 'en'];
+  return {
+    paths: locales.map(locale => ({ params: { locale } })),
+    fallback: false,
+  };
+}; 
