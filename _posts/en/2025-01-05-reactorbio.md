@@ -4,8 +4,8 @@ metaTitle: "New Biological Reactor"
 description: "Optimization of the plant's biological treatment, increasing hydraulic capacity and treatment efficiency."
 date: "2025-01-05"
 modified_date: "2025-01-05"
-# image: https://idr.cat/thumb/thumb-reactor.jpg
-image: https://idr-web-teal.vercel.app/thumb/thumb-reactor.jpg
+# image: /thumb/thumb-reactor.jpg
+image: /thumb/thumb-reactor.jpg
 
 tags:
   - Optimization

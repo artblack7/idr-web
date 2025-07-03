@@ -4,8 +4,8 @@ metaTitle: "BIOINDUSTRIAL"
 description: "BIOINDUSTRIAL aims to verify if the treatment plant is capable of biologically treating only water from the industrial collector."
 date: "2025-01-09"
 modified_date: "2025-01-09"
-# image: https://idr.cat/thumb/thumb-bioind.jpg
-image: https://idr-web-teal.vercel.app/thumb/thumb-bioind.jpg
+# image: /thumb/thumb-bioind.jpg
+image: /thumb/thumb-bioind.jpg
 
 tags:
   - R&D

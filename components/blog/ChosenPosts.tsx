@@ -8,12 +8,13 @@ type ChosenPostsProps = {
   initialPosts: PostItems[];
   allPosts: PostItems[];
   tagFilter?: string | null;
+  locale?: string;
 };
 
-const ChosenPosts: React.FC<ChosenPostsProps> = ({ initialPosts, allPosts, tagFilter }) => {
+const ChosenPosts: React.FC<ChosenPostsProps> = ({ initialPosts, allPosts, tagFilter, locale: propLocale }) => {
   const POSTS_PER_PAGE = 3;
   const router = useRouter();
-  const { locale } = router;
+  const locale = propLocale || router.locale || 'ca';
 
   const [filteredPosts, setFilteredPosts] = useState<PostItems[]>([]);
   const [currentPosts, setCurrentPosts] = useState<PostItems[]>([]);
@@ -52,6 +53,7 @@ const ChosenPosts: React.FC<ChosenPostsProps> = ({ initialPosts, allPosts, tagFi
             slug={slugCompute(post.slug)}
             tags={post.tags}
             showDescription={true}
+            locale={locale}
           />
         ))}
       </div>

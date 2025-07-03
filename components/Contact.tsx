@@ -6,7 +6,7 @@ import ContactForm2 from './descarte/LoginForm';
 import { useTranslations } from 'next-intl';
 
 const Contact = () => {
-  const t = useTranslations('serveis');
+  const t = useTranslations('services');
 
   return (
     <>

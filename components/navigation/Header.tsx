@@ -4,11 +4,11 @@ import { useElementOnScreen } from "../../hooks/useElementOnScreen"
 import useMediaQuery from "../../hooks/useMediaQuery";
 import Head from 'next/head';
 import Link from "next/link";
-import { useRouter } from "next/router";
 import { useTranslations } from 'next-intl';
 
-export default function MainHeader(props: any) {
-  const router = useRouter();
+type MainHeaderProps = { locale: string } & any;
+export default function MainHeader(props: MainHeaderProps) {
+  const locale = props.locale;
   const t = useTranslations('navigation');
   const [containerRef, isVisible ] = useElementOnScreen({
     root: null,
@@ -41,12 +41,12 @@ export default function MainHeader(props: any) {
           
         <Toolbar useWhite={props.useWhite} {...props}>
           <div className="MenuLinks">
-            <Link href="/">{t('home')}</Link>
-            <Link href="/laplanta">{t('laplanta')}</Link>
-            <Link href="/innovacio">{t('innovacio')}</Link>
-            <Link href="/sostenibilitat">{t('sostenibilitat')}</Link>
-            <Link href="/serveis">{t('serveis')}</Link>
-            <Link href="/empresa">{t('empresa')}</Link>
+            <Link href={`/${locale}`}>{t('home')}</Link>
+            <Link href={`/${locale}/plant`}>{t('plant')}</Link>
+            <Link href={`/${locale}/innovation`}>{t('innovation')}</Link>
+            <Link href={`/${locale}/sustainability`}>{t('sustainability')}</Link>
+            <Link href={`/${locale}/services`}>{t('services')}</Link>
+            <Link href={`/${locale}/about`}>{t('about')}</Link>
           </div>
         </Toolbar>
 

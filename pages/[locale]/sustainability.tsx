@@ -1,26 +1,30 @@
 import React from 'react';
 import Image from "next/image";
 import Link from 'next/link';
-import MainHeader from "../components/navigation/Header";
-import {Footer} from '../components/navigation/Footer';
-import AnimationTrigger from '../components/AnimationTrigger';
-import Arrow_Icon from '../components/SVG/Arrow_Icon';
-import { Meta } from '../components/head/Meta';
+import MainHeader from "../../components/navigation/Header";
+import {Footer} from '../../components/navigation/Footer';
+import AnimationTrigger from '../../components/AnimationTrigger';
+import Arrow_Icon from '../../components/SVG/Arrow_Icon';
+import { Meta } from '../../components/head/Meta';
 import { useTranslations } from 'next-intl';
+import { GetStaticPaths, GetStaticProps } from 'next';
 
-export default function Sostenibilitat() {
-  const t = useTranslations('sostenibilitat');
+type SustainabilityProps = { messages: any; locale: string };
+
+export default function Sustainability(props: SustainabilityProps) {
+  const { locale } = props;
+  const t = useTranslations('sustainability');
 
   return (
     <main className='Main'>
      <AnimationTrigger />
       <div>
-        <MainHeader useWhite={false}
+        <MainHeader useWhite={false} locale={locale}
           meta={<Meta 
-          title="Sostenibilitat" 
-          metaTitle="Sostenibilitat │ Igualadina de Depuració i Recuperació." 
-          metaImg="https://idr.com/thumb/thumb.png" 
-          description="Depuració Innovadora per un futur sostenible." />} 
+          title={props.messages.meta.sustainability.title}
+          metaTitle={props.messages.meta.sustainability.metaTitle}
+          metaImg="https://idr.com/thumb/thumb.png"
+          description={props.messages.meta.sustainability.metaDescription} />} 
           />
       </div>
 
@@ -467,16 +471,27 @@ export default function Sostenibilitat() {
         </div>
       </section>
 
-      <Footer />
+      <Footer locale={locale} />
 
     </main>
   );
 }
 
-export async function getStaticProps({ locale }: { locale: string }) {
+export const getStaticPaths: GetStaticPaths = async () => {
+  const locales = ['ca', 'es', 'en'];
+  return {
+    paths: locales.map(locale => ({ params: { locale } })),
+    fallback: false,
+  };
+};
+
+export const getStaticProps: GetStaticProps = async ({ params }) => {
+  const locale = typeof params?.locale === 'string' ? params.locale : 'ca';
+  const messages = (await import(`../../messages/${locale}.json`)).default;
   return {
     props: {
-      messages: (await import(`../messages/${locale}.json`)).default
-    }
+      messages,
+      locale,
+    },
   };
-}
+}; 

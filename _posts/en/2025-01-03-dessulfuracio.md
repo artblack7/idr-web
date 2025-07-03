@@ -4,8 +4,8 @@ metaTitle: "Desulfurization with liquid oxygen"
 description: "Optimization of the desulfurization process, accelerating the reaction and reducing foams."
 date: "2025-01-03"
 modified_date: "2025-01-03"
-# image: https://idr.cat/thumb/thumb-oxigen.jpg
-image: https://idr-web-teal.vercel.app/thumb/thumb-oxigen.jpg
+# image: /thumb/thumb-oxigen.jpg
+image: /thumb/thumb-oxigen.jpg
 tags:
   - Optimization
 ---

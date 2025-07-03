@@ -4,8 +4,8 @@ metaTitle: "Desulfuración con oxígeno líquido"
 description: "Optimización del proceso de desulfuración, acelerando la reacción y reduciendo espumas."
 date: "2025-01-03"
 modified_date: "2025-01-03"
-# image: https://idr.cat/thumb/thumb-oxigen.jpg
-image: https://idr-web-teal.vercel.app/thumb/thumb-oxigen.jpg
+# image: /thumb/thumb-oxigen.jpg
+image: /thumb/thumb-oxigen.jpg
 tags:
   - Optimización
 ---

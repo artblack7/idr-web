@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import MainHeader from "../../components/navigation/Header";
-import {Footer} from '../../components/navigation/Footer';
-import {BlogSubscribe} from '../../components/blog/BlogSubscribe';
-import {BlogHero} from '../../components/blog/BlogHero';
-import AnimationTrigger from '../../components/AnimationTrigger';
-import { GetStaticProps } from 'next';
-import BlogArchive from '../../components/blog/BlogArchive';
-import { BlogArchiveConfig, Config } from '../../utils/Config';
-import { getAllPosts, getCategoryCollection, PostItems } from '../../utils/Content';
-import { Meta } from '../../components/head/Meta';
+import MainHeader from "../../../components/navigation/Header";
+import {Footer} from '../../../components/navigation/Footer';
+import {BlogSubscribe} from '../../../components/blog/BlogSubscribe';
+import {BlogHero} from '../../../components/blog/BlogHero';
+import AnimationTrigger from '../../../components/AnimationTrigger';
+import { GetStaticProps, GetStaticPaths } from 'next';
+import BlogArchive from '../../../components/blog/BlogArchive';
+import { BlogArchiveConfig, Config } from '../../../utils/Config';
+import { getAllPosts, getCategoryCollection, PostItems } from '../../../utils/Content';
+import { Meta } from '../../../components/head/Meta';
 import { useTranslations } from 'next-intl';
 import { useRouter } from 'next/router';
 
@@ -18,13 +18,13 @@ type IIndexProps = {
   categoryCollection: [string, PostItems[]][];
   posts?: any;
   messages: any;
+  locale: string;
 };
 
 export default function Blog(props: IIndexProps) {
-  const { initialPosts, allPosts, categoryCollection } = props;
+  const { initialPosts, allPosts, categoryCollection, locale } = props;
   const t = useTranslations('blog');
   const router = useRouter();
-  const { locale } = router;
 
   const [activeSection, setActiveSection] = useState<string>('all');
 
@@ -47,7 +47,8 @@ export default function Blog(props: IIndexProps) {
             metaTitle={t('meta.metaTitle')} 
             metaImg="https://idr.cat/thumb/thumb.png" 
             description={t('meta.description')} />} 
-            />
+            locale={locale}
+        />
       </div>
 
       {/* <BlogHero posts={initialPosts}/> */}
@@ -83,7 +84,7 @@ export default function Blog(props: IIndexProps) {
                   onClick={() => setActiveSection('company')}>{t('categories.company')}</button>
               </div>
               <div className={activeSection==='all' ? 'activeTab' : 'hiddenTab'}>
-                <BlogArchive initialPosts={initialPosts} allPosts={filteredPosts.all}/>
+                <BlogArchive initialPosts={initialPosts} allPosts={filteredPosts.all} locale={locale}/>
               </div>
             </div>
         </div>
@@ -91,21 +92,31 @@ export default function Blog(props: IIndexProps) {
 
       {/* <BlogSubscribe /> */}
 
-      <Footer />
+      <Footer locale={locale} />
 
     </main>
   );
 }
 
-export const getStaticProps: GetStaticProps<IIndexProps> = async ({ locale }) => {
-  const posts = getAllPosts(Config.post_fields, locale || 'ca');
+export const getStaticProps: GetStaticProps<IIndexProps> = async ({ params }) => {
+  const locale = typeof params?.locale === 'string' ? params.locale : 'ca';
+  const posts = getAllPosts(Config.post_fields, locale);
 
   return {
     props: {
       allPosts: posts,
       initialPosts: posts.slice(0, BlogArchiveConfig.blog_pagination_size),
       categoryCollection: getCategoryCollection(['slug', 'tags'], locale || 'ca'),
-      messages: (await import(`../../messages/${locale || 'ca'}.json`)).default,
+      messages: (await import(`../../../messages/${locale || 'ca'}.json`)).default,
+      locale,
     },
+  };
+};
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  const locales = ['ca', 'es', 'en'];
+  return {
+    paths: locales.map(locale => ({ params: { locale } })),
+    fallback: false,
   };
 };

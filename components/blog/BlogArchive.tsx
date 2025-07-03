@@ -8,12 +8,13 @@ type BlogArchiveProps = {
   initialPosts: PostItems[];
   allPosts: PostItems[];
   tagFilter?: string | null;
+  locale?: string;
 };
 
-const BlogArchive: React.FC<BlogArchiveProps> = ({ initialPosts, allPosts, tagFilter }) => {
+const BlogArchive: React.FC<BlogArchiveProps> = ({ initialPosts, allPosts, tagFilter, locale }) => {
   const POSTS_PER_PAGE = 9;
   const router = useRouter();
-  const { locale } = router;
+  const { locale: routerLocale } = router;
 
   const [filteredPosts, setFilteredPosts] = useState<PostItems[]>([]);
   const [currentPosts, setCurrentPosts] = useState<PostItems[]>([]);
@@ -52,6 +53,7 @@ const BlogArchive: React.FC<BlogArchiveProps> = ({ initialPosts, allPosts, tagFi
             slug={slugCompute(post.slug)}
             tags={post.tags}
             showDescription={true}
+            locale={locale}
           />
         ))}
       </div>

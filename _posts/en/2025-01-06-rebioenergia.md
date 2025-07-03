@@ -4,8 +4,8 @@ metaTitle: "ReBioenergia"
 description: "ReBioenergia transforms industrial waste into resources for a sustainable future."
 date: "2025-01-06"
 modified_date: "2025-01-06"
-# image: https://idr.cat/thumb/thumb-rebio.jpg
-image: https://idr-web-teal.vercel.app/thumb/thumb-rebio.jpg
+# image: /thumb/thumb-rebio.jpg
+image: /thumb/thumb-rebio.jpg
 
 tags:
   - Circular Economy

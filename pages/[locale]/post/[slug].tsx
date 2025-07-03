@@ -1,15 +1,15 @@
 import React from 'react';
 import { format } from 'date-fns';
 import { GetStaticPaths, GetStaticProps } from 'next';
-import { Hero } from '../../components/blog/BlogPostHero';
-import { Content } from '../../components/blog/Content';
-import  RecentPosts from '../../components/blog/RecentPosts';
-import { Meta } from '../../components/head/Meta';
-import { BlogContainer } from '../../components/blog/BlogContainer';
-import { Config } from '../../utils/Config';
+import { Hero } from '../../../components/blog/BlogPostHero';
+import { Content } from '../../../components/blog/Content';
+import  RecentPosts from '../../../components/blog/RecentPosts';
+import { Meta } from '../../../components/head/Meta';
+import { BlogContainer } from '../../../components/blog/BlogContainer';
+import { Config } from '../../../utils/Config';
 import { getAllPosts, getPostBySlug, PostItems, getCategoryCollection,
-} from '../../utils/Content';
-import { markdownToHtml, swapSchematicSVGs } from '../../utils/Markdown';
+} from '../../../utils/Content';
+import { markdownToHtml, swapSchematicSVGs } from '../../../utils/Markdown';
 import { useTranslations } from 'next-intl';
 
 type IPostUrl = {
@@ -34,43 +34,41 @@ type IPostProps = {
   messages: any;
 };
 
-const DisplayPost: React.FC<IPostProps> = (props) => {
-  const { allPosts, initialPosts } = props;
+const DisplayPost: React.FC<IPostProps & { locale: string }> = (props) => {
+  const { allPosts, initialPosts, locale } = props;
   const t = useTranslations('blog');
 
-return (
-  <BlogContainer
-    meta={(
-      <Meta
-        title={props.title}
-        metaTitle={props.metaTitle}
-        description={props.description}
-        pauthor={props.pauthor}
-        author_image={props.author_image}
-        post={{
-          image: props.image,
-          date: props.date,
-          modified_date: props.modified_date,
-          pauthor: props.pauthor,
-          author_image: props.author_image,
-        }}
-      />
-    )}
-    hero={(
-      <Hero
-        title={props.title}
-        metaTitle={props.metaTitle}
-        description={`${props.pauthor ? props.pauthor : Config.author} ~ ${format(new Date(props.date), 'LLLL d, yyyy')}`}
-        image={props.image}
-        pauthor={props.pauthor}
-        author_image={props.author_image}
-      />
-    )}
-    // recentPosts={props.recentPosts}
-    categoryCollection={props.categoryCollection}
-  >
-
-
+  return (
+    <BlogContainer
+      meta={(
+        <Meta
+          title={props.title}
+          metaTitle={props.metaTitle}
+          description={props.description}
+          pauthor={props.pauthor}
+          author_image={props.author_image}
+          post={{
+            image: props.image,
+            date: props.date,
+            modified_date: props.modified_date,
+            pauthor: props.pauthor,
+            author_image: props.author_image,
+          }}
+        />
+      )}
+      hero={(
+        <Hero
+          title={props.title}
+          metaTitle={props.metaTitle}
+          description={`${props.pauthor ? props.pauthor : Config.author} ~ ${format(new Date(props.date), 'LLLL d, yyyy')}`}
+          image={props.image}
+          pauthor={props.pauthor}
+          author_image={props.author_image}
+        />
+      )}
+      categoryCollection={props.categoryCollection}
+      locale={props.locale}
+    >
       <Content>
         <div
           // eslint-disable-next-line react/no-danger
@@ -87,28 +85,26 @@ return (
               <div className='NewsTitle'>
                 <h2>{t('featuredProjects')}</h2>
               </div>
-              <RecentPosts allPosts={allPosts}/>
+              <RecentPosts allPosts={allPosts} locale={locale}/>
               </div>
           </div>
         </section>
-  </BlogContainer>
-);
+    </BlogContainer>
+  );
 }
 
-export const getStaticPaths: GetStaticPaths<IPostUrl> = async ({ locales = ['ca', 'es', 'en'] }) => {
-  // Get posts from all locales to generate all possible paths
+export const getStaticPaths: GetStaticPaths<IPostUrl> = async () => {
+  const locales = ['ca', 'es', 'en'];
   const allPaths = [];
-  
+
   for (const locale of locales) {
     const posts = getAllPosts(['slug'], locale);
     const paths = posts.map((post) => {
       const slugArr = post.slug.split('-');
       slugArr.splice(0, 3);
       const slug = slugArr.join('-');
-      
       return {
-        params: { slug },
-        locale,
+        params: { slug, locale },
       };
     });
     allPaths.push(...paths);
@@ -120,10 +116,11 @@ export const getStaticPaths: GetStaticPaths<IPostUrl> = async ({ locales = ['ca'
   };
 };
 
-export const getStaticProps: GetStaticProps<IPostProps, IPostUrl> = async ({ params, locale }) => {  
+export const getStaticProps: GetStaticProps<IPostProps & { locale: string }, IPostUrl & { locale: string }> = async ({ params }) => {
+  const locale = params?.locale as string;
   const posts = getAllPosts(Config.post_fields, locale || 'ca');
   const gallery = posts.slice(0, Config.blog_pagination_size);
-  
+
   // Find the post by matching the slug
   const realPost = posts.find((post) => {
     const slugArr = post.slug.split('-');
@@ -176,7 +173,8 @@ export const getStaticProps: GetStaticProps<IPostProps, IPostUrl> = async ({ par
           posts: gallery,
           allPosts: posts,
           initialPosts: gallery,
-          messages: (await import(`../../messages/${locale || 'ca'}.json`)).default,
+          messages: (await import(`../../../messages/${locale || 'ca'}.json`)).default,
+          locale: locale,
         },
       };
     }
@@ -201,7 +199,7 @@ export const getStaticProps: GetStaticProps<IPostProps, IPostUrl> = async ({ par
   const swappedContent = swapSchematicSVGs(post.content || '', locale || 'ca');
   const content = await markdownToHtml(swappedContent);
   console.log('Markdown HTML:', content);
-  
+
   const recentPosts = getAllPosts(['slug', 'title', 'date'], locale || 'ca').slice(0, 5);
 
   return {
@@ -220,7 +218,8 @@ export const getStaticProps: GetStaticProps<IPostProps, IPostUrl> = async ({ par
       posts: gallery,
       allPosts: posts,
       initialPosts: gallery,
-      messages: (await import(`../../messages/${locale || 'ca'}.json`)).default,
+      messages: (await import(`../../../messages/${locale || 'ca'}.json`)).default,
+      locale: locale,
     },
   };
 };

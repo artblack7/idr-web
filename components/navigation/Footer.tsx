@@ -1,13 +1,22 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { useRouter } from 'next/router';
 import { useTranslations } from 'next-intl';
 
-const Footer = () => {
-  const { locale, asPath } = useRouter();
+type FooterProps = { locale: string };
+const Footer = ({ locale }: FooterProps) => {
+  // Simulate asPath as '' for static export (language selector will just go to home of each locale)
+  const asPath = '';
   const locales = ['ca', 'es', 'en'];
   const t = useTranslations('navigation');
   const tf = useTranslations('footer');
+
+  // Helper to swap the locale in the current path
+  function getLocalePath(targetLocale: string) {
+    // For static export, just go to the home of the selected locale
+    return `/${targetLocale}`;
+  }
+
+  const currentLocale = locale;
 
   return (
     <>
@@ -37,22 +46,22 @@ const Footer = () => {
                   <h6>{tf('sitemap')}</h6>
                   <ul>
                     <li>
-                      <Link href="/laplanta" className="">{t('laplanta')}</Link>
+                      <Link href={`/${currentLocale}/plant`} className="">{t('plant')}</Link>
                     </li>
                     <li>
-                      <Link href="/innovacio" className="">{t('innovacio')}</Link>
+                      <Link href={`/${currentLocale}/innovation`} className="">{t('innovation')}</Link>
                     </li>
                     <li>
-                      <Link href="/sostenibilitat" className="">{t('sostenibilitat')}</Link>
+                      <Link href={`/${currentLocale}/sustainability`} className="">{t('sustainability')}</Link>
                     </li>
                     <li>
-                      <Link href="/serveis" className="">{t('serveis')}</Link>
+                      <Link href={`/${currentLocale}/services`} className="">{t('services')}</Link>
                     </li>
                     <li>
-                      <Link href="/empresa" className="">{t('empresa')}</Link>
+                      <Link href={`/${currentLocale}/about`} className="">{t('about')}</Link>
                     </li>
                     <li>
-                      <Link href="/privacitat">{tf('privacy')}</Link>
+                      <Link href={`/${currentLocale}/privacy`}>{tf('privacy')}</Link>
                     </li>
                     <li>
                       <Link href="https://clients.idr.cat/" target="_blank" rel="noopener noreferrer">{t('clientArea')}</Link>
@@ -111,11 +120,10 @@ const Footer = () => {
               <div><p>{tf('copyright')}</p></div>
               <div className="LanguageSelector">
                 {locales.map((lng) => (
-                  <Link 
-                    key={lng} 
-                    href={asPath} 
-                    locale={lng}
-                    className={locale === lng ? 'active' : ''}
+                  <Link
+                    key={lng}
+                    href={getLocalePath(lng)}
+                    className={currentLocale === lng ? 'active' : ''}
                   >
                     {lng.toUpperCase()}
                   </Link>

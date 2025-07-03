@@ -1,12 +1,50 @@
 {
   "navigation": {
     "home": "Inicio",
-    "laplanta": "La Planta",
-    "innovacio": "Innovación",
-    "sostenibilitat": "Sostenibilidad",
-    "serveis": "Gestión Residuos",
-    "empresa": "Empresa",
-    "clientArea": "Área Clientes"
+    "plant": "La Planta",
+    "innovation": "Innovación",
+    "sustainability": "Sostenibilidad",
+    "services": "Gestiones",
+    "about": "Empresa",
+    "clientArea": "Área Clientes",
+    "privacy": "Política de Privacidad"
+  },
+  "meta": {
+    "home": {
+      "metaTitle": "IDR │ Igualadina de Depuración y Recuperación.",
+      "metaDescription": "Depuración Innovadora para un futuro sostenible.",
+      "title": "IDR"
+    },
+    "plant": {
+      "metaTitle": "La Planta │ Igualadina de Depuración y Recuperación.",
+      "metaDescription": "Pioneros en depuración biológica para el tratamiento de aguas.",
+      "title": "La Planta"
+    },
+    "innovation": {
+      "metaTitle": "Innovación │ Igualadina de Depuración y Recuperación.",
+      "metaDescription": "Depuración Innovadora para un futuro sostenible.",
+      "title": "Innovación"
+    },
+    "sustainability": {
+      "metaTitle": "Sostenibilidad │ Igualadina de Depuración y Recuperación.",
+      "metaDescription": "Compromiso con el medio ambiente y las personas.",
+      "title": "Sostenibilidad"
+    },
+    "services": {
+      "metaTitle": "Gestiones │ Igualadina de Depuración y Recuperación.",
+      "metaDescription": "Gestión de residuos líquidos industriales.",
+      "title": "Gestiones"
+    },
+    "about": {
+      "metaTitle": "Empresa │ Igualadina de Depuración y Recuperación.",
+      "metaDescription": "Unidos por una industria del cuero sostenible.",
+      "title": "Empresa"
+    },
+    "privacy": {
+      "metaTitle": "Política de Privacidad │ IDR",
+      "metaDescription": "Política de Privacidad",
+      "title": "Política de Privacidad"
+    }
   },
   "footer": {
     "sitemap": "Mapa Web",
@@ -84,7 +122,7 @@
     }
   },
   
-  "laplanta": {
+  "plant": {
     "hero": {
       "tagline": "LA PLANTA",
       "title": "Pioneros en depuración biológica para el tratamiento de aguas"
@@ -202,7 +240,7 @@
       }
     }
   },
-  "innovacio": {
+  "innovation": {
     "hero": {
       "tagline": "INNOVACIÓN",
       "title": "Tecnología avanzada para la depuración del futuro"
@@ -253,7 +291,7 @@
     }
   },
 
-  "sostenibilitat": {
+  "sustainability": {
     "hero": {
       "tagline": "SOSTENIBILIDAD",
       "title": "Compromiso con el medio ambiente y las personas"
@@ -367,7 +405,7 @@
     }
   },
   
-  "serveis": {
+  "services": {
     "hero": {
       "tagline": "SERVICIOS",
       "title": "Gestión de residuos líquidos industriales"
@@ -410,7 +448,7 @@
       }
     }
   },
-  "empresa": {
+  "about": {
     "hero": {
       "tagline": "EMPRESA",
       "title": "Unidos por una industria del cuero sostenible"
@@ -529,5 +567,46 @@
       "company": "Empresa"
     },
     "featuredProjects": "Proyectos Destacados"
+  },
+  "privacy": {
+    "meta": {
+      "title": "Política de Privacidad",
+      "metaTitle": "Política de Privacidad │ IDR",
+      "description": "Política de Privacidad"
+    },
+    "metaDescription": "Política de Privacidad",
+    "title": "Política de Privacidad",
+    "effectiveDate": "Fecha de entrada en vigor: 4 de mayo de 2025",
+    "intro": "En IDR, nos tomamos la privacidad muy en serio. Esta política de privacidad explica cómo gestionamos la información en nuestra página web y nuestros servicios en línea. Nos comprometemos a proteger su privacidad y a ser transparentes sobre nuestras prácticas.",
+    "section1": {
+      "title": "Sección 01",
+      "subtitle": "No recopilamos datos personales",
+      "text": "No recopilamos, almacenamos ni procesamos ningún tipo de dato personal de los usuarios que visitan nuestra página web. Esto incluye, pero no se limita a, información como nombres, direcciones, correos electrónicos, direcciones IP o cualquier otro dato que pueda identificarle."
+    },
+    "section2": {
+      "title": "Sección 02",
+      "subtitle": "No compartimos datos con terceros",
+      "text": "Como no recopilamos ningún dato personal, no compartimos ninguna información con terceros, ya sean empresas, organizaciones o individuos. Su interacción con nuestra página web es completamente privada."
+    },
+    "section3": {
+      "title": "Sección 03",
+      "subtitle": "Cookies y tecnologías de seguimiento",
+      "text": "Nuestra página web no utiliza cookies ni ninguna otra tecnología de seguimiento para monitorizar la actividad de los usuarios. No utilizamos herramientas de análisis, anuncios publicitarios ni otras formas de seguimiento."
+    },
+    "section4": {
+      "title": "Sección 04",
+      "subtitle": "Enlaces a sitios de terceros",
+      "text": "Nuestra página web puede contener enlaces a otros sitios web que no son operados por nosotros. No tenemos control sobre las políticas de privacidad de esos sitios y le recomendamos que revise sus políticas antes de proporcionar cualquier información."
+    },
+    "section5": {
+      "title": "Sección 05",
+      "subtitle": "Cambios en esta política",
+      "text": "Esta política de privacidad puede evolucionar con el tiempo. Cuando la actualicemos, revisaremos la 'Fecha de entrada en vigor' y publicaremos la nueva política. Para mantenerse informado sobre nuestras prácticas de privacidad, le recomendamos revisar esta política regularmente mientras utilice nuestros servicios."
+    },
+    "section6": {
+      "title": "Sección 06",
+      "subtitle": "Cómo contactarnos",
+      "text": "Si tiene cualquier duda sobre esta política de privacidad, puede contactarnos en info@idr.cat."
+    }
   }
 }
