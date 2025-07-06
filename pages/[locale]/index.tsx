@@ -45,15 +45,24 @@ export default function Home(props: IIndexProps) {
       </div>
 
       <div className="HeroSectionWrap Dark" id="main-hero">
-          <video
-            className="HeroVideo"
-            muted
-            loop
-            playsInline
-            autoPlay
-            src="/video/video-hero.mp4"
-            poster="/video/video-poster.jpg"
-          ></video>
+          {/* <video
+             className="HeroVideo"
+             muted
+             loop
+             playsInline
+             autoPlay
+             src="/video/video-hero.mp4"
+             poster="/video/video-poster.jpg"
+           ></video> */}
+          <div className='hero-video-container'>
+            <iframe
+              src="https://player.vimeo.com/video/1098597684?h=13e07d9db1&autoplay=1&muted=1&background=1&controls=0&badge=0&autopause=0&player_id=0&app_id=58479"
+              frameBorder="0"
+              allow="autoplay; fullscreen; encrypted-media; web-share"
+              className="HeroVideo"
+              title="IDR"
+            />
+          </div>
 
           <div className="Overlay"></div>
         <div className="HeroSection Main">
