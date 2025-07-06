@@ -18,10 +18,8 @@ jobs:
           node-version: '20'
       - name: Install dependencies
         run: yarn install --frozen-lockfile # Use Yarn to install dependencies
-      - name: Build and export Next.js
-        run: |
-          yarn build
-          npx next export
+      - name: Build Next.js
+        run: yarn build
       - name: FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
