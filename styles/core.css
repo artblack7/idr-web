@@ -197,12 +197,12 @@
 
 /* -------------------- MAIN STYLES  --------------------*/
 
-*, html, body {
+/* *, html, body {
   scroll-behavior: smooth !important;
 }
 html:focus-within {
   scroll-behavior: smooth !important;
-}
+} */
 
 body {
   /* font-family: "Poppins", sans-serif; */
