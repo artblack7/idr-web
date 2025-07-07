@@ -381,7 +381,7 @@
   left: 0;
   bottom: 0;
   z-index: 0;
-  background: var(--tgreen4);
+  background: var(--turq5);
 }
 
 .FooterContent {
@@ -544,23 +544,23 @@
 
 .LanguageSelector a {
   padding: 5px 10px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--turq3);
   border-radius: 4px;
   text-decoration: none;
   color: var();
   font-size: 12px;
   transition: all 0.3s ease;
+  color: white;
 }
 
 .LanguageSelector a:hover {
-  background-color: #f5f5f5;
-  color: #333;
+  background-color: var(--turq4);
+  color: white;
 }
 
 .LanguageSelector a.active {
-  background-color: var(--tgreen2);
-  color: white;
-  border-color: var(--tgreen2);
+  background-color: var(--turq3);
+  border-color: var(--turq3);
 }
 
 /*********************************************************/

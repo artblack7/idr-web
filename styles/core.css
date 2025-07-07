@@ -82,6 +82,7 @@
   --turq2: hsl(195, 85%, 30%); /*fase3*/
   --turq3: hsl(195, 100%, 25%); /*fase2*/
   --turq4: hsl(195, 100%, 18%); /*fase1*/
+  --turq5: hsl(192, 100%, 15%); /*fase1*/
 
   --green: hsl(145, 71%, 57%); 
   --green2: hsl(150, 48%, 43%); /*ecosquare4 */
@@ -90,7 +91,7 @@
   --tgreen0: hsl(170, 34%, 58%); /*maingrad*/
   --tgreen: hsl(170, 30%, 48%); /*maingrad*/
   --tgreen2: hsl(170, 100%, 27%); /*ecosquare3 - maingrad dark*/
-  --tgreen3: hsl(194, 100%, 22%); /*ecosquare2*/
+  --tgreen3: hsl(186, 100%, 22%); /*ecosquare2*/
   --tgreen4: hsl(186, 100%, 13%); /*ecosquare1 - footer*/
   --tgreen5: hsl(186, 100%, 7%); /*residus*/
 
