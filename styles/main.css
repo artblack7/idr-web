@@ -271,6 +271,21 @@ section .LineBtn {
   }
 }
 
+.ImgPoster {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%; 
+  width: auto;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translateX(-50%);
+  z-index: -1;
+  direction: ltr;
+  overflow: hidden;
+  pointer-events: none;
+}
+
 /* .hero-video-container iframe {
   position: absolute;
   top: 50%;
@@ -1264,5 +1279,4 @@ section video {
     }
 
 } 
-
 

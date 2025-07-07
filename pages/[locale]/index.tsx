@@ -13,6 +13,7 @@ import { GetStaticPaths, GetStaticProps } from 'next';
 import { BlogArchiveConfig, Config } from '../../utils/Config';
 import { getAllPosts, getCategoryCollection, PostItems } from '../../utils/Content';
 import { useTranslations } from 'next-intl';
+import HeroVideo from '../../components/HeroVideo';
 
 
 type IIndexProps = {
@@ -29,6 +30,7 @@ export default function Home(props: IIndexProps) {
   const isWide = useMediaQuery('(min-width: 1800px)');
   const { allPosts, initialPosts, messages } = props;
   const t = useTranslations('home');
+  const [videoLoaded, setVideoLoaded] = useState(false);
 
   return (
     <main className='Main'>
@@ -43,8 +45,15 @@ export default function Home(props: IIndexProps) {
           locale={props.locale}
         />
       </div>
-
-      <div className="HeroSectionWrap Dark" id="main-hero">
+ 
+      <div
+        className="HeroSectionWrap Dark"
+        id="main-hero"
+        style={{
+          // Remove backgroundImage logic, handled by HeroVideo
+        }}
+      >
+        <HeroVideo />
           {/* <video
              className="HeroVideo"
              muted
@@ -54,16 +63,16 @@ export default function Home(props: IIndexProps) {
              src="/video/video-hero.mp4"
              poster="/video/video-poster.jpg"
            ></video> */}
-          <div className='hero-video-container'>
+          {/* <div className='hero-video-container'>
             <iframe
               src="https://player.vimeo.com/video/1098597684?h=13e07d9db1&autoplay=1&muted=1&background=1&controls=0&badge=0&autopause=0&player_id=0&app_id=58479"
               frameBorder="0"
               allow="autoplay; fullscreen; encrypted-media; web-share"
               className="HeroVideo"
               title="IDR"
+              onLoad={() => setVideoLoaded(true)}
             />
-          </div>
-
+          </div> */}
           <div className="Overlay"></div>
         <div className="HeroSection Main">
           <div className="MainHeroContent animation-up" data-animate="slide-up">
