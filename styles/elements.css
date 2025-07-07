@@ -378,16 +378,6 @@
   font-size: 14px;
 }
 
-/* .table-header > :first-child,
-.table-row > :first-child {
-  width: 20%;
-}
-
-.table-header > :last-child,
-.table-row > :last-child {
-  width: 80%;
-} */
-
 .CodeTag {
   background: var(--darkGrad);
   font-size: 0.75rem;
