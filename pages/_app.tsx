@@ -20,7 +20,7 @@ export default function App({ Component, pageProps }: AppProps) {
   const { locale } = useRouter();
 
   return (
-    <IntlProvider messages={pageProps.messages} locale={locale || 'ca'}>
+    <IntlProvider messages={pageProps.messages} locale={locale || 'ca'} timeZone="Europe/Madrid">
       <div className="root">
         <Component {...pageProps} />
       </div>
