@@ -81,7 +81,7 @@
   --turq: hsl(185, 53%, 43%); /*fase4*/
   --turq2: hsl(195, 85%, 30%); /*fase3*/
   --turq3: hsl(195, 100%, 25%); /*fase2*/
-  --turq4: hsl(195, 100%, 18%); /*fase1*/
+  --turq4: hsl(194, 100%, 18%); /*fase1*/
   --turq5: hsl(192, 100%, 15%); /*fase1*/
 
   --green: hsl(145, 71%, 57%); 
@@ -607,7 +607,7 @@ button {
       width: 0;
       bottom: 0;
       /* background: var(--mainGrad); */
-      background: var(--tgreen3);
+      background: var(--turq3);
       height: 120%;
       left: -10%;
       transform: skewX(20deg);

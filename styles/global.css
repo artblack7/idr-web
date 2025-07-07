@@ -342,10 +342,11 @@
   /* padding: 16px 20px; */
   /* height: 48px; */
   border-color: white;
+  border: 1px solid white;
 }
 .header-top .AppBtn button:hover {
   background-color: transparent;
-  border-color: var(--tgreen3);
+  border-color: var(--turq3);
 
 }
 .header-top .AppBtn svg path {
