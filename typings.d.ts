@@ -4,3 +4,5 @@ declare module 'marked' {
     }
   }
   
+declare module '@vimeo/player';
+  
