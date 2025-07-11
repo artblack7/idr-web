@@ -111,7 +111,7 @@ export default function Home(props: IIndexProps) {
               </div>
 
              <div className="AppBtn Black">
-               <Link href={`/${props.locale}/laplanta`}><button>{t('sections.tech.button')}<Arrow_Icon /></button></Link>
+               <Link href={`/${props.locale}/plant`}><button>{t('sections.tech.button')}<Arrow_Icon /></button></Link>
              </div>
             </div>
 
@@ -172,7 +172,7 @@ export default function Home(props: IIndexProps) {
               {t('sections.about.text2')}
               </p>
               <div className="AppBtn Brown">
-                <Link href={`/${props.locale}/empresa`}><button>{t('button.more')}<Arrow_Icon /></button></Link>
+                <Link href={`/${props.locale}/about`}><button>{t('button.more')}<Arrow_Icon /></button></Link>
               </div>
             </div>
 
@@ -242,7 +242,7 @@ export default function Home(props: IIndexProps) {
               {t('sections.services.text2')}
               </p>
               <div className="AppBtn Green">
-                <Link href={`/${props.locale}/serveis`}><button>{t('sections.services.button')}<Arrow_Icon /></button></Link>
+                <Link href={`/${props.locale}/services`}><button>{t('sections.services.button')}<Arrow_Icon /></button></Link>
               </div>
             </div>
 
@@ -340,7 +340,7 @@ export default function Home(props: IIndexProps) {
               {t('sections.innovation.text')}
               </p>
               <div className="AppBtn Blue">
-                <Link href={`/${props.locale}/innovacio`}><button>{t('sections.innovation.button')}<Arrow_Icon /></button></Link>
+                <Link href={`/${props.locale}/innovation`}><button>{t('sections.innovation.button')}<Arrow_Icon /></button></Link>
               </div>
             </div>
 

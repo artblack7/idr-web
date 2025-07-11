@@ -198,7 +198,7 @@ export default function Innovation(props: IIndexProps) {
               {t('sections.testbed.text')}
               </p>
               <div className="AppBtn">
-              <Link href="/post/testbed"><button>{t('button.more')}<Arrow_Icon /></button></Link>
+              <Link href={`/${locale}/post/testbed`}><button>{t('button.more')}<Arrow_Icon /></button></Link>
               </div>
             </div>
           </div>
