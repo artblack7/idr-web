@@ -65,14 +65,14 @@
 
   /***/
 
-  --heroBlue: hsla(215, 100%, 13%, 0.95);
-  --heroBlue2: hsla(215, 100%, 18%, 0.95);
-  --heroGreen: hsla(178, 100%, 11%, 0.95);
-  --heroGreen2: hsla(169, 100%, 11%, 0.9); 
+  --heroBlue: hsla(206, 100%, 14%, 0.95);
+  --heroBlue2: hsla(214, 100%, 18%, 0.95);
+  --heroGreen: hsla(186, 100%, 11%, 0.95);
+  --heroGreen2: hsla(183, 100%, 11%, 0.9); 
   --heroBrown: hsla(0, 0%, 7%, 0.95); 
 
   --cyan: #00ede2; /*bluegrad*/
-  --cyan2: #0099c3; /*button*/
+  --cyan2: #0080ae; /*button*/
   --blue: hsl(203, 100%, 48%); /*bluegrad*/
   --blue2: hsl(210, 100%, 32%); /*maingrad*/
   --blue3: hsl(210, 100%, 18%); /*maingrad dark*/
@@ -85,6 +85,7 @@
   --turq5: hsl(192, 100%, 15%); /*fase1*/
 
   --green: hsl(145, 71%, 57%); 
+  --green1: hsl(150, 69%, 36%);
   --green2: hsl(150, 48%, 43%); /*ecosquare4 */
   --green3: hsl(150, 88%, 29%); /*ecosquare4 */
 
@@ -100,7 +101,7 @@
   --brown3:rgba(28, 15, 7, 0.903); /*quisom*/
 
   --cream: hsl(34, 100%, 78%); 
-  --cream2: hsl(27, 50%, 54%); 
+  --cream2: hsl(27, 39%, 48%); 
   --cream3: hsl(27, 51%, 45%); 
 
   --brown: hsl(27, 75%, 62%); 
@@ -630,11 +631,11 @@ button {
 
 .AppBtn.Green button::before {
   /* background: var(--greenGrad2); */
-  background: var(--green2);
+  background: var(--green1);
 
 }
 .AppBtn.Green button:hover {
-  border: 1px solid var(--green2);
+  border: 1px solid var(--green1);
 }
 .AppBtn.Green button:hover::before {
   width: 120%;
