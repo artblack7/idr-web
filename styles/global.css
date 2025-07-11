@@ -146,17 +146,17 @@
 .AppName {
   display: flex;
   align-items: center;
-  margin-top: 8px;
+  justify-content: center;
 }
 
-.AppName svg {
-  width: 150px;
+/* .AppName svg {
+  width: 130px;
   height: auto;
-}
+} */
 
 .toolbar-logo img,
 .footer-logo img {
-  width: 120px;
+  width: 100px;
   height: auto;
 }
 

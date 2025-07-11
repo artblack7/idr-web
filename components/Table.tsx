@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { TableVirtuoso, TableVirtuosoHandle } from "react-virtuoso";
 import { useTranslations } from "next-intl";
+import Arrow_Icon from "./SVG/Arrow_Icon";
 
 interface TableRow {
   codi: string;
@@ -57,14 +58,14 @@ const Table: React.FC = () => {
           onMouseDown={() => handleMouseDown("up")}
           aria-label="Scroll up"
         >
-          ↑
+          <span className="arrow-icon arrow-up"><Arrow_Icon /></span>
         </button>
         <button
           className="scroll-button scroll-down"
           onMouseDown={() => handleMouseDown("down")}
           aria-label="Scroll down"
         >
-          ↓
+          <span className="arrow-icon arrow-down"><Arrow_Icon /></span>
         </button>
       </div>
 

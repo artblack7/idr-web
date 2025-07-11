@@ -41,7 +41,7 @@
   --divPadding: 100px 4%;   
   --padding-1024: 100px 6%;
   --paddingHero-1024: 0px 6%;
-  --padding-480: 80px 4%;
+  --padding-480: 60px 4%;
   --paddingHero-480: 0px 2%;
   --toolbar: 100px;
 
@@ -92,7 +92,7 @@
   --tgreen0: hsl(170, 34%, 58%); /*maingrad*/
   --tgreen: hsl(170, 30%, 48%); /*maingrad*/
   --tgreen2: hsl(170, 100%, 27%); /*ecosquare3 - maingrad dark*/
-  --tgreen3: hsl(186, 100%, 22%); /*ecosquare2*/
+  --tgreen3: #006570; /*ecosquare2*/
   --tgreen4: hsl(186, 100%, 13%); /*ecosquare1 - footer*/
   --tgreen5: hsl(186, 100%, 7%); /*residus*/
 
@@ -578,7 +578,7 @@ button {
     position: relative;
     background: var(--transparent);
     /* box-shadow: var(--sh-l); */
-    border: 1.5px solid var(--tgreen3);
+    border: 1.5px solid var(--turq3);
     padding: 12px 20px;
     min-width: 150px;
     width: max-content;
@@ -589,13 +589,13 @@ button {
     z-index: 1;
     font-weight: 400;
     letter-spacing: 0.02rem;
-    color: var(--tgreen3);
+    color: var(--turq3);
   }
     .AppBtn button:hover {
       /* color: var(--tgreen2); */
       /* border-color: var(--tgreen2); */
       /* background-color: var(--tgreen3); */
-      border: 1.5px solid var(--tgreen3);
+      border: 1.5px solid var(--turq3);
       color: white;
       /* box-shadow: inset 12rem 0 0 var(--tgreen3);
       transition: background-color 0.2s ease-in-out, box-shadow 0.3s ease-in-out;  */
@@ -670,7 +670,7 @@ button {
     }
 
   .AppBtn svg path {
-    fill: var(--dark);
+    fill: var(--turq3);
   }
     .AppBtn button:hover svg path {
       fill: var(--white);

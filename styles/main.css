@@ -284,6 +284,7 @@ section .LineBtn {
   direction: ltr;
   overflow: hidden;
   pointer-events: none;
+  transition: opacity 1.2s ease;
 }
 
 /* .hero-video-container iframe {
@@ -1236,6 +1237,11 @@ section video {
 
   .SocisLogos img {
     height: 80px;
+  }
+
+  .SectionWrap,
+  .DivSectionWrap {
+    padding: var(--padding-480);
   }
 
     /* .animation-up,

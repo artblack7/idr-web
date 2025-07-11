@@ -726,3 +726,15 @@ input:focus {
   
 
 }
+
+.arrow-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.arrow-up {
+  transform: rotate(-90deg);
+}
+.arrow-down {
+  transform: rotate(90deg);
+}

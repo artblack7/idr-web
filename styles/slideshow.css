@@ -257,23 +257,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
-    color: var(--tgreen3);
-  }
-
-  .flickity-prev-next-button:hover.previous::before,
-  .flickity-prev-next-button:hover.next::before {
-    color: var(--white);
+    font-size: 10px;
+    color: var(--tgreen2);
   }
 
   .flickity-prev-next-button.previous::before {
-    /* content: url('/icons/arrow-left.svg'); */
-    content: "←";
+    content: url('/icons/arrow-left.svg');
   }
 
   .flickity-prev-next-button.next::before {
-    /* content: url('/icons/arrow-right.svg'); */
-    content: "→";
+    content: url('/icons/arrow-right.svg');
+  }
+
+  .flickity-prev-next-button.previous:hover::before {
+    content: url('/icons/arrow-left-white.svg');
+  }
+  .flickity-prev-next-button.next:hover::before {
+    content: url('/icons/arrow-right-white.svg');
   }
 
   /* PAGE DOT */
@@ -741,3 +741,4 @@
   }
 
 }
+

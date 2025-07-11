@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { PostItems } from '../../utils/Content';
 import { BlogCard } from './BlogCard';
 import { slugCompute } from '../../utils/SlugCompute';
@@ -23,6 +23,7 @@ const RecentPosts: React.FC<RecentPostsProps> = ({ allPosts, locale: propLocale 
   const locale = propLocale || router.locale || 'ca';
 
   const [currentPosts, setCurrentPosts] = useState<PostItems[]>(allPosts.slice(0, POSTS_PER_PAGE));
+  const flickityRef = useRef<any>(null);
 
   // Use the posts from props (which are already filtered by locale from getStaticProps)
   // and update when locale changes (which triggers a page reload)

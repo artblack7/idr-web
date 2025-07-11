@@ -4,36 +4,31 @@ import Player from '@vimeo/player';
 const VIMEO_ID = '1098597684';
 
 const HeroVideo: React.FC = () => {
-  const [thumbnail, setThumbnail] = useState<string | null>(null);
+  const thumbnail = '/video/video-poster.jpg';
   const [hidePoster, setHidePoster] = useState(false);
   const [fadePoster, setFadePoster] = useState(false);
   const iframeRef = useRef<HTMLIFrameElement>(null);
 
   useEffect(() => {
-    fetch(`https://vimeo.com/api/oembed.json?url=https://vimeo.com/${VIMEO_ID}`)
-      .then(async res => {
-        if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
-        try { return await res.json(); }
-        catch (e) { throw new Error('Failed to parse JSON from Vimeo oEmbed API'); }
-      })
-      .then(data => setThumbnail(data.thumbnail_url))
-      .catch(err => {
-        console.error('Failed to fetch Vimeo thumbnail:', err);
-        setThumbnail(null);
-      });
+    // The thumbnail fetching logic is removed as per the edit hint.
   }, []);
 
   useEffect(() => {
-    if (iframeRef.current) {
-      const player = new Player(iframeRef.current);
-      const fadeOutPoster = () => {
-        setFadePoster(true);
-        setTimeout(() => setHidePoster(true), 1200); // 1.2s fade
-      };
-      player.on('play', fadeOutPoster);
-      player.on('timeupdate', fadeOutPoster);
-    }
-  }, [iframeRef.current]);
+    if (!iframeRef.current) return;
+    const player = new Player(iframeRef.current);
+    const fadeOutPoster = () => {
+      setFadePoster(true);
+      setTimeout(() => setHidePoster(true), 1200); // 1.2s fade
+    };
+    player.on('play', fadeOutPoster);
+    player.on('timeupdate', fadeOutPoster);
+
+    // Cleanup
+    return () => {
+      player.off('play', fadeOutPoster);
+      player.off('timeupdate', fadeOutPoster);
+    };
+  }, []);
 
   return (
     <div className="hero-video-container" >

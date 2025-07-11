@@ -68,7 +68,7 @@ export default function Home(props: IIndexProps) {
               src="https://player.vimeo.com/video/1098597684?h=13e07d9db1&autoplay=1&muted=1&background=1&controls=0&badge=0&autopause=0&player_id=0&app_id=58479"
               frameBorder="0"
               allow="autoplay; fullscreen; encrypted-media; web-share"
-              className="HeroVideo"
+              className=""
               title="IDR"
               onLoad={() => setVideoLoaded(true)}
             />
@@ -147,7 +147,7 @@ export default function Home(props: IIndexProps) {
                   }}
                   title="Igualadina de Depuració i Recuperació IDR"
                 ></iframe>
-            </div>
+              </div>
 
             </div>
 
@@ -204,7 +204,7 @@ export default function Home(props: IIndexProps) {
                 </p>
               </div>
               <div className="CenterWrap">
-                <Image className="animation-up mt-5" data-animate="slide-up"  loading="eager" 
+                <Image className="mt-5" loading="eager" 
                   alt="IDR" src='/logos/aj-black.png' 
                   // sizes="(max-width: 480px) 200px, (max-width: 1024px) 300px, 400px"
                   width={250} height={50} />
@@ -280,7 +280,7 @@ export default function Home(props: IIndexProps) {
             
               <div className="CardWrap animation-up" data-animate="slide-up">
                 <div className="CardImg">
-                <Image className="animation-up" data-animate="slide-up"  loading="eager" 
+                <Image loading="eager" 
                 alt="img" src='/img/mission-1.jpg' width={800} height={800}
                 sizes="(max-width: 480px) 180px, (max-width: 1024px) 200px, 220px"                />           
                </div>
@@ -294,7 +294,7 @@ export default function Home(props: IIndexProps) {
 
               <div className="CardWrap animation-up" data-animate="slide-up">
                 <div className="CardImg">
-                <Image className="animation-up" data-animate="slide-up"  loading="eager" 
+                <Image loading="eager" 
                 alt="img" src='/img/mission-2.jpg' width={800} height={800}
                 sizes="(max-width: 480px) 180px, (max-width: 1024px) 200px, 220px"
                  />           
@@ -309,7 +309,7 @@ export default function Home(props: IIndexProps) {
 
               <div className="CardWrap animation-up" data-animate="slide-up">
                 <div className="CardImg">
-                <Image className="animation-up" data-animate="slide-up"  loading="eager" 
+                <Image loading="eager" 
                 alt="img" src='/img/mission-3.jpg' width={800} height={800}
                 sizes="(max-width: 480px) 180px, (max-width: 1024px) 200px, 220px"
                  />           
