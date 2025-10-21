@@ -156,7 +156,7 @@
 
 .toolbar-logo img,
 .footer-logo img {
-  width: 120px;
+  width: 110px;
   height: auto;
 }
 
@@ -164,6 +164,25 @@
 .header-top-w img {
   filter: invert();
 }
+
+.header-scrolled .LanguageButton,
+.header-top-w .LanguageButton {
+  color: var(--dark);
+}
+
+.header-scrolled .LanguageButton:hover {
+  color: var(--tgreen3);
+}
+
+.header-scrolled .LanguageButton:hover svg {
+  fill: var(--tgreen3);
+}
+
+.header-scrolled .LanguageButton.open {
+  color: var(--tgreen3);
+}
+
+
 
 /* .header-top .AppName svg path {
   fill: #fff;
@@ -190,11 +209,9 @@
   padding-right: 40px;
   padding-bottom: 10px;
   margin-top: 10px;
-
-  font-weight: 400;
+  font-weight: 300;
   text-decoration: none;
   letter-spacing: 0.04rem;
-
   background: transparent;
   border-bottom: 2px solid transparent;
    
@@ -212,6 +229,7 @@
 
   .header-scrolled .MenuLinks a {
     color: var(--dark);
+    font-weight: 400;
   }
   .header-scrolled .MenuLinks a:hover {
     color: var(--dark);
@@ -222,6 +240,7 @@
 
   .header-top-w .MenuLinks a {
     color: var(--dark);
+    font-weight: 400;
   }
   .header-top-w .MenuLinks a:hover {
     color: var(--dark);
@@ -319,12 +338,114 @@
   padding: 0; 
 }
 
+/*---------------  Language Selector  ---------------*/
+
+.LanguageSelector {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Language Selector Footer*/
+
+.LanguageSelector {
+  display: flex;
+  gap: 10px;
+}
+
+.LanguageSelector a {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-decoration: none;
+  color: var();
+  font-size: 12px;
+  transition: all 0.3s ease;
+}
+
+.LanguageSelector a:hover {
+  border-color: var(--tgreen2);
+  color: white !important;
+}
+
+.LanguageSelector a.active {
+  background-color: var(--tgreen3);
+  color: white;
+  border-color: var(--tgreen2);
+}
+
+.header-scrolled .LanguageArrow svg path,
+.header-top-w .LanguageArrow svg path {
+  fill: var(--dark)
+}
+
+.LanguageButton {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  /* border: 1.5px solid var(--white); */
+  border-radius: var(--r2);
+  padding: 12px 14px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-size: 0.9rem;
+  color: var(--white);
+  width: 90px;
+  height: fit-content;
+}
+
+.LanguageDropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  /* border: 1px solid var(--grey2); */
+  border-radius: var(--r2);
+  box-shadow: var(--dropdown);
+  z-index: 100;
+  width: 90px;
+  overflow: hidden;
+  margin-top: 6px;
+  opacity: 0;
+  transform: scale(0.95) translateY(-8px);
+  transition: all 0.15s ease-out;
+  pointer-events: none;
+}
+
+.LanguageDropdown.open {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+  pointer-events: auto;
+}
+
+.LanguageOption {
+  display: block;
+  padding: 10px 16px;
+  margin: 2px;
+  color: var(--dark);
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out;
+  font-size: 0.9rem;
+}
+
+.LanguageOption:hover {
+  background-color: var(--tgreen);
+  border-color: var(--tgreen);
+}
 /*---------------  App Button  ---------------*/
 
 .ButtonGroup {
   display: flex;
   align-items: center;
   gap: 12px;
+}
+
+.ButtonGroup .LanguageSelector {
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  gap: 0;
 }
 
 .ButtonGroup.left {
@@ -535,34 +656,6 @@
   color: var(--white);
 }
 
-/* Language Selector */
-.LanguageSelector {
-  display: flex;
-  gap: 10px;
-  margin-top: 10px;
-}
-
-.LanguageSelector a {
-  padding: 5px 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  text-decoration: none;
-  color: var();
-  font-size: 12px;
-  transition: all 0.3s ease;
-}
-
-.LanguageSelector a:hover {
-  background-color: #f5f5f5;
-  color: #333;
-}
-
-.LanguageSelector a.active {
-  background-color: var(--tgreen2);
-  color: white;
-  border-color: var(--tgreen2);
-}
-
 /*********************************************************/
 /*////////////////// RESPONSIVE STYLES //////////////////*/
 /*********************************************************/
@@ -585,6 +678,10 @@
 
   .MenuLinks a {
     padding-right: 3vw;
+  }
+
+  .Toolbar .AppBtn button {
+    min-width: 0;
   }
 }
 
@@ -791,6 +888,81 @@
 
   .MenuLinks.Extra {
     padding-top: 8px;
+  }
+
+  .LanguageSelectorMobile {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    width: 100%;
+  }
+
+  .LanguageSelectorMobile .language-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+    padding: 15px 0;
+    border-bottom: 1px solid rgb(219, 219, 219);
+    color: var(--dark);
+  }
+
+  .LanguageSelectorMobile .LanguageButton {
+    background: transparent;
+    border: none;
+    color: var(--dark);
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 0;
+    width: auto;
+    cursor: pointer;
+  }
+
+  .LanguageSelectorMobile .LanguageButton:hover {
+    color: var(--tgreen2);
+  }
+
+  .LanguageSelectorMobile .arrow {
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+  }
+
+  .LanguageSelectorMobile .arrow svg {
+    width: 10px;
+    height: 10px;
+    fill: var(--dark);
+  }
+
+  .LanguageSelectorMobile .arrow.rotate-arrow {
+    transform: rotate(90deg);
+  }
+
+  .LanguageSelectorMobile .LanguageDropdown {
+    position: relative;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+  }
+
+  .LanguageSelectorMobile .LanguageOption {
+    padding: 15px 0;
+    border-bottom: 1px solid rgb(219, 219, 219);
+    color: var(--dark);
+  }
+
+  .LanguageSelectorMobile .LanguageOption:hover {
+    background: transparent;
+    color: var(--tgreen2);
+  }
+
+  .LanguageSelectorMobile .LanguageOption.active {
+    background: transparent;
+    color: var(--tgreen2);
+    font-weight: 600;
   }
 
   .FooterNavWrap {
