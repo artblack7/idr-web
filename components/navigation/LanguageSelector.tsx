@@ -52,7 +52,7 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = ({ currentLocal
         <Language_Icon />
         <span>{currentLanguage.name}</span>
         <span className="arrow-right">
-          <div className='LanguageArrow'><Arrow_Icon /></div>
+          {/* <div className='LanguageArrow'><Arrow_Icon /></div> */}
         </span>
       </button>
       
