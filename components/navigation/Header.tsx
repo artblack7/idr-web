@@ -39,9 +39,9 @@ export default function MainHeader(props: MainHeaderProps) {
     <div ref={containerRef}></div>
         <div className={isVisible ? headerClass : headerScrolledClass}>
           
-        <Toolbar useWhite={props.useWhite} {...props}>
+        <Toolbar useWhite={props.useWhite} locale={locale} {...props}>
           <div className="MenuLinks">
-            <Link href={`/${locale}`}>{t('home')}</Link>
+            {/* <Link href={`/${locale}`}>{t('home')}</Link> */}
             <Link href={`/${locale}/plant`}>{t('plant')}</Link>
             <Link href={`/${locale}/innovation`}>{t('innovation')}</Link>
             <Link href={`/${locale}/sustainability`}>{t('sustainability')}</Link>

@@ -589,7 +589,8 @@ button {
     z-index: 1;
     font-weight: 400;
     letter-spacing: 0.02rem;
-    color: var(--turq3);
+    color: var(--tgreen3);
+    cursor: pointer;
   }
     .AppBtn button:hover {
       /* color: var(--tgreen2); */
@@ -670,7 +671,7 @@ button {
     }
 
   .AppBtn svg path {
-    fill: var(--turq3);
+    fill: var(--tgreen3);
   }
     .AppBtn button:hover svg path {
       fill: var(--white);

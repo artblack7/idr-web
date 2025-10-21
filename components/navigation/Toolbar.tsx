@@ -7,13 +7,15 @@ import Image from "next/image";
 import Menu_Icon from "../SVG/Menu_Icon";
 import Arrow_Icon from "../SVG/Arrow_Icon";
 import { useTranslations } from 'next-intl';
+import { LanguageSelector } from './LanguageSelector';
 
 interface ToolbarProps {
   useWhite?: boolean;
   children: React.ReactNode;
+  locale?: string;
 }
 
-export const Toolbar = ({ useWhite = false, children }: ToolbarProps) => {
+export const Toolbar = ({ useWhite = false, children, locale = 'ca' }: ToolbarProps) => {
     const [burgerMenuOpen, setBurgerMenuOpen] = useState(false);
     const isDesktop = useMediaQuery('(min-width: 1025px)');
     const toolbarClass = useWhite ? 'ToolbarWhite' : 'Toolbar';
@@ -45,6 +47,7 @@ export const Toolbar = ({ useWhite = false, children }: ToolbarProps) => {
                           {children}
                       </div>
                       <div className="ButtonGroup right">
+                          <LanguageSelector currentLocale={locale} useWhite={useWhite} />
                           <div className="AppBtn">
                             <Link target="blank" href="https://clients.idr.cat/"><button>{t('clientArea')}<Arrow_Icon /></button></Link>
                           </div>
@@ -104,6 +107,9 @@ export const Toolbar = ({ useWhite = false, children }: ToolbarProps) => {
                     <Link target="_blank" href="https://clients.idr.cat/">
                       {t('clientArea')}
                     </Link>
+                    <div className="LanguageSelectorMobile">
+                      <LanguageSelector currentLocale={locale} useWhite={false} />
+                    </div>
                   </div>
                 </div>
               )}
