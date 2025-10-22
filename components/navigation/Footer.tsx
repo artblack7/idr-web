@@ -118,7 +118,7 @@ const Footer = ({ locale }: FooterProps) => {
 
             <div className="Legal">
               <div><p>{tf('copyright')}</p></div>
-              <div className="LanguageSelector">
+              <div className="LanguageSelectorFooter">
                 {locales.map((lng) => (
                   <Link
                     key={lng}

@@ -165,20 +165,20 @@
   filter: invert();
 }
 
-.header-scrolled .LanguageButton,
-.header-top-w .LanguageButton {
+.header-scrolled .LanguageSelectorToolbar .LanguageButton,
+.header-top-w .LanguageSelectorToolbar .LanguageButton {
   color: var(--dark);
 }
 
-.header-scrolled .LanguageButton:hover {
+.header-scrolled .LanguageSelectorToolbar .LanguageButton:hover {
   color: var(--tgreen3);
 }
 
-.header-scrolled .LanguageButton:hover svg {
+.header-scrolled .LanguageSelectorToolbar .LanguageButton:hover svg {
   fill: var(--tgreen3);
 }
 
-.header-scrolled .LanguageButton.open {
+.header-scrolled .LanguageSelectorToolbar .LanguageButton.open {
   color: var(--tgreen3);
 }
 
@@ -340,51 +340,84 @@
 
 /*---------------  Language Selector  ---------------*/
 
-.LanguageSelector {
+/* Shared Language Selector Styles */
+.LanguageSelectorFooter,
+.LanguageSelectorToolbar {
   position: relative;
   display: flex;
   align-items: center;
-}
-
-/* Language Selector Footer*/
-
-.LanguageSelector {
-  display: flex;
   gap: 10px;
 }
 
-.LanguageSelector a {
-  padding: 5px 10px;
-  border: 1px solid #ccc;
+/* Shared Language Selector Link Styles */
+.LanguageSelectorFooter a,
+.LanguageSelectorToolbar a {
   border-radius: 4px;
   text-decoration: none;
-  color: var();
   font-size: 12px;
   transition: all 0.3s ease;
 }
 
-.LanguageSelector a:hover {
-  border-color: var(--tgreen2);
-  color: white !important;
+/* Footer Language Selector Links */
+.LanguageSelectorFooter a {
+  border: 1px solid var(--tgreen2);
+  color: var(--grey2);
+  padding: 5px 10px;
 }
 
-.LanguageSelector a.active {
+.Footer .LanguageSelectorFooter a:hover {
+  border-color: var(--tgreen2);
+  background-color: var(--tgreen3);
+  color: var(--grey2);
+}
+
+.LanguageSelectorFooter a.active {
+  background-color: var(--tgreen3);
+  border-color: var(--tgreen2);
+}
+
+/* Toolbar Language Selector Links */
+.LanguageSelectorToolbar a {
+  border: 1px solid #ccc;
+  color: #333;
+  padding: 6px 10px !important;
+}
+
+.LanguageSelectorToolbar a:hover {
+  border-color: var(--tgreen2);
+  color: white;
+}
+
+/* Toolbar Language Selector Hover - Dark when header scrolled or white header */
+.header-scrolled .LanguageSelectorToolbar a:hover,
+.header-top-w .LanguageSelectorToolbar a:hover {
+  color: var(--dark);
+}
+
+.LanguageSelectorToolbar a.active {
   background-color: var(--tgreen3);
   color: white;
   border-color: var(--tgreen2);
 }
 
-.header-scrolled .LanguageArrow svg path,
-.header-top-w .LanguageArrow svg path {
-  fill: var(--dark)
+/* Language Arrow Default - White */
+.LanguageArrow svg path {
+  fill: white;
 }
 
-.LanguageButton {
+/* Language Arrow - Dark when header scrolled or white header */
+.header-scrolled .LanguageArrow svg path,
+.header-top-w .LanguageArrow svg path {
+  fill: var(--dark);
+}
+
+/* Shared Language Button Styles */
+.LanguageSelectorFooter .LanguageButton,
+.LanguageSelectorToolbar .LanguageButton {
   display: flex;
   align-items: center;
   gap: 6px;
   background: transparent;
-  /* border: 1.5px solid var(--white); */
   border-radius: var(--r2);
   padding: 12px 14px;
   cursor: pointer;
@@ -395,12 +428,20 @@
   height: fit-content;
 }
 
-.LanguageDropdown {
+/* Toolbar Language Content Wrapper */
+.LanguageSelectorToolbar .language-content {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Shared Language Dropdown Styles */
+.LanguageSelectorFooter .LanguageDropdown,
+.LanguageSelectorToolbar .LanguageDropdown {
   position: absolute;
   top: 100%;
   right: 0;
   background: white;
-  /* border: 1px solid var(--grey2); */
   border-radius: var(--r2);
   box-shadow: var(--dropdown);
   z-index: 100;
@@ -413,15 +454,17 @@
   pointer-events: none;
 }
 
-.LanguageDropdown.open {
+.LanguageSelectorFooter .LanguageDropdown.open,
+.LanguageSelectorToolbar .LanguageDropdown.open {
   opacity: 1;
   transform: scale(1) translateY(0);
   pointer-events: auto;
 }
 
-.LanguageOption {
+/* Shared Language Option Styles */
+.LanguageSelectorFooter .LanguageOption,
+.LanguageSelectorToolbar .LanguageOption {
   display: block;
-  padding: 10px 16px;
   margin: 2px;
   color: var(--dark);
   text-decoration: none;
@@ -429,10 +472,17 @@
   font-size: 0.9rem;
 }
 
-.LanguageOption:hover {
+.LanguageSelectorFooter .LanguageOption:hover,
+.LanguageSelectorToolbar .LanguageOption:hover {
   background-color: var(--tgreen);
   border-color: var(--tgreen);
 }
+
+/* Toolbar Language Option - Additional padding */
+.LanguageSelectorToolbar .LanguageOption {
+  padding: 10px 16px;
+}
+
 /*---------------  App Button  ---------------*/
 
 .ButtonGroup {
@@ -441,7 +491,7 @@
   gap: 12px;
 }
 
-.ButtonGroup .LanguageSelector {
+.ButtonGroup .LanguageSelectorToolbar {
   display: flex;
   align-items: center;
   margin-top: 0;
@@ -585,7 +635,7 @@
  }
 
  .Footer a:hover {
-  color: var(--tgreen);
+  color: var(--tgreen2);
  }
 
  /* Partners */
@@ -798,6 +848,101 @@
     width: 100%;
   }
 
+
+  /*---------------  Mobile Language Selector  ---------------*/
+
+  /* Mobile Language Selector Container */
+  .LanguageSelectorMobile {
+    position: relative;
+  }
+
+  /* Mobile Language Button - follows MenuLinks pattern */
+  .LanguageSelectorMobile .LanguageButton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(219, 219, 219);
+    padding: 0;
+    margin-top: 0;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--dark);
+    height: 7vh;
+  }
+
+  .LanguageSelectorMobile .LanguageButton:hover {
+    color: var(--tgreen2);
+  }
+
+  .LanguageSelectorMobile .language-content {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  /* Arrow - follows dropdown arrow pattern */
+  .LanguageSelectorMobile .arrow {
+    display: block;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+  }
+
+  .LanguageSelectorMobile .arrow svg {
+    width: 10px;
+    height: 10px;
+    fill: var(--dark);
+  }
+
+  .LanguageSelectorMobile .arrow.rotate-arrow {
+    transform: rotate(90deg);
+  }
+
+  /* Mobile Language Dropdown - follows dropdown-container pattern */
+  .LanguageSelectorMobile .LanguageDropdown {
+    display: flex;
+    flex-direction: column;
+    position: static;
+    width: 100%;
+    margin-top: 0;
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+    padding: 0;
+  }
+
+  /* Mobile Language Option - follows MenuLinks pattern */
+  .LanguageSelectorMobile .LanguageOption {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin-top: 0;
+    border-bottom: 1px solid rgb(219, 219, 219);
+    color: var(--dark);
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+    font-size: 1rem;
+    font-weight: 300;
+    border-radius: 0;
+    height: 7vh;
+  }
+
+  .LanguageSelectorMobile .LanguageOption:hover {
+    background: transparent;
+    color: var(--tgreen2);
+  }
+
+  .LanguageSelectorMobile .LanguageOption.active {
+    background: transparent;
+    color: var(--tgreen3);
+    font-weight: 600;
+  }
+
 }
 
 @media (max-width: 800px) {
@@ -845,6 +990,7 @@
   .Footer li {
     padding: 6px 0;
   }
+
 
    
 }
@@ -962,7 +1108,6 @@
 
   .LanguageSelectorMobile .LanguageOption.active {
     background: transparent;
-    color: var(--tgreen2);
     font-weight: 600;
   }
 
