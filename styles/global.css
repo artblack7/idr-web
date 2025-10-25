@@ -366,7 +366,7 @@
 }
 
 .Footer .LanguageSelectorFooter a:hover {
-  border-color: var(--tgreen2);
+  border-color: var(--tgreen1);
   background-color: var(--tgreen3);
   color: var(--grey2);
 }
@@ -583,6 +583,11 @@
   width: 25%;
 }
 
+.FooterSection.Logo {
+  max-width: 100%;
+  width: 100%;
+}
+
 .ContentWrap {
   display: flex;
   flex-direction: row;
@@ -635,7 +640,7 @@
  }
 
  .Footer a:hover {
-  color: var(--tgreen2);
+  color: var(--tgreen1);
  }
 
  /* Partners */
@@ -659,6 +664,35 @@
   height: 100px;
   padding-right: 5%;
   border-right: 1px solid var(--pblue);
+}
+
+/* LinkedIn Icon Styling */
+.footer-logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 100%;
+  flex: 1;
+}
+
+.footer-linkedin {
+  margin-left: 20px;
+  margin-right: 4vw;
+}
+
+.footer-linkedin svg {
+  width: 32px;
+  height: 32px;
+  transition: fill 0.3s ease;
+}
+
+.footer-linkedin svg path {
+  fill: white;
+}
+
+.footer-linkedin:hover svg path {
+  fill: var(--tgreen1);
 }
 
 /* Info Section */

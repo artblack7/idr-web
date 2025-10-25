@@ -91,6 +91,7 @@
 
   --tgreen0: hsl(170, 34%, 58%); /*maingrad*/
   --tgreen: hsl(170, 30%, 48%); /*maingrad*/
+  --tgreen1: #3fc5ad; /*brighter than tgreen3*/
   --tgreen2: hsl(170, 100%, 27%); /*ecosquare3 - maingrad dark*/
   --tgreen3: #006570; /*ecosquare2*/
   --tgreen4: hsl(186, 100%, 13%); /*ecosquare1 - footer*/

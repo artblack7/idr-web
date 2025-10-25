@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
+import Linkedin_Icon from '../SVG/Linkedin_Icon';
 
 type FooterProps = { locale: string };
 const Footer = ({ locale }: FooterProps) => {
@@ -28,11 +29,16 @@ const Footer = ({ locale }: FooterProps) => {
             <div className='LogoWrap'>
               <div className="FooterSection Logo">
                 <div className="">
-                  <div className="">
+                  <div className="footer-logo-container">
                     <div className="footer-logo">
                        <Link href="/" target="_blank" rel="noopener noreferrer">
                          <Image alt="IDR" src='/logos/logo.png' width={200} height={200} />
                        </Link>
+                    </div>
+                    <div className="footer-linkedin">
+                      <a href="https://www.linkedin.com/company/idr-igualadina-depuracio-recuperacio/" target="_blank" rel="noopener noreferrer">
+                        <Linkedin_Icon />
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -91,6 +97,7 @@ const Footer = ({ locale }: FooterProps) => {
                         <p>{tf('contactOffice')}: +34 93 806 85 95</p>
                         <p>{tf('contactPlant')}: +34 93 803 03 30</p>
                         <p>Email: info@idr.cat</p>
+                        {/* <p>LinkedIn: IDR Linkedin</p> */}
                       </li>
                     </ul>
                   </div>
