@@ -1,82 +1,4 @@
-/* RESPONISVE TOOLBAR */
 
-.ToolbarMenuBackdrop,
-.ToolbarMenuBox {
-  visibility: hidden;
-}
-.ToolbarMenuBackdrop.open,
-.ToolbarMenuBox.open {
-  visibility: visible;
-}
-
-.ToolbarMenuBackdrop {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  height: 100vh;
-  width: 100%;
-  z-index: 10;
-  background: var(--white);
-  opacity: 1;
-}
-
-.ToolbarMenuBox {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  overflow-y: auto !important;
-  -webkit-overflow-scrolling: touch;
-}
-
-.MenuHamburger button {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  overflow: hidden;
-  transition: 0.5s ease-in-out;
-   
-  background: transparent;
-  border: none;
-  border-radius: 20px;
-}
-
-.MenuClose button {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  top: 25px;
-  right: 30px;
-  transform: scale(0.75);
-  border: none;
-   
-  background: transparent;
-}
-
-.header-scrolled .MenuHamburger svg,
-.header-top-w  .MenuHamburger svg,
-.header-scrolled-w .MenuHamburger svg {
-  fill: var(--dark);
-}
-
-.MenuClose svg path,
-.dropdown-link svg path {
-  fill: var(--dark) !important;
-}
-
-.Exit_Icon path {
-  fill: var(--dark);
-}
-
-.MenuClose .AppName {
-  padding-left: 30px;
-  padding-top: 12px;
-}
 
 /*//////////////////// TOOLBAR /////////////////*/
 
@@ -88,8 +10,6 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  /* background: transparent; */
-  /* position: fixed; */
 }
 
 .Toolbar,
@@ -100,7 +20,6 @@
 .header-scrolled-w {
   height: 80px;
   z-index: 10;
-  /* background: transparent; */
 }
 
 .ToolbarWhite {
@@ -129,18 +48,40 @@
 }
 
 .ToolbarInner {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
   width: 1400px;
+  max-width: 100%;
   padding: 0 30px;
   z-index: 10;
+  gap: 20px;
+}
+
+.ToolbarLeft {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.ToolbarCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ToolbarRight {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .ToolbarMenu {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-left: 15vw;
+  justify-content: center;
+  padding: 0;
 }
 
 .AppName {
@@ -149,10 +90,6 @@
   justify-content: center;
 }
 
-/* .AppName svg {
-  width: 130px;
-  height: auto;
-} */
 
 .toolbar-logo img,
 .footer-logo img {
@@ -182,39 +119,46 @@
   color: var(--tgreen3);
 }
 
-
-
-/* .header-top .AppName svg path {
-  fill: #fff;
-}
-
-.header-scrolled .AppName svg path,
-.ToolbarWhite .AppName svg path  {
-  color: var(--dark);
-} */
-
- 
 /*---------------  Menu  Links ---------------*/
 
 
 .MenuLinks {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  gap: 48px;
 }
 
 .MenuLinks a {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding-right: 40px;
-  padding-bottom: 10px;
-  margin-top: 10px;
-  font-weight: 300;
+  display: inline-block;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+  font-size: 15px;
   text-decoration: none;
-  letter-spacing: 0.04rem;
+  letter-spacing: 0.02em;
   background: transparent;
-  border-bottom: 2px solid transparent;
-   
+  border-bottom: none;
+  white-space: nowrap;
+  transition: color 0.3s ease;
+}
+
+.MenuLinks a::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.MenuLinks a:hover::after {
+  transform: scaleX(1);
 }
 
   .header-top .MenuLinks a {
@@ -248,6 +192,44 @@
   .header-top-w .MenuLinks a:active {
     color: var(--dark);
   }
+
+/* LinkedIn Icon in Menu (after Empresa/About) */
+.NavLinkedinMenu {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.NavLinkedinMenu a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+}
+
+.NavLinkedinMenu svg {
+  width: 20px;
+  height: 20px;
+  transition: fill 0.3s ease;
+}
+
+.NavLinkedinMenu svg path {
+  fill: var(--white);
+}
+
+.header-top-w .NavLinkedinMenu svg path,
+.header-scrolled .NavLinkedinMenu svg path {
+  fill: var(--dark);
+}
+
+.NavLinkedinMenu:hover {
+  opacity: 0.8;
+}
+
+.NavLinkedinMenu:hover svg path {
+  fill: var(--tgreen1);
+}
 
 /*---------------  Menu  Dropdown ---------------*/
 
@@ -472,8 +454,7 @@
   font-size: 0.9rem;
 }
 
-.LanguageSelectorFooter .LanguageOption:hover,
-.LanguageSelectorToolbar .LanguageOption:hover {
+.LanguageSelectorFooter .LanguageOption:hover {
   background-color: var(--tgreen);
   border-color: var(--tgreen);
 }
@@ -481,6 +462,15 @@
 /* Toolbar Language Option - Additional padding */
 .LanguageSelectorToolbar .LanguageOption {
   padding: 10px 16px;
+  background-color: rgba(102, 122, 117, 0.15);
+  border: none;
+  border-radius: 4px;
+}
+
+.LanguageSelectorToolbar .LanguageOption:hover {
+  background-color: var(--tgreen);
+  border: none;
+  color: var(--white) !important;
 }
 
 /*---------------  App Button  ---------------*/
@@ -491,6 +481,26 @@
   gap: 12px;
 }
 
+.ButtonGroup .LanguageSelectorToolbar + .NavLinkedin {
+  margin-left: -8px; /* Bring LinkedIn closer to language selector */
+}
+
+.ButtonGroup .NavLinkedin + .AppBtn {
+  margin-left: 20px; /* Add extra space before CTA */
+}
+
+.ButtonGroup.right {
+  justify-content: flex-end;
+}
+
+.ButtonGroup.left {
+  justify-content: flex-start;
+}
+
+.ButtonGroup.center {
+  justify-content: center;
+}
+
 .ButtonGroup .LanguageSelectorToolbar {
   display: flex;
   align-items: center;
@@ -498,52 +508,226 @@
   gap: 0;
 }
 
-.ButtonGroup.left {
-  justify-content: flex-start;
+/* Navbar LinkedIn Icon */
+.NavLinkedin {
+  display: flex;
+  align-items: center;
+  margin-left: 0;
 }
-.ButtonGroup.right {
-  justify-content: flex-end;
-}
-.ButtonGroup.center {
+
+.NavLinkedin a {
+  display: flex;
+  align-items: center;
   justify-content: center;
+  transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.NavLinkedin svg {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.NavLinkedin svg path {
+  fill: var(--white);
+  transition: fill 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-top-w .NavLinkedin svg path {
+  fill: var(--dark);
+}
+
+.header-scrolled .NavLinkedin svg path,
+.header-scrolled-w .NavLinkedin svg path,
+.ToolbarWhite .NavLinkedin svg path {
+  fill: var(--main);
+}
+
+.NavLinkedin:hover {
+  opacity: 1;
+}
+
+.NavLinkedin:hover svg {
+  transform: scale(1.1);
+}
+
+/* Glass effect for normal Toolbar and header-top (no white background) */
+.Toolbar .NavLinkedin:hover,
+.header-top .NavLinkedin:hover {
+  opacity: 1;
+}
+
+.Toolbar .NavLinkedin:hover a,
+.header-top .NavLinkedin:hover a {
+  background: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  border-radius: 50%;
+  padding: 0;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.Toolbar .NavLinkedin:hover a::before,
+.header-top .NavLinkedin:hover a::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.Toolbar .NavLinkedin:hover svg path,
+.header-top .NavLinkedin:hover svg path {
+  fill: var(--white);
+}
+
+/* Semi-transparent color circle hover for scrolled headers and white toolbar */
+.ToolbarWhite .NavLinkedin:hover a,
+.header-scrolled .NavLinkedin:hover a,
+.header-scrolled-w .NavLinkedin:hover a {
+  background: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  border-radius: 50%;
+  padding: 0;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ToolbarWhite .NavLinkedin:hover a::before,
+.header-scrolled .NavLinkedin:hover a::before,
+.header-scrolled-w .NavLinkedin:hover a::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  background: rgba(35, 139, 109, 0.15); /* Semi-transparent turq3 color */
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.ToolbarWhite .NavLinkedin:hover svg path,
+.header-scrolled .NavLinkedin:hover svg path,
+.header-scrolled-w .NavLinkedin:hover svg path {
+  fill: var(--turq3);
+}
+
+.header-top-w .NavLinkedin:hover svg path {
+  fill: var(--dark);
+}
+
+/* Mobile Navbar LinkedIn Icon */
+.NavLinkedinMobile {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.NavLinkedinMobile a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+}
+
+.NavLinkedinMobile svg {
+  width: 24px;
+  height: 24px;
+  transition: fill 0.3s ease;
+}
+
+.NavLinkedinMobile svg path {
+  fill: var(--dark);
+}
+
+.NavLinkedinMobile:hover {
+  opacity: 0.8;
+}
+
+.NavLinkedinMobile:hover svg path {
+  fill: var(--tgreen1);
 }
 
 .header-top .AppBtn button {
   color: var(--white);
-  /* padding: 16px 20px; */
-  /* height: 48px; */
   border-color: white;
   border: 1px solid white;
-}
-.header-top .AppBtn button:hover {
-  background-color: transparent;
-  border-color: var(--turq3);
 }
 
 .header-top .AppBtn svg path {
   fill: var(--white);
 }
 
+/* CTA button base styles for normal Toolbar and header-top - Glass effect */
+.Toolbar .AppBtn button::before,
+.header-top .AppBtn button::before {
+  background: rgba(255, 255, 255, 0.15) !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
 
-/* .Toolbar .LineBtn button {
-  background: var(--dpurple);
+/* Ensure white backgrounds use original color slide effect, not glass */
+.ToolbarWhite .AppBtn button::before,
+.header-scrolled .AppBtn button::before,
+.header-scrolled-w .AppBtn button::before,
+.header-top-w .AppBtn button::before {
+  background: var(--main) !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+/* CTA button hover for normal Toolbar and header-top (no white background) - Glass effect with slide animation */
+.Toolbar .AppBtn button:hover,
+.header-top .AppBtn button:hover {
   color: var(--white);
-  font-weight: 300;
+  background: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  border-color: rgba(255, 255, 255, 0.3);
 }
 
-.ToolbarWhite .LineBtn button,
-.header-scrolled .LineBtn button {
-  color: var(--dark);
-  background-color: var(--white);
-  padding: 16px 20px;
+.Toolbar .AppBtn button:hover::before,
+.header-top .AppBtn button:hover::before {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(2px) !important;
+  -webkit-backdrop-filter: blur(4px);
+  width: 120%;
 }
 
-.ToolbarWhite .LineBtn button:hover,
-.header-scrolled .LineBtn button:hover {
-  background: var(--warmGrad) !important;
-  color: var(--white) !important;
-} */
+.Toolbar .AppBtn button:hover svg path,
+.header-top .AppBtn button:hover svg path {
+  fill: var(--white);
+}
 
+/* Keep original button behavior for white backgrounds */
+.ToolbarWhite .AppBtn button:hover,
+.header-scrolled .AppBtn button:hover,
+.header-scrolled-w .AppBtn button:hover,
+.header-top-w .AppBtn button:hover {
+  background: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+.ToolbarWhite .AppBtn button:hover::before,
+.header-scrolled .AppBtn button:hover::before,
+.header-scrolled-w .AppBtn button:hover::before,
+.header-top-w .AppBtn button:hover::before {
+  background: var(--main);
+  width: 120%;
+}
 
 /*////////////////// FOOTER ////////////////////*/
 
@@ -612,9 +796,6 @@
   width: 100%;
 }
 
-/* .FooterColumn.Wide {
-  min-width: 250px;
-} */
 
 .Footer ul, 
 .Footer li {
@@ -746,24 +927,26 @@
 /*********************************************************/
 
 @media (max-width: 1350px) {
-  
-  .ToolbarMenu {
-    padding-right: 10px;
-    padding-left: 35px;
+  .ToolbarInner {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .MenuLinks {
+    gap: 40px;
   }
 }
 
- @media (max-width: 1280px) {
-  
-  .Toolbar .LineBtn button,
-  .ToolbarWhite .LineBtn button {
-    width: 100% !important;
-    min-width: 10vw !important;
+@media (max-width: 1280px) {
+  .ToolbarInner {
+    grid-template-columns: auto 1fr auto;
+    gap: 15px;
   }
 
-  .MenuLinks a {
-    padding-right: 3vw;
+  .MenuLinks {
+    gap: 36px;
   }
+
 
   .Toolbar .AppBtn button {
     min-width: 0;
@@ -771,20 +954,153 @@
 }
 
 @media (max-width: 1100px) {
-  
-  .Toolbar .LineBtn button,
-  .ToolbarWhite .LineBtn button {
-    width: 100% !important;
-    min-width: 10vw !important;
+  .MenuLinks {
+    gap: 28px;
+  }
+}
+
+@media (max-width: 900px) {
+  .MenuLinks a {
+    font-size: 13px;
   }
 
-  .MenuLinks a {
-    padding-right: 2vw;
-  }
 }
 
 
 @media (max-width: 1024px) {
+
+
+.ToolbarMenuBackdrop,
+.ToolbarMenuBox {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.3s, transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.ToolbarMenuBackdrop.open,
+.ToolbarMenuBox.open {
+  visibility: visible;
+  opacity: 1;
+}
+
+.ToolbarMenuBackdrop {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 100vh;
+  width: 100vw;
+  z-index: 9;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  transform: translateX(0);
+  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.3s;
+}
+
+.ToolbarMenuBackdrop.open {
+  transform: translateX(0);
+}
+
+.ToolbarMenuBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: fixed;
+  height: 100%;
+  width: 50vw;
+  overflow-y: auto !important;
+  -webkit-overflow-scrolling: touch;
+  box-sizing: border-box;
+  right: 0;
+  top: 0;
+  transform: translateX(100%);
+  background: var(--white);
+  z-index: 10;
+  box-shadow: -4px 0 20px rgba(0, 0, 0, 0.15), -2px 0 8px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.3s, transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ToolbarMenuBox.open {
+  transform: translateX(0);
+}
+
+.MenuHamburger button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+   
+  background: transparent;
+  border: none;
+  border-radius: 20px;
+}
+
+.MenuClose {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 18px;
+  box-sizing: border-box;
+}
+
+.MenuClose .AppName {
+  padding-left: 30px;
+  flex-shrink: 0;
+}
+
+.MenuClose .AppName img,
+.MenuClose .toolbar-logo img {
+  filter: invert();
+}
+
+.MenuClose button {
+  position: static;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0.75);
+  border: none;
+  background: transparent;
+  margin-left: auto;
+  flex-shrink: 0;
+  padding-right: 28px;
+}
+
+.header-scrolled .MenuHamburger svg,
+.header-top-w  .MenuHamburger svg,
+.header-scrolled-w .MenuHamburger svg {
+  fill: var(--dark);
+}
+
+.MenuClose svg path,
+.dropdown-link svg path {
+  fill: var(--dark) !important;
+}
+
+.Exit_Icon path {
+  fill: var(--dark);
+}
+
+.ToolbarInner {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .ToolbarLeft,
+  .ToolbarCenter,
+  .ToolbarRight {
+    flex: 0 0 auto;
+  }
+
+  .ToolbarCenter {
+    display: none; /* Hide menu links on mobile, they're in the hamburger menu */
+  }
 
   .ToolbarMenu {
     padding-right: 0;
@@ -804,31 +1120,67 @@
     border: none;
   }
 
+  /* Mobile Menu Links - using old desktop styles */
   .MenuLinks {
     flex-direction: column;
     justify-content: center;
-    font-size: 1rem;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 50px;
-    width: 90%;
+    align-items: stretch;
+    padding: 60px 30px 0 30px;
+    width: 100%;
+    max-width: 100%;
+    gap: 0;
+    box-sizing: border-box;
   }
 
-  .MenuLinks a {
-    color: var(--dark) !important;
-    margin-top: 0;
-    padding-right: 0;
-    padding-bottom: 0;
+  /* Shared base styles for all mobile menu items */
+  .MenuLinks a,
+  .NavLinkedinMenu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    font-weight: 300;
+    font-size: 1.1rem;
+    text-decoration: none;
+    letter-spacing: 0.04rem;
+    background: transparent;
     border-bottom: 1px solid rgb(219, 219, 219);
+    color: var(--dark) !important;
     height: 7vh;
+    min-height: 48px;
+    white-space: nowrap;
   }
 
-  .MenuLinks a:hover {
+  /* Disable desktop hover underline on mobile */
+  .MenuLinks a::after {
+    display: none !important;
+  }
+
+  .MenuLinks a:hover,
+  .NavLinkedinMenu:hover {
     color: var(--tgreen2) !important;
   }
 
+  .NavLinkedinMenu svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .NavLinkedinMenu svg path {
+    fill: var(--dark) !important;
+    transition: fill 0.3s ease;
+  }
+
+  .NavLinkedinMenu:hover svg path {
+    fill: var(--tgreen2) !important;
+  }
+
   .MenuLinks.Extra {
-    padding-top: 0;
+    padding: 0 30px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   .dropdown-item {
@@ -848,26 +1200,6 @@
     width: 100%;
   }
 
-  /* .MenuLinks a:hover {
-    color: var(--dark);
-  }
-
-  .dropdown-link {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-  }
-  
-  .arrow {
-    display: block;
-    transition: transform 0.3s ease;
-  }
-
-  .rotate-arrow {
-    transform: rotate(90deg);
-    transition: transform 0.3s ease;
-  }  */
 
   .FooterNavWrap {
     flex-direction: column;
@@ -888,28 +1220,35 @@
   /* Mobile Language Selector Container */
   .LanguageSelectorMobile {
     position: relative;
+    width: 100%;
+    box-sizing: border-box;
   }
 
-  /* Mobile Language Button - follows MenuLinks pattern */
+  /* Mobile Language Button - matches menu links */
   .LanguageSelectorMobile .LanguageButton {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-weight: 300;
+    font-size: 1.1rem;
+    text-decoration: none;
+    letter-spacing: 0.04rem;
     background: transparent;
     border: none;
-    border-bottom: 1px solid rgb(219, 219, 219);
-    padding: 0;
-    margin-top: 0;
+    border-bottom: 1px solid rgb(240, 240, 240);
     cursor: pointer;
-    font-size: 1rem;
-    font-weight: 300;
-    color: var(--dark);
+    color: var(--dark) !important;
     height: 7vh;
+    min-height: 48px;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .LanguageSelectorMobile .LanguageButton:hover {
-    color: var(--tgreen2);
+    color: var(--tgreen2) !important;
   }
 
   .LanguageSelectorMobile .language-content {
@@ -918,11 +1257,16 @@
     gap: 6px;
   }
 
-  /* Arrow - follows dropdown arrow pattern */
+  /* Arrow - positioned on the right */
   .LanguageSelectorMobile .arrow {
-    display: block;
-    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0;
+    margin-left: auto;
+    flex-shrink: 0;
     transition: transform 0.3s ease;
+    padding-left: 10px;
   }
 
   .LanguageSelectorMobile .arrow svg {
@@ -949,37 +1293,42 @@
     padding: 0;
   }
 
-  /* Mobile Language Option - follows MenuLinks pattern */
+  /* Mobile Language Option - matches menu links */
   .LanguageSelectorMobile .LanguageOption {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    width: 100%;
     padding: 0;
-    margin-top: 0;
-    border-bottom: 1px solid rgb(219, 219, 219);
-    color: var(--dark);
-    text-decoration: none;
-    transition: color 0.2s ease-in-out;
-    font-size: 1rem;
+    margin: 0;
     font-weight: 300;
-    border-radius: 0;
+    font-size: 1.1rem;
+    text-decoration: none;
+    letter-spacing: 0.04rem;
+    background: transparent;
+    border-bottom: 1px solid rgb(219, 219, 219);
+    color: var(--dark) !important;
     height: 7vh;
+    min-height: 48px;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .LanguageSelectorMobile .LanguageOption:hover {
-    background: transparent;
-    color: var(--tgreen2);
+    color: var(--tgreen2) !important;
   }
 
   .LanguageSelectorMobile .LanguageOption.active {
-    background: transparent;
-    color: var(--tgreen3);
+    color: var(--tgreen3) !important;
     font-weight: 600;
   }
 
 }
 
 @media (max-width: 800px) {
+
+  .ToolbarMenuBox  {
+    width: 60vw;
+  }
 
   .ContentWrap {
     flex-direction: row-reverse;
@@ -1003,13 +1352,9 @@
 @media (max-width: 600px) {
 
 
-  /* .CompanyWrap {
-    width: 100%;
-    padding-right: 0;
-    padding-bottom: 20px;
-    border-bottom: 1px solid var(--pblue);
-    border-right: none;
-  } */
+  .ToolbarMenuBox  {
+    width: 70vw;
+  }
 
   .ContentWrap {
     flex-direction: column;
@@ -1036,6 +1381,11 @@
     padding: 0 20px;
   }
 
+  .ToolbarMenuBackdrop,
+  .ToolbarMenuBox  {
+    width: 100vw;
+  }
+
     .Toolbar,
   .ToolbarWhite,
   .header-top,
@@ -1046,9 +1396,16 @@
     z-index: 10;
   }
 
+  .MenuClose {
+    padding-top: 8px;
+  }
+
   .MenuClose .AppName {
     padding-left: 20px;
-    padding-top: 10.5px;
+  }
+
+  .MenuClose button {
+    padding-right: 20px;
   }
 
   .AppName svg {
@@ -1057,92 +1414,28 @@
   }
 
   .MenuClose button {
-    right: 20px;
-    top: 15px;
+    position: static;
+    margin-left: auto;
   }
 
   .MenuLinks {
     gap: 10px;
-    padding-left: 20px;
-    padding-top: 30px;
+    padding: 30px 20px 0 20px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   .MenuLinks.Extra {
-    padding-top: 8px;
+    padding: 8px 20px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   .LanguageSelectorMobile {
-    margin-bottom: 20px;
-    margin-left: 20px;
     width: 100%;
-  }
-
-  .LanguageSelectorMobile .language-link {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    cursor: pointer;
-    padding: 15px 0;
-    border-bottom: 1px solid rgb(219, 219, 219);
-    color: var(--dark);
-  }
-
-  .LanguageSelectorMobile .LanguageButton {
-    background: transparent;
-    border: none;
-    color: var(--dark);
-    font-size: 1rem;
-    font-weight: 300;
-    padding: 0;
-    width: auto;
-    cursor: pointer;
-  }
-
-  .LanguageSelectorMobile .LanguageButton:hover {
-    color: var(--tgreen2);
-  }
-
-  .LanguageSelectorMobile .arrow {
-    display: flex;
-    align-items: center;
-    transition: transform 0.3s ease;
-  }
-
-  .LanguageSelectorMobile .arrow svg {
-    width: 10px;
-    height: 10px;
-    fill: var(--dark);
-  }
-
-  .LanguageSelectorMobile .arrow.rotate-arrow {
-    transform: rotate(90deg);
-  }
-
-  .LanguageSelectorMobile .LanguageDropdown {
-    position: relative;
-    box-shadow: none;
-    border: none;
-    background: transparent;
-    opacity: 1;
-    transform: none;
-    pointer-events: auto;
-  }
-
-  .LanguageSelectorMobile .LanguageOption {
-    padding: 15px 0;
-    border-bottom: 1px solid rgb(219, 219, 219);
-    color: var(--dark);
-  }
-
-  .LanguageSelectorMobile .LanguageOption:hover {
-    background: transparent;
-    color: var(--tgreen2);
-  }
-
-  .LanguageSelectorMobile .LanguageOption.active {
-    background: transparent;
-    font-weight: 600;
+    box-sizing: border-box;
   }
 
   .FooterNavWrap {
@@ -1159,10 +1452,40 @@
 
 @media (max-width: 360px) {
 
-  .MenuLinks {
+  /* .ToolbarInner {
+    padding: 0 15px;
+  }
+
+  .MenuClose {
+    padding-top: 12px;
+  }
+
+  .MenuClose .AppName {
     padding-left: 15px;
   }
 
+  .MenuClose button {
+    padding-right: 15px;
+  }
+
+  .MenuLinks {
+    padding: 0 15px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .MenuLinks.Extra {
+    padding: 0 15px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .LanguageSelectorMobile {
+    width: 100%;
+    box-sizing: border-box;
+  }
 
   .dropdown-item .icon {
     padding-right: 10px;
@@ -1173,7 +1496,7 @@
     border-radius: 8px;
     margin-bottom: 6px;
     padding: 8px 0px 12px 0px;
-  }
+  } */
 
 }
 

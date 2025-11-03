@@ -49,13 +49,6 @@ const HeroVideo: React.FC = () => {
         allow="autoplay; fullscreen; encrypted-media; web-share"
         className="HeroVideo"
         title="IDR"
-        style={{
-          width: '100%',
-          height: '100%',
-          display: 'block',
-          position: 'relative',
-          zIndex: 1,
-        }}
       />
     </div>
   );

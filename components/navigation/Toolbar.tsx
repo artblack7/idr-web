@@ -8,6 +8,7 @@ import Menu_Icon from "../SVG/Menu_Icon";
 import Arrow_Icon from "../SVG/Arrow_Icon";
 import { useTranslations } from 'next-intl';
 import { LanguageSelector } from './LanguageSelector';
+import Linkedin_Icon from '../SVG/Linkedin_Icon';
 
 interface ToolbarProps {
   useWhite?: boolean;
@@ -33,27 +34,35 @@ export const Toolbar = ({ useWhite = false, children, locale = 'ca' }: ToolbarPr
         return (
             <div className={toolbarClass}>
                 <div className="ToolbarInner">
-                    <div className="AppName">
-                        <Link href="/">
-                              <div className="toolbar-logo">
-                                <Link href="/" target="_blank" rel="noopener noreferrer">
-                                <Image alt="IDR Logo" src='/logos/logo.png' width={866} height={414} loading="eager"/>
-                                </Link>
-                              </div>
-                        </Link>
+                    <div className="ToolbarLeft">
+                      <div className="AppName">
+                          <Link href="/">
+                                <div className="toolbar-logo">
+                                  <Link href="/" target="_blank" rel="noopener noreferrer">
+                                  <Image alt="IDR Logo" src='/logos/logo.png' width={866} height={414} loading="eager"/>
+                                  </Link>
+                                </div>
+                          </Link>
+                      </div>
                     </div>
-                    <div className='row'>
+                    <div className="ToolbarCenter">
                       <div className="ToolbarMenu">
                           {children}
                       </div>
+                    </div>
+                    <div className="ToolbarRight">
                       <div className="ButtonGroup right">
                           <LanguageSelector currentLocale={locale} useWhite={useWhite} />
+                          <div className="NavLinkedin">
+                            <a href="https://www.linkedin.com/company/idr-igualadina-depuracio-recuperacio/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                              <Linkedin_Icon />
+                            </a>
+                          </div>
                           <div className="AppBtn">
                             <Link target="blank" href="https://clients.idr.cat/"><button>{t('clientArea')}<Arrow_Icon /></button></Link>
                           </div>
                       </div>
                     </div>
-
                 </div>
             </div>
         );
@@ -90,7 +99,7 @@ export const Toolbar = ({ useWhite = false, children, locale = 'ca' }: ToolbarPr
                         <div className="toolbar-logo">
                           <Image
                             alt="IDR Logo"
-                            src="/logos/logo-black.png"
+                            src="/logos/logo.png"
                             width={866}
                             height={414}
                             loading="eager"

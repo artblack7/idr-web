@@ -52,6 +52,7 @@
   --dark: var(--dark2);
   --trans: rgba(0, 0, 0, 0.5);
   --transparent: rgba(0, 0, 0, 0);
+  --main: hsl(194, 100%, 18%);;
 
   --dark1: #1c1c1c; 
   --dark2: #282828;
@@ -579,7 +580,7 @@ button {
     position: relative;
     background: var(--transparent);
     /* box-shadow: var(--sh-l); */
-    border: 1.5px solid var(--turq3);
+    border: 1.5px solid var(--main);
     padding: 12px 20px;
     min-width: 150px;
     width: max-content;
@@ -590,14 +591,14 @@ button {
     z-index: 1;
     font-weight: 400;
     letter-spacing: 0.02rem;
-    color: var(--tgreen3);
+    color: var(--main);
     cursor: pointer;
   }
     .AppBtn button:hover {
       /* color: var(--tgreen2); */
       /* border-color: var(--tgreen2); */
       /* background-color: var(--tgreen3); */
-      border: 1.5px solid var(--turq3);
+      border: 1.5px solid var(--main);
       color: white;
       /* box-shadow: inset 12rem 0 0 var(--tgreen3);
       transition: background-color 0.2s ease-in-out, box-shadow 0.3s ease-in-out;  */
@@ -610,7 +611,7 @@ button {
       width: 0;
       bottom: 0;
       /* background: var(--mainGrad); */
-      background: var(--turq3);
+      background: var(--main);
       height: 120%;
       left: -10%;
       transform: skewX(20deg);

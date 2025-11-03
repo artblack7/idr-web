@@ -14,6 +14,7 @@ import { BlogArchiveConfig, Config } from '../../utils/Config';
 import { getAllPosts, getCategoryCollection, PostItems } from '../../utils/Content';
 import { useTranslations } from 'next-intl';
 import HeroVideo from '../../components/HeroVideo';
+import ScrollIndicator from '../../components/ScrollIndicator';
 
 
 type IIndexProps = {
@@ -80,6 +81,7 @@ export default function Home(props: IIndexProps) {
             <h6 className=''>{t('subtitle')}</h6>
           </div>
         </div>
+        <ScrollIndicator />
 
       </div>
 

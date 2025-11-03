@@ -233,42 +233,45 @@ section .LineBtn {
 
 .HeroVideo {
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 50%;
-  height: 100%;
-  width: auto;
+  height: calc(100vw * 9 / 16) !important; /* 16:9 aspect ratio - height scales with viewport width */
+  width: 100% !important;
   min-width: 100%;
   min-height: 100%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   z-index: -1;
   direction: ltr;
   overflow: hidden;
   pointer-events: none;
 }
 
+@media (max-width: 1500px) {
+  .HeroVideo {
+    top: 0;
+    height: 100% !important;
+    width: calc(100vh * 16 / 9) !important; /* 16:9 aspect ratio - width scales with viewport height */
+    transform: translateX(-50%);
+  }
+
+  /* .HeroSectionWrap {
+    height: 100vh !important;
+    margin-top: -80px !important;
+  }
+
+  .HeroSection {
+    height: 100vh !important;
+  } */
+}
+
 .hero-video-container {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   overflow: hidden;
   z-index: -1;
-  transform: translate(-50%, -50%);
-
-  width: 100%;
-  height: 177.78%;
-}
-
-@media (max-width: 1510px) {
-  .hero-video-container {
-    width: 180vh;
-    height: 100vh;
-    /* min-width: 100%; */
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
 }
 
 .ImgPoster {
@@ -402,6 +405,74 @@ section .LineBtn {
 
 #main-hero .HeroSection  {
   justify-content: center;
+}
+
+/* Scroll Indicator */
+.ScrollIndicator {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  display: block;
+  cursor: pointer;
+  opacity: 0;
+  visibility: visible;
+  pointer-events: none;
+  transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (min-width: 1501px) {
+  .ScrollIndicator {
+    display: none;
+  }
+}
+
+.ScrollIndicator.hidden {
+  display: none;
+}
+
+.ScrollIndicatorCircle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: background 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: scrollBounce 2s ease-in-out infinite;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.ScrollIndicatorCircle svg {
+  color: var(--white);
+  width: 32px;
+  height: 32px;
+}
+
+.ScrollIndicator.fade-in {
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ScrollIndicator.fade-out {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes scrollBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
 }
 
 #innovation-hero .HeroContent,
