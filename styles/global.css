@@ -670,48 +670,16 @@
   fill: var(--white);
 }
 
-/* CTA button base styles for normal Toolbar and header-top - Glass effect */
-.Toolbar .AppBtn button::before,
-.header-top .AppBtn button::before {
-  background: rgba(255, 255, 255, 0.15) !important;
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
-}
-
-/* Ensure white backgrounds use original color slide effect, not glass */
+/* CTA button default styles (white backgrounds) */
 .ToolbarWhite .AppBtn button::before,
 .header-scrolled .AppBtn button::before,
 .header-scrolled-w .AppBtn button::before,
 .header-top-w .AppBtn button::before {
-  background: var(--main) !important;
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
-}
-
-/* CTA button hover for normal Toolbar and header-top (no white background) - Glass effect with slide animation */
-.Toolbar .AppBtn button:hover,
-.header-top .AppBtn button:hover {
-  color: var(--white);
-  background: transparent;
+  background: var(--main);
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
-  border-color: rgba(255, 255, 255, 0.3);
 }
 
-.Toolbar .AppBtn button:hover::before,
-.header-top .AppBtn button:hover::before {
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(2px) !important;
-  -webkit-backdrop-filter: blur(4px);
-  width: 120%;
-}
-
-.Toolbar .AppBtn button:hover svg path,
-.header-top .AppBtn button:hover svg path {
-  fill: var(--white);
-}
-
-/* Keep original button behavior for white backgrounds */
 .ToolbarWhite .AppBtn button:hover,
 .header-scrolled .AppBtn button:hover,
 .header-scrolled-w .AppBtn button:hover,
@@ -727,6 +695,64 @@
 .header-top-w .AppBtn button:hover::before {
   background: var(--main);
   width: 120%;
+}
+
+/* CTA button glass effect for Toolbar and header-top (overrides defaults) */
+/* .Toolbar .AppBtn button,
+.header-top .AppBtn button {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+} */
+
+.Toolbar .AppBtn button::before,
+.header-top .AppBtn button::before {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+/* Ensure header-scrolled uses normal button (not glass effect) */
+.header-scrolled .Toolbar .AppBtn button::before,
+.header-scrolled-w .Toolbar .AppBtn button::before {
+  background: var(--main);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+.Toolbar .AppBtn button:hover,
+.header-top .AppBtn button:hover {
+  color: var(--white);
+  background: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.header-scrolled .Toolbar .AppBtn button:hover,
+.header-scrolled-w .Toolbar .AppBtn button:hover {
+  background: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+.header-scrolled .Toolbar .AppBtn button:hover::before,
+.header-scrolled-w .Toolbar .AppBtn button:hover::before {
+  background: var(--main);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  width: 120%;
+}
+
+.Toolbar .AppBtn button:hover::before,
+.header-top .AppBtn button:hover::before {
+  /* background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: brightness(1.1) blur(2px); */
+  /* -webkit-backdrop-filter: brightness(1.1) blur(4px); */
+  width: 120%;
+}
+
+.Toolbar .AppBtn button:hover svg path,
+.header-top .AppBtn button:hover svg path {
+  fill: var(--white);
 }
 
 /*////////////////// FOOTER ////////////////////*/

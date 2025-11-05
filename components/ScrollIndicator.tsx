@@ -6,7 +6,7 @@ const ScrollIndicator: React.FC = () => {
 
   useEffect(() => {
     const checkScreenSize = () => {
-      const isSmallScreen = window.innerWidth <= 1500;
+      const isSmallScreen = window.innerWidth <= 1024;
       setIsVisible(isSmallScreen);
     };
 
