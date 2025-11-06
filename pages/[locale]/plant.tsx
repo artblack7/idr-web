@@ -204,9 +204,9 @@ export default function Tech(props: IIndexProps) {
           <img
             alt="IDR"
             src={
-              router.locale === 'es'
+              props.locale === 'es'
                 ? '/svg/es-planta.svg'
-                : router.locale === 'en'
+                : props.locale === 'en'
                 ? '/svg/en-planta.svg'
                 : '/svg/cat-planta.svg'
             }
@@ -233,9 +233,9 @@ export default function Tech(props: IIndexProps) {
               >
                 <iframe
                   src={
-                    router.locale === 'es'
+                    props.locale === 'es'
                       ? 'https://player.vimeo.com/video/1097863337'
-                      : router.locale === 'en'
+                      : props.locale === 'en'
                       ? 'https://player.vimeo.com/video/1097863149'
                       : 'https://player.vimeo.com/video/1097863538'
                   }
@@ -251,6 +251,7 @@ export default function Tech(props: IIndexProps) {
                   }}
                   title="Igualadina de Depuració i Recuperació IDR"
                 ></iframe>
+                
             </div>
 
           
