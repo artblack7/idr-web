@@ -1,7 +1,7 @@
 ---
 title: "New Biological Reactor"
 metaTitle: "New Biological Reactor"
-description: "Optimization of the plant's biological treatment, increasing hydraulic capacity and treatment efficiency."
+description: "Improved biological treatment by increasing efficiency."
 date: "2025-01-05"
 modified_date: "2025-01-05"
 # image: /thumb/thumb-reactor.jpg
@@ -11,13 +11,13 @@ tags:
   - Optimization
 ---
 
-## New Biological Reactor
+## NEW BIOLOGICAL REACTOR (2018)
 
 <!-- <img className="PostImg" src="https://www.idr.cat/posts/resalt1.jpg"> -->
 
 <!-- #### Summary -->
 
-<strong>Optimization of the plant's biological treatment, increasing hydraulic capacity and treatment efficiency.</strong>
+<strong>Improved biological treatment by increasing efficiency.</strong>
 
 ![My Image](/posts/reactor.jpg)
 

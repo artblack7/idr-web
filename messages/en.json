@@ -69,53 +69,53 @@
     },
     "sections": {
       "tech": {
-        "title": "Innovative purification for a sustainable future",
-        "highlight1": "The IDR plant, a pioneer in Europe in biological purification, uses cutting-edge technology to ensure efficiency and quality in water treatment.",
-        "text1": "This facility reflects the collective commitment to a cleaner, more sustainable industry prepared for the environmental challenges of the present and future.",
-        "highlight2": "Managed by a team of professionals specialized in industrial wastewater treatment, it ensures rigorous quality control in all phases of the process, complying with all current environmental standards.",
-        "text2": "The plant also offers non-hazardous liquid waste management services for other industries, helping to reduce the environmental impact of Catalan industry.",
+        "title": "Innovative Water Treatment for a Sustainable Future",
+        "highlight1": "Our IDR plant, a European pioneer in biological wastewater treatment, is equipped with state-of-the-art technology to ensure maximum efficiency and quality in processing wastewater from the leather industry in Igualada.",
+        "text1": "Operated by a team of highly specialized professionals in industrial water treatment, the facility upholds strict quality control throughout every stage of the process and fully complies with current environmental regulations.",
+        "highlight2": "In addition to serving the leather sector, the plant also manages non-hazardous liquid waste for other industries, contributing to the reduction of environmental impact across Catalonia's industrial landscape.",
+        "text2": "This facility is a testament to our shared commitment to a cleaner, more sustainable future, prepared to meet the environmental challenges of today and tomorrow.",
         "button": "See the plant"
       },
       "about": {
         "tagline": "WHO WE ARE",
-        "title": "United for a sustainable leather industry",
-        "text1": "Igualadina de Depuració i Recuperació (IDR) is a corporate initiative of the Leather Cluster Barcelona (LCB) association with the participation of tanners from the Rec neighborhood of Igualada, created with the objective of treating wastewater from the leather sector and ensuring a cleaner and more environmentally respectful water cycle.",
-        "text2": "Thanks to this alliance, IDR has become a unique platform in Catalonia, with a clear mission: To promote a more sustainable leather industry."
+        "title": "United for a Sustainable Leather Industry",
+        "text1": "Igualadina de Depuració i Recuperació (IDR) is a corporate initiative led by Leather Cluster Barcelona (LCB), in collaboration with tanners from the Rec district of Igualada. It was founded with a clear mission: to treat wastewater from the leather sector and ensure a cleaner, more environmentally respectful water cycle.",
+        "text2": "Thanks to this alliance, IDR has become a unique platform in Catalonia, driven by a shared commitment: to promote a more sustainable leather industry."
       },
       "partners": {
         "title": "Partners",
-        "subtitle": "Our founding partners include prominent companies from the leather sector, as well as the Igualada City Council and representatives from the textile and chemical industries, all committed to environmental sustainability.",
+        "subtitle": "Our founding partners include leading companies from the leather industry, along with the City Council of Igualada and representatives from the textile and chemical sectors—all united by a strong commitment to environmental sustainability.",
         "illustrious": "HONORARY PARTNER"
       },
       "services": {
         "tagline": "SERVICES",
-        "title": "Liquid waste management for a cleaner industry",
-        "text1": "IDR is the only authorized treatment plant in Catalonia to treat non-hazardous industrial liquid waste.",
-        "text2": "We add value to Catalan industry by offering a specialized water purification service for external companies, with advanced technology and sustainable processes.",
+        "title": "Liquid Waste Management for a Cleaner Industry",
+        "text1": "IDR is the only authorized treatment plant in Catalonia specializing in the processing of non-hazardous industrial liquid waste.",
+        "text2": "We add value to Catalonia's industrial sector by offering specialized water purification services for external companies, using advanced technology and sustainable processes.",
         "button": "More Information"
       },
       "mission": {
-        "title": "Our mission",
-        "subtitle": "At IDR, we strive to offer sustainable purification solutions, constantly innovating to explore circular economy models and advance towards an increasingly efficient and environmentally responsible industry.",
+        "title": "Our Mission",
+        "subtitle": "At IDR, we are dedicated to providing sustainable purification solutions, constantly innovating to embrace circular economy models and moving toward a more efficient and environmentally responsible industry.",
         "cards": {
           "water": {
-            "title": "Water quality",
-            "text": "We apply advanced treatment processes to ensure maximum quality purified water, protecting the environment through efficient water management throughout the purification process."
+            "title": "Water Quality",
+            "text": "We apply advanced treatment processes to ensure the highest quality of purified water, protecting the environment through efficient water management at every stage of purification."
           },
           "sustainability": {
-            "title": "Environmental sustainability",
-            "text": "We are committed to reducing the ecological impact of the leather sector, purifying wastewater from the leather transformation process through biological treatments to minimize its environmental effect."
+            "title": "Environmental Sustainability",
+            "text": "We are committed to reducing the ecological impact of the leather sector by treating wastewater from the leather transformation process using biological methods, minimizing its environmental footprint."
           },
           "circular": {
             "title": "Circular Economy",
-            "text": "We promote research into alternatives to reintegrate purified water into the production process, thus contributing to a more circular system and optimizing the use of water resources."
+            "text": "We promote the development of alternatives to reintegrate purified water into the production process, contributing to a more circular system and optimizing the use of water resources."
           }
         }
       },
       "innovation": {
         "tagline": "PROJECTS",
-        "title": "Innovative solutions for new environmental challenges",
-        "text": "We promote R&D projects to optimize existing processes and implement innovative technologies that allow increasingly complete and sustainable purification, advancing towards a circular economy and zero impact model.",
+        "title": "Innovative Solutions for Emerging Environmental Challenges",
+        "text": "We lead R&D projects aimed at optimizing existing processes and implementing cutting-edge technologies that enable increasingly comprehensive and sustainable purification—moving toward a circular economy and zero-impact model.",
         "button": "See Projects"
       },
       "posts": {
@@ -127,28 +127,28 @@
   "plant": {
     "hero": {
       "tagline": "THE PLANT",
-      "title": "Pioneers in biological purification for water treatment"
+      "title": "Pioneers in Biological Wastewater Treatment"
     },
     "sections": {
       "plant": {
-        "tagline": "The plant",
-        "title": "Advanced technology at the service of water",
-        "highlight": "Our plant, a pioneer in Europe in biological purification, performs the treatment of wastewater from the leather sector in Igualada.",
-        "text1": "Equipped with cutting-edge technology and managed by Tradebe, an international company leader in industrial waste treatment, it ensures an efficient process that meets the most demanding environmental standards.",
-        "text2": "With constant and rigorous supervision, we analyze wastewater daily, which allows us to know with precision its composition and apply immediate improvements to reduce environmental impact in real time."
+        "tagline": "THE PLANT",
+        "title": "Advanced Technology in Service of Water",
+        "highlight": "Our plant, a European pioneer in biological wastewater treatment, processes wastewater from the leather sector in Igualada. Equipped with state-of-the-art technology and managed by Tradebe—an international leader in industrial waste treatment—it ensures an efficient process that meets the most demanding environmental standards.",
+        "text1": "With constant and rigorous monitoring, we analyze wastewater daily, allowing us to accurately understand its composition and make real-time improvements to reduce environmental impact.",
+        "text2": ""
       },
       "process": {
-        "tagline": "Our process",
-        "title": "Biological purification: Water, air and life in harmony",
-        "highlight": "Our purification process mimics the cycles of nature, using water, air and microbial life.",
-        "text1": "Wastewater is treated with oxygen to favor the growth of specific bacteria, which decompose organic matter and transform contaminants through the natural nitrogen cycle. In final phases, bacteria, without needing oxygen, convert nitrates into nitrogen gas, returning clean water to the environment with minimal impact.",
-        "text2": "This system is a highly sustainable solution that reproduces the functioning of nature at each stage."
+        "tagline": "THE BIOLOGICAL PROCESS",
+        "title": "Biological Purification: Water, Air, and Life in Harmony",
+        "highlight": "Our purification process mimics nature's own cycles, using water, air, and microbial life.",
+        "text1": "The wastewater is treated with oxygen to support the growth of specific bacteria that break down organic matter and transform pollutants through the natural nitrogen cycle. In the final stages, oxygen-free (anoxic) bacteria convert nitrates into nitrogen gas, returning clean water to the environment with minimal impact.",
+        "text2": "This system offers a highly sustainable solution that reproduces nature's logic at every step."
       },
       "facilities": {
-        "tagline": "The facilities",
-        "title": "A tour of the facilities and the purification process",
-        "text1": "Every day, specialized technicians from the treatment plant collect water samples proportional to the flow discharged by the 26 associated companies for analysis. The results obtained allow us to know with exactitude the composition of the wastewater from each company, and these, in turn, take the appropriate measures to minimize environmental impact.",
-        "text2": "Once at the treatment plant, the water goes through physical, chemical and biological processes to eliminate solids, suspended matter, dissolved substances such as organic matter and nitrogen, as well as color. Finally, the treated water is returned clean to the environment, complying with established environmental requirements."
+        "tagline": "THE FACILITIES",
+        "title": "A tour of the facilities and the treatment process",
+        "text1": "Every day, specialized technicians from the treatment plant collect water samples from the 26 associated companies for analysis. The results obtained allow for precise understanding of the composition of each company's wastewater, enabling them to take the appropriate measures to minimize environmental impact.",
+        "text2": "Once at the treatment plant, the water undergoes physical, chemical, and biological processes to remove solids, suspended matter, and dissolved substances such as organic material and nitrogen, as well as color. Finally, the treated water is returned clean to the environment, meeting all established environmental standards."
       },
       "video": {
         "tagline": "AUDIOVISUAL TOUR",
@@ -160,55 +160,55 @@
     },
     "numbers": {
       "investment": {
-        "amount": "12M €",
+        "amount": "€12M",
         "label": "Initial investment"
       },
       "operation": {
-        "amount": "4.5M €",
+        "amount": "€4.5M",
         "label": "Annual operating cost"
       },
       "water": {
-        "amount": "4000m³",
-        "label": "Water purified daily"
+        "amount": "4,000 m³",
+        "label": "Water treated daily"
       }
     },
     "techSlideshow": {
       "slides": {
         "analysis": {
-          "tagline": "WATER ANALYSIS",
-          "title": "Analysis of tannery waters",
-          "text1": "Every day, specialized technicians from the treatment plant collect water samples from the 26 associated tanning companies for analysis.",
-          "text2": "The water samples are processed in a specialized laboratory located at the A3 Innovation Center of the University of Lleida, on the Igualada Campus.",
-          "text3": "The results obtained allow us to determine with precision the composition of the wastewater from each company. This makes it possible to adjust the treatment plant processes to changes in the composition of tannery waters and notify in real time any anomaly that requires correction."
+          "tagline": "WASTEWATER ANALYSIS",
+          "title": "Water samples from the tanneries",
+          "text1": "Each day, specialized technicians from the treatment plant collect water samples proportional to the volume discharged by the 26 companies. These samples are analyzed in a specialized laboratory located at the A3 Innovation Center of the University of Lleida, on the Igualada Campus.",
+          "text2": "These analyses allow for precise knowledge of the composition of each company's wastewater and help detect any variation or anomaly. Thanks to this data, companies can adjust their processes to reduce environmental impact, while the treatment plant continuously adapts its treatment system to ensure optimal performance.",
+          "text3": "This constant adaptation between the companies and the treatment plant improves process efficiency, reduces pollution, and ensures sustainable water management."
         },
         "pretreatment": {
-          "tagline": "PRETREATMENT",
-          "title": "Screening or sieving",
-          "text1": "Water arrives at the treatment plant inlet wells through collectors: one for the industrial collector and one for the municipal collector. These water lines remain separated until they reach the first biological reactor. In these wells, coarse solids are removed using a bivalve bucket and filtering screens.",
-          "text2": "After extraction of coarse solids, the pumping well pumps water to the next phase, where fine solids are removed using two scale sieves. Finally, in the degreaser and desander, fats are removed by flotation and sands by sedimentation.",
-          "text3": "Each type of waste removed in this phase is deposited in separate buckets for later management."
+          "tagline": "PRE-TREATMENT",
+          "title": "Coarse screening",
+          "text1": "Water enters the treatment plant's intake wells via collectors: one for industrial water and one for municipal water. These two water lines remain separate until they reach the first biological reactor. In these intake wells, coarse solids are removed using a clamshell bucket and filtration screens.",
+          "text2": "After the coarse solids are removed, the pumping well moves the water to the next phase, where medium-sized solids are extracted using two step screens. Finally, in the grease and sand traps, fats are removed by flotation, and sand is settled out by decantation.",
+          "text3": "Each type of waste removed at this stage is collected in separate containers for proper management."
         },
         "chemical": {
           "tagline": "CHEMICAL TREATMENT",
-          "title": "pH correction and desulfurization",
-          "text1": "Water from the industrial line passes through the pH corrector to adapt it to the subsequent phases of the process. One part of the industrial water goes directly to the first biological reactor. While the other is treated in desulfurization tanks, where sulfides are transformed into sulfates by adding liquid oxygen. Once desulfurized, the water is directed to the first biological reactor.",
-          "text2": "In addition to water treatment, the plant has deodorization systems, such as chemical scrubbers. The air aspirated from pumping wells, desulfurization ponds and selective storage tanks is treated chemically to ensure it does not release harmful contaminants to the atmosphere."
+          "title": "pH Adjustment and Desulfurization",
+          "text1": "Water from the industrial line passes through a pH correction system to adjust it for the following stages of treatment. Part of the industrial water is directed straight to the first biological reactor, while the rest is treated in desulfurization tanks, where sulfides are transformed into sulfates through the addition of liquid oxygen. Once desulfurized, the water flows into the first biological reactor.",
+          "text2": "In addition to water treatment, the plant also includes deodorization systems such as chemical scrubbers. Air extracted from the pumping wells, desulfurization basins, and selective storage tanks is chemically treated to ensure no harmful pollutants are released into the atmosphere."
         },
         "biological1": {
           "tagline": "BIOLOGICAL TREATMENT",
-          "title": "Biological reactor I",
-          "text1": "Industrial and municipal water arrives at biological reactor I once it has been physically and chemically pretreated. This tank is aerated through diffusers and the bacteria and protozoa necessary for the degradation of organic matter develop.",
-          "text2": "Water from the biological reactor passes through two secondary settlers, where sludge sediments by gravity. The clarified water passes to a feed tank for biological reactor II and the sludge is collected in a sump to be sent to sludge treatment or recirculated to maintain an adequate sludge volume in the reactor."
+          "title": "Biological Reactor I",
+          "text1": "Once physically and chemically pre-treated, both industrial and municipal water enters Biological Reactor I. This tank is aerated using diffusers, and it fosters the growth of bacteria and protozoa essential for the degradation of organic matter.",
+          "text2": "From here, the water flows through two secondary clarifiers where the sludge settles by gravity. The clarified water is transferred to a feed tank for Biological Reactor II, while the settled sludge is either sent for sludge treatment or recirculated to maintain the appropriate biomass volume in the reactor."
         },
         "biological2": {
           "tagline": "BIOLOGICAL TREATMENT",
-          "title": "Biological reactor II",
-          "text1": "The plant has four SBR (Sequential Batch Reactor) tanks configurable to perform both nitrification and denitrification reactions. Generally, two reactors are used for each of the reactions. These reactors have the peculiarity of being able to carry out all phases of biological treatment in the same tank: feeding, reaction, sedimentation, discharge and sludge purge.",
-          "text2": "Water passes to nitrifying reactors, where, through aeration, specialized bacteria transform ammonium to nitrates. The resulting clarified water goes to biological reactor III."
+          "title": "Biological Reactor II",
+          "text1": "The plant includes four SBR (Sequential Batch Reactor) tanks, which are configurable to perform both nitrification and denitrification processes. Typically, two reactors are used for each process. These reactors are unique in their ability to carry out all phases of biological treatment within a single tank: filling, reaction, settling, decanting, and sludge purging.",
+          "text2": "The water enters the nitrification reactors, where specialized bacteria convert ammonium into nitrates through aeration. The resulting clarified water is then directed to Biological Reactor III."
         },
         "biological3": {
           "tagline": "BIOLOGICAL TREATMENT",
-          "title": "Biological reactor III",
+          "title": "Biological Reactor III",
           "text1": "In denitrifying reactors, bacteria transform nitrates to nitrogen gas, which is released to the atmosphere, by adding new organic matter (desulfurized water) and in the absence of air. At the same time, tertiary treatment for color reduction is carried out using a coagulant.",
           "text2": "Sludge from all biological reactors is collected in a biological sludge sump, from where it is pumped to sludge treatment.",
           "text3": "Finally, the resulting clarified water reaches the outlet sump and is discharged to the municipal collector, which subsequently reaches the Vilanova del Camí municipal treatment plant."
@@ -216,28 +216,28 @@
         "tertiary": {
           "tagline": "TERTIARY TREATMENT",
           "title": "DAF (Dissolved Air Flotation)",
-          "text1": "Water from biological reactor III is treated with a flotation system to improve its quality and subsequently discharged to the municipal collector."
+          "text1": "The water from Biological Reactor III will be treated through a flotation system to enhance quality before being discharged into the municipal collector."
         },
         "sludge1": {
           "tagline": "SLUDGE TREATMENT",
-          "title": "Sludge stabilization and dewatering",
-          "text1": "Sludge stabilization is carried out by adding lime slurry to the sludge sump. Once stabilized, they enter the centrifuges to be dewatered. A polyelectrolyte is also added to the centrifuge to flocculate the sludge and extract the maximum amount of water possible. The clarified water that comes out is returned to biological reactor I.",
-          "text2": "Using an Archimedes screw, dewatered sludge is transported to storage hoppers, from where it will be sent to the Jorba Composting Plant for bio-stabilization.",
-          "text3": "Deodorization systems are also available, in this case biological scrubbers. The air aspirated from the sludge treatment room is treated biologically to ensure it does not release harmful contaminants to the atmosphere."
+          "title": "Stabilization and Dehydration of Sludge",
+          "text1": "Sludge stabilization is carried out by adding lime slurry in the sludge chamber. Once stabilized, the sludge enters centrifuges for dehydration. A polyelectrolyte is also added to the centrifuge to flocculate the sludge and extract as much water as possible. The clarified water produced during this process is returned to Biological Reactor I.",
+          "text2": "Using an Archimedes screw, the dehydrated sludge is transported to storage silos, from where it is sent to the Jorba Composting Plant for bio-stabilization.",
+          "text3": "Deodorization systems are also in place here, using biological scrubbers. Air extracted from the sludge treatment room is biologically treated to prevent the release of harmful pollutants into the atmosphere."
         },
         "sludge2": {
           "tagline": "SLUDGE TREATMENT",
-          "title": "Sludge bio-stabilization",
-          "text1": "Sludge bio-stabilization is carried out at the Jorba Composting Plant. The sludge that arrives at the plant is unloaded and mixed with shredded wood to facilitate its bio-stabilization. This initial mixture is incorporated into the decomposition space, called plateau, where the material decomposition process begins.",
-          "text2": "Subsequently, the turning operation is carried out until the turning of the entire plateau is completed, thus aerating the material to favor its decomposition. When the temperature reaches 70 ºC, hygienization occurs.",
-          "text3": "Finally, in the handling and screening phase, the gray compost is separated from the wood using a screener (Trommel). The wood is recirculated to the system, while the gray compost is properly managed."
+          "title": "Sludge Bio-stabilization",
+          "text1": "Bio-stabilization of sludge takes place at the Jorba Composting Plant. The sludge delivered to the plant is unloaded and mixed with shredded wood to facilitate the bio-stabilization process. This mixture is moved into a decomposition area called the \"meseta,\" where decomposition begins.",
+          "text2": "Subsequently, the entire meseta is turned over to aerate the material and promote further decomposition. When the temperature reaches 70 °C, hygienization occurs.",
+          "text3": "Finally, during the turning and screening phase, the grey compost is separated from the wood using a trommel screen. The wood is recirculated in the system, while the grey compost is properly managed."
         },
         "quality": {
-          "tagline": "QUALITY CONTROL AND MAINTENANCE",
-          "title": "Management and maintenance facilities",
-          "text1": "The facilities have a laboratory where daily analytical controls are carried out to ensure the efficiency of the treatment plant, as well as the analysis of liquid waste that arrives at the plant. From the offices, the treatment plant is managed and directed, coordinating its operation and general control.",
-          "text2": "The plant has two rooms with blowers to provide air to reactors and tanks that need it. There are also nebulizers distributed throughout the plant at strategic points to prevent the dispersion of unpleasant odors in areas closest to the treatment plant.",
-          "text3": "In addition, it has 3 tanks dedicated to the selective temporary storage of liquid waste, allowing their introduction and differential treatment according to their characteristics."
+          "tagline": "QUALITY CONTROL & MAINTENANCE",
+          "title": "Management and Maintenance Facilities",
+          "text1": "The facilities include a laboratory where daily analytical controls are carried out to ensure the efficiency of the treatment plant and to analyze the liquid waste received. From the offices, the plant is managed and monitored, ensuring coordinated operation and overall control.",
+          "text2": "The plant has two blower rooms to supply air to the reactors and tanks that require it. Nebulizers are also installed at strategic points throughout the plant to prevent the spread of unpleasant odors near the facility.",
+          "text3": "Additionally, there are three tanks dedicated to the selective and temporary storage of liquid waste, allowing for differentiated treatment based on the specific characteristics of each type."
         }
       }
     }
@@ -245,25 +245,25 @@
   
   "innovation": {
     "hero": {
-      "tagline": "INNOVATION",
-      "title": "Advanced technology for the future of water treatment"
+      "tagline": "PROJECTS",
+      "title": "Research, Innovation and Development"
     },
     "sections": {
       "projects": {
         "tagline": "PROJECTS",
-        "title": "R&D projects for new environmental challenges",
-        "highlight": "With the mission of leading the transition towards a cleaner and more sustainable water cycle, IDR is committed to research and development of innovative solutions in water treatment.",
-        "text": "We collaborate with tanning companies, innovation centers and other sector entities to optimize wastewater treatment and advance in circular economy models of water that allow the reuse of resources within the leather industry, thus reducing the consumption of natural resources."
+        "title": "R&D Projects for New Environmental Challenges",
+        "highlight": "With the mission of leading the transition towards a cleaner and more sustainable water cycle, IDR is fully committed to researching and developing innovative water treatment solutions.",
+        "text": "We collaborate with tanning companies, innovation centers, and other stakeholders in the sector to optimize wastewater treatment and advance circular water economy models that enable resource reuse within the leather industry—thereby reducing the consumption of natural resources."
       },
       "innovation": {
         "tagline": "INNOVATION",
-        "title": "Technologies to advance towards zero impact",
-        "highlight": "IDR is specialized in biological treatment of industrial wastewater and has a long track record in implementing advanced technologies for water purification.",
-        "text1": "Through research in advanced technologies such as nanofiltration and reverse osmosis, we seek to achieve increasingly complete and efficient purification, oriented towards a model of minimal environmental impact, and advancing towards zero impact.",
-        "text2": "These systems eliminate contaminants such as salts, heavy metals and organic compounds, improving efficiency and reducing energy and chemical consumption. This allows for more sustainable water management, aligned with global environmental objectives."
+        "title": "Technologies for Advancing Towards Zero Impact",
+        "highlight": "Through research into advanced technologies such as nanofiltration and reverse osmosis, we aim to achieve increasingly complete and efficient purification, oriented toward a model of minimal environmental impact and progressing toward zero impact.",
+        "text1": "These systems remove contaminants such as salts, heavy metals, and organic compounds, improving efficiency while reducing energy and chemical consumption. This enables more sustainable water management aligned with global environmental goals.",
+        "text2": ""
       },
       "quote": {
-        "text": "IDR, a pioneer in biological purification, drives sustainability and continuous innovation in water treatment for the leather industry."
+        "text": "IDR, a pioneer in biological water treatment, drives sustainability and continuous innovation in wastewater management for the leather industry."
       },
       "testbed": {
         "tagline": "MEMBRANE FILTRATION",
@@ -297,68 +297,69 @@
   "sustainability": {
     "hero": {
       "tagline": "SUSTAINABILITY",
-      "title": "Commitment to the environment and people"
+      "title": "Commitment to the Environment and to People",
+      "subtitle": "Leading the transition towards a cleaner and more sustainable industry."
     },
     "sections": {
       "mission": {
         "tagline": "OUR MISSION",
-        "title": "The path towards a zero-impact industry",
-        "highlight": "IDR, as a fundamental part of the Leather Cluster Barcelona, has led the transformation of the leather sector towards a more sustainable industry.",
-        "text": "The Igualada water treatment plant, which currently treats wastewater from 26 companies, is a pioneering model in Europe for its advanced biological system, capable of significantly reducing both water consumption and the contaminant load associated with the leather transformation process."
+        "title": "The Path Towards a Zero-Impact Industry",
+        "highlight": "As a key part of Leather Cluster Barcelona, IDR has led the transformation of the leather sector toward a more sustainable industry.",
+        "text": "The wastewater treatment plant in Igualada, which currently treats the wastewater from 26 companies, is a pioneering model in Europe. Its advanced biological system significantly reduces both water consumption and the pollutant load associated with leather processing."
       },
       "impact": {
-        "tagline": "THE IMPACT IN DATA",
+        "tagline": "IMPACT IN FIGURES",
         "title": "Our results from the beginning to the present",
-        "highlight": "Thanks to this alliance, water consumption per unit produced has been reduced by 50% and the contaminant load by another 50% over the last 20 years.",
-        "text1": "This collaboration model has made it possible for IDR partner companies to be more ecological and competitive, establishing a standard of excellence in the tanning industry.",
-        "text2": "Looking to the future, we continue innovating and exploring circular economy models to advance towards an increasingly efficient and environmentally respectful industry."
+        "highlight": "Thanks to this partnership, water consumption per unit produced has been reduced by 50%, and the pollutant load has also been cut by 50% over the past 20 years.",
+        "text1": "This collaborative model has enabled IDR's partner companies to become greener and more competitive, setting a new standard of excellence in the tanning industry.",
+        "text2": "Looking ahead, we continue to innovate and explore circular economy models to move towards an increasingly efficient and environmentally responsible industry."
       },
       "quote": {
-        "text": "IDR facilitates that wastewater from leather sector companies joins the sustainability commitment, driving a more environmentally respectful industry."
+        "text": "IDR enables wastewater from leather industry companies to contribute to sustainability efforts, driving a more environmentally responsible industry."
       },
       "lifecycle": {
-        "tagline": "SUSTAINABILITY IN THE SECTOR",
-        "title": "The sustainable life cycle of leather",
+        "tagline": "LIFE CYCLE",
+        "title": "The Sustainable Life Cycle of Leather",
         "circular": {
-          "title": "Commitment to the circular economy",
-          "text": "At IDR, we bet on the circular economy as the basis for sustainable development. Tanners recover leather, a byproduct of meat consumption, the main source of protein for more than 90% of the world's population, and recycle it to prevent it from becoming waste. Thus, they value it in elegant, noble and useful products for society, contributing to sustainability thanks to its durability and for being a biodegradable and compostable product."
+          "title": "Commitment to the Circular Economy",
+          "text": "At IDR, we are committed to the circular economy as the foundation for sustainable development. Tanners recover hides—byproducts of meat consumption, the main protein source for over 90% of the global population—and recycle them to prevent waste. These hides are transformed into elegant, noble, and useful products for society, contributing to sustainability through their durability and by being both biodegradable and compostable."
         },
         "byproducts": {
-          "title": "Byproduct valorization",
-          "text": "For centuries, tanners have recovered this byproduct from the food industry and recycled it to transform it into sustainable consumer goods with high added value. This practice not only reduces waste, but also promotes responsible use of resources."
+          "title": "Byproduct Valorization",
+          "text": "For centuries, tanners have recovered this byproduct of the food industry and recycled it into high-value sustainable consumer goods. This practice not only reduces waste but also promotes responsible use of resources."
         },
         "zero": {
-          "title": "Path towards zero waste",
-          "text": "Catalan tanners, associated with the Leather Cluster Barcelona, maintain their commitment to the zero waste model. The cluster drives various projects to optimize the valorization of byproducts and reduce waste generated throughout the production process within the leather industry value chain."
+          "title": "Path Towards Zero Waste",
+          "text": "Catalan tanners, members of Leather Cluster Barcelona, remain committed to the zero-waste model. The cluster drives several initiatives to optimize the valorization of byproducts and reduce waste generated throughout the entire production process within the leather industry's value chain."
         }
       },
       "commitment": {
         "tagline": "SUSTAINABILITY AT THE PLANT",
-        "title": "The sustainable commitment of the treatment plant",
-        "text": "At IDR, our commitment to sustainability is reflected not only in our treatment technology, but also in the internal practices we adopt to minimize our environmental impact and ensure a safe and responsible work environment.",
+        "title": "The Treatment Plant's Sustainable Commitment",
+        "text": "At IDR, our commitment to sustainability is reflected not only in our water treatment technology but also in the internal practices we adopt to minimize our environmental impact and ensure a safe and responsible working environment.",
         "cards": {
           "renewable": {
-            "title": "Renewable energies",
-            "text": "100% of the energy we consume comes from renewable sources, and we have our own solar panel system to increase our energy efficiency."
+            "title": "Renewable Energy",
+            "text": "100% of the energy we consume comes from renewable sources, and we operate our own solar panel system to enhance energy efficiency."
           },
           "chemicals": {
-            "title": "Reduction in the use of chemical agents",
-            "text": "Our biological treatment process optimizes the use of microorganisms to replace chemical agents, with the aim of minimizing environmental impact and favoring more sustainable and ecological solutions."
+            "title": "Reduction in Chemical Use",
+            "text": "Our biological treatment process optimizes the use of microorganisms to replace chemical agents, with the goal of minimizing environmental impact and promoting more sustainable and eco-friendly solutions."
           },
           "audits": {
-            "title": "Environmental audits",
+            "title": "Environmental Audits",
             "text": "We conduct regular environmental audits and maintain certifications to ensure our practices meet the highest standards of sustainability and environmental responsibility."
           },
           "safety": {
-            "title": "Safety and occupational risk prevention",
-            "text": "We take the safety of our workers very seriously, with strict protocols to ensure a safe work environment and comply with all health and safety regulations."
+            "title": "Occupational Safety and Risk Prevention",
+            "text": "We take worker safety very seriously, with strict protocols in place to guarantee a safe working environment and full compliance with all health and safety regulations."
           }
         }
       },
       "certifications": {
-        "title": "Certifications and Environmental Audits",
-        "highlight": "At IDR, in collaboration with Tradebe, we manage the treatment plant following the highest environmental standards, with a clear vocation for sustainability.",
-        "text": "Our audits and certifications demonstrate our dedication to ensuring the best practices in sustainability, innovation and safety in all our services.",
+        "title": "Environmental Certifications and Audits",
+        "highlight": "At IDR, in collaboration with Tradebe, we manage the treatment plant according to the highest environmental standards, with a clear focus on sustainability.",
+        "text": "Our audits and certifications demonstrate our dedication to upholding best practices in sustainability, innovation, and safety across all our services.",
         "iso9001": {
           "title": "ISO 9001:2015: Quality in the Treatment of wastewater and non-hazardous liquid waste",
           "items": {
@@ -395,15 +396,15 @@
     "numbers": {
       "water": {
         "amount": "50%",
-        "label": "Water reduction per unit produced over the last 20 years"
+        "label": "reduction in water consumption per unit produced over the past 20 years"
       },
       "pollution": {
         "amount": "50%",
-        "label": "Contaminant load reduction over the last 20 years"
+        "label": "reduction in pollutant load over the past 20 years"
       },
       "companies": {
         "amount": "26",
-        "label": "Companies that treat their water at IDR"
+        "label": "companies treat their wastewater at IDR"
       }
     }
   },
@@ -411,22 +412,22 @@
   "services": {
     "hero": {
       "tagline": "SERVICES",
-      "title": "Industrial liquid waste management"
+      "title": "Industrial Liquid Waste Management"
     },
     "contact": "Contact",
     "sections": {
       "services": {
         "tagline": "SERVICES FOR COMPANIES",
-        "title": "Non-hazardous liquid waste management service",
-        "highlight": "IDR offers its wastewater treatment and non-hazardous liquid waste management services, advising companies on minimizing their environmental impact.",
-        "text": "Our continuous improvement philosophy means we constantly work on optimizing our water treatment process, applying customized and optimal physicochemical and biological treatment for each waste."
+        "title": "Non-Hazardous Liquid Waste Management Services",
+        "highlight": "IDR offers treatment and management services for non-hazardous liquid waste, helping companies reduce their environmental impact.",
+        "text": "Our philosophy of continuous improvement drives us to optimize treatment processes through customized physicochemical and biological treatment tailored to each type of waste."
       },
       "licenses": {
         "tagline": "LICENSES",
-        "title": "Liquid waste management with environmental guarantees",
-        "highlight": "IDR has the Integrated Environmental License for the management of non-hazardous liquid waste, with manager code E-1706.17.",
-        "text1": "IDR is a pioneer in Catalonia in combining two activities: industrial and urban wastewater treatment and non-hazardous liquid waste management.",
-        "text2": "The high technological capacity of IDR's treatment plant allows treating non-hazardous liquid waste with all environmental guarantees."
+        "title": "Environmentally Guaranteed Liquid Waste Management",
+        "highlight": "IDR holds an Integrated Environmental License for the management of non-hazardous liquid waste, with Manager Code: E-1706.17.",
+        "text1": "We are pioneers in Catalonia for combining two core activities:\n\n·       Industrial and urban wastewater treatment\n\n·       Non-hazardous liquid waste management",
+        "text2": "Thanks to our advanced treatment technology, IDR can handle a wide variety of non-hazardous liquid waste streams with full environmental assurance."
       },
       "codes": {
         "title": "LER Codes List",
@@ -454,48 +455,49 @@
   "about": {
     "hero": {
       "tagline": "COMPANY",
-      "title": "United for a sustainable leather industry"
+      "title": "United for a Sustainable Leather Industry"
     },
     "sections": {
       "who": {
         "tagline": "WHO WE ARE",
-        "title": "The tanners' treatment plant",
-        "highlight": "Igualadina de Depuració i Recuperació (IDR) was founded as a corporate initiative of the Leather Cluster Barcelona (LCB) association with the participation of tanners from the Rec neighborhood of Igualada. This treatment plant is managed by the same leather industry companies, with the aim of ensuring a sustainable future for the sector.",
-        "text1": "After twenty years of operation, IDR's treatment plant, one of the pioneering plants in Europe in industrial wastewater treatment, has become a reference for the water industry.",
-        "text2": "During these years, the plant that treats daily the waters generated in the leather transformation process of the Igualada tanning companies associated with the LCB together with other industries, has been visited by technicians and sustainability professionals from more than 30 different countries."
+        "title": "The Tanners' Treatment Plant",
+        "highlight": "Igualadina de Depuració i Recuperació (IDR) was founded as a corporate initiative of the Leather Cluster Barcelona (LCB), in collaboration with tanners from the Rec district of Igualada. The treatment plant is managed by companies from the leather industry itself, with the aim of ensuring a sustainable future for the sector.",
+        "text1": "Our organizational structure is based on the active collaboration of our members through committees and working groups advising on traceability, technical development, and environmental impact. This ensures that every decision contributes to a more sustainable production cycle.",
+        "text2": "Thanks to this alliance, IDR has become a unique platform in Catalonia, dedicated both to treating wastewater from leather tanning processes and managing liquid industrial waste from other sectors.",
+        "text3": "After twenty years in operation, IDR has become one of the pioneering plants in Europe for industrial wastewater treatment and is now a reference point in the water industry. Over the years, it has treated wastewater from the tanning companies of Igualada affiliated with LCB, alongside other industries, and has been visited by sustainability professionals from over 30 different countries."
       },
       "mission": {
         "tagline": "OUR MISSION",
-        "title": "The sustainable revolution of the leather sector",
-        "text1": "As part of the Leather Cluster Barcelona, IDR has contributed to the continuous improvement of processes in the leather sector, with an innovative biological treatment system that has allowed a significant reduction in the environmental impact of the industry.",
-        "text2": "Our organizational structure is based on the active collaboration of our partners, with committees and working groups that advise on aspects such as traceability, technical development and environmental impact, thus ensuring that each decision contributes to a more sustainable production cycle.",
-        "text3": "This collective effort drives a future-oriented leather industry, with a firm commitment to efficiency and respect for the environment, adding value to both the production chain and the local community."
+        "title": "The Sustainable Revolution of the Leather Sector",
+        "text1": "As part of Leather Cluster Barcelona, IDR has continuously improved processes in the leather sector through an innovative biological treatment system that has significantly reduced the industry's environmental impact.",
+        "text2": "",
+        "text3": "This collective effort drives a forward-thinking leather industry, firmly committed to efficiency and environmental responsibility, bringing value both to the production chain and the local community."
       },
       "vision": {
-        "tagline": "FUTURE VISION",
-        "text": "We want to be an international reference in advanced industrial water treatment systems, leading the leather sector's transition towards a zero-impact water circular economy model."
+        "tagline": "A VISION FOR THE FUTURE",
+        "text": "We aim to become an international benchmark in advanced industrial water treatment systems, leading the leather sector's transition toward a zero-impact circular water economy."
       },
       "collaborators": {
-        "title": "Collaborator Network",
-        "text": "At IDR we are part of a collaboration network with universities, associations, municipalities and specialized companies, with which we work together to promote R&D projects and ensure sustainability in the leather industry.",
+        "title": "Who We Work With",
+        "text": "Collaborative Network\nIDR is part of a collaborative network involving universities, associations, municipalities, and specialized companies. Together, we carry out R&D projects and promote sustainability within the leather industry.",
         "cards": {
-          "cluster": {
-            "title": "Leather Cluster Barcelona",
-            "text": "Leather Cluster Barcelona is a competitive cooperation environment to promote transversal and transformative strategic projects with the aim of boosting the Catalan leather sector ecosystem and its value chain within the framework of sustainability, circular economy, sustainable fashion and shared value."
-          },
           "tradebe": {
             "title": "Tradebe",
-            "text": "Tradebe is a pioneering company in waste management, specialized in converting it into valuable resources through innovative solutions. With a firm commitment to the circular economy, Tradebe actively contributes to a greener and more sustainable future."
+            "text": "A pioneering waste management company, Tradebe specializes in converting waste into valuable resources through innovative solutions, contributing to a greener and more sustainable future."
+          },
+          "cluster": {
+            "title": "Leather Cluster Barcelona",
+            "text": "A platform for cooperative competitiveness that promotes strategic and transformative projects to boost the Catalan leather sector's ecosystem, aligned with sustainability, circular economy, sustainable fashion, and shared value."
           },
           "a3": {
             "title": "A3 Leather Innovation Center",
-            "text": "Research and innovation with new technologies in the leather sector. A3 Leather Innovation Center drives projects to open new horizons, create high-end ecological leather and improve process sustainability."
+            "text": "Focused on research and innovation with new technologies for the leather sector, it develops projects aimed at producing premium eco-leather and improving the sustainability of tanning processes."
           }
         }
       },
       "partners": {
-        "title": "Partners and Collaborators",
-        "text": "Our founding partners include outstanding companies in the leather sector, as well as the Igualada City Council and representatives from the textile and chemical industries, all committed to environmental sustainability.",
+        "title": "Members",
+        "text": "Our founding members include leading companies from the leather sector, the Igualada City Council, and representatives from the textile and chemical industries, all committed to environmental sustainability.",
         "illustrious": "ILLUSTRIOUS PARTNER"
       }
     }
@@ -509,49 +511,49 @@
       "020101": "Washing and cleaning sludges",
       "020201": "Washing and cleaning sludges",
       "020203": "Materials unsuitable for consumption or processing",
-      "020204": "In situ effluent treatment sludges",
+      "020204": "Sludges from on-site effluent treatment",
       "020301": "Sludges from washing, cleaning, peeling, centrifuging and separation",
       "020304": "Materials unsuitable for consumption or processing",
-      "020305": "In situ effluent treatment sludges",
-      "020403": "In situ effluent treatment sludges",
+      "020305": "Sludges from on-site effluent treatment",
+      "020403": "Sludges from on-site effluent treatment",
       "020501": "Materials unsuitable for consumption or processing",
-      "020502": "In situ effluent treatment sludges",
+      "020502": "Sludges from on-site effluent treatment",
       "020601": "Materials unsuitable for consumption or processing",
-      "020603": "In situ effluent treatment sludges",
+      "020603": "Sludges from on-site effluent treatment",
       "020704": "Materials unsuitable for consumption or processing",
-      "020705": "In situ effluent treatment sludges",
+      "020705": "Sludges from on-site effluent treatment",
       "030305": "De-inking sludges from paper recycling",
-      "030311": "In situ effluent treatment sludges, other than those specified in code 030310",
-      "040104": "Liquid waste from tanning containing chromium",
-      "040105": "Liquid waste from tanning not containing chromium",
-      "040106": "Sludges, in particular from in situ effluent treatment, containing chromium",
-      "040107": "Sludges, in particular from in situ effluent treatment, not containing chromium",
-      "040220": "In situ effluent treatment sludges other than those specified in code 040219",
+      "030311": "Sludges from on-site effluent treatment other than those specified in code 030310",
+      "040104": "Tanning liquid waste containing chromium",
+      "040105": "Tanning liquid waste not containing chromium",
+      "040106": "Sludges, especially from on-site effluent treatment, containing chromium",
+      "040107": "Sludges, especially from on-site effluent treatment, not containing chromium",
+      "040220": "Sludges from on-site effluent treatment other than those specified in code 040219",
       "060603": "Wastes containing sulphides other than those mentioned in code 060602",
-      "070112": "In situ effluent treatment sludges other than those specified in code 070111",
-      "070212": "In situ effluent treatment sludges other than those specified in code 070211",
-      "070312": "In situ effluent treatment sludges other than those specified in code 070311",
-      "070512": "In situ effluent treatment sludges other than those specified in code 070511",
-      "070612": "In situ effluent treatment sludges other than those specified in code 070611",
-      "070712": "In situ effluent treatment sludges other than those specified in code 070711",
+      "070112": "Sludges from on-site effluent treatment other than those specified in code 070111",
+      "070212": "Sludges from on-site effluent treatment other than those specified in code 070211",
+      "070312": "Sludges from on-site effluent treatment other than those specified in code 070311",
+      "070512": "Sludges from on-site effluent treatment other than those specified in code 070511",
+      "070612": "Sludges from on-site effluent treatment other than those specified in code 070611",
+      "070712": "Sludges from on-site effluent treatment other than those specified in code 070711",
       "080112": "Paint and varnish waste other than those specified in code 080111",
       "080120": "Aqueous suspensions containing paint or varnish other than those specified in code 080119",
       "080308": "Aqueous liquid waste containing ink",
-      "110112": "Aqueous washing liquids other than those specified in code 110111",
+      "110112": "Aqueous rinsing liquids other than those specified in code 110111",
       "161002": "Aqueous liquid waste other than those specified in code 161001",
       "161004": "Aqueous concentrates other than those specified in code 161003",
       "170506": "Drainage sludges other than those specified in code 170505",
       "190206": "Physicochemical treatment sludges other than those specified in code 190205",
-      "190603": "Anaerobic treatment liquors of municipal waste",
-      "190605": "Anaerobic treatment liquors of animal and vegetable waste",
-      "190703": "Landfill leachate other than those specified in code 190702",
+      "190603": "Liquors from anaerobic treatment of municipal waste",
+      "190605": "Liquors from anaerobic treatment of animal and vegetable waste",
+      "190703": "Landfill leachates other than those specified in code 190702",
       "190805": "Urban wastewater treatment sludges",
-      "190809": "Mixtures of fats and oils from water/oily substance separation containing only edible oils and fats",
+      "190809": "Mixtures of fats and oils from waste/oil separation containing only edible oils and fats",
       "190812": "Sludges from biological treatment of industrial wastewater other than those specified in code 190811",
       "190814": "Sludges from other industrial wastewater treatment other than those specified in code 190813",
-      "190902": "Water clarification sludges",
+      "190902": "Sludges from water clarification",
       "200304": "Septic tank sludges",
-      "200306": "Sewer cleaning waste"
+      "200306": "Sewer cleaning residues"
     }
   },
   "blog": {

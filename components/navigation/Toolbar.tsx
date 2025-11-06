@@ -36,11 +36,9 @@ export const Toolbar = ({ useWhite = false, children, locale = 'ca' }: ToolbarPr
                 <div className="ToolbarInner">
                     <div className="ToolbarLeft">
                       <div className="AppName">
-                          <Link href="/">
+                          <Link href={`/${locale}`}>
                                 <div className="toolbar-logo">
-                                  <Link href="/" target="_blank" rel="noopener noreferrer">
                                   <Image alt="IDR Logo" src='/logos/logo.png' width={866} height={414} loading="eager"/>
-                                  </Link>
                                 </div>
                           </Link>
                       </div>
@@ -72,7 +70,7 @@ export const Toolbar = ({ useWhite = false, children, locale = 'ca' }: ToolbarPr
         <div className={toolbarClass}>
           <div className="ToolbarInner">
             <div className="AppName">
-              <Link href="/">
+              <Link href={`/${locale}`}>
                 <div className="toolbar-logo">
                   <Image alt="IDR Logo" src="/logos/logo.png"
                     width={866} height={414} loading="eager"
@@ -95,7 +93,7 @@ export const Toolbar = ({ useWhite = false, children, locale = 'ca' }: ToolbarPr
                 <div className={`ToolbarMenuBox ${burgerMenuOpen ? "open" : ""}`}>
                   <div className="MenuClose">
                     <div className="AppName">
-                      <Link href="/">
+                      <Link href={`/${locale}`}>
                         <div className="toolbar-logo">
                           <Image
                             alt="IDR Logo"

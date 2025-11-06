@@ -1,7 +1,7 @@
 ---
 title: "BIOINDUSTRIAL"
 metaTitle: "BIOINDUSTRIAL"
-description: "BIOINDUSTRIAL aims to verify if the treatment plant is capable of biologically treating only water from the industrial collector."
+description: "BIOINDUSTRIAL explores whether the treatment plant can biologically process only industrial water."
 date: "2025-01-09"
 modified_date: "2025-01-09"
 # image: /thumb/thumb-bioind.jpg
@@ -11,13 +11,13 @@ tags:
   - R&D
 ---
 
-## BIOINDUSTRIAL
+## BIOINDUSTRIAL (2023–24)
 
 <!-- <img className="PostImg" src="https://www.idr.cat/posts/resalt1.jpg"> -->
 
 <!-- #### Summary -->
 
-<strong>BIOINDUSTRIAL aims to verify if the treatment plant is capable of biologically treating only water from the industrial collector.</strong>
+<strong>BIOINDUSTRIAL explores whether the treatment plant can biologically process only industrial water.</strong>
 
 <!-- #### Explanation -->
 

@@ -1,7 +1,7 @@
 ---
 title: "Desulfurization with liquid oxygen"
 metaTitle: "Desulfurization with liquid oxygen"
-description: "Optimization of the desulfurization process, accelerating the reaction and reducing foams."
+description: "Improved desulfurization speed and reduced foam formation."
 date: "2025-01-03"
 modified_date: "2025-01-03"
 # image: /thumb/thumb-oxigen.jpg
@@ -10,13 +10,13 @@ tags:
   - Optimization
 ---
 
-## Desulfurization with liquid oxygen
+## DESULFURIZATION WITH LIQUID OXYGEN (2018)
 
 <!-- <img className="PostImg" src="https://www.idr.cat/posts/resalt1.jpg"> -->
 
 <!-- #### Summary -->
 
-<strong>Optimization of the desulfurization process, accelerating the reaction and reducing foams.</strong>
+<strong>Improved desulfurization speed and reduced foam formation.</strong>
 
 ![My Image](/posts/oxigen.jpg)
 
