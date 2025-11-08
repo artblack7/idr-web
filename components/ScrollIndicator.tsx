@@ -1,13 +1,17 @@
 import React, { useState, useEffect } from 'react';
+import { useRouter } from 'next/router';
 
 const ScrollIndicator: React.FC = () => {
+  const router = useRouter();
   const [isVisible, setIsVisible] = useState(false);
   const [hasScrolled, setHasScrolled] = useState(false);
 
   useEffect(() => {
     const checkScreenSize = () => {
       const isSmallScreen = window.innerWidth <= 1024;
-      setIsVisible(isSmallScreen);
+      // Hide on blog pages (blog index or blog post pages)
+      const isBlogPage = router.pathname?.includes('/blog') || router.pathname?.includes('/post');
+      setIsVisible(isSmallScreen && !isBlogPage);
     };
 
     const handleScroll = () => {
@@ -21,12 +25,16 @@ const ScrollIndicator: React.FC = () => {
     checkScreenSize();
     window.addEventListener('resize', checkScreenSize);
     window.addEventListener('scroll', handleScroll);
+    
+    // Re-check when route changes
+    router.events?.on('routeChangeComplete', checkScreenSize);
 
     return () => {
       window.removeEventListener('resize', checkScreenSize);
       window.removeEventListener('scroll', handleScroll);
+      router.events?.off('routeChangeComplete', checkScreenSize);
     };
-  }, []);
+  }, [router]);
 
   const handleClick = () => {
     window.scrollTo({

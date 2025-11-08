@@ -8,6 +8,7 @@ import Arrow_Icon from '../../components/SVG/Arrow_Icon';
 import { Meta } from '../../components/head/Meta';
 import Table from '../../components/Table';
 import Contact from '../../components/Contact';
+import ScrollIndicator from '../../components/ScrollIndicator';
 import { useTranslations } from 'next-intl';
 import { GetStaticPaths, GetStaticProps } from 'next';
 
@@ -41,7 +42,7 @@ export default function Services(props: ServicesProps) {
             </div>
           </div>
         </div>
-
+        <ScrollIndicator />
       </div>
 
       {/* MAIN SECTION */}

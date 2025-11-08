@@ -6,6 +6,7 @@ import {Footer} from '../../components/navigation/Footer';
 import AnimationTrigger from '../../components/AnimationTrigger';
 import Arrow_Icon from '../../components/SVG/Arrow_Icon';
 import { Meta } from '../../components/head/Meta';
+import ScrollIndicator from '../../components/ScrollIndicator';
 import { useTranslations } from 'next-intl';
 import { GetStaticPaths, GetStaticProps } from 'next';
 
@@ -38,7 +39,7 @@ export default function Sustainability(props: SustainabilityProps) {
             </div>
           </div>
         </div>
-
+        <ScrollIndicator />
       </div>
 
       {/* MAIN SECTION */}

@@ -13,6 +13,7 @@ import { GetStaticPaths, GetStaticProps } from 'next';
 import { BlogArchiveConfig, Config } from '../../utils/Config';
 import { getAllPosts, getCategoryCollection, PostItems } from '../../utils/Content';
 import BlogArchive from '../../components/blog/BlogArchive';
+import ScrollIndicator from '../../components/ScrollIndicator';
 import { useTranslations } from 'next-intl';
 
 type IIndexProps = {
@@ -49,7 +50,7 @@ export default function Innovation(props: IIndexProps) {
             </div>
           </div>
         </div>
-
+        <ScrollIndicator />
       </div>
 
       {/* MAIN SECTION */}

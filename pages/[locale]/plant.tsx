@@ -12,6 +12,7 @@ import { GetStaticProps } from 'next';
 import { BlogArchiveConfig, Config } from '../../utils/Config';
 import { getAllPosts, getCategoryCollection, PostItems } from '../../utils/Content';
 import VideoTecnic from '../../components/descarte/VideoTecnic';
+import ScrollIndicator from '../../components/ScrollIndicator';
 import { useTranslations } from 'next-intl';
 import { useRouter } from 'next/router';
 
@@ -53,7 +54,7 @@ export default function Tech(props: IIndexProps) {
             </div>
           </div>
         </div>
-
+        <ScrollIndicator />
       </div>
 
       {/* MAIN SECTION */}

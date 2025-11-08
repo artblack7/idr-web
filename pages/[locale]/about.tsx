@@ -7,6 +7,7 @@ import AnimationTrigger from '../../components/AnimationTrigger';
 import Arrow_Icon from '../../components/SVG/Arrow_Icon';
 import { Meta } from '../../components/head/Meta';
 import SocisList from '../../components/carousel/SocisList';
+import ScrollIndicator from '../../components/ScrollIndicator';
 import { useTranslations } from 'next-intl';
 import { GetStaticPaths, GetStaticProps } from 'next';
 
@@ -39,7 +40,7 @@ export default function About(props: AboutProps) {
             </div>
           </div>
         </div>
-
+        <ScrollIndicator />
       </div>
 
       {/* MAIN SECTION */}

@@ -233,35 +233,15 @@ section .LineBtn {
 
 .HeroVideo {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 0;
+  left: 0;
   height: calc(100vw * 9 / 16) !important; /* 16:9 aspect ratio - height scales with viewport width */
   width: 100% !important;
   min-width: 100%;
-  min-height: 100%;
-  transform: translate(-50%, -50%);
   z-index: -1;
   direction: ltr;
   overflow: hidden;
   pointer-events: none;
-}
-
-@media (max-width: 1500px) {
-  .HeroVideo {
-    top: 0;
-    height: 100% !important;
-    width: calc(100vh * 16 / 9) !important; /* 16:9 aspect ratio - width scales with viewport height */
-    transform: translateX(-50%);
-  }
-
-  /* .HeroSectionWrap {
-    height: 100vh !important;
-    margin-top: -80px !important;
-  }
-
-  .HeroSection {
-    height: 100vh !important;
-  } */
 }
 
 .hero-video-container {
@@ -269,7 +249,7 @@ section .LineBtn {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: calc(100vw * 9 / 16); /* Match video height - 16:9 aspect ratio */
   overflow: hidden;
   z-index: -1;
 }
@@ -277,12 +257,10 @@ section .LineBtn {
 .ImgPoster {
   position: absolute;
   top: 0;
-  left: 50%;
-  height: 100%; 
-  width: auto;
-  min-width: 100%;
-  min-height: 100%;
-  transform: translateX(-50%);
+  left: 0;
+  height: calc(100vw * 9 / 16); /* Match video height - 16:9 aspect ratio */
+  width: 100%;
+  object-fit: cover;
   z-index: -1;
   direction: ltr;
   overflow: hidden;
@@ -329,7 +307,7 @@ section .LineBtn {
 
 .HeroSectionWrap {
   width: 100%;
-  /* height: 850px; */
+  height: calc(100vw * 9 / 16); /* Match video height - 16:9 aspect ratio */
   overflow: hidden;
   margin-top: -100px;
   box-sizing: border-box;
@@ -342,7 +320,8 @@ section .LineBtn {
 .HeroSection {
   /* max-width: 1400px; */
   margin: auto;
-  height: 850px;
+  height: 100%; /* Fill parent height */
+  min-height: calc(100vw * 9 / 16); /* Ensure minimum height matches video */
   z-index: 1;
   position: relative;
   display: flex;
@@ -425,6 +404,13 @@ section .LineBtn {
 @media (min-width: 1025px) {
   .ScrollIndicator {
     display: none;
+  }
+}
+
+@media (min-width: 2000px) {
+
+  .HeroSectionWrap {
+    height: 1125px; /* Max height at 2000px viewport */
   }
 }
 
@@ -1045,13 +1031,31 @@ section video {
     padding: var(--padding-1024);
   }
 
-  .HeroSectionWrap {
+  .HeroVideo {
+    height: 100vh !important;
+    width: calc(100vh * 16 / 9) !important; /* 16:9 aspect ratio - width scales with viewport height */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .hero-video-container {
+    height: 100vh; /* Full screen height on mobile */
+  }
+
+  .ImgPoster {
     height: 100vh;
+    width: calc(100vh * 16 / 9);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .HeroSectionWrap {
+    height: 100vh; /* Full screen height on mobile */
     margin-top: -80px;
   }
 
   .HeroSection {
-    height: 100vh;
+    height: 100vh; /* Full screen height on mobile */
   }
 
   h2 {
