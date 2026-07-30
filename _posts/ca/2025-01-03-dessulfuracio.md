@@ -4,8 +4,8 @@ metaTitle: "Dessulfuració amb oxígen líquid"
 description: "Optimització del procés de dessulfuració, accelerant la reacció i reduint espumes."
 date: "2025-01-03"
 modified_date: "2025-01-03"
-# image: /thumb/thumb-oxigen.jpg
-image: /thumb/thumb-oxigen.jpg
+# image: /thumb/thumb-oxigen.webp
+image: /thumb/thumb-oxigen.webp
 tags:
   - Optimització
 ---
@@ -18,7 +18,7 @@ tags:
 
 <strong>Optimització del procés de dessulfuració, accelerant la reacció i reduint espumes.</strong>
 
-![My Image](/posts/oxigen.jpg)
+![My Image](/posts/oxigen.webp)
 
 L'any 2018 es va implementar una millora significativa en el procés de dessulfuració de la planta depuradora per optimitzar-ne l'eficiència. Aquesta millora va consistir en substituir el sistema convencional amb aire atmosfèric per l'addició d'oxigen líquid a les basses de dessulfuració.
 

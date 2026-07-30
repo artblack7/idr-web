@@ -4,8 +4,8 @@ metaTitle: "New Biological Reactor"
 description: "Improved biological treatment by increasing efficiency."
 date: "2025-01-05"
 modified_date: "2025-01-05"
-# image: /thumb/thumb-reactor.jpg
-image: /thumb/thumb-reactor.jpg
+# image: /thumb/thumb-reactor.webp
+image: /thumb/thumb-reactor.webp
 
 tags:
   - Optimization
@@ -19,7 +19,7 @@ tags:
 
 <strong>Improved biological treatment by increasing efficiency.</strong>
 
-![My Image](/posts/reactor.jpg)
+![My Image](/posts/reactor.webp)
 
 In 2018, a very significant improvement was implemented for the process, focusing basically on increasing the plant's treatment efficiency. This was achieved by modifying existing facilities and creating a new aerated biological reactor. This reactor has a capacity of 14,000 m³ of water. Its function is to homogenize the incoming wastewater, regulate the flow and load uniformly throughout the seven days of the week and degrade the organic matter present in the water.
 

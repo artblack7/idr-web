@@ -4,8 +4,8 @@ metaTitle: "Desulfurization with liquid oxygen"
 description: "Improved desulfurization speed and reduced foam formation."
 date: "2025-01-03"
 modified_date: "2025-01-03"
-# image: /thumb/thumb-oxigen.jpg
-image: /thumb/thumb-oxigen.jpg
+# image: /thumb/thumb-oxigen.webp
+image: /thumb/thumb-oxigen.webp
 tags:
   - Optimization
 ---
@@ -18,7 +18,7 @@ tags:
 
 <strong>Improved desulfurization speed and reduced foam formation.</strong>
 
-![My Image](/posts/oxigen.jpg)
+![My Image](/posts/oxigen.webp)
 
 In 2018, a significant improvement was implemented in the desulfurization process of the treatment plant to optimize its efficiency. This improvement consisted of replacing the conventional system with atmospheric air with the addition of liquid oxygen to the desulfurization ponds.
 

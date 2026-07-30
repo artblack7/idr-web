@@ -91,16 +91,16 @@
 }
 
   .CardTop.Collab1 {
-    background: url("../public/img/img-cluster.jpg") 
+    background: url("../public/img/img-cluster.webp") 
     no-repeat center right / cover; 
   }
   .CardTop.Collab2 {
     background:
-    url("../public/img/img-tradebe.jpg") 
+    url("../public/img/img-tradebe.webp") 
     no-repeat center right / cover; 
   }
   .CardTop.Collab3 {
-    background: url("../public/img/img-a3.jpg") 
+    background: url("../public/img/img-a3.webp") 
     no-repeat center right / cover; 
   }
 

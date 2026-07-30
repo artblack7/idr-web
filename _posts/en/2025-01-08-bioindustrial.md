@@ -4,8 +4,8 @@ metaTitle: "BIOINDUSTRIAL"
 description: "BIOINDUSTRIAL explores whether the treatment plant can biologically process only industrial water."
 date: "2025-01-09"
 modified_date: "2025-01-09"
-# image: /thumb/thumb-bioind.jpg
-image: /thumb/thumb-bioind.jpg
+# image: /thumb/thumb-bioind.webp
+image: /thumb/thumb-bioind.webp
 
 tags:
   - R&D

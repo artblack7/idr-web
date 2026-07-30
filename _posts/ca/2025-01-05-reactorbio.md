@@ -4,8 +4,8 @@ metaTitle: "Nou Reactor Biològic"
 description: "Optimització del tractament biològic de la planta, incrementant la capacitat hidràulica i l’eficiència del tractament."
 date: "2025-01-05"
 modified_date: "2025-01-05"
-# image: /thumb/thumb-reactor.jpg
-image: /thumb/thumb-reactor.jpg
+# image: /thumb/thumb-reactor.webp
+image: /thumb/thumb-reactor.webp
 
 tags:
   - Optimització
@@ -19,7 +19,7 @@ tags:
 
 <strong>Optimització del tractament biològic de la planta, incrementant la capacitat hidràulica i l’eficiència del tractament.</strong>
 
-![My Image](/posts/reactor.jpg)
+![My Image](/posts/reactor.webp)
 
 L’any 2018 es va implementar una millora molt significativa per al procés, es va centrar bàsicament en augmentar l’eficiència de tractament de la planta. Això es va aconseguir mitjançant la modificació de les instal·lacions existents i la creació d’un nou reactor biològic airejat. Aquest reactor té una capacitat de 14.000 m³ d’aigua. La seva funció és homogeneïtzar l’aigua residual d’entrada, regular el cabal i la càrrega uniformement els set dies de la setmana i degradar la matèria orgànica present en l’aigua.
 

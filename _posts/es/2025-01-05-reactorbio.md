@@ -4,8 +4,8 @@ metaTitle: "Nuevo Reactor Biológico"
 description: "Optimización del tratamiento biológico de la planta, incrementando la capacidad hidráulica y la eficiencia del tratamiento."
 date: "2025-01-05"
 modified_date: "2025-01-05"
-# image: /thumb/thumb-reactor.jpg
-image: /thumb/thumb-reactor.jpg
+# image: /thumb/thumb-reactor.webp
+image: /thumb/thumb-reactor.webp
 
 tags:
   - Optimización
@@ -19,7 +19,7 @@ tags:
 
 <strong>Optimización del tratamiento biológico de la planta, incrementando la capacidad hidráulica y la eficiencia del tratamiento.</strong>
 
-![My Image](/posts/reactor.jpg)
+![My Image](/posts/reactor.webp)
 
 En el año 2018 se implementó una mejora muy significativa para el proceso, se centró básicamente en aumentar la eficiencia de tratamiento de la planta. Esto se consiguió mediante la modificación de las instalaciones existentes y la creación de un nuevo reactor biológico aireado. Este reactor tiene una capacidad de 14.000 m³ de agua. Su función es homogeneizar el agua residual de entrada, regular el caudal y cargar uniformemente los siete días de la semana y degradar la materia orgánica presente en el agua.
 

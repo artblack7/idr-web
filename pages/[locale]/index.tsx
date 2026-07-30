@@ -62,7 +62,7 @@ export default function Home(props: IIndexProps) {
              playsInline
              autoPlay
              src="/video/video-hero.mp4"
-             poster="/video/video-poster.jpg"
+             poster="/video/video-poster.webp"
            ></video> */}
           {/* <div className='hero-video-container'>
             <iframe
@@ -132,10 +132,10 @@ export default function Home(props: IIndexProps) {
                 <iframe
                   src={
                     props.locale === 'es'
-                      ? 'https://player.vimeo.com/video/1097862706'
+                      ? 'https://player.vimeo.com/video/1214301739'
                       : props.locale === 'en'
-                      ? 'https://player.vimeo.com/video/1097861127'
-                      : 'https://player.vimeo.com/video/1097862914'
+                      ? 'https://player.vimeo.com/video/1214302418'
+                      : 'https://player.vimeo.com/video/1214243801'
                   }
                   frameBorder="0"
                   allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
@@ -182,16 +182,16 @@ export default function Home(props: IIndexProps) {
 
             <div className="SideImg">
 
-              {isTablet || isWide ? <Image alt="dashboard" src='/img/img-quisom.jpg' width={800} height={800} />
+              {isTablet || isWide ? <Image alt="dashboard" src='/img/img-quisom.webp' width={800} height={800} />
               : (null )}
 
             </div>
 
           </div>
       </section>
-      <section>
+      {/* <section>
         <div className='Stripe Brown'></div>
-      </section>
+      </section> */}
 
         {/* SOCIS  */}
 
@@ -207,7 +207,7 @@ export default function Home(props: IIndexProps) {
               </div>
               <div className="CenterWrap">
                 <Image className="mt-5" loading="eager" 
-                  alt="IDR" src='/logos/aj-black.png' 
+                  alt="IDR" src='/logos/aj-black.webp' 
                   // sizes="(max-width: 480px) 200px, (max-width: 1024px) 300px, 400px"
                   width={250} height={50} />
                 <p className='mt-3'>
@@ -252,16 +252,16 @@ export default function Home(props: IIndexProps) {
 
             <div className="SideImg">
 
-              {isTablet || isWide ? <Image alt="dashboard" src='/img/img-residus.jpg' width={800} height={800} />
+              {isTablet || isWide ? <Image alt="dashboard" src='/img/img-residus.webp' width={800} height={800} />
               : (null )}
 
             </div>
 
           </div>
       </section>
-      <section>
+      {/* <section>
         <div className='Stripe Green'></div>
-      </section>
+      </section> */}
 
         {/* MISSION */}
 
@@ -283,7 +283,7 @@ export default function Home(props: IIndexProps) {
               <div className="CardWrap animation-up" data-animate="slide-up">
                 <div className="CardImg">
                 <Image loading="eager" 
-                alt="img" src='/img/mission-1.jpg' width={800} height={800}
+                alt="img" src='/img/mission-1.webp' width={800} height={800}
                 sizes="(max-width: 480px) 180px, (max-width: 1024px) 200px, 220px"                />           
                </div>
                 <div className="CardTxt">
@@ -297,7 +297,7 @@ export default function Home(props: IIndexProps) {
               <div className="CardWrap animation-up" data-animate="slide-up">
                 <div className="CardImg">
                 <Image loading="eager" 
-                alt="img" src='/img/mission-2.jpg' width={800} height={800}
+                alt="img" src='/img/mission-2.webp' width={800} height={800}
                 sizes="(max-width: 480px) 180px, (max-width: 1024px) 200px, 220px"
                  />           
                 </div>
@@ -312,7 +312,7 @@ export default function Home(props: IIndexProps) {
               <div className="CardWrap animation-up" data-animate="slide-up">
                 <div className="CardImg">
                 <Image loading="eager" 
-                alt="img" src='/img/mission-3.jpg' width={800} height={800}
+                alt="img" src='/img/mission-3.webp' width={800} height={800}
                 sizes="(max-width: 480px) 180px, (max-width: 1024px) 200px, 220px"
                  />           
                 </div>
@@ -350,16 +350,16 @@ export default function Home(props: IIndexProps) {
 
             <div className="SideImg">
 
-              {isTablet || isWide ? <Image alt="dashboard" src='/img/img-lab.jpg' width={800} height={800} />
+              {isTablet || isWide ? <Image alt="dashboard" src='/img/img-lab.webp' width={800} height={800} />
               : (null )}
 
             </div>
 
           </div>
       </section>
-      <section>
+      {/* <section>
         <div className='Stripe Blue'></div>
-      </section>
+      </section> */}
 
       {/* POSTS */}
 

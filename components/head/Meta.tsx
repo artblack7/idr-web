@@ -123,8 +123,8 @@ const Meta = (props: IMetaProps) => {
 
         <meta name="author" content={props.pauthor ? props.pauthor : Config.author} key="author" />
 
-        <link rel="preload" as="image" href="/logos/logo.png" />
-        <link rel="preload" as="image" href="/logos/logo-black.png" />
+        <link rel="preload" as="image" href="/logos/logo.webp" />
+        <link rel="preload" as="image" href="/logos/logo-black.webp" />
 
       </Head>
     </>

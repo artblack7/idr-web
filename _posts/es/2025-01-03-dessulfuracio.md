@@ -4,8 +4,8 @@ metaTitle: "Desulfuración con oxígeno líquido"
 description: "Optimización del proceso de desulfuración, acelerando la reacción y reduciendo espumas."
 date: "2025-01-03"
 modified_date: "2025-01-03"
-# image: /thumb/thumb-oxigen.jpg
-image: /thumb/thumb-oxigen.jpg
+# image: /thumb/thumb-oxigen.webp
+image: /thumb/thumb-oxigen.webp
 tags:
   - Optimización
 ---
@@ -18,7 +18,7 @@ tags:
 
 <strong>Optimización del proceso de desulfuración, acelerando la reacción y reduciendo espumas.</strong>
 
-![My Image](/posts/oxigen.jpg)
+![My Image](/posts/oxigen.webp)
 
 En el año 2018 se implementó una mejora significativa en el proceso de desulfuración de la planta depuradora para optimizar su eficiencia. Esta mejora consistió en sustituir el sistema convencional con aire atmosférico por la adición de oxígeno líquido a las balsas de desulfuración.
 

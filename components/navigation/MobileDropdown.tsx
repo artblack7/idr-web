@@ -97,7 +97,7 @@ export const MobileDropdown = () => {
            <Link href="/globalpay">
              <div className="dropdown-card">
                 <div className="drop-img">
-                    <Image alt="img" src='/img/grid-7.jpg' width={400} height={340} />
+                    <Image alt="img" src='/img/grid-7.webp' width={400} height={340} />
                 </div>
                 <div className="drop-txt">
                     <small>Global Operations</small>

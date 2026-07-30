@@ -8,7 +8,6 @@ const nextConfig = {
     // pageExtensions: ['js', 'jsx', 'md', 'mdx'], 
   },
   reactStrictMode: false,
-  swcMinify: true,
 };
 
 module.exports = nextConfig;

@@ -36,7 +36,7 @@ const TechSlideshow: React.FC = () => {
                       <div className="SideImg">
                         <div className='ImgWrapSlide'>
                           <Image className="radius-4 nimation-up" data-animate="slide-up"  loading="eager" 
-                          alt="IDR" src='/img/proces-01.jpg' 
+                          alt="IDR" src='/img/proces-01.webp' 
                           sizes="(max-width: 480px) 400px, (max-width: 1024px) 800px, 1200px"
                           width={1200} height={400} />
                         </div>
@@ -62,7 +62,7 @@ const TechSlideshow: React.FC = () => {
                     <div className="SideImg">
                         <div className='ImgWrapSlide'>
                           <Image className="radius-4 nimation-up" data-animate="slide-up"  loading="eager" 
-                          alt="IDR" src='/img/proces-02.jpg' 
+                          alt="IDR" src='/img/proces-02.webp' 
                           sizes="(max-width: 480px) 400px, (max-width: 1024px) 800px, 1200px"
                           width={1200} height={400} />
                         </div>
@@ -88,7 +88,7 @@ const TechSlideshow: React.FC = () => {
                     <div className="SideImg">
                         <div className='ImgWrapSlide'>
                           <Image className="radius-4 nimation-up" data-animate="slide-up"  loading="eager" 
-                          alt="IDR" src='/img/proces-03.jpg' 
+                          alt="IDR" src='/img/proces-03.webp' 
                           sizes="(max-width: 480px) 400px, (max-width: 1024px) 800px, 1200px"
                           width={1200} height={400} />
                         </div>
@@ -111,7 +111,7 @@ const TechSlideshow: React.FC = () => {
                      <div className="SideImg">
                         <div className='ImgWrapSlide'>
                           <Image className="radius-4 nimation-up" data-animate="slide-up"  loading="eager" 
-                          alt="IDR" src='/img/proces-04.jpg' 
+                          alt="IDR" src='/img/proces-04.webp' 
                           sizes="(max-width: 480px) 400px, (max-width: 1024px) 800px, 1200px"
                           width={1200} height={400} />
                         </div>
@@ -134,7 +134,7 @@ const TechSlideshow: React.FC = () => {
                       <div className="SideImg">
                         <div className='ImgWrapSlide'>
                           <Image className="radius-4 nimation-up" data-animate="slide-up"  loading="eager" 
-                          alt="IDR" src='/img/proces-05.jpg' 
+                          alt="IDR" src='/img/proces-05.webp' 
                           sizes="(max-width: 480px) 400px, (max-width: 1024px) 800px, 1200px"
                           width={1200} height={400} />
                         </div>
@@ -158,7 +158,7 @@ const TechSlideshow: React.FC = () => {
                       <div className="SideImg">
                         <div className='ImgWrapSlide'>
                           <Image className="radius-4 nimation-up" data-animate="slide-up"  loading="eager" 
-                          alt="IDR" src='/img/proces-06.jpg' 
+                          alt="IDR" src='/img/proces-06.webp' 
                           sizes="(max-width: 480px) 400px, (max-width: 1024px) 800px, 1200px"
                           width={1200} height={400} />
                         </div>
@@ -184,7 +184,7 @@ const TechSlideshow: React.FC = () => {
                       <div className="SideImg">
                         <div className='ImgWrapSlide'>
                           <Image className="radius-4 nimation-up" data-animate="slide-up"  loading="eager" 
-                          alt="IDR" src='/img/proces-07.jpg' 
+                          alt="IDR" src='/img/proces-07.webp' 
                           sizes="(max-width: 480px) 400px, (max-width: 1024px) 800px, 1200px"
                           width={1200} height={400} />
                         </div>
@@ -204,7 +204,7 @@ const TechSlideshow: React.FC = () => {
                       <div className="SideImg">
                         <div className='ImgWrapSlide'>
                           <Image className="radius-4 nimation-up" data-animate="slide-up"  loading="eager" 
-                          alt="IDR" src='/img/proces-08.jpg' 
+                          alt="IDR" src='/img/proces-08.webp' 
                           sizes="(max-width: 480px) 400px, (max-width: 1024px) 800px, 1200px"
                           width={1200} height={400} />
                         </div>
@@ -230,7 +230,7 @@ const TechSlideshow: React.FC = () => {
                       <div className="SideImg">
                         <div className='ImgWrapSlide'>
                           <Image className="radius-4 nimation-up" data-animate="slide-up"  loading="eager" 
-                          alt="IDR" src='/img/proces-09.jpg' 
+                          alt="IDR" src='/img/proces-09.webp' 
                           sizes="(max-width: 480px) 400px, (max-width: 1024px) 800px, 1200px"
                           width={1200} height={400} />
                         </div>
@@ -256,7 +256,7 @@ const TechSlideshow: React.FC = () => {
                       <div className="SideImg">
                         <div className='ImgWrapSlide'>
                           <Image className="radius-4 nimation-up" data-animate="slide-up"  loading="eager" 
-                          alt="IDR" src='/img/proces-10.jpg' 
+                          alt="IDR" src='/img/proces-10.webp' 
                           sizes="(max-width: 480px) 400px, (max-width: 1024px) 800px, 1200px"
                           width={1200} height={400} />
                         </div>

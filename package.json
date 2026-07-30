@@ -13,7 +13,6 @@
     "@types/react-helmet": "^6.1.7",
     "@types/react-slick": "^0.23.10",
     "@vimeo/player": "^2.29.0",
-    "axios": "^1.5.1",
     "date-fns": "^2.30.0",
     "flickity": "^3.0.0",
     "gray-matter": "^4.0.3",

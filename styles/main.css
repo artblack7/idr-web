@@ -110,10 +110,19 @@ section .LineBtn {
   margin-bottom: 100px;
 }
 
+/* Animation wrapper that sits between .SideSection and .SideImg/.SideTxt.
+   Without a width it is content-sized, so the 50% children resolve against
+   nothing and the image overflows into the text. */
+.SideContent {
+  width: 100%;
+  min-width: 0;
+}
+
 .Left,
 .Right {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .Left .SideTxt {
@@ -128,6 +137,7 @@ section .LineBtn {
   flex-direction: column;
   justify-content: center;
   width: 50%;
+  min-width: 0;
 }
 
 .SideImg {
@@ -136,6 +146,17 @@ section .LineBtn {
   justify-content: center;
   align-items: center;
   width: 50%;
+  min-width: 0;
+}
+
+/* Constrain only the two-column section layout, never the slideshow slides */
+.SideContent .SideTxt,
+.SideContent .SideImg {
+  flex: 0 1 50%;
+}
+
+.SideContent .SideImg {
+  max-width: 50%;
 }
 
 .CenterTxt {
@@ -158,12 +179,20 @@ section .LineBtn {
 .SideImg video,
 .CenterImg video {
   width: 100%;
+  max-width: 100%;
   height: auto;
+}
+
+.SideImg .ImgWrap,
+.SideImg .ImgWrapSlide {
+  width: 100%;
+  max-width: 100%;
 }
 
 .ImgWrap img,
 .ImgWrapSlide img {
   width: 100%;
+  max-width: 100%;
   height: 100%;
   object-fit: cover;
 }
@@ -295,7 +324,22 @@ section .LineBtn {
   height: 100%;
   transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
   z-index: 0;
-  background: linear-gradient(180deg, 
+}
+
+/* Inner heroes: dark on the left, fading out to the right so the
+   left-aligned white title stays readable over the background image */
+.Overlay {
+  background: linear-gradient(90deg,
+  rgba(0, 0, 0, 0.5) 0%,
+  rgba(0, 0, 0, 0.3) 25%,
+  rgba(0, 0, 0, 0.2) 45%,
+  rgba(0, 0, 0, 0.1) 70%,
+  rgba(0, 0, 0, 0) 100%);
+}
+
+/* Gradient scrim only on the home page hero */
+#main-hero .Overlay {
+  background: linear-gradient(180deg,
   rgba(11, 15, 22, 0.8),
   rgba(11, 15, 22, 0.4),
   rgba(0, 0, 0, 0.2),
@@ -346,16 +390,15 @@ section .LineBtn {
   max-width: 650px;
   min-width: 500px;
   padding: var(--paddingHero);
-  border-radius: 0 200px 200px 0 ;
 }
 
 .HeroContent.Wide {
   max-width: 680px;
 }
-
+/* 
 .HeroTitle {
-  padding: 50px 0 30px 0;
-}
+  padding: 0 0 20px 0;
+} */
 
 .HeroSection .AppBtn button {
   margin-top: 40px;
@@ -365,7 +408,7 @@ section .LineBtn {
 .HeroSection h1 {
   font-family: "montserrat", sans-serif;
   font-weight: 700;
-  margin-bottom: 6px;
+  /* margin-bottom: 6px; */
   /* font-size: 60px;
   width: 60%; */
   color: var(--white);
@@ -378,6 +421,19 @@ section .LineBtn {
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
   margin-bottom: 24px;
   letter-spacing: 0.06rem;
+}
+
+/* Inner heroes (not home): soft, centered glow instead of a hard drop shadow */
+.HeroContent h1,
+.HeroContent h2,
+.HeroContent h3 {
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.75), 0 0 50px rgba(0, 0, 0, 0.55),
+    0 0 90px rgba(0, 0, 0, 0.4);
+}
+
+.HeroContent h6,
+.HeroContent p {
+  text-shadow: 0 1px 16px rgba(0, 0, 0, 0.7), 0 0 36px rgba(0, 0, 0, 0.45);
 }
 
 /*///////////////////// HERO ////////////////////*/
@@ -461,16 +517,7 @@ section .LineBtn {
   }
 }
 
-#innovation-hero .HeroContent,
-#projects-hero .HeroContent,
-#services-hero .HeroContent {
-  background: var(--heroBlue);
-}
-#tech-hero .HeroContent,
-#eco-hero .HeroContent,
-#about-hero .HeroContent {
-  background: var(--heroGreen);
-}
+/* Colored hero boxes replaced by a neutral dark scrim on .HeroContent */
 
 /* #about-hero .HeroContent {
   background: var(--tgreen4);
@@ -480,31 +527,31 @@ section .LineBtn {
 #innovation-hero {
   background: linear-gradient(180deg, 
   var(--heroBlue2), transparent, transparent),
-  url(../public/bg/bg-lab-xl.jpg) no-repeat center/cover;
+  url(../public/bg/bg-lab-xl.webp) no-repeat center/cover;
 }
 
 #services-hero {
   background: linear-gradient(180deg, 
   var(--heroBlue2), transparent, transparent),
-  url(../public/bg/bg-gestio-xl.jpg) no-repeat center/cover;
+  url(../public/bg/bg-gestio-xl.webp) no-repeat center/cover;
 }
 
 #tech-hero {
   background: linear-gradient(180deg, 
   var(--heroGreen2), transparent, transparent, transparent),
-  url(../public/bg/bg-tec-xl.jpg) no-repeat bottom/cover;
+  url(../public/bg/bg-tec-xl.webp) no-repeat bottom/cover;
 }
 
 #eco-hero {
   background: linear-gradient(180deg, 
   var(--heroGreen2), transparent, transparent, transparent),
-  url(../public/bg/bg-eco-xl.jpg) no-repeat center/cover;
+  url(../public/bg/bg-eco-xl.webp) no-repeat center/cover;
 }
 
 #about-hero {
   background: linear-gradient(180deg, 
   var(--heroGreen2), transparent, transparent),
-  url(../public/bg/bg-about-xl.jpg) no-repeat top/cover;
+  url(../public/bg/bg-about-xl.webp) no-repeat top/cover;
 }
 
 #projects-hero .HeroSection {
@@ -516,31 +563,31 @@ section .LineBtn {
   #innovation-hero {
     background: linear-gradient(180deg, 
     var(--heroBlue2), transparent, transparent),
-    url(../public/bg/bg-lab.jpg) no-repeat center/cover;
+    url(../public/bg/bg-lab.webp) no-repeat center/cover;
   }
   
   #services-hero {
     background: linear-gradient(180deg, 
     var(--heroBlue2), transparent, transparent),
-    url(../public/bg/bg-gestio.jpg) no-repeat center/cover;
+    url(../public/bg/bg-gestio.webp) no-repeat center/cover;
   }
   
   #tech-hero {
     background: linear-gradient(180deg, 
     var(--heroBrown), transparent, transparent, transparent),
-    url(../public/bg/bg-tec.jpg) no-repeat bottom/cover;
+    url(../public/bg/bg-tec.webp) no-repeat bottom/cover;
   }
   
   #eco-hero {
     background: linear-gradient(180deg, 
     var(--heroGreen2), transparent, transparent, transparent),
-    url(../public/bg/bg-eco.jpg) no-repeat center/cover;
+    url(../public/bg/bg-eco.webp) no-repeat center/cover;
   }
   
   #about-hero {
     background: linear-gradient(180deg, 
     var(--heroGreen2), transparent, transparent),
-    url(../public/bg/bg-about.jpg) no-repeat top/cover;
+    url(../public/bg/bg-about.webp) no-repeat top/cover;
   }
     
 }
@@ -550,31 +597,31 @@ section .LineBtn {
   #innovation-hero {
     background: linear-gradient(180deg, 
     var(--heroBlue2), transparent, transparent),
-    url(../public/bg/bg-lab-m.jpg) no-repeat center/cover;
+    url(../public/bg/bg-lab-m.webp) no-repeat center/cover;
   }
   
   #services-hero {
     background: linear-gradient(180deg, 
     var(--heroBlue2), transparent, transparent),
-    url(../public/bg/bg-gestio-m.jpg) no-repeat center/cover;
+    url(../public/bg/bg-gestio-m.webp) no-repeat center/cover;
   }
   
   #tech-hero {
     background: linear-gradient(180deg, 
     var(--heroGreen2), transparent, transparent, transparent),
-    url(../public/bg/bg-tec-m.jpg) no-repeat bottom/cover;
+    url(../public/bg/bg-tec-m.webp) no-repeat bottom/cover;
   }
   
   #eco-hero {
     background: linear-gradient(180deg, 
     var(--heroGreen2), transparent, transparent, transparent),
-    url(../public/bg/bg-eco-m.jpg) no-repeat center/cover;
+    url(../public/bg/bg-eco-m.webp) no-repeat center/cover;
   }
   
   #about-hero {
     background: linear-gradient(180deg, 
     var(--heroGreen2), transparent, transparent),
-    url(../public/bg/bg-about-m.jpg) no-repeat top/cover;
+    url(../public/bg/bg-about-m.webp) no-repeat top/cover;
   }
   
 }
@@ -584,31 +631,31 @@ section .LineBtn {
   #innovation-hero {
     background: linear-gradient(180deg, 
     var(--heroBlue2), transparent, transparent),
-    url(../public/bg/bg-lab-s.jpg) no-repeat center/cover;
+    url(../public/bg/bg-lab-s.webp) no-repeat center/cover;
   }
   
   #services-hero {
     background: linear-gradient(180deg, 
     var(--heroBlue2), transparent, transparent),
-    url(../public/bg/bg-gestio-s.jpg) no-repeat center/cover;
+    url(../public/bg/bg-gestio-s.webp) no-repeat center/cover;
   }
   
   #tech-hero {
     background: linear-gradient(180deg, 
     var(--heroGreen2), transparent, transparent, transparent),
-    url(../public/bg/bg-tec-s.jpg) no-repeat bottom/cover;
+    url(../public/bg/bg-tec-s.webp) no-repeat bottom/cover;
   }
   
   #eco-hero {
     background: linear-gradient(180deg, 
     var(--heroGreen2), transparent, transparent, transparent),
-    url(../public/bg/bg-eco-s.jpg) no-repeat center/cover;
+    url(../public/bg/bg-eco-s.webp) no-repeat center/cover;
   }
   
   #about-hero {
     background: linear-gradient(180deg, 
     var(--heroGreen2), transparent, transparent),
-    url(../public/bg/bg-about-s.jpg) no-repeat top/cover;
+    url(../public/bg/bg-about-s.webp) no-repeat top/cover;
   }
   
 }
@@ -626,17 +673,17 @@ section .LineBtn {
 } 
 
 .Stripe.Blue {
-  background: url("../public/bg/blue-stripe.jpg") 
+  background: url("../public/bg/blue-stripe.webp") 
   no-repeat top right / cover;
 }
 
 .Stripe.Green {
-  background: url("../public/bg/green-stripe.jpg") 
+  background: url("../public/bg/green-stripe.webp") 
   no-repeat center / cover;
 }
 
 .Stripe.Brown {
-  background: url("../public/bg/brown-stripe.jpg") 
+  background: url("../public/bg/brown-stripe.webp") 
   no-repeat center right / cover;
 }
 
@@ -660,7 +707,7 @@ section .LineBtn {
       rgba(18, 33, 87, 0.6),
       rgba(18, 33, 87, 0.6),
       rgba(0, 0, 0, 0.2)),
-    url("../public/bg/bg-water.jpg") 
+    url("../public/bg/bg-water.webp") 
     no-repeat center right / cover;
 }
 
@@ -670,7 +717,7 @@ section .LineBtn {
       rgba(9, 49, 34, 0.6),
       rgba(9, 49, 34, 0.6),
       rgba(0, 0, 0, 0.2)),
-    url("../public/bg/bg-leaf.jpg") 
+    url("../public/bg/bg-leaf.webp") 
     no-repeat center right / cover;
 }
 
@@ -680,7 +727,7 @@ section .LineBtn {
       rgba(49, 20, 9, 0.6),
       rgba(49, 20, 9, 0.6),
       rgba(0, 0, 0, 0.2)),
-    url("../public/bg/bg-leather.jpg") 
+    url("../public/bg/bg-leather.webp") 
     no-repeat center right / cover;
 }
 
@@ -691,7 +738,7 @@ section .LineBtn {
 #main-tech {
   display: flex;
   background: 
-  url("../public/bg/bg-main.jpg") 
+  url("../public/bg/bg-main.webp") 
   no-repeat bottom right / 100%;
   /* padding-bottom: 100px; */
 }
@@ -723,7 +770,7 @@ section video {
 /* INNOVATION */
 
 #main-innovation {
-  background: url("../public/img/img-lab.jpg") 
+  background: url("../public/img/img-lab.webp") 
   no-repeat center right / auto 100% ;
 }
 
@@ -736,7 +783,7 @@ section video {
   height: 100%;
   background: 
     linear-gradient( var(--blue5), var(--blue5)),
-    url("../public/bg/bg-water.jpg") no-repeat center / cover;
+    url("../public/bg/bg-water.webp") no-repeat center / cover;
   /* background-blend-mode: multiply; */
   clip-path: polygon(0 0, 55% 0, 45% 101%, 0 101%);
 }
@@ -749,7 +796,7 @@ section video {
 /* RESIDUS */
 
 #main-services {
-  background: url("../public/img/img-residus.jpg") 
+  background: url("../public/img/img-residus.webp") 
   no-repeat center right / auto 100% ;
 }
 
@@ -762,16 +809,16 @@ section video {
   height: 100%;
   background: 
   linear-gradient( var(--tgreen6), var(--tgreen6)),
-  url("../public/bg/bg-green.jpg") no-repeat center / cover;
+  url("../public/bg/bg-green.webp") no-repeat center / cover;
   /* background: 
-    url("../public/bg/bg-green.jpg") no-repeat center left / cover; */
+    url("../public/bg/bg-green.webp") no-repeat center left / cover; */
   clip-path: polygon(0 0, 55% 0, 45% 101%, 0 101%);
   }
 
 /* ABOUT */
 
 #main-about {
-  background: url("../public/img//img-quisom.jpg") 
+  background: url("../public/img//img-quisom.webp") 
   no-repeat center right / auto 100% ;
 }
 
@@ -784,7 +831,7 @@ section video {
   height: 100%;
   background: 
     linear-gradient( var(--brown3), var(--brown3)),
-    url("../public/bg/bg-leather.jpg") no-repeat center / cover;
+    url("../public/bg/bg-leather.webp") no-repeat center / cover;
   clip-path: polygon(0 0, 55% 0, 45% 101%, 0 101%);
   }
 
@@ -898,12 +945,12 @@ section video {
 }
 
 #services-contact  {
-  background: url("../public/img/img-contact.jpg") 
+  background: url("../public/img/img-contact.webp") 
   no-repeat center right / auto 100% ;
 }
 
 /* #services-contact .SideImg {
-  background: url("../public/img/lab.jpg") 
+  background: url("../public/img/lab.webp") 
   no-repeat center right / auto 100% ;
   height: 100%;
   width: 100%;
@@ -956,7 +1003,7 @@ section video {
 @media (min-width: 1800px) {
 /*   
   #innovation {
-    background: url("../public/img/img-lab.jpg") 
+    background: url("../public/img/img-lab.webp") 
     no-repeat center right / auto 40vw;
   }
   
@@ -1084,8 +1131,14 @@ section video {
   .Left .SideImg,
   .Right .SideImg {
     width: 100%;
+    max-width: 100%;
+    flex: 0 1 auto;
     margin: 0;
    }
+
+  .SideContent .SideImg {
+    max-width: 100%;
+  }
 
     .Left .SideTxt,
     .Right .SideTxt {
@@ -1120,7 +1173,7 @@ section video {
   .HeroContent {
     width: 75%;
     min-width: 0;
-    padding: var(--paddingHero-1024);
+    padding: 32px 5%;
   }
 
   .MiddleSpace {

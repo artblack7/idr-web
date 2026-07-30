@@ -8,7 +8,7 @@ const LoginForm: React.FC = () => {
         <div className="login-logo">
           <Image
             alt="IDR Logo"
-            src="/logos/logo-color.png"
+            src="/logos/logo-color.webp"
             width={126}
             height={41}
             loading="eager"

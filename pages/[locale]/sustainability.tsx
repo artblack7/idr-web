@@ -54,7 +54,7 @@ export default function Sustainability(props: SustainabilityProps) {
             <div className="SideImg animation-up" data-animate="slide-up">
               <div className='ImgWrap'>
                 <Image className="radius-4 nimation-up" data-animate="slide-up"  loading="eager" 
-                alt="IDR" src='/img/img-drop.jpg' 
+                alt="IDR" src='/img/img-drop.webp' 
                 sizes="(max-width: 480px) 400px, (max-width: 1024px) 800px, 1200px"
                 width={1200} height={400} />
               </div>
@@ -101,7 +101,7 @@ export default function Sustainability(props: SustainabilityProps) {
               <div className='ImgWrap'>
                 <Image className="radius-4 nimation-up" data-animate="slide-up"  
                 // loading="eager" 
-                alt="IDR" src='/img/img-riu.jpg' 
+                alt="IDR" src='/img/img-riu.webp' 
                 sizes="(max-width: 480px) 400px, (max-width: 1024px) 800px, 1200px"
                 width={1200} height={400} />
               </div>
@@ -188,7 +188,7 @@ export default function Sustainability(props: SustainabilityProps) {
                 <div className='SquareImgWrap'>
                   <Image className="radius-3"  
                   // loading="eager" 
-                  alt="IDR" src='/img/cicle-1.jpg' 
+                  alt="IDR" src='/img/cicle-1.webp' 
                   sizes="(max-width: 480px) 400px, (max-width: 1024px) 400px, 400px"
                   width={900} height={600} />
                 </div>
@@ -207,7 +207,7 @@ export default function Sustainability(props: SustainabilityProps) {
                <div className='SquareImgWrap'>
                   <Image className="radius-3"  
                   // loading="eager" 
-                  alt="IDR" src='/img/cicle-2.jpg' 
+                  alt="IDR" src='/img/cicle-2.webp' 
                   sizes="(max-width: 480px) 400px, (max-width: 1024px) 400px, 400px"
                   width={900} height={600} />
                 </div>
@@ -226,7 +226,7 @@ export default function Sustainability(props: SustainabilityProps) {
                 <div className='SquareImgWrap'>
                   <Image className="radius-3"  
                   // loading="eager" 
-                  alt="IDR" src='/img/cicle-3.jpg' 
+                  alt="IDR" src='/img/cicle-3.webp' 
                   sizes="(max-width: 480px) 400px, (max-width: 1024px) 400px, 400px"
                   width={900} height={600} />
                 </div>
@@ -356,7 +356,7 @@ export default function Sustainability(props: SustainabilityProps) {
                 <div className="CardTopCert">
                   <div className="CardImg">
                     <Image loading="eager" 
-                    alt="img" src='/logos/enac-01.png' width={250} height={200} />           
+                    alt="img" src='/logos/enac-01.webp' width={250} height={200} />           
                   </div>
                 </div>
                 <div className="CardBottomCert">
@@ -386,7 +386,7 @@ export default function Sustainability(props: SustainabilityProps) {
                 <div className="CardTopCert">
                 <div className="CardImg">
                   <Image loading="eager" 
-                  alt="img" src='/logos/enac-02.png' width={250} height={200} />           
+                  alt="img" src='/logos/enac-02.webp' width={250} height={200} />           
                 </div>
                 </div>
                 <div className="CardBottomCert">
@@ -418,7 +418,7 @@ export default function Sustainability(props: SustainabilityProps) {
                 <div className="CardTopCert">
                 <div className="CardImg">
                   <Image loading="eager" 
-                  alt="img" src='/logos/enac-03.png' width={250} height={200} />           
+                  alt="img" src='/logos/enac-03.webp' width={250} height={200} />           
                 </div>
                 </div>
                 <div className="CardBottomCert">
@@ -450,7 +450,7 @@ export default function Sustainability(props: SustainabilityProps) {
                 <div className="CardTopCert">
                 <div className="CardImg">
                   <Image loading="eager" 
-                  alt="img" src='/logos/endesa.png' width={250} height={200} />           
+                  alt="img" src='/logos/endesa.webp' width={250} height={200} />           
                 </div>
                 </div>
                 <div className="CardBottomCert">

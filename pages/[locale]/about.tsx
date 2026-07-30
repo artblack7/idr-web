@@ -55,7 +55,7 @@ export default function About(props: AboutProps) {
             <div className="SideImg">
               <div className='ImgWrap'>
                 <Image className="radius-4" loading="eager" 
-                alt="IDR" src='/img/img-curtidors.jpg' 
+                alt="IDR" src='/img/img-curtidors.webp' 
                   sizes="(max-width: 480px) 400px, (max-width: 1024px) 800px, 1200px"
                   width={1200} height={400} />
               </div>
@@ -101,7 +101,7 @@ export default function About(props: AboutProps) {
               <div className='ImgWrap'>
                 <Image className="radius-4"  
                 // loading="eager" 
-                alt="IDR" src='/img/img-pells3.jpg' 
+                alt="IDR" src='/img/img-pells3.webp' 
                 sizes="(max-width: 480px) 400px, (max-width: 1024px) 800px, 1200px"
                 width={1200} height={400} />
               </div>
@@ -147,7 +147,7 @@ export default function About(props: AboutProps) {
                 <div className="CardTop Collab1">
                 <div className="CardImg">
                   <Image loading="eager" 
-                  alt="img" src='/logos/cluster.png' width={250} height={200} />           
+                  alt="img" src='/logos/cluster.webp' width={250} height={200} />           
                 </div>
                 </div>
                 <div className="CardBottom">
@@ -166,7 +166,7 @@ export default function About(props: AboutProps) {
               <div className="CardWrap animation-up" data-animate="slide-up">
                 <div className="CardTop Collab2">
                   <Image loading="eager" 
-                    alt="img" src='/logos/tradebe.png' width={250} height={200} />           
+                    alt="img" src='/logos/tradebe.webp' width={250} height={200} />           
                 </div>
                 <div className="CardBottom">
                   <div className="CardTxt">
@@ -183,7 +183,7 @@ export default function About(props: AboutProps) {
               <div className="CardWrap animation-up" data-animate="slide-up">
                 <div className="CardTop Collab3">
                 <Image loading="eager" 
-                  alt="img" src='/logos/a3.png' width={250} height={200} />           
+                  alt="img" src='/logos/a3.webp' width={250} height={200} />           
                 </div>
                 <div className="CardBottom">
                   <div className="CardTxt">
@@ -218,7 +218,7 @@ export default function About(props: AboutProps) {
               </div>
               <div className="CenterWrap">
                 <Image className="mt-5"  loading="eager" 
-                  alt="IDR" src='/logos/aj-black.png' 
+                  alt="IDR" src='/logos/aj-black.webp' 
                   // sizes="(max-width: 480px) 200px, (max-width: 1024px) 300px, 400px"
                   width={250} height={50} />
                 <p className='mt-3'>

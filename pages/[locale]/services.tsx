@@ -57,7 +57,7 @@ export default function Services(props: ServicesProps) {
             <div className="SideImg">
               <div className='ImgWrap'>
                 <Image className="radius-4" loading="eager" 
-                alt="IDR" src='/img/img-camio.jpg' 
+                alt="IDR" src='/img/img-camio.webp' 
                 sizes="(max-width: 480px) 400px, (max-width: 1024px) 800px, 1200px"
                 width={1200} height={400} />
               </div>
@@ -100,7 +100,7 @@ export default function Services(props: ServicesProps) {
               <div className='ImgWrap'>
                 <Image className="radius-4"  
                 // loading="eager" 
-                alt="IDR" src='/img/img-gestio.jpg' 
+                alt="IDR" src='/img/img-gestio.webp' 
                 sizes="(max-width: 480px) 400px, (max-width: 1024px) 800px, 1200px"
                 width={1200} height={400} />
               </div>

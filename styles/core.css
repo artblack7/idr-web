@@ -67,9 +67,9 @@
   /***/
 
   --heroBlue: hsla(206, 100%, 14%, 0.95);
-  --heroBlue2: hsla(214, 100%, 18%, 0.95);
+  --heroBlue2: hsl(214, 100%, 11%);
   --heroGreen: hsla(186, 100%, 11%, 0.95);
-  --heroGreen2: hsla(183, 100%, 11%, 0.9); 
+  --heroGreen2: hsl(184, 100%, 6%); 
   --heroBrown: hsla(0, 0%, 7%, 0.95); 
 
   --cyan: #00ede2; /*bluegrad*/
@@ -584,7 +584,7 @@ button {
     padding: 12px 20px;
     min-width: 150px;
     width: max-content;
-    border-radius: 6px;
+    border-radius: 10px;
     /* transition: background-color 0.2s ease-in-out, box-shadow 0.3s ease-in-out; */
     transition: background-color 0.2s ease-in-out, color 0.3s ease-in-out;
     overflow: hidden;

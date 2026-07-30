@@ -38,7 +38,7 @@ export const Toolbar = ({ useWhite = false, children, locale = 'ca' }: ToolbarPr
                       <div className="AppName">
                           <Link href={`/${locale}`}>
                                 <div className="toolbar-logo">
-                                  <Image alt="IDR Logo" src='/logos/logo.png' width={866} height={414} loading="eager"/>
+                                  <Image alt="IDR Logo" src='/logos/logo.webp' width={866} height={414} loading="eager"/>
                                 </div>
                           </Link>
                       </div>
@@ -72,7 +72,7 @@ export const Toolbar = ({ useWhite = false, children, locale = 'ca' }: ToolbarPr
             <div className="AppName">
               <Link href={`/${locale}`}>
                 <div className="toolbar-logo">
-                  <Image alt="IDR Logo" src="/logos/logo.png"
+                  <Image alt="IDR Logo" src="/logos/logo.webp"
                     width={866} height={414} loading="eager"
                   />
                 </div>
@@ -97,7 +97,7 @@ export const Toolbar = ({ useWhite = false, children, locale = 'ca' }: ToolbarPr
                         <div className="toolbar-logo">
                           <Image
                             alt="IDR Logo"
-                            src="/logos/logo.png"
+                            src="/logos/logo.webp"
                             width={866}
                             height={414}
                             loading="eager"

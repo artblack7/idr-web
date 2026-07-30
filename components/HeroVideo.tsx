@@ -4,7 +4,7 @@ import Player from '@vimeo/player';
 const VIMEO_ID = '1098597684';
 
 const HeroVideo: React.FC = () => {
-  const thumbnail = '/video/video-poster.jpg';
+  const thumbnail = '/video/video-poster.webp';
   const [hidePoster, setHidePoster] = useState(false);
   const [fadePoster, setFadePoster] = useState(false);
   const iframeRef = useRef<HTMLIFrameElement>(null);

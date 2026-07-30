@@ -32,7 +32,7 @@ const Footer = ({ locale }: FooterProps) => {
                   <div className="footer-logo-container">
                     <div className="footer-logo">
                        <Link href="/" target="_blank" rel="noopener noreferrer">
-                         <Image alt="IDR" src='/logos/logo.png' width={200} height={200} />
+                         <Image alt="IDR" src='/logos/logo.webp' width={200} height={200} />
                        </Link>
                     </div>
                     <div className="footer-linkedin">
@@ -106,15 +106,15 @@ const Footer = ({ locale }: FooterProps) => {
                   <div className="PartnerLogos">
                       <div className="Socis">
                         <a href="https://leatherbarcelona.com/" target="_blank" rel="noopener noreferrer">
-                         <Image src="/logos/cluster.png" height="300" width="300" alt="Logo" loading='eager'/>
+                         <Image src="/logos/cluster.webp" height="300" width="300" alt="Logo" loading='eager'/>
                         </a>
                       </div>
                       <div className="Socis">
                         <a href="https://www.tradebe.com/environmental-services/" target="_blank" rel="noopener noreferrer">
-                         <Image src="/logos/tradebe.png" height="300" width="300" alt="Logo" loading='eager'/>
+                         <Image src="/logos/tradebe.webp" height="300" width="300" alt="Logo" loading='eager'/>
                         </a>
                       </div>
-                      <Image src="/logos/gremi.png" height="300" width="300" alt="Logo" loading='eager'/>
+                      <Image src="/logos/gremi.webp" height="300" width="300" alt="Logo" loading='eager'/>
                   </div>
                 </div>
               </div>

@@ -4,8 +4,8 @@ metaTitle: "ReBioenergia"
 description: "ReBioenergia transforma residus industrials en recursos per a un futur sostenible."
 date: "2025-01-06"
 modified_date: "2025-01-06"
-# image: /thumb/thumb-rebio.jpg
-image: /thumb/thumb-rebio.jpg
+# image: /thumb/thumb-rebio.webp
+image: /thumb/thumb-rebio.webp
 
 tags:
   - Economia Circular
