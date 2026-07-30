@@ -22,8 +22,13 @@
   z-index: 10;
 }
 
+/* Frosted glass instead of solid white: translucent fill plus a blur of
+   whatever scrolls underneath. Saturation is bumped so colours passing
+   behind the bar do not wash out. */
 .ToolbarWhite {
-  background: white;
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
 }
 
 .header-top {
@@ -38,13 +43,28 @@
   left: 0;
   right: 0;
   box-shadow: var(--sh-toolbar);
-  background: white;
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
   transition: all 0.3s ease-in-out;
 }
 
 .header-top-w {
-  background: white;
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
   border-bottom: 1px solid var(--grey3);
+}
+
+/* Browsers without backdrop-filter get an opaque bar so text stays legible */
+@supports not (backdrop-filter: blur(1px)) {
+  .ToolbarWhite,
+  .header-scrolled,
+  .header-scrolled-w,
+  .header-top-w {
+    background: white;
+  }
 }
 
 .ToolbarInner {
@@ -105,17 +125,18 @@
 .header-scrolled .LanguageSelectorToolbar .LanguageButton,
 .header-top-w .LanguageSelectorToolbar .LanguageButton {
   color: var(--dark);
+  transition: color 0.3s ease;
 }
 
-.header-scrolled .LanguageSelectorToolbar .LanguageButton:hover {
+/* Both white header states hover the same way. The arrow picks this up
+   through currentColor instead of being filled separately. */
+.header-scrolled .LanguageSelectorToolbar .LanguageButton:hover,
+.header-top-w .LanguageSelectorToolbar .LanguageButton:hover {
   color: var(--tgreen3);
 }
 
-.header-scrolled .LanguageSelectorToolbar .LanguageButton:hover svg {
-  fill: var(--tgreen3);
-}
-
-.header-scrolled .LanguageSelectorToolbar .LanguageButton.open {
+.header-scrolled .LanguageSelectorToolbar .LanguageButton.open,
+.header-top-w .LanguageSelectorToolbar .LanguageButton.open {
   color: var(--tgreen3);
 }
 
@@ -387,10 +408,12 @@
   fill: white;
 }
 
-/* Language Arrow - Dark when header scrolled or white header */
+/* Language Arrow - follows the button's text colour on the white headers,
+   so it goes dark by default and turquoise on hover along with the label. */
 .header-scrolled .LanguageArrow svg path,
 .header-top-w .LanguageArrow svg path {
-  fill: var(--dark);
+  fill: currentColor;
+  transition: fill 0.3s ease;
 }
 
 /* Shared Language Button Styles */
@@ -613,7 +636,7 @@
   transform: translate(-50%, -50%);
   width: 40px;
   height: 40px;
-  background: rgba(35, 139, 109, 0.15); /* Semi-transparent turq3 color */
+  background: rgba(139, 139, 139, 0.15); /* Semi-transparent turq3 color */
   border-radius: 50%;
   z-index: -1;
 }
@@ -662,12 +685,31 @@
 
 .header-top .AppBtn button {
   color: var(--white);
-  border-color: white;
-  border: 1px solid white;
+  border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .header-top .AppBtn svg path {
   fill: var(--white);
+}
+
+/* Toolbar CTA arrow follows the button's text colour in every state
+   instead of the fixed green it had before. */
+.Toolbar .AppBtn button svg path,
+.ToolbarWhite .AppBtn button svg path,
+.header-top .AppBtn button svg path,
+.header-top-w .AppBtn button svg path,
+.header-scrolled .AppBtn button svg path,
+.header-scrolled-w .AppBtn button svg path {
+  fill: currentColor;
+}
+
+/* Frosted glass on the CTA, only while the bar is transparent over the hero.
+   On hover the solid fill sweeps across via ::before, so the blur is dropped
+   there (see the :hover rules below) to keep the sweep readable. */
+.header-top .AppBtn button {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
 /* CTA button default styles (white backgrounds) */
@@ -724,7 +766,24 @@
   background: transparent;
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
-  border: 1px solid rgba(255, 255, 255, 0.8);
+  /* No border override: .Toolbar also sits inside .header-scrolled, so a
+     1px white border here both shrank the 1.5px border (making the button
+     shift) and washed it out against the white bar. */
+}
+
+/* Transparent bar only: keep the button's own glass on hover, and make the
+   sweeping fill a dark glass so it layers over the white one. These come
+   after the .Toolbar rules above, which would otherwise strip the blur. */
+.header-top .AppBtn button:hover {
+  background: transparent;
+  backdrop-filter: blur(10px) saturate(160%);
+  -webkit-backdrop-filter: blur(10px) saturate(160%);
+}
+
+.header-top .AppBtn button::before {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
 .header-scrolled .Toolbar .AppBtn button:hover,
@@ -750,10 +809,10 @@
   width: 120%;
 }
 
-.Toolbar .AppBtn button:hover svg path,
-.header-top .AppBtn button:hover svg path {
-  fill: var(--white);
-}
+/* No explicit hover fill: the arrow inherits currentColor, so it follows the
+   button's own colour transition. Setting it here made the fill switch on a
+   different schedule than the text, which showed up as a white flash on
+   un-hover. */
 
 /*////////////////// FOOTER ////////////////////*/
 

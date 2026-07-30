@@ -328,7 +328,7 @@ section .LineBtn {
 
 /* Inner heroes: dark on the left, fading out to the right so the
    left-aligned white title stays readable over the background image */
-.Overlay {
+.HeroSectionWrap .Overlay {
   background: linear-gradient(90deg,
   rgba(0, 0, 0, 0.5) 0%,
   rgba(0, 0, 0, 0.3) 25%,

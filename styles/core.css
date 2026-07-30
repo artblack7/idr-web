@@ -66,10 +66,10 @@
 
   /***/
 
-  --heroBlue: hsla(206, 100%, 14%, 0.95);
+  --heroBlue: hsla(206, 100%, 10%, 0.95);
   --heroBlue2: hsl(214, 100%, 11%);
-  --heroGreen: hsla(186, 100%, 11%, 0.95);
-  --heroGreen2: hsl(184, 100%, 6%); 
+  --heroGreen: hsla(187, 100%, 7%, 0.95);
+  --heroGreen2: hsl(185, 100%, 5%); 
   --heroBrown: hsla(0, 0%, 7%, 0.95); 
 
   --cyan: #00ede2; /*bluegrad*/
@@ -598,7 +598,9 @@ button {
       /* color: var(--tgreen2); */
       /* border-color: var(--tgreen2); */
       /* background-color: var(--tgreen3); */
-      border: 1.5px solid var(--main);
+      /* Border is deliberately left alone on hover: restating it here
+         overrode the 1px border set by .header-top and the 0.5px width
+         change made the button shift. */
       color: white;
       /* box-shadow: inset 12rem 0 0 var(--tgreen3);
       transition: background-color 0.2s ease-in-out, box-shadow 0.3s ease-in-out;  */
@@ -638,7 +640,7 @@ button {
 
 }
 .AppBtn.Green button:hover {
-  border: 1px solid var(--green1);
+  border-color: var(--green1);
 }
 .AppBtn.Green button:hover::before {
   width: 120%;
@@ -661,11 +663,14 @@ button {
     top: 1px;
     margin-left: 12px;
     margin-right: 2px;
-    transition: 0.1s ease-in-out;
+    transition: margin 0.1s ease-in-out;
     width: 7px;
   }
-  .AppBtn button:hover svg path {
-    fill: var(--tgreen3);
+
+  /* Match the button's own colour transition so the arrow and the label
+     change together in both directions. */
+  .AppBtn button svg path {
+    transition: fill 0.3s ease-in-out;
   }
     .AppBtn button:hover svg {
       margin-left: 14px;

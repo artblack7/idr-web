@@ -54,7 +54,7 @@ export default function Sustainability(props: SustainabilityProps) {
             <div className="SideImg animation-up" data-animate="slide-up">
               <div className='ImgWrap'>
                 <Image className="radius-4 nimation-up" data-animate="slide-up"  loading="eager" 
-                alt="IDR" src='/img/img-drop.webp' 
+                alt="IDR" src='/img/img-eco.webp' 
                 sizes="(max-width: 480px) 400px, (max-width: 1024px) 800px, 1200px"
                 width={1200} height={400} />
               </div>
