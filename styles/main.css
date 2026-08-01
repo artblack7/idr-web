@@ -781,10 +781,9 @@ section video {
   left: 0;
   width: 100%;
   height: 100%;
-  background: 
-    linear-gradient( var(--blue5), var(--blue5)),
-    url("../public/bg/bg-water.webp") no-repeat center / cover;
-  /* background-blend-mode: multiply; */
+  /* Flat blue panel: the bg-water image underneath was barely visible
+     through the 0.96-alpha overlay, so it only cost a download. */
+  background: var(--blue5);
   clip-path: polygon(0 0, 55% 0, 45% 101%, 0 101%);
 }
 
@@ -807,11 +806,7 @@ section video {
   left: 0;
   width: 100%;
   height: 100%;
-  background: 
-  linear-gradient( var(--tgreen6), var(--tgreen6)),
-  url("../public/bg/bg-green.webp") no-repeat center / cover;
-  /* background: 
-    url("../public/bg/bg-green.webp") no-repeat center left / cover; */
+  background: var(--tgreen6);
   clip-path: polygon(0 0, 55% 0, 45% 101%, 0 101%);
   }
 
@@ -829,9 +824,7 @@ section video {
   left: 0;
   width: 100%;
   height: 100%;
-  background: 
-    linear-gradient( var(--brown3), var(--brown3)),
-    url("../public/bg/bg-leather.webp") no-repeat center / cover;
+  background: var(--brown3);
   clip-path: polygon(0 0, 55% 0, 45% 101%, 0 101%);
   }
 

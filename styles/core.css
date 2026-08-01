@@ -98,9 +98,9 @@
   --tgreen4: hsl(186, 100%, 13%); /*ecosquare1 - footer*/
   --tgreen5: hsl(186, 100%, 7%); /*residus*/
 
-  --blue5: hsla(211, 100%, 10%, 0.96); /*innovation*/
-  --tgreen6: hsl(186, 100%, 7%, 0.9); /*residus*/
-  --brown3:rgba(28, 15, 7, 0.903); /*quisom*/
+  --blue5: hsla(211, 100%, 10%, 1); /*innovation*/
+  --tgreen6: hsl(186, 100%, 7%, 1); /*residus*/
+  --brown3:hsl(23, 60%, 10%); /*quisom*/
 
   --cream: hsl(34, 100%, 78%); 
   --cream2: hsl(27, 39%, 48%); 
